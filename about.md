@@ -1,0 +1,40 @@
+---
+layout: doc
+sidebar: false
+aside: false
+title: About - Main St Audio Labs
+---
+
+# About Main St Audio Labs
+
+Main St Audio Labs is a personal project born at the intersection of vintage rock 'n' roll passion, analog modeling, and software engineering.
+
+---
+
+## The Story Behind the Labs
+
+Main St Audio Labs was founded by **Emiliano Tegli**, a guitarist, developer, and tone enthusiast obsessed with the raw, dynamic, and touch-sensitive guitar sounds of the late 1960s and early 1970s. 
+
+The name is a direct tribute to the legendary basement sessions of the Rolling Stones' *Exile on Main St.*—an era where records were greasy, valves were pushed to their melting point, and guitar tones had a tridimensional, organic warmth that defined rock music.
+
+---
+
+## Why Main St Audio Labs?
+
+Modern audio plugins have become incredibly powerful, but they often get in the way of making music. Musicians and producers are frequently forced to navigate infinite parameters, coordinate complex routings, scroll through hundreds of presets, and deal with bloated setups that drain CPU resources.
+
+We believe in a different approach: **The Simplicity Manifesto.**
+
+### 📻 1. Calibrated to the Records (Mix-Ready)
+Instead of giving you raw, unpolished emulations and leaving you to struggle with post-equalization, we do the heavy lifting beforehand. Each plugin is meticulously tuned and calibrated by studying the exact guitar, synth, and dynamic responses heard on classic studio albums and live records, ensuring they fit immediately into your mix.
+
+### ⚡ 2. Ultra-Low CPU & Maximum Performance
+We believe your computer should focus on your music, not on running heavy graphics or inefficient DSP loops. All of our tools are built using highly optimized audio engines and lightweight DSP code that deliver maximum performance with an extremely low CPU footprint, letting you run multiple instances without breaking a sweat.
+
+---
+
+## Our Mission
+
+To build virtual boutique audio tools that sound raw, feel organic, and get completely out of the way of your inspiration.
+
+No registration walls, no bloated setups—just plug in, turn the knobs, and play.

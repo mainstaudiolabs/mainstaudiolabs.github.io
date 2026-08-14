@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  /* Brand colors (Iconic Stones Cherry Red) */
+  --vp-c-brand-1: #e01a22;
+  --vp-c-brand-2: #f32d36;
+  --vp-c-brand-3: #b81017;
+  --vp-c-brand-next: #d01820;
+  --rock-red: #e01a22;
+
+  /* Fonts */
+  --vp-font-family-base: 'Courier Prime', Courier, monospace;
+  --vp-font-family-mono: 'Courier Prime', Courier, monospace;
+
+  /* Light Theme (Stones Vinyl Label Yellow & High Contrast Black) */
+  --vp-c-bg: #ecc04a; /* Mustard Yellow from the vinyl label */
+  --vp-c-bg-soft: #f2c95c; /* Slightly lighter yellow for card containers */
+  --vp-c-bg-mute: #dfb33d; /* Darker yellow for active elements */
+  --vp-c-text-1: #000000; /* Solid black text */
+  --vp-c-text-2: #111111;
+  --vp-c-text-3: #222222;
+  --vp-c-border: #000000; /* Solid black borders for print style */
+}
+
+.dark {
+  /* Dark Theme (Charcoal Vinyl & Red Accents) */
+  --vp-c-bg: #151515;
+  --vp-c-bg-soft: #1f1f1f;
+  --vp-c-bg-mute: #2a2a2a;
+  --vp-c-text-1: #efe8d8;
+  --vp-c-text-2: #bcae97;
+  --vp-c-text-3: #8e806c;
+  --vp-c-border: #333333;
+  --vp-c-brand-1: #e01a22;
+  --vp-c-brand-2: #f32d36;
+  --vp-c-brand-3: #b81017;
+}
+
+/* Custom typographic tweaks */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Special Elite', Georgia, serif !important;
+  font-weight: normal !important;
+  letter-spacing: -0.5px;
+}
+
+.vp-doc h1 {
+  font-family: 'Lobster', cursive !important;
+  font-size: 3rem !important;
+  color: var(--rock-red) !important;
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
+  border: none !important;
+}
+
+.dark .vp-doc h1 {
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.8);
+}
+
+.vp-doc h2 {
+  border-bottom: 2px dashed var(--vp-c-border) !important;
+  padding-bottom: 5px;
+  font-size: 1.8rem;
+  color: var(--vp-c-text-1);
+}
+
+/* Customized layout elements */
+.VPNavBar {
+  background-color: var(--vp-c-bg) !important;
+  border-bottom: 2px solid var(--vp-c-border) !important;
+}
+
+.VPFooter {
+  background-color: var(--vp-c-bg-soft) !important;
+  border-top: 2px dashed var(--vp-c-border) !important;
+  font-family: 'Special Elite', monospace;
+}
+
+/* Customize code blocks to look like vintage typewriter text */
+.vp-doc code {
+  font-family: 'Courier Prime', monospace !important;
+  background-color: var(--vp-c-bg-soft) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  border-radius: 4px;
+}
+
+/* Vintage Rock Design - Custom collage components */
+.rock-header {
+  text-align: center;
+  margin: 3rem auto 4rem auto;
+  border-bottom: 4px double var(--vp-c-border);
+  padding-bottom: 2rem;
+  max-width: 800px;
+}
+
+.rock-title {
+  font-family: 'Lobster', cursive !important;
+  font-size: 4.5rem !important;
+  line-height: 1.1;
+  color: var(--rock-red);
+  margin-bottom: 0.3rem;
+}
+
+.rock-subtitle {
+  font-family: 'Special Elite', monospace !important;
+  font-size: 1.1rem !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--vp-c-text-2);
+  line-height: 1.4;
+}
+
+.rock-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+}
+
+.rock-section-heading {
+  font-family: 'Special Elite', monospace !important;
+  font-size: 1.75rem !important;
+  border-bottom: 3px double var(--vp-c-border);
+  padding-bottom: 0.5rem;
+  margin: 4rem 0 2rem 0;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+}
+
+.rock-card {
+  background-color: var(--vp-c-bg-soft);
+  border: 3px solid var(--vp-c-text-1);
+  box-shadow: 8px 8px 0px var(--vp-c-text-1);
+  border-radius: 0px; /* Gritty, sharp borders */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.dark .rock-card {
+  border: 3px solid var(--vp-c-border);
+  box-shadow: 8px 8px 0px var(--vp-c-border);
+}
+
+.rock-card.coming-soon {
+  opacity: 0.65;
+  filter: grayscale(80%);
+}
+
+.rock-card.coming-soon::before {
+  content: "COMING SOON";
+  position: absolute;
+  top: 25px;
+  right: -35px;
+  background-color: var(--vp-c-brand-1);
+  color: white;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.75rem;
+  padding: 0.25rem 2.5rem;
+  transform: rotate(45deg);
+  z-index: 10;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  font-weight: bold;
+}
+
+.rock-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 8px 8px 0px var(--vp-c-brand-1);
+}
+
+.rock-card.coming-soon:hover {
+  border-color: var(--vp-c-text-1);
+  box-shadow: 8px 8px 0px var(--vp-c-text-1);
+}
+
+.dark .rock-card.coming-soon:hover {
+  border-color: var(--vp-c-border);
+  box-shadow: 8px 8px 0px var(--vp-c-border);
+}
+
+.rock-card-image-wrapper {
+  background-color: #1a1a1a;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid var(--vp-c-text-1);
+}
+
+.dark .rock-card-image-wrapper {
+  border-bottom: 3px solid var(--vp-c-border);
+}
+
+.rock-card-image {
+  max-height: 150px;
+  object-fit: contain;
+  filter: grayscale(10%) sepia(20%);
+  transition: filter 0.3s ease;
+}
+
+.rock-card:hover .rock-card-image {
+  filter: none;
+}
+
+.rock-card-content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .rock-card {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .rock-card-image-wrapper {
+    width: 35%;
+    border-bottom: none !important;
+    border-right: 3px solid var(--vp-c-text-1);
+    padding: 1.5rem;
+  }
+
+  .dark .rock-card-image-wrapper {
+    border-right: 3px solid var(--vp-c-border);
+  }
+
+  .rock-card-image {
+    max-height: 200px;
+  }
+
+  .rock-card-content {
+    width: 65%;
+    padding: 1.75rem;
+  }
+}
+
+.rock-card-tag {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.badge-free {
+  background-color: var(--vp-c-brand-1);
+  color: #ffffff !important;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.5rem;
+  border: 1px solid var(--vp-c-text-1);
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transform: translateY(-1px);
+}
+
+.dark .badge-free {
+  border: 1px solid var(--vp-c-border);
+}
+
+.badge-format {
+  border: none;
+  background: none;
+  color: #000000 !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 0.8rem;
+  padding: 0;
+  margin-left: 0.75rem;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+  font-weight: 800; /* Extra bold for clear weight */
+}
+
+.dark .badge-format {
+  border: none;
+  color: var(--vp-c-text-1) !important;
+}
+
+.rock-card-title {
+  font-family: 'Special Elite', Georgia, serif;
+  font-size: 2rem;
+  color: var(--vp-c-text-1);
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.rock-card-desc {
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+  margin-bottom: 1.5rem;
+}
+
+.rock-card-specs {
+  margin-bottom: 2rem;
+  border-top: 1px dashed var(--vp-c-border);
+  border-bottom: 1px dashed var(--vp-c-border);
+  padding: 1rem 0;
+}
+
+.rock-card-specs-title {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--vp-c-text-1);
+  margin-bottom: 0.5rem;
+}
+
+.rock-card-specs-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.95rem;
+  color: var(--vp-c-text-2);
+}
+
+.rock-card-specs-list li::before {
+  content: "• " !important;
+  color: var(--vp-c-brand-1);
+}
+
+.rock-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.rock-btn {
+  font-family: 'Special Elite', monospace !important;
+  font-size: 1rem !important;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none !important;
+  text-align: center;
+  transition: all 0.15s ease;
+  font-weight: normal;
+  border-radius: 0px;
+}
+
+.rock-btn-primary {
+  background-color: var(--vp-c-brand-1);
+  color: #ffffff !important;
+  border: 2px solid var(--vp-c-brand-1);
+}
+
+.rock-btn-primary:hover {
+  background-color: var(--vp-c-brand-2);
+  border-color: var(--vp-c-brand-2);
+}
+
+.rock-btn-secondary {
+  background-color: transparent;
+  color: var(--vp-c-text-1) !important;
+  border: 2px solid var(--vp-c-text-1);
+}
+
+.dark .rock-btn-secondary {
+  border-color: var(--vp-c-border);
+}
+
+.rock-btn-secondary:hover {
+  background-color: var(--vp-c-text-1);
+  color: var(--vp-c-bg) !important;
+}
+
+.dark .rock-btn-secondary:hover {
+  background-color: var(--vp-c-text-1);
+  color: var(--vp-c-bg) !important;
+}
+
+/* Vinyl disc styles for card */
+.vinyl-disc-wrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, #2a2a2a 35%, #111111 70%, #000000 100%);
+  border: 3px solid var(--vp-c-text-1);
+  box-shadow: 6px 6px 0px var(--vp-c-text-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+}
+
+.dark .vinyl-disc-wrapper {
+  border-color: var(--vp-c-border);
+  box-shadow: 6px 6px 0px var(--vp-c-border);
+}
+
+/* Vinyl grooves simulation */
+.vinyl-disc-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 0 5px rgba(0,0,0,0.5),
+              0 0 0 10px rgba(255,255,255,0.02),
+              0 0 0 15px rgba(0,0,0,0.5),
+              0 0 0 20px rgba(255,255,255,0.02),
+              0 0 0 25px rgba(0,0,0,0.5),
+              0 0 0 30px rgba(255,255,255,0.02);
+  pointer-events: none;
+}
+
+.vinyl-disc {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--vp-c-text-1);
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 2;
+}
+
+.dark .vinyl-disc {
+  border-color: var(--vp-c-border);
+}
+
+/* Rotation and animation on hover */
+.rock-card:hover .vinyl-disc-wrapper {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 0px var(--vp-c-brand-1);
+}
+
+.rock-card:hover .vinyl-disc {
+  transform: rotate(360deg);
+}
+
+/* Print stylesheet for high-quality clean PDF manuals */
+@media print {
+  .VPNav,
+  .VPSidebar,
+  .VPLocalNav,
+  .VPOutline,
+  .VPDocFooter,
+  .edit-link,
+  .last-updated,
+  .VPNavScreen {
+    display: none !important;
+  }
+
+  body, html, :root {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    --vp-c-bg: #ffffff !important;
+    --vp-c-text-1: #000000 !important;
+    --vp-c-text-2: #222222 !important;
+    --vp-c-border: #cccccc !important;
+  }
+
+  .VPContent {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: #ffffff !important;
+  }
+
+  .VPDoc {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .content-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .vp-doc {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Prevent page breaks inside sections and code blocks */
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+  }
+  
+  pre, code, blockquote, img, tr {
+    page-break-inside: avoid;
+  }
+}
