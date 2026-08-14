@@ -86,3 +86,7 @@ Many guitarists experience a sweeter, more fluid tone at 256 samples. This is du
 **Midnight Rambler is 100% self-contained.** It does not require loading external models, XML configs, or IR wav files separately:
 * All neural amplifier models and cabinet profiles are **embedded internally as binary resources** inside the plugin binary.
 * Simply copy the `.vst3` file to your plugin folder or run the `.exe` standalone app to start playing.
+
+<div class="print-footer">
+  Official Website &amp; Manual: <a href="https://mainstaudiolabs.github.io/midnight-rambler.html" target="_blank">https://mainstaudiolabs.github.io/midnight-rambler.html</a>
+</div>

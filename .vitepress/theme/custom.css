@@ -502,3 +502,21 @@ h1, h2, h3, h4, h5, h6 {
     page-break-inside: avoid;
   }
 }
+
+/* Custom print-only footer */
+.print-footer {
+  display: none;
+}
+
+@media print {
+  .print-footer {
+    display: block !important;
+    text-align: center;
+    font-size: 0.8rem !important;
+    border-top: 1px dashed #cccccc;
+    padding-top: 1.5rem;
+    margin-top: 4rem;
+    font-family: 'Courier Prime', monospace;
+    color: #555555;
+  }
+}
