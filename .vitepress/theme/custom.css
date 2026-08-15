@@ -706,29 +706,24 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
 }
 
-/* Crypto List & Items */
+/* Crypto List & Items (Horizontal Rows on Desktop) */
 .crypto-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   margin-top: 2rem;
-}
-
-@media (min-width: 768px) {
-  .crypto-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .crypto-item {
   background-color: rgba(0, 0, 0, 0.05);
   border: 2px solid var(--vp-c-text-1);
   border-radius: 4px;
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .dark .crypto-item {
@@ -737,47 +732,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .crypto-meta {
-  width: 100%;
+  flex: 1;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  border-bottom: 1px dashed var(--vp-c-text-1);
-  padding-bottom: 0.5rem;
-}
-
-.dark .crypto-meta {
-  border-bottom-color: var(--vp-c-border);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
 }
 
 .crypto-name {
   font-family: 'Special Elite', Georgia, serif;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: var(--vp-c-text-1);
+  margin: 0 !important;
 }
 
 .crypto-network-badge {
   font-family: 'Courier Prime', monospace;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   background-color: var(--rock-red);
   color: #000000;
-  padding: 0.1rem 0.4rem;
+  padding: 0.15rem 0.5rem;
   font-weight: bold;
   border-radius: 2px;
+  display: inline-block;
 }
 
 .crypto-address-wrapper {
-  width: 100%;
+  flex: 2.5;
+  max-width: 440px;
   background-color: #1a1a1a;
   border: 1px solid var(--vp-c-text-1);
   border-radius: 4px;
-  padding: 0.4rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.25rem;
-  gap: 0.4rem;
+  gap: 0.5rem;
 }
 
 .dark .crypto-address-wrapper {
@@ -786,7 +777,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .crypto-address-text {
   font-family: 'Courier Prime', monospace;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #cccccc;
   white-space: nowrap;
   overflow: hidden;
@@ -795,21 +786,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rock-copy-btn.compact {
-  font-size: 0.7rem;
-  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
   margin: 0;
+  flex-shrink: 0;
 }
 
 .crypto-qr-wrapper {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   background-color: #ffffff;
-  padding: 0.5rem;
+  padding: 0.35rem;
   border: 2px solid var(--vp-c-text-1);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .dark .crypto-qr-wrapper {
@@ -821,6 +814,32 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .crypto-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .crypto-meta {
+    align-items: center;
+    width: 100%;
+  }
+
+  .crypto-address-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .crypto-qr-wrapper {
+    width: 130px;
+    height: 130px;
+  }
 }
 
 /* Hide QR codes in print to keep the layout extremely neat */
