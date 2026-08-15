@@ -446,37 +446,46 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(360deg);
 }
 
-/* Contact & Copy Email Components */
-.rock-cta-box {
-  margin-top: 5rem;
-  padding: 2.5rem;
-  background-color: var(--vp-c-bg-soft);
-  border: 3px solid var(--vp-c-text-1);
-  box-shadow: 8px 8px 0px var(--vp-c-text-1);
-  text-align: center;
-  border-radius: 4px;
+/* Card-Integrated Contact Section */
+.rock-card-contact {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed var(--vp-c-text-1);
 }
 
-.dark .rock-cta-box {
-  border-color: var(--vp-c-border);
-  box-shadow: 8px 8px 0px var(--vp-c-border);
+.dark .rock-card-contact {
+  border-top: 2px dashed var(--vp-c-border);
 }
 
-.rock-cta-title {
+.rock-card-contact-title {
   font-family: 'Special Elite', Georgia, serif;
-  font-size: 2.2rem;
+  font-size: 1.25rem;
   color: var(--rock-red);
   margin-top: 0 !important;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
-.rock-cta-desc {
+.rock-card-contact-desc {
   font-family: 'Courier Prime', monospace;
-  font-size: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 1rem !important;
   color: var(--vp-c-text-1);
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-  line-height: 1.6;
+}
+
+.rock-copy-email-wrapper.card-contact {
+  max-width: 100%;
+  padding: 0.4rem 0.4rem 0.4rem 1rem;
+}
+
+.rock-copy-email-wrapper.card-contact .rock-email-text {
+  font-size: 0.95rem;
+}
+
+.rock-copy-email-wrapper.card-contact .rock-copy-btn {
+  font-size: 0.8rem;
+  padding: 0.4rem 1rem;
 }
 
 .rock-copy-email-wrapper {
