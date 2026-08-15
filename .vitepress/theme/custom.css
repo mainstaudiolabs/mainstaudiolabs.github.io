@@ -558,7 +558,8 @@ h1, h2, h3, h4, h5, h6 {
   .edit-link,
   .last-updated,
   .VPNavScreen,
-  .rock-copy-btn {
+  .rock-copy-btn,
+  .rock-btn {
     display: none !important;
   }
 
@@ -637,3 +638,199 @@ h1, h2, h3, h4, h5, h6 {
     color: #555555;
   }
 }
+
+/* Support Page Styles */
+.support-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.support-card {
+  background-color: var(--vp-c-bg-soft);
+  border: 3px solid var(--vp-c-text-1);
+  box-shadow: 8px 8px 0px var(--vp-c-text-1);
+  border-radius: 4px;
+  padding: 2.5rem;
+  position: relative;
+}
+
+.dark .support-card {
+  border-color: var(--vp-c-border);
+  box-shadow: 8px 8px 0px var(--vp-c-border);
+}
+
+.support-card-badge {
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  background-color: var(--rock-red);
+  color: #000000;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.25rem 0.75rem;
+  border: 2px solid var(--vp-c-text-1);
+  border-radius: 4px;
+  box-shadow: 4px 4px 0px var(--vp-c-text-1);
+}
+
+.dark .support-card-badge {
+  border-color: var(--vp-c-border);
+  box-shadow: 4px 4px 0px var(--vp-c-border);
+}
+
+.support-card-title {
+  font-family: 'Special Elite', Georgia, serif;
+  font-size: 1.8rem;
+  color: var(--rock-red);
+  margin-top: 0 !important;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+.support-card-desc {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.95rem;
+  color: var(--vp-c-text-1);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.support-kofi-btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  width: auto;
+}
+
+/* Crypto List & Items */
+.crypto-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .crypto-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.crypto-item {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 2px solid var(--vp-c-text-1);
+  border-radius: 4px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark .crypto-item {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-color: var(--vp-c-border);
+}
+
+.crypto-meta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed var(--vp-c-text-1);
+  padding-bottom: 0.5rem;
+}
+
+.dark .crypto-meta {
+  border-bottom-color: var(--vp-c-border);
+}
+
+.crypto-name {
+  font-family: 'Special Elite', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: var(--vp-c-text-1);
+}
+
+.crypto-network-badge {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.7rem;
+  background-color: var(--rock-red);
+  color: #000000;
+  padding: 0.1rem 0.4rem;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.crypto-address-wrapper {
+  width: 100%;
+  background-color: #1a1a1a;
+  border: 1px solid var(--vp-c-text-1);
+  border-radius: 4px;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  gap: 0.4rem;
+}
+
+.dark .crypto-address-wrapper {
+  border-color: var(--vp-c-border);
+}
+
+.crypto-address-text {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.75rem;
+  color: #cccccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0.4rem;
+}
+
+.rock-copy-btn.compact {
+  font-size: 0.7rem;
+  padding: 0.3rem 0.7rem;
+  margin: 0;
+}
+
+.crypto-qr-wrapper {
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border: 2px solid var(--vp-c-text-1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .crypto-qr-wrapper {
+  border-color: var(--vp-c-border);
+}
+
+.crypto-qr-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Hide QR codes in print to keep the layout extremely neat */
+@media print {
+  .crypto-qr-wrapper {
+    display: none !important;
+  }
+  .crypto-item {
+    padding: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+

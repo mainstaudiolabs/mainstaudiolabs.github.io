@@ -35,6 +35,9 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
           <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
           <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
         </div>
+        <div style="margin-top: 1rem;">
+          <a href="/support" class="rock-btn rock-btn-primary" style="display: block; text-align: center; width: 100%; box-sizing: border-box;">Support the Lab (Ko-fi / Crypto) ☕</a>
+        </div>
       </div>
     </div>
   </div>
