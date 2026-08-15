@@ -89,15 +89,20 @@ Many guitarists experience a sweeter, more fluid tone at 256 samples. This is du
 ## 4. System Requirements & Distribution
 
 ### 🖥️ System Requirements
-* **Operating System:** Windows 10 or Windows 11 (64-bit).
-* **Processor (CPU):** Must support **AVX2** instruction sets (Intel Core 4th Gen / AMD Ryzen or newer) to calculate the mathematical models in real-time.
-* **RAM:** 4 GB minimum.
-* **Audio Card:** Audio interface with native **ASIO** drivers.
+* **Operating Systems**:
+  * **Windows**: Windows 10 or Windows 11 (64-bit).
+  * **macOS**: macOS 10.13 or newer (supports both Intel and Apple Silicon natively).
+  * **Linux**: Ubuntu 22.04 or compatible 64-bit distribution.
+* **Processor (CPU)**: Must support **AVX2** instruction sets (Intel Core 4th Gen / AMD Ryzen or newer) on Windows and Linux to calculate the mathematical models in real-time. Apple Silicon processors are fully supported natively.
+* **RAM**: 4 GB minimum.
+* **Audio Card (Standalone mode)**: Audio interface with low-latency drivers (native **ASIO** on Windows; **CoreAudio** on macOS; **JACK** or **ALSA** on Linux).
 
 ### 📦 Distribution (All-in-One)
 **Midnight Rambler is 100% self-contained.** It does not require loading external models, XML configs, or IR wav files separately:
 * All neural amplifier models and cabinet profiles are **embedded internally as binary resources** inside the plugin binary.
-* Simply copy the `.vst3` file to your plugin folder or run the `.exe` standalone app to start playing.
+* **Windows**: Simply copy the `.vst3` file to your plugin folder (typically `C:\Program Files\Common Files\VST3\`) or run the `.exe` standalone app.
+* **macOS**: Copy the `.vst3` or `.component` (AU) to your plugin folder (typically `/Library/Audio/Plug-Ins/VST3/` or `/Library/Audio/Plug-Ins/Components/`) or run the `.app` standalone app.
+* **Linux**: Copy the `.vst3` file to your plugin folder (typically `~/.vst3/` or `/usr/lib/vst3/`) or run the standalone binary.
 
 ---
 
