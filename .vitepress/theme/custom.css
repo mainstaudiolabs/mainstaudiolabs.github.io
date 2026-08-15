@@ -446,6 +446,99 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(360deg);
 }
 
+/* Contact & Copy Email Components */
+.rock-cta-box {
+  margin-top: 5rem;
+  padding: 2.5rem;
+  background-color: var(--vp-c-bg-soft);
+  border: 3px solid var(--vp-c-text-1);
+  box-shadow: 8px 8px 0px var(--vp-c-text-1);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.dark .rock-cta-box {
+  border-color: var(--vp-c-border);
+  box-shadow: 8px 8px 0px var(--vp-c-border);
+}
+
+.rock-cta-title {
+  font-family: 'Special Elite', Georgia, serif;
+  font-size: 2.2rem;
+  color: var(--rock-red);
+  margin-top: 0 !important;
+  margin-bottom: 1rem;
+}
+
+.rock-cta-desc {
+  font-family: 'Courier Prime', monospace;
+  font-size: 1rem;
+  color: var(--vp-c-text-1);
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.rock-copy-email-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  max-width: 480px;
+  background-color: #1a1a1a;
+  border: 2px solid var(--vp-c-text-1);
+  padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+  border-radius: 4px;
+}
+
+.dark .rock-copy-email-wrapper {
+  border-color: var(--vp-c-border);
+}
+
+.rock-copy-email-wrapper.inline {
+  margin: 1.5rem 0;
+  justify-content: flex-start;
+  max-width: 420px;
+}
+
+.rock-email-text {
+  font-family: 'Courier Prime', monospace;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ecc04a !important; /* Mustang yellow contrast text */
+  flex-grow: 1;
+  text-align: left;
+  user-select: all;
+}
+
+.rock-copy-btn {
+  background-color: var(--rock-red);
+  color: #ffffff !important;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid var(--vp-c-text-1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.dark .rock-copy-btn {
+  border-color: var(--vp-c-border);
+}
+
+.rock-copy-btn:hover {
+  background-color: #b8141a; /* Darker red */
+  transform: translateY(-1px);
+}
+
+.rock-copy-btn:active {
+  transform: translateY(1px);
+}
+
 /* Print stylesheet for high-quality clean PDF manuals */
 @media print {
   .VPNav,
@@ -455,8 +548,23 @@ h1, h2, h3, h4, h5, h6 {
   .VPDocFooter,
   .edit-link,
   .last-updated,
-  .VPNavScreen {
+  .VPNavScreen,
+  .rock-copy-btn {
     display: none !important;
+  }
+
+  .rock-copy-email-wrapper {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0.5rem 0 !important;
+    display: block !important;
+  }
+
+  .rock-email-text {
+    color: #000000 !important;
+    font-size: 1.1rem !important;
+    font-weight: bold !important;
   }
 
   body, html, :root {

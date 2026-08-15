@@ -1,3 +1,13 @@
+<script setup>
+import { ref } from 'vue'
+const btnText = ref('Copy Email')
+function copyEmail() {
+  navigator.clipboard.writeText('mainstaudiolabs@gmail.com')
+  btnText.value = 'Copied!'
+  setTimeout(function() { btnText.value = 'Copy Email' }, 2000)
+}
+</script>
+
 # Midnight Rambler: User Manual
 
 This manual provides a detailed description of the usage, design philosophy, and technical specifications for the **Midnight Rambler** amplifier emulation stompbox plugin.
@@ -86,6 +96,18 @@ Many guitarists experience a sweeter, more fluid tone at 256 samples. This is du
 **Midnight Rambler is 100% self-contained.** It does not require loading external models, XML configs, or IR wav files separately:
 * All neural amplifier models and cabinet profiles are **embedded internally as binary resources** inside the plugin binary.
 * Simply copy the `.vst3` file to your plugin folder or run the `.exe` standalone app to start playing.
+
+---
+
+### We Want to Hear Your Mixes!
+Midnight Rambler's dynamic behavior was calibrated directly from classic record listening tests. If you've recorded a song or mixed a track using this stompbox, we want to hear it!
+
+Copy our contact email to share your links or feedback:
+
+<div class="rock-copy-email-wrapper inline">
+  <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
+  <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
+</div>
 
 <div class="print-footer">
   Official Website &amp; Manual: <a href="https://mainstaudiolabs.github.io/midnight-rambler.html" target="_blank">https://mainstaudiolabs.github.io/midnight-rambler.html</a>

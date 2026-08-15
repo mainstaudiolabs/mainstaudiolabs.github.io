@@ -5,6 +5,16 @@ aside: false
 title: About - Main St Audio Labs
 ---
 
+<script setup>
+import { ref } from 'vue'
+const btnText = ref('Copy Email')
+function copyEmail() {
+  navigator.clipboard.writeText('mainstaudiolabs@gmail.com')
+  btnText.value = 'Copied!'
+  setTimeout(function() { btnText.value = 'Copy Email' }, 2000)
+}
+</script>
+
 # About Main St Audio Labs
 
 Main St Audio Labs is a personal project born at the intersection of vintage rock 'n' roll passion, analog modeling, and software engineering.
@@ -38,3 +48,14 @@ We believe your computer should focus on your music, not on running heavy graphi
 To build virtual boutique audio tools that sound raw, feel organic, and get completely out of the way of your inspiration.
 
 No registration walls, no bloated setups—just plug in, turn the knobs, and play.
+
+---
+
+## Contact &amp; Feedback
+
+We are always listening. If you have any suggestions, audio tracks you want to share, or custom cabinet requests, feel free to copy our email below:
+
+<div class="rock-copy-email-wrapper inline">
+  <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
+  <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
+</div>

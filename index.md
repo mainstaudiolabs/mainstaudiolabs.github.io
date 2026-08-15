@@ -5,6 +5,16 @@ aside: false
 title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
 ---
 
+<script setup>
+import { ref } from 'vue'
+const btnText = ref('Copy Email')
+function copyEmail() {
+  navigator.clipboard.writeText('mainstaudiolabs@gmail.com')
+  btnText.value = 'Copied!'
+  setTimeout(function() { btnText.value = 'Copy Email' }, 2000)
+}
+</script>
+
 <div class="rock-container">
 <div class="rock-header">
   <div class="rock-title">Main St Audio Labs</div>
@@ -16,7 +26,7 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
   <div class="rock-card">
     <div class="rock-card-image-wrapper">
       <div class="vinyl-disc-wrapper">
-        <img :src="'/logo.jpg'" alt="Midnight Rambler Label" class="vinyl-disc">
+        <img :src="'/logo.jpg'" alt="Midnight Rambler Label" class="vinyl-disc" />
       </div>
     </div>
     <div class="rock-card-content">
@@ -28,6 +38,15 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
         <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1;">Get PDF Manual</a>
         <a href="https://github.com/mainstaudiolabs/Midnight-Rambler/releases" target="_blank" class="rock-btn rock-btn-primary" style="width: 100%; margin-top: 0.5rem;">Download Plugin (FREE)</a>
       </div>
+    </div>
+  </div>
+
+  <div class="rock-cta-box">
+    <h3 class="rock-cta-title">We want to hear your mixes!</h3>
+    <p class="rock-cta-desc">Midnight Rambler was calibrated by listening to classic record mixes. Now we want to hear how it sounds in yours. Send us your tracks, feedback, or inquiries.</p>
+    <div class="rock-copy-email-wrapper">
+      <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
+      <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
     </div>
   </div>
 </div>
