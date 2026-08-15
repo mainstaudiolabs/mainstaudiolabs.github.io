@@ -724,6 +724,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  min-width: 0;
 }
 
 .dark .crypto-item {
@@ -761,6 +762,7 @@ h1, h2, h3, h4, h5, h6 {
 .crypto-address-wrapper {
   flex: 2.5;
   max-width: 440px;
+  min-width: 0;
   background-color: #1a1a1a;
   border: 1px solid var(--vp-c-text-1);
   border-radius: 4px;
@@ -783,6 +785,8 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-left: 0.4rem;
+  min-width: 0;
+  width: 100%;
 }
 
 .rock-copy-btn.compact {

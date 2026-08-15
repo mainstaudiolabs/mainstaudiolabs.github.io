@@ -34,7 +34,7 @@ title: Support the Lab - Main St Audio Labs
           <button class="rock-copy-btn compact" @click="copyUsdt">{{ usdtText }}</button>
         </div>
         <div class="crypto-qr-wrapper">
-          <img src="/usdt.jpg" alt="USDT TRC20 QR Code" class="crypto-qr-img" />
+          <img src="/usdtQR.jpg" alt="USDT TRC20 QR Code" class="crypto-qr-img" />
         </div>
       </div>
       <!-- Bitcoin -->
@@ -48,7 +48,7 @@ title: Support the Lab - Main St Audio Labs
           <button class="rock-copy-btn compact" @click="copyBtc">{{ btcText }}</button>
         </div>
         <div class="crypto-qr-wrapper">
-          <img src="/btc.jpg" alt="BTC QR Code" class="crypto-qr-img" />
+          <img src="/btcQR.jpg" alt="BTC QR Code" class="crypto-qr-img" />
         </div>
       </div>
       <!-- Solana -->
@@ -62,7 +62,7 @@ title: Support the Lab - Main St Audio Labs
           <button class="rock-copy-btn compact" @click="copySol">{{ solText }}</button>
         </div>
         <div class="crypto-qr-wrapper">
-          <img src="/sol.jpg" alt="Solana QR Code" class="crypto-qr-img" />
+          <img src="/solQR.jpg" alt="Solana QR Code" class="crypto-qr-img" />
         </div>
       </div>
     </div>
