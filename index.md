@@ -23,8 +23,8 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
       <h3 class="rock-card-title">Midnight Rambler</h3>
       <p class="rock-card-desc">An amp simulator in pedal format born from a deep study of Keith Richards' legendary guitar tone. Midnight Rambler is not just another generic simulation; it is a sound meticulously calibrated and adapted to fit immediately into the mix. The dynamic saturation behavior and frequency response have been optimized specifically to prevent muddy low-end and harsh high-end. All of this runs on an ultra-low CPU consumption engine, delivering that raw and indomitable classic record character instantly.</p>
       <div class="rock-card-actions">
-        <a href="/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1;">Read Manual</a>
-        <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1;">Get PDF Manual</a>
+        <a href="/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1;">Read Manual (v1.0.0)</a>
+        <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1;">Get PDF Manual (v1.0.0)</a>
         <a href="https://github.com/mainstaudiolabs/Midnight-Rambler/releases" target="_blank" class="rock-btn rock-btn-primary" style="width: 100%; margin-top: 0.5rem;">Download Plugin (FREE)</a>
       </div>
       <!-- Contact & Feedback Section integrated in Card -->
@@ -35,9 +35,9 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
           <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
           <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
         </div>
-        <div style="margin-top: 1rem;">
-          <a href="/support" class="rock-btn rock-btn-primary" style="display: block; text-align: center; width: 100%; box-sizing: border-box;">Support the Lab (Ko-fi / Crypto) ☕</a>
-        </div>
+      </div>
+      <div style="text-align: center; margin-top: 0.75rem;">
+        <a href="/support" style="font-size: 0.85rem; opacity: 0.8; text-decoration: underline; color: var(--vp-c-brand-1);">Support the Lab (Ko-fi / Crypto) ☕</a>
       </div>
     </div>
   </div>
