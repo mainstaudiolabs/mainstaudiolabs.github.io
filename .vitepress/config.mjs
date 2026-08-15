@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Main St Audio Labs",
   description: "Record-Inspired Audio Tools and Signal Processors",
+  head: [
+    ['meta', { name: 'color-scheme', content: 'light dark' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
