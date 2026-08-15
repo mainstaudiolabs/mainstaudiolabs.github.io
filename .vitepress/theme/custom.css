@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
+  color-scheme: only light;
   /* Brand colors (Iconic Stones Cherry Red) */
   --vp-c-brand-1: #e01a22;
   --vp-c-brand-2: #f32d36;
@@ -23,6 +24,7 @@
 }
 
 .dark {
+  color-scheme: only dark;
   /* Dark Theme (Charcoal Vinyl & Red Accents) */
   --vp-c-bg: #151515;
   --vp-c-bg-soft: #1f1f1f;
