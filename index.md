@@ -25,7 +25,7 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
       <div class="rock-card-actions">
         <a href="/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1;">Read Manual (v1.0.0)</a>
         <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1;">Get PDF Manual (v1.0.0)</a>
-        <a href="https://github.com/mainstaudiolabs/Midnight-Rambler/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="width: 100%; margin-top: 0.5rem;">Download Plugin (FREE)</a>
+        <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="width: 100%; margin-top: 0.5rem;">Download Plugin (FREE)</a>
       </div>
       <!-- Contact & Feedback Section integrated in Card -->
       <div class="rock-card-contact">
