@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Midnight Rambler - User Manual v1.0.0</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 18mm 20mm 18mm;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.55;
+    font-size: 10.5pt;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 22pt;
+    color: #111;
+    margin-top: 0;
+    margin-bottom: 4px;
+    border-bottom: 2px solid #e1aa00;
+    padding-bottom: 6px;
+  }
+  .version-tag {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #b52010;
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 14pt;
+    color: #111;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 11.5pt;
+    color: #222;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  h4 {
+    font-size: 10.5pt;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  p {
+    margin: 6px 0;
+  }
+  ul {
+    margin: 6px 0 10px 20px;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  code {
+    background-color: #f3f3f3;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: "Consolas", monospace;
+    font-size: 9.5pt;
+  }
+  .img-container {
+    text-align: center;
+    margin: 14px 0;
+    page-break-inside: avoid;
+  }
+  .img-container img {
+    max-height: 190px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .badge {
+    background-color: #e1aa00;
+    color: #111;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 9pt;
+  }
+  .callout {
+    background-color: #faf7ee;
+    border-left: 4px solid #e1aa00;
+    padding: 8px 12px;
+    margin: 10px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .footer {
+    margin-top: 24px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+    font-size: 9pt;
+    color: #666;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>Midnight Rambler: User Manual</h1>
+<div class="version-tag">Version 1.0.0 &bull; Main St Audio Labs</div>
+
+<p>This manual provides a detailed description of the usage, design philosophy, and technical specifications for the <strong>Midnight Rambler</strong> amplifier emulation stompbox plugin.</p>
+
+<div class="img-container">
+  <img src="public/mr.png" alt="Midnight Rambler Virtual Stompbox">
+</div>
+
+<h2>1. Design Philosophy: The Tweed 5E3 Soul in a Pedal</h2>
+
+<p><strong>Midnight Rambler</strong> is an amplifier simulation in virtual stompbox format, powered by state-of-the-art Neural Amp Modeler (NAM) technology and modeled after the iconic <strong>Tweed Deluxe 5E3</strong> &mdash; the legendary circuit that defined the raw, gritty guitar sound of the late '60s and early '70s.</p>
+
+<h3>The Sound of an Era</h3>
+<ul>
+  <li><strong>The Rolling Stones (Late '60s / Early '70s):</strong> Keith Richards' open-G chime and gritty rhythm breakup (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>).</li>
+  <li><strong>The Faces / Ronnie Wood:</strong> Greasy, fat, mid-forward slide and chord crunch.</li>
+  <li><strong>Neil Young:</strong> Raging, explosive Tweed harmonic overdrive and rich sustain.</li>
+  <li><strong>Billy Gibbons (ZZ Top):</strong> Texas grease, harmonic pinch bite, and tight low-end snap.</li>
+  <li><strong>Ed King (Lynyrd Skynyrd):</strong> The crystalline out-of-phase Stratocaster Tweed tone on the timeless intro of <em>Sweet Home Alabama</em>.</li>
+</ul>
+
+<h3>Mix-Ready Dynamic Calibration</h3>
+<p>Unlike raw generic models that can sound boomy or harsh, Midnight Rambler features meticulously tuned post-amp State-Variable TPT filters (Bass &amp; Tone cut) and calibrated gain staging. It sits immediately in a multi-track production without clashing with the bass guitar or cymbals.</p>
+
+<h3>Ultra-Low CPU Consumption</h3>
+<p>Featuring 0% idle overhead and near-zero latency, only one neural engine instance is active at any time, allowing multiple instances across your DAW session without straining your CPU.</p>
+
+<h2>2. Control Guide</h2>
+
+<p>The pedal features intuitive, analog-calibrated controls designed to feel like operating vintage physical gear:</p>
+
+<h3>🎛️ 1. VOLUME / GAIN (Gain / Drive)</h3>
+<ul>
+  <li><strong>Function:</strong> Sets the input drive sent into the neural tube modeling stage.</li>
+  <li><strong>Range:</strong> Calibrated analog scale from <code>1.0</code> to <code>10.0</code> (Default: <code>7.0</code>).</li>
+  <li><strong>Response:</strong>
+    <ul>
+      <li><code>1.0</code> (-18.0 dB): Crystal clean tone with massive dynamic headroom.</li>
+      <li><code>5.0</code> (-10.0 dB): Warm clean tone that breaks up organically when picking hard.</li>
+      <li><code>7.0</code> (-6.0 dB): The dynamic sweet spot &mdash; crunchy rhythmic chords and blues bite.</li>
+      <li><code>10.0</code> (0.0 dB): Maximum unboosted capture level, delivering rich tube saturation and sustain without digital harshness.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>🎛️ 2. BASS (Bass Cut - HP Filter)</h3>
+<ul>
+  <li><strong>Function:</strong> A post-amp State-Variable TPT High-Pass Filter designed to tighten low-end response.</li>
+  <li><strong>Range:</strong> <code>20.0 Hz</code> to <code>300.0 Hz</code> (Logarithmic taper).</li>
+  <li><strong>Usage:</strong> Shaves off unnecessary sub-bass rumble to keep the rhythm tracks tight and punchy. At 20 Hz the filter is wide open.</li>
+</ul>
+
+<h3>🎛️ 3. TONE (Tone Cut - LP Filter)</h3>
+<ul>
+  <li><strong>Function:</strong> A post-amp State-Variable TPT Low-Pass Filter designed to control top-end presence.</li>
+  <li><strong>Range:</strong> <code>1.0 kHz</code> to <code>20.0 kHz</code>.</li>
+  <li><strong>Usage:</strong> Tames digital fizz and harsh high frequencies. Higher values deliver glassy clarity, while rolling it back provides warm, woody, mid-rich vintage character.</li>
+</ul>
+
+<h3>🎛️ 4. MASTER (Master Volume)</h3>
+<ul>
+  <li><strong>Function:</strong> Clean, linear output level control.</li>
+  <li><strong>Range:</strong> Analog scale from <code>1.0</code> to <code>10.0</code> (Default: <code>7.0</code> = <code>0.0 dB</code> Unity Gain, Max: <code>10.0</code> = <code>+18.0 dB</code>).</li>
+  <li><strong>Response (Continuous Real-Amp Taper):</strong>
+    <ul>
+      <li>Each step increases level by a uniform <code>+6.0 dB</code>.</li>
+      <li><code>1.0</code> (-36.0 dB): Soft bedroom practice level, immediately audible without dead zones.</li>
+      <li><code>7.0</code> (0.0 dB): Standard nominal unity gain.</li>
+      <li><code>10.0</code> (+18.0 dB): Massive clean volume boost for low-output vintage single-coil pickups or pushing downstream effects.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>🔀 5. CHANNEL (Dual Amp Mode Selector)</h3>
+<p>Switches between two distinct, high-resolution boutique neural captures:</p>
+<ol>
+  <li><strong>EDGE (Breakup):</strong> Umbral breakup capture with hyper-dynamic touch response. Responds instantly to guitar volume pot adjustments and picking intensity. Includes an internal +2.0 dB output level compensation to match perceived loudness with the cranked mode.</li>
+  <li><strong>CRANKED (Rock 'N' Roll):</strong> Maximum volume Tweed saturation with lush power-tube compression, creamy harmonics, and singing sustain.</li>
+</ol>
+
+<h3>📻 6. MIC / CAB (Cabinet Impulse Convolution)</h3>
+<p>Switches between three curated speaker cabinet responses using real-time zero-latency convolution:</p>
+<ol>
+  <li><strong>WARM (Royer R121 Ribbon):</strong> Thick, full-bodied tone with smooth top-end and rich low-mids, ideal for greasy rhythms and slide guitar.</li>
+  <li><strong>SHARP (Shure SM57 Dynamic):</strong> Classic rock bite with focused upper-mid punch that cuts effortlessly through dense mixes.</li>
+  <li><strong>BLEND (60/40 Custom Mix):</strong> The ultimate studio pairing (60% SM57 + 40% R121) delivering balanced bite, depth, and three-dimensional realism.</li>
+</ol>
+
+<h3>🎛️ 7. STANDBY (Mute / 0% CPU Switch)</h3>
+<ul>
+  <li><strong>Function:</strong> Replicates a physical amplifier standby switch, completely muting the audio path and reducing CPU consumption to <strong>0%</strong> immediately.</li>
+</ul>
+
+<h3>🖼️ 8. Dynamic Background Skin (Drag &amp; Drop)</h3>
+<ul>
+  <li>You can drag and drop any image file (<code>.jpg</code>, <code>.jpeg</code>, or <code>.png</code>) directly from your file explorer onto the plugin interface to customize its visual appearance in real time.</li>
+</ul>
+
+<h2>3. Audio Configuration (Standalone Mode)</h2>
+<p>When running the pedal as a standalone application, configure your audio settings as follows for optimal performance:</p>
+<ol>
+  <li><strong>Audio Device Type:</strong> Always select <strong>ASIO</strong> on Windows to avoid latency and digital distortion.</li>
+  <li><strong>Device:</strong> Select the native ASIO driver of your audio interface (e.g., <em>Focusrite USB ASIO</em>).</li>
+  <li><strong>Sample Rate:</strong> Set it to <strong>48000 Hz</strong> (48 kHz).</li>
+  <li><strong>Buffer Size:</strong> Set the buffer size to <strong>128 samples</strong> (2.3 ms) or <strong>256 samples</strong> (5.3 ms).</li>
+</ol>
+
+<div class="callout">
+  <strong>💡 Why 256 samples (5.3 ms) might sound better than 128 samples (2.3 ms):</strong><br>
+  The tiny 5.3 ms delay, combined with the physical acoustic sound of your unplugged electric strings vibrating in the room, creates an organic doubling effect that adds tridimensional depth, thickness, and a natural room reverb feel to your playing.
+</div>
+
+<h2>4. System Requirements &amp; Distribution</h2>
+<h3>🖥️ System Requirements</h3>
+<ul>
+  <li><strong>Operating Systems:</strong> Windows 10/11 (64-bit), macOS 10.13+ (Intel &amp; Apple Silicon), Linux (Ubuntu 22.04+).</li>
+  <li><strong>Processor (CPU):</strong> Must support <strong>AVX2</strong> instruction sets on Windows/Linux (Intel Core 4th Gen / AMD Ryzen or newer). Native Apple Silicon support on macOS.</li>
+  <li><strong>RAM:</strong> 4 GB minimum.</li>
+  <li><strong>Audio Interface:</strong> Low-latency driver support (ASIO / CoreAudio / JACK / ALSA).</li>
+</ul>
+
+<h3>📦 Distribution (All-in-One)</h3>
+<p><strong>Midnight Rambler is 100% self-contained.</strong> All neural amplifier models and cabinet IR profiles are embedded internally as binary resources inside the plugin binary.</p>
+
+<h2>5. Troubleshooting</h2>
+<ul>
+  <li><strong>Missing C++ Redistributable (Windows):</strong> If the VST3 fails to scan, install the official <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">Microsoft Visual C++ Redistributable 2015-2022 (x64)</a>.</li>
+  <li><strong>CPU Compatibility (AVX2):</strong> Ensure your processor supports AVX2 instructions. The underlying NAM neural engine requires AVX2 to compute neural networks in real-time.</li>
+  <li><strong>macOS Unidentified Developer:</strong> Go to <em>System Settings &gt; Privacy &amp; Security</em> and click <em>Open Anyway</em>, or run <code>xattr -cr /path/to/MidnightRambler.app</code> in Terminal.</li>
+</ul>
+
+<div class="footer">
+  <strong>Main St Audio Labs</strong> &bull; Contact: <code>mainstaudiolabs@gmail.com</code> &bull; Website: <a href="https://mainstaudiolabs.github.io">https://mainstaudiolabs.github.io</a>
+</div>
+
+</body>
+</html>
