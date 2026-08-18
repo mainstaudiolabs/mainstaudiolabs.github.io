@@ -41,6 +41,34 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
       </div>
     </div>
   </div>
+
+  <!-- Card 2: Beast of Burden (Coming Soon) -->
+  <div class="rock-card coming-soon">
+    <div class="rock-card-image-wrapper">
+      <img src="/bob.png" alt="Beast of Burden GUI Preview" class="rock-card-image" style="object-fit: contain; padding: 0.85rem; width: 100%; height: 100%;" />
+    </div>
+    <div class="rock-card-content">
+      <div class="rock-card-tag">Amplifier &amp; FX Series #02 <span class="badge-free">COMING SOON</span> <span class="badge-format">VST3 &amp; Standalone</span></div>
+      <h3 class="rock-card-title">Beast of Burden</h3>
+      <p class="rock-card-desc">The definitive 1978 Mesa/Boogie Mark I (100W 6L6) amplifier emulation and Keith Richards signature vintage dual FX suite. Powered by deep neural networks (NAM) and ultra-fast convolution, Beast of Burden captures the legendary <em>Some Girls</em> era Stones guitar tone — from chimey, dynamic open-G rhythm breakup and percussive funk riffs to searing, mid-forward crunch and singing harmonic sustain. Featuring a 3-way channel mode selector (IN 2 Rhythm, IN 1 Crunch Vol 5, IN 1 Lead Vol 10), Bright switch, authentic 5-Band Graphic Equalizer with the iconic Mesa V-curve, Phase '78 optical phaser (MXR Phase 100 style), 110ms analog tape slapback delay, and impulse convolution of the classic Electro-Voice EVM-12L speaker.</p>
+      <div class="rock-card-actions">
+        <a href="/beast-of-burden" class="rock-btn rock-btn-secondary" style="flex: 1;">Read Manual (v1.0.0)</a>
+        <button class="rock-btn rock-btn-primary" disabled style="width: 100%; margin-top: 0.5rem; opacity: 0.65; cursor: not-allowed;">Release Coming Soon (FREE)</button>
+      </div>
+      <!-- Contact & Feedback Section integrated in Card -->
+      <div class="rock-card-contact">
+        <div class="rock-card-contact-title">Early Access &amp; Inquiries</div>
+        <p class="rock-card-contact-desc">Beast of Burden is currently in final testing. Drop us a line with questions or to request beta builds.</p>
+        <div class="rock-copy-email-wrapper card-contact">
+          <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
+          <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 0.75rem;">
+        <a href="/support" style="font-size: 0.85rem; opacity: 0.8; text-decoration: underline; color: var(--vp-c-brand-1);">Support the Lab (Ko-fi / Crypto) ☕</a>
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 <!-- redeploy -->

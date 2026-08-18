@@ -19,7 +19,8 @@ export default defineConfig({
       {
         text: 'Plugins Manuals',
         items: [
-          { text: 'Midnight Rambler', link: '/midnight-rambler' }
+          { text: 'Midnight Rambler (5E3 Tweed)', link: '/midnight-rambler' },
+          { text: 'Beast of Burden (Mark I & FX)', link: '/beast-of-burden' }
         ]
       }
     ],
