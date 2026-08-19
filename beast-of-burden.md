@@ -18,52 +18,49 @@ This manual provides a detailed description of the design philosophy, signal cha
 
 ---
 
-## 1. Design Philosophy: The Holy Grail of Tube Crunch & Lead
+## 1. Design Philosophy: The 100W Tube Crunch & Lead Beast
 
-**Beast of Burden** is a dual-engine audio processor pairing an authentic neural emulation of the legendary **Mesa/Boogie Mark IIC+ (100W 6L6)** with the signature **Stones '78 Vintage Dual FX Suite** (Phase '78 optical phaser and analog tape slapback delay) and a studio-captured **Pacific Woodworks 1x12 Thiele ported cabinet loaded with an Electro-Voice EVM-12L speaker**.
+**Beast of Burden** is a dedicated amplifier simulation and vintage effects suite pairing an authentic 100W 6L6 tube amplifier architecture with the signature **Stones '78 Vintage Dual FX Suite** (Phase '78 optical phaser and analog tape slapback delay) and a studio-recorded **Pacific Woodworks 1x12 Thiele cabinet with an Electro-Voice EVM-12L speaker**.
 
-### The Sound of Studio & Arena Stones
-In the late '70s and 80s (from the Paris *Some Girls* sessions to the explosive 1981 American Tour), Keith Richards and Ron Wood relied on custom Mesa/Boogie 100W cascaded-gain rigs. Beast of Burden captures the best of both worlds:
-* **Hyper-Fast Attack & Articulated Punch:** Driven by massive transformers, four 6L6 power tubes, and the ultra-efficient 200W Electro-Voice EVM-12L speaker.
+### The Sound of Studio & Stage
+Inspired by the high-headroom, cascaded-gain rigs that defined legendary late '70s and early '80s rock records:
+* **Hyper-Fast Attack & Punch:** Massive power supply headroom, four 6L6 power tubes, and the ultra-efficient 200W Electro-Voice EVM-12L speaker.
 * **Liquid Modulation & Dimension:** Running guitars through vintage optical phasing and tape slapback echo before hitting the tube preamp.
-* **The Iconic 5-Band Graphic EQ:** Sculpting mid attack (2.2 kHz) and vocal presence (750 Hz) while cleaning low-mid boxiness (240 Hz).
-
-### Neural Amp Modeler (NAM) Engine
-Powered by deep WaveNet neural networks compiled with full AVX/SIMD vectorization, Beast of Burden reproduces every non-linear nuance of tube sag, harmonic saturation, dynamic compression, and touch response with **ultra-low latency (<0.2 ms per block)** and native 0 dB unity gain staging.
+* **The Iconic 5-Band Graphic EQ:** Sculpting mid attack (2.2 kHz) and vocal presence (750 Hz) while clearing low-mid mud (240 Hz).
 
 ---
 
-## 2. Neural Amp Architecture: 3 Direct Amp Channels
+## 2. 3-Channel Amplifier Architecture
 
-Beast of Burden features a streamlined 3-position channel selector covering the entire tonal spectrum:
+Beast of Burden features a straightforward 3-way channel selector covering the entire tonal spectrum:
 
-| Channel Mode | Tone Profile & Applications | NAM Direct Capture | Perceived Output Leveling |
-| :--- | :--- | :--- | :---: |
-| **`CLEAN`** | Pure crystal clean with natural tube compression, wide headroom and smooth highs. Perfect for open-G chord balance, funk chops and dynamic fingerpicking. | `Mesa Boogie Mark IIC+ Compressed Clean` | **+14.5 dB** (Post-Amp Leveling) |
-| **`CRUNCH`** | Organic 80's *edge-of-breakup* with solid body, woody mids and immediate tactile response to pick attack. Cleans up with a light touch, growls when digging in. | `Mesa Boogie Mark IIC+ 80's Clean` | **+4.5 dB** (Post-Amp Leveling) |
-| **`LEAD`** | Classic rock gain, screaming tube saturation, singing harmonic sustain, and tight low-end focus without harshness. | `Mesa Boogie Mark IIC+ Rock` | **0.0 dB** (Nominal RMS) |
+| Channel Mode | Tone Character | Ideal Applications |
+| :--- | :--- | :--- |
+| **`CLEAN`** | Pristine clean tone with natural tube compression, wide dynamic headroom and smooth, chimey highs. | Open-G chord balance, funk chops, soul ballads and dynamic fingerpicking. |
+| **`CRUNCH`** | Organic edge-of-breakup with a solid low-end body, punchy mids and immediate tactile response to pick attack. | Rhythmic rock riffs, classic Stones overdrive, blues solos and chord crunch. |
+| **`LEAD`** | Searing high-gain tube saturation with rich harmonic sustain, liquid soloing feel and focused low end. | Singing lead lines, heavy riffs, slide guitar and sustained soloing. |
 
 > [!TIP]
-> **Intelligent Perceived Loudness Leveling:** Because uncompressed clean channels naturally have lower RMS volume than heavily clipped lead channels, Beast of Burden automatically levels the post-amp output stage. Switching between `CLEAN`, `CRUNCH`, and `LEAD` maintains consistent perceived volume across your mix.
+> **Automatic Loudness Matching:** Beast of Burden automatically levels the perceived output across all three channels. Switching between `CLEAN`, `CRUNCH`, and `LEAD` maintains a consistent level in your mix without volume jumps.
 
 ---
 
 ## 3. Complete Control Guide
 
 ```
-[ INPUT SIGNAL (Auto 0dB) ]
-            │
-            ▼
-    [ PHASE '78 ]  ───►  [ SLAPBACK DELAY ]
-            │
-            ▼
-   [ INPUT GAIN (Unity 7.0) ] ───►  [ NAM 100W 6L6 TUBE ENGINE ]
-            │
-            ▼
- [ 5-BAND GRAPHIC EQ (Bypass) ]  ───►  [ EVM-12L PURE PHASE IR CONVOLVER ]
-            │
-            ▼
- [ MASTER OUTPUT GAIN ]  ───►  [ STEREO OUT ]
+[ GUITAR INPUT ]
+       │
+       ▼
+ [ PHASE '78 ]  ───►  [ SLAPBACK DELAY ]
+       │
+       ▼
+ [ 100W 6L6 TUBE PREAMP (Clean / Crunch / Lead) ]
+       │
+       ▼
+ [ 5-BAND GRAPHIC EQ ]  ───►  [ EVM-12L CABINET SIMULATION ]
+       │
+       ▼
+ [ MASTER OUTPUT ]  ───►  [ STEREO OUT ]
 ```
 
 ### 🎛️ 1. Main Amplifier Controls
@@ -107,17 +104,17 @@ Integrated directly before the preamp stage, replicating the exact pedalboard si
 
 ---
 
-### 🔊 4. Pacific Woodworks 1x12 EVM-12L Cabinet Convolution (Pure Phase)
+### 🔊 4. Pacific Woodworks 1x12 EVM-12L Cabinet Simulation
 
-The Pacific Woodworks 1x12 (Thiele ported) cabinet loaded with an Electro-Voice EVM-12L 200W speaker delivers massive power handling, transparent mids, and tight bass. The **`CABINET`** selector provides 6 pure-phase single-mic captures (48 kHz / 24-bit) with zero comb-filtering:
+The Pacific Woodworks 1x12 (Thiele ported) cabinet loaded with an Electro-Voice EVM-12L 200W speaker delivers massive power handling, transparent mids, and punchy, tight bass. The **`CABINET`** selector offers 6 studio microphone placements plus a bypass option:
 
-1. **`SM57 SweetSpot` (`-1`):** Shure SM57 on cap-edge — balanced attack, rich mids and solid punch.
-2. **`SM57 Warm` (`-2`):** Shure SM57 on outer cone — deep lows, smooth highs and creamy textures.
-3. **`SM57 Direct` (`0`):** Shure SM57 dead-center — razor-sharp articulation and immediate bite.
-4. **`SM57 BassPort` (`Port`):** Shure SM57 in front of the Thiele port — massive sub-bass thump (80–100 Hz).
-5. **`U87 Studio` (`0`):** Neumann U87Ai large condenser — pristine high fidelity, extended dynamic range and 3D air.
-6. **`U87 Warm` (`-2`):** Neumann U87Ai in warm zone — dense harmonic body without harshness.
-7. **`Bypass IR`:** Disables internal convolution for pairing with external third-party IR loaders.
+1. **`SM57 SweetSpot`:** Shure SM57 on cap-edge — balanced attack, rich mids and solid punch.
+2. **`SM57 Warm`:** Shure SM57 on outer cone — deep lows, smooth highs and warm textures.
+3. **`SM57 Direct`:** Shure SM57 on center — razor-sharp articulation and immediate bite.
+4. **`SM57 BassPort`:** Shure SM57 on the Thiele port — extended low-end thump (80–100 Hz).
+5. **`U87 Studio`:** Neumann U87Ai large diaphragm condenser — high fidelity, wide dynamic range and open 3D air.
+6. **`U87 Warm`:** Neumann U87Ai in warm zone — dense harmonic body without top-end harshness.
+7. **`Bypass IR`:** Disables internal cabinet simulation for pairing with external third-party IR loaders.
 
 ---
 
