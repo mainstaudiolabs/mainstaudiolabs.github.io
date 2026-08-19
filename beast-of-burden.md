@@ -62,12 +62,8 @@ Beast of Burden features a straightforward 3-way channel selector covering the e
 
 ### 🎛️ 1. Main Amplifier Controls
 
-* **`GAIN` (Volume / Drive):** Sets input signal drive into the neural engine (`1.0` = -9 dB, `7.0` = 0 dB Unity Gain, `10.0` = +4.5 dB boost).
-* **`TREBLE`:** Passive high-frequency tone control.
-* **`BASS`:** Passive low-frequency tone control.
-* **`MIDDLE`:** Passive midrange tone control shaping body and vocal roar.
-* **`PRESENCE`:** Active power-amp feedback control adding top-end sparkle and bite.
-* **`MASTER`:** Linear analog output volume (`1.0` = -36 dB bedroom volume, `7.0` = 0 dB Unity Gain, `10.0` = +18 dB boost).
+* **`GAIN` (Volume / Drive):** Sets input signal drive into the amplifier (`1.0` = -9 dB, `7.0` = 0 dB Unity Gain, `10.0` = +4.5 dB boost).
+* **`MASTER`:** Clean analog output volume (`1.0` = -36 dB bedroom volume, `7.0` = 0 dB Unity Gain, `10.0` = +18 dB boost).
 * **`CHANNEL SELECTOR`:** 3-position rotary selector switching between `CLEAN`, `CRUNCH`, and `LEAD`.
 
 ---
@@ -128,7 +124,7 @@ Here are studio-tested dial-in settings for iconic guitar tones:
 
 ### 🌟 Preset 1: "Beast of Burden" (The Signature Liquid Phase Tone)
 * **Channel:** `CLEAN`
-* **Amp Tone Stack:** Gain: `7.0` | Treble: `7.5` | Bass: `4.0` | Middle: `6.5` | Presence: `5.5` | Master: `7.0`
+* **Gain:** `7.0` | **Master:** `7.0`
 * **5-Band Graphic EQ:** `80Hz: 0dB` | `240Hz: -2.0dB` | `750Hz: +2.0dB` | `2.2kHz: +3.0dB` | `6.6kHz: +1.5dB`
 * **Phase '78:** `ON` | Speed: `0.80 Hz` | Intensity: `60%`
 * **Slapback Delay:** `ON` | Time: `110 ms` | Repeats: `20%` | Mix: `25%`
@@ -136,14 +132,16 @@ Here are studio-tested dial-in settings for iconic guitar tones:
 
 ### ⚡ Preset 2: "Start Me Up" / "Tattoo You Crunch" (Open-G Riff Power)
 * **Channel:** `CRUNCH`
-* **Amp Tone Stack:** Gain: `7.5` | Treble: `7.5` | Bass: `4.0` | Middle: `7.5` | Presence: `6.0` | Master: `7.5`
+* **Gain:** `7.5` | **Master:** `7.5`
+* **5-Band Graphic EQ:** `80Hz: +1.5dB` | `240Hz: -3.0dB` | `750Hz: +2.5dB` | `2.2kHz: +4.0dB` | `6.6kHz: +2.0dB`
 * **Phase '78:** `OFF`
 * **Slapback Delay:** `OFF` (or `ON` with Mix @ `12%` for studio depth)
 * **Cabinet:** `SM57 Warm`
 
 ### 👑 Preset 3: "Classic Rock Lead & Solo" (Singing Tube Sustain)
 * **Channel:** `LEAD`
-* **Amp Tone Stack:** Gain: `8.0` | Treble: `7.0` | Bass: `4.5` | Middle: `7.5` | Presence: `6.5` | Master: `7.0`
+* **Gain:** `8.0` | **Master:** `7.0`
+* **5-Band Graphic EQ:** `80Hz: +2.0dB` | `240Hz: -1.5dB` | `750Hz: +3.5dB` | `2.2kHz: +3.0dB` | `6.6kHz: +2.0dB`
 * **Slapback Delay:** `ON` | Time: `140 ms` | Repeats: `30%` | Mix: `25%`
 * **Cabinet:** `SM57 Direct` (or `U87 Studio`)
 
