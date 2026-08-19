@@ -20,7 +20,7 @@ export default defineConfig({
         text: 'Plugins Manuals',
         items: [
           { text: 'Midnight Rambler (5E3 Tweed)', link: '/midnight-rambler' },
-          { text: 'Beast of Burden (Mark I & FX)', link: '/beast-of-burden' }
+          { text: 'Beast of Burden (Mark IIC+ & FX)', link: '/beast-of-burden' }
         ]
       }
     ],
