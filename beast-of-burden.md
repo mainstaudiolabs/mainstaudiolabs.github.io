@@ -40,9 +40,6 @@ Beast of Burden features a straightforward 3-way channel selector covering the e
 | **`CRUNCH`** | Organic edge-of-breakup with a solid low-end body, punchy mids and immediate tactile response to pick attack. | Rhythmic rock riffs, classic Stones overdrive, blues solos and chord crunch. |
 | **`LEAD`** | Searing high-gain tube saturation with rich harmonic sustain, liquid soloing feel and focused low end. | Singing lead lines, heavy riffs, slide guitar and sustained soloing. |
 
-> [!TIP]
-> **Automatic Loudness Matching:** Beast of Burden automatically levels the perceived output across all three channels. Switching between `CLEAN`, `CRUNCH`, and `LEAD` maintains a consistent level in your mix without volume jumps.
-
 ---
 
 ## 3. Complete Control Guide
