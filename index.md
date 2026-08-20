@@ -21,7 +21,7 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
     <div class="rock-card-content">
       <div class="rock-card-tag">Stompbox Series #01 <span class="badge-free">FREE</span> <span class="badge-format">VST3 &amp; Standalone</span></div>
       <h3 class="rock-card-title">Midnight Rambler</h3>
-      <p class="rock-card-desc">An amplifier simulator in pedal format powered by neural modeling (NAM) and based on the legendary Tweed Deluxe 5E3. Crafted to deliver that raw, touch-sensitive, late '60s and early '70s classic rock tone — from Keith Richards' iconic Stones crunch and the greasy riffs of The Faces (Ron Wood) to Neil Young's roaring Tweed overdrive, Billy Gibbons' Texas bite, and Ed King's legendary intro tone on <em>Sweet Home Alabama</em>. Featuring dual-channel switching (Edge of Breakup &amp; Cranked Overdrive), high-precision mix-ready tone filters, custom cabinet IR profiles, and near-zero latency with ultra-low CPU footprint.</p>
+      <p class="rock-card-desc">The best amplifier simulator based on the legendary Tweed Deluxe 5E3 according to the people who tested it. Crafted to deliver that raw, touch-sensitive classic rock tone. Featuring dual-channel switching (Edge of Breakup &amp; Cranked Overdrive), high-precision mix-ready tone filters, custom cabinet IR profiles, and near-zero latency with ultra-low CPU footprint.</p>
       <div class="rock-card-actions">
         <a href="/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1;">Read Manual (v1.0.0)</a>
         <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1;">Get PDF Manual (v1.0.0)</a>
