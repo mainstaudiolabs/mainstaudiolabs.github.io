@@ -44,7 +44,7 @@ function copyEmail() {
 
 | Channel Mode | Tone Character | Ideal Applications |
 | :--- | :--- | :--- |
-| **`CLEAN`** | Pristine clean tone with natural tube compression, wide dynamic headroom and smooth, chimey highs. | Rhythm chord balance (*"Beast of Burden"*, *"Waiting on a Friend"*), funk chops, and soul ballads. |
+| **`CLEAN`** | Pristine clean tone with natural tube compression, wide dynamic headroom and smooth, chimey highs. | Rhythm chord balance (*"Beast of Burden"*, *"Tops"*), funk chops, and soul ballads. |
 | **`CRUNCH`** | Organic edge-of-breakup with a solid low-end body, punchy mids and immediate tactile response to pick attack. | Iconic classic rock riffs (*"Start Me Up"*, *"Little T&A"*, *"Hang Fire"*), chord crunch, and blues rhythms. |
 | **`LEAD`** | Searing high-gain tube saturation with rich harmonic sustain, liquid soloing feel and focused low end. | Singing lead lines, heavy rock riffs, slide guitar (*"Slave"*, *"Neighbours"*), and sustained soloing. |
 
@@ -121,12 +121,7 @@ The 1x12 ported cabinet loaded with an authentic Electro-Voice EVM-12L 200W spea
 
 ---
 
-### 5. Standby & Custom Skinning
 
-* **`STANDBY`:** Mutes audio output and reduces neural CPU processing to **0%** immediately.
-* **Drag-and-Drop Backgrounds:** Drag any `.jpg`, `.jpeg`, or `.png` image directly onto the plugin window from your file manager to customize its visual skin in real time.
-
----
 
 ## 4. Recommended Track Presets & Dial-In Guides
 
