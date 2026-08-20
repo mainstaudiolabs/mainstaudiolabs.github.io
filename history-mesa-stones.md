@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { ref } from 'vue'
 const btnText = ref('Copy Email')
 function copyEmail() {
@@ -13,6 +13,8 @@ function copyEmail() {
 **Historical Archive & Sound Notes · Main St Audio Labs**
 
 ---
+
+<img src="/KEITH_RICHARDS_MESA_03.webp" alt="Keith Richards with his Mesa Boogie Mark I" style="max-height: 400px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
 
 In the late 1970s, as the Rolling Stones were preparing for their *Some Girls* tour and a string of legendary studio sessions, a critical piece of their iconic guitar tone was forged—not in a massive London factory, but in a small "cottage industry" workshop in California. The story of how Keith Richards and the Stones acquired their legendary 100W Mesa/Boogie Mark I amplifiers is a fascinating chapter in rock history.
 
@@ -51,6 +53,8 @@ These amplifiers were subsequently packed up and shipped to *Pathé Marconi Stud
 The Boogies remained the band's primary backline through the recording of *Emotional Rescue* (1979-1980 at Compass Point and Pathé Marconi) and *Tattoo You* (1981). Over the years, the Rolling Stones would go on to purchase—and fully pay for—over 40 Mesa/Boogie amplifiers. 
 
 Today, that original 1977 Mark I (Serial Number A804) with the cigarette burn still exists, a physical testament to a pivotal moment when a boutique California amp builder helped redefine the sound of the world's greatest rock and roll band.
+
+> *Story adapted from Dave Hunter's article "Keith Richards’ 1977 Mesa/Boogie Mark I" via Vintage Guitar® magazine. Read the full original article [here](https://www.vintageguitar.com/55906/keith-richards-1977-mesa-boogie-mark-i/).*
 
 ---
 
