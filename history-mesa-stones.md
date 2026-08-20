@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref } from 'vue'
 const btnText = ref('Copy Email')
 function copyEmail() {
@@ -52,7 +52,17 @@ These amplifiers were subsequently packed up and shipped to *Pathé Marconi Stud
 
 The Boogies remained the band's primary backline through the recording of *Emotional Rescue* (1979-1980 at Compass Point and Pathé Marconi) and *Tattoo You* (1981). Over the years, the Rolling Stones would go on to purchase—and fully pay for—over 40 Mesa/Boogie amplifiers. 
 
-Today, that original 1977 Mark I (Serial Number A804) with the cigarette burn still exists, a physical testament to a pivotal moment when a boutique California amp builder helped redefine the sound of the world's greatest rock and roll band.
+
+## The End of an Era and the Return to the Roots
+
+The Mesa/Boogie Mark I (and later Mark II and III models) remained the undisputed core of Richards' guitar rig for over a decade. They powered the massive *Steel Wheels* tour in 1989 and were still heavily featured during his solo *X-Pensive Winos* tours in 1992 and 1993. In fact, that original 1977 Mark I (Serial Number A804) was sent back to the Mesa factory in California for a tune-up right before the '92 Winos tour.
+
+However, by the mid-1990s (*Voodoo Lounge* and *Bridges to Babylon*), Keith began transitioning back to his roots. He rediscovered his love for the loose, organic, uncompressed crunch of 1950s **Fender Tweed** amplifiers—specifically the High Power Tweed Twins and Tweed Deluxes—which have remained the staple of his live and studio sound ever since.
+
+> 🎸 **Looking for that raw 50s Tweed tone?**  
+> If you want to experience the raw, touch-sensitive breakup of the Tweed era that Keith eventually returned to, check out our **[Midnight Rambler plugin](/midnight-rambler)**—a faithful neural emulation of a cranked 1950s Tweed Deluxe (5E3).
+
+Today, that original 1977 Mark I with the cigarette burn still exists, a physical testament to a pivotal moment when a boutique California amp builder helped redefine the sound of the world's greatest rock and roll band.
 
 > *Story adapted from Dave Hunter's article "Keith Richards’ 1977 Mesa/Boogie Mark I" via Vintage Guitar® magazine. Read the full original article [here](https://www.vintageguitar.com/55906/keith-richards-1977-mesa-boogie-mark-i/).*
 
