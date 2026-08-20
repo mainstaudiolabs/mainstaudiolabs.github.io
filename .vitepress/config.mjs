@@ -22,6 +22,12 @@ export default defineConfig({
           { text: 'Midnight Rambler (5E3 Tweed)', link: '/midnight-rambler' },
           { text: 'Tattoo You (1978–1981 Tube & FX)', link: '/tattoo-you' }
         ]
+      },
+      {
+        text: 'Studio Archives',
+        items: [
+          { text: 'How the Stones Met Mesa (1978–1981)', link: '/history-mesa-stones' }
+        ]
       }
     ],
 

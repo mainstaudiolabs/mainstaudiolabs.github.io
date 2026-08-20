@@ -48,11 +48,12 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
       <img src="/tattoo-you.png" alt="Tattoo You GUI Preview" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
     </div>
     <div class="rock-card-content">
-      <div class="rock-card-tag">Amplifier &amp; FX Series #02 <span class="badge-free">COMING SOON</span> <span class="badge-format">VST3 &amp; Standalone</span></div>
+      <div class="rock-card-tag">Amplifier &amp; FX Series #02 <span class="badge-free">COMING SOON</span> <span class="badge-format">Windows · macOS &amp; Linux Coming Soon</span></div>
       <h3 class="rock-card-title">Tattoo You</h3>
-      <p class="rock-card-desc">The definitive 1978–1981 vintage 100W tube amplifier simulation and Keith Richards signature vintage dual FX suite. Based on the legendary Mesa/Boogie tube head and Pacific Woodworks 1x12 Electro-Voice EVM-12L speaker, Tattoo You captures that iconic, articulate Stones guitar tone — from chimey, dynamic compressed cleans and the legendary 80's open-G crunch (<em>Start Me Up</em>, <em>Little T&A</em>) to singing, mid-forward classic rock lead sustain. Featuring a 3-way channel selector (Clean, Crunch, Lead), authentic 5-Band Graphic Equalizer, Phase '78 optical phaser (MXR Phase 100 style), and 110ms analog tape slapback echo.</p>
+      <p class="rock-card-desc">The definitive 1978–1981 vintage 100W tube amplifier simulation and Keith Richards signature vintage dual FX suite. Based on the legendary Mesa/Boogie tube head and 1x12 Electro-Voice EVM-12L speaker, Tattoo You captures that iconic, articulate Stones guitar tone — from chimey, dynamic compressed cleans and the legendary 80's crunch (Start Me Up, Little T&amp;A) to singing, mid-forward classic rock lead sustain. Featuring a 3-way channel selector (Clean, Crunch, Lead), authentic 5-Band Graphic Equalizer, Phase '78 optical phaser (MXR Phase 100 style), and 110ms analog tape slapback echo.</p>
       <div class="rock-card-actions">
         <a href="/tattoo-you" class="rock-btn rock-btn-secondary" style="flex: 1;">Read Manual (v1.0.0)</a>
+        <a href="/history-mesa-stones" class="rock-btn rock-btn-secondary" style="flex: 1;">The '78–'81 Story 📖</a>
         <button class="rock-btn rock-btn-primary" disabled style="width: 100%; margin-top: 0.5rem; opacity: 0.65; cursor: not-allowed;">Release Coming Soon (FREE)</button>
       </div>
       <!-- Contact & Feedback Section integrated in Card -->
