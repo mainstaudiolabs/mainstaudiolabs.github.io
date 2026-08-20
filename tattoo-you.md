@@ -1,4 +1,4 @@
-<script setup>
+﻿<script setup>
 import { ref } from 'vue'
 const btnText = ref('Copy Email')
 function copyEmail() {
@@ -8,19 +8,19 @@ function copyEmail() {
 }
 </script>
 
-# Beast of Burden: User Manual
+# Tattoo You: User Manual
 
-**Version 1.0.0 · Virtual Stompbox & Amplifier Simulation**
+**Version 1.0.0 Â· Virtual Stompbox & Amplifier Simulation**
 
-This manual provides a detailed description of the design philosophy, signal chain architecture, control parameters, and recommended presets for the **Beast of Burden** amplifier emulation and vintage FX suite.
+This manual provides a detailed description of the design philosophy, signal chain architecture, control parameters, and recommended presets for the **Tattoo You** amplifier emulation and vintage FX suite.
 
-<img :src="'/bob.png'" alt="Beast of Burden Plugin GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 4px;" />
+<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 4px;" />
 
 ---
 
 ## 1. Design Philosophy: The 100W Tube Crunch & Lead Beast
 
-**Beast of Burden** is a dedicated amplifier simulation and vintage effects suite pairing an authentic 100W 6L6 tube amplifier architecture with the signature **Stones '78 Vintage Dual FX Suite** (Phase '78 optical phaser and analog tape slapback delay) and a studio-recorded **Pacific Woodworks 1x12 Thiele cabinet with an Electro-Voice EVM-12L speaker**.
+**Tattoo You** is a dedicated amplifier simulation and vintage effects suite pairing an authentic 100W 6L6 tube amplifier architecture with the signature **Stones '78 Vintage Dual FX Suite** (Phase '78 optical phaser and analog tape slapback delay) and a studio-recorded **Pacific Woodworks 1x12 Thiele cabinet with an Electro-Voice EVM-12L speaker**.
 
 ### The Sound of Studio & Stage
 Inspired by the high-headroom, cascaded-gain rigs that defined legendary late '70s and early '80s rock records:
@@ -32,7 +32,7 @@ Inspired by the high-headroom, cascaded-gain rigs that defined legendary late '7
 
 ## 2. 3-Channel Amplifier Architecture
 
-Beast of Burden features a straightforward 3-way channel selector covering the entire tonal spectrum:
+Tattoo You features a straightforward 3-way channel selector covering the entire tonal spectrum:
 
 | Channel Mode | Tone Character | Ideal Applications |
 | :--- | :--- | :--- |
@@ -46,21 +46,21 @@ Beast of Burden features a straightforward 3-way channel selector covering the e
 
 ```
 [ GUITAR INPUT ]
-       │
-       ▼
- [ PHASE '78 ]  ───►  [ SLAPBACK DELAY ]
-       │
-       ▼
+       â”‚
+       â–¼
+ [ PHASE '78 ]  â”€â”€â”€â–º  [ SLAPBACK DELAY ]
+       â”‚
+       â–¼
  [ 100W 6L6 TUBE PREAMP (Clean / Crunch / Lead) ]
-       │
-       ▼
- [ 5-BAND GRAPHIC EQ ]  ───►  [ EVM-12L CABINET SIMULATION ]
-       │
-       ▼
- [ MASTER OUTPUT ]  ───►  [ STEREO OUT ]
+       â”‚
+       â–¼
+ [ 5-BAND GRAPHIC EQ ]  â”€â”€â”€â–º  [ EVM-12L CABINET SIMULATION ]
+       â”‚
+       â–¼
+ [ MASTER OUTPUT ]  â”€â”€â”€â–º  [ STEREO OUT ]
 ```
 
-### 🎛️ 1. Main Amplifier Controls
+### ðŸŽ›ï¸ 1. Main Amplifier Controls
 
 * **`GAIN` (Volume / Drive):** Sets input signal drive into the amplifier (`1.0` = -9 dB, `7.0` = 0 dB Unity Gain, `10.0` = +4.5 dB boost).
 * **`MASTER`:** Clean analog output volume (`1.0` = -36 dB bedroom volume, `7.0` = 0 dB Unity Gain, `10.0` = +18 dB boost).
@@ -68,19 +68,19 @@ Beast of Burden features a straightforward 3-way channel selector covering the e
 
 ---
 
-### 🎚️ 2. 5-Band Graphic Equalizer
+### ðŸŽšï¸ 2. 5-Band Graphic Equalizer
 
 An authentic recreation of the classic Mesa/Boogie active slider EQ with an independent **`EQ IN`** toggle and status LED:
 
-* **`80 Hz` (±12 dB):** Deep sub-bass thump and cab resonance.
-* **`240 Hz` (±12 dB):** Low-mid boxiness control. Cutting clears mud.
-* **`750 Hz` (±12 dB):** Midrange punch and vocal bark.
-* **`2200 Hz / 2.2 kHz` (±12 dB):** The attack frequency! Delivers pick snap and chord bite.
-* **`6600 Hz / 6.6 kHz` (±12 dB):** Smooth air and chime characteristic of the EVM-12L speaker.
+* **`80 Hz` (Â±12 dB):** Deep sub-bass thump and cab resonance.
+* **`240 Hz` (Â±12 dB):** Low-mid boxiness control. Cutting clears mud.
+* **`750 Hz` (Â±12 dB):** Midrange punch and vocal bark.
+* **`2200 Hz / 2.2 kHz` (Â±12 dB):** The attack frequency! Delivers pick snap and chord bite.
+* **`6600 Hz / 6.6 kHz` (Â±12 dB):** Smooth air and chime characteristic of the EVM-12L speaker.
 
 ---
 
-### 🌀 3. Stones '78 Vintage Dual FX Suite
+### ðŸŒ€ 3. Stones '78 Vintage Dual FX Suite
 
 Integrated directly before the preamp stage, replicating the exact pedalboard signal flow used on classic records:
 
@@ -97,21 +97,21 @@ Integrated directly before the preamp stage, replicating the exact pedalboard si
 
 ---
 
-### 🔊 4. Pacific Woodworks 1x12 EVM-12L Cabinet Simulation
+### ðŸ”Š 4. Pacific Woodworks 1x12 EVM-12L Cabinet Simulation
 
 The Pacific Woodworks 1x12 (Thiele ported) cabinet loaded with an Electro-Voice EVM-12L 200W speaker delivers massive power handling, transparent mids, and punchy, tight bass. The **`CABINET`** selector offers 6 studio microphone placements plus a bypass option:
 
-1. **`SM57 SweetSpot`:** Shure SM57 on cap-edge — balanced attack, rich mids and solid punch.
-2. **`SM57 Warm`:** Shure SM57 on outer cone — deep lows, smooth highs and warm textures.
-3. **`SM57 Direct`:** Shure SM57 on center — razor-sharp articulation and immediate bite.
-4. **`SM57 BassPort`:** Shure SM57 on the Thiele port — extended low-end thump (80–100 Hz).
-5. **`U87 Studio`:** Neumann U87Ai large diaphragm condenser — high fidelity, wide dynamic range and open 3D air.
-6. **`U87 Warm`:** Neumann U87Ai in warm zone — dense harmonic body without top-end harshness.
+1. **`SM57 SweetSpot`:** Shure SM57 on cap-edge â€” balanced attack, rich mids and solid punch.
+2. **`SM57 Warm`:** Shure SM57 on outer cone â€” deep lows, smooth highs and warm textures.
+3. **`SM57 Direct`:** Shure SM57 on center â€” razor-sharp articulation and immediate bite.
+4. **`SM57 BassPort`:** Shure SM57 on the Thiele port â€” extended low-end thump (80â€“100 Hz).
+5. **`U87 Studio`:** Neumann U87Ai large diaphragm condenser â€” high fidelity, wide dynamic range and open 3D air.
+6. **`U87 Warm`:** Neumann U87Ai in warm zone â€” dense harmonic body without top-end harshness.
 7. **`Bypass IR`:** Disables internal cabinet simulation for pairing with external third-party IR loaders.
 
 ---
 
-### 🖼️ 5. Standby & Custom Tolex Skinning
+### ðŸ–¼ï¸ 5. Standby & Custom Tolex Skinning
 
 * **`STANDBY`:** Mutes audio output and reduces neural CPU processing to **0%** immediately.
 * **Drag-and-Drop Backgrounds:** Drag any `.jpg`, `.jpeg`, or `.png` image directly onto the plugin window from your file manager to customize its visual skin in real time.
@@ -122,7 +122,7 @@ The Pacific Woodworks 1x12 (Thiele ported) cabinet loaded with an Electro-Voice 
 
 Here are studio-tested dial-in settings for iconic guitar tones:
 
-### 🌟 Preset 1: "Beast of Burden" (The Signature Liquid Phase Tone)
+### ðŸŒŸ Preset 1: "Tattoo You" (The Signature Liquid Phase Tone)
 * **Channel:** `CLEAN`
 * **Gain:** `7.0` | **Master:** `7.0`
 * **5-Band Graphic EQ:** `80Hz: 0dB` | `240Hz: -2.0dB` | `750Hz: +2.0dB` | `2.2kHz: +3.0dB` | `6.6kHz: +1.5dB`
@@ -130,7 +130,7 @@ Here are studio-tested dial-in settings for iconic guitar tones:
 * **Slapback Delay:** `ON` | Time: `110 ms` | Repeats: `20%` | Mix: `25%`
 * **Cabinet:** `SM57 SweetSpot` (or `SM57 Warm`)
 
-### ⚡ Preset 2: "Start Me Up" / "Tattoo You Crunch" (Open-G Riff Power)
+### âš¡ Preset 2: "Start Me Up" / "Tattoo You Crunch" (Open-G Riff Power)
 * **Channel:** `CRUNCH`
 * **Gain:** `7.5` | **Master:** `7.5`
 * **5-Band Graphic EQ:** `80Hz: +1.5dB` | `240Hz: -3.0dB` | `750Hz: +2.5dB` | `2.2kHz: +4.0dB` | `6.6kHz: +2.0dB`
@@ -138,7 +138,7 @@ Here are studio-tested dial-in settings for iconic guitar tones:
 * **Slapback Delay:** `OFF` (or `ON` with Mix @ `12%` for studio depth)
 * **Cabinet:** `SM57 Warm`
 
-### 👑 Preset 3: "Classic Rock Lead & Solo" (Singing Tube Sustain)
+### ðŸ‘‘ Preset 3: "Classic Rock Lead & Solo" (Singing Tube Sustain)
 * **Channel:** `LEAD`
 * **Gain:** `8.0` | **Master:** `7.0`
 * **5-Band Graphic EQ:** `80Hz: +2.0dB` | `240Hz: -1.5dB` | `750Hz: +3.5dB` | `2.2kHz: +3.0dB` | `6.6kHz: +2.0dB`
@@ -149,11 +149,11 @@ Here are studio-tested dial-in settings for iconic guitar tones:
 
 ## 5. Standalone Audio Configuration
 
-When running Beast of Burden as a standalone application on Windows:
+When running Tattoo You as a standalone application on Windows:
 
 1. **Audio Device Type:** Select **ASIO** (essential for ultra-low latency).
 2. **Device:** Choose your audio interface's native ASIO driver.
-3. **Smart Input Detection:** Beast of Burden automatically senses your active guitar input (Input 1 or Input 2) and sends 100% full-level mono audio to both stereo outputs without signal loss.
+3. **Smart Input Detection:** Tattoo You automatically senses your active guitar input (Input 1 or Input 2) and sends 100% full-level mono audio to both stereo outputs without signal loss.
 4. **Sample Rate:** Set to **48000 Hz** (48 kHz) for optimal neural inference.
 5. **Buffer Size:** Set to **128 samples** (2.7 ms) or **256 samples** (5.3 ms) for seamless real-time monitoring.
 
@@ -177,3 +177,4 @@ When running Beast of Burden as a standalone application on Windows:
     <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
   </div>
 </div>
+

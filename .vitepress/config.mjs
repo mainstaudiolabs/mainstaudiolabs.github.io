@@ -20,7 +20,7 @@ export default defineConfig({
         text: 'Plugins Manuals',
         items: [
           { text: 'Midnight Rambler (5E3 Tweed)', link: '/midnight-rambler' },
-          { text: 'Beast of Burden (Mark IIC+ & FX)', link: '/beast-of-burden' }
+          { text: 'Tattoo You (1978–1981 Tube & FX)', link: '/tattoo-you' }
         ]
       }
     ],
