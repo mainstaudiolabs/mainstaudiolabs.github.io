@@ -21,9 +21,9 @@ title: Main St Audio Labs - Stompboxes y Amplificadores Virtuales
       <h3 class="rock-card-title">Midnight Rambler</h3>
       <p class="rock-card-desc">El Fender Tweed Deluxe 5E3 es el Santo Grial de los amplificadores de grabación en la historia del rock: la columna vertebral cruda y dinámica detrás de Keith Richards (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>), la furia de Neil Young, Billy Gibbons y <em>Hotel California</em>. Aunque existen muchas emulaciones de este legendario circuito, <strong>Midnight Rambler</strong> es algo que definitivamente debes probar: su sensibilidad táctil inmediata, compresión valvular orgánica y su consumo de CPU ultra bajo te permiten conectar tu guitarra, subir el volumen y sumergirte en el sonido de un disco clásico al instante.</p>
       <div class="rock-card-actions">
-        <a href="/es/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1;">Leer Manual (v1.0.0)</a>
-        <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1;">Descargar PDF (v1.0.0)</a>
-        <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="width: 100%; margin-top: 0.5rem;">Descargar Plugin (GRATIS)</a>
+        <a href="/es/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Leer Manual (v1.0.0)</a>
+        <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Descargar PDF (v1.0.0)</a>
+        <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="flex: 2; min-width: 240px;">Descargar Plugin (GRATIS)</a>
       </div>
       <!-- Contact & Feedback Section integrated in Card -->
       <div class="rock-card-contact">
@@ -50,9 +50,9 @@ title: Main St Audio Labs - Stompboxes y Amplificadores Virtuales
       <h3 class="rock-card-title">Tattoo You</h3>
       <p class="rock-card-desc">La simulación definitiva del amplificador de bulbos vintage de 100W de 1978–1981 y la icónica suite dual de efectos vintage de Keith Richards. Basado en el legendario cabezal Mesa/Boogie y el altavoz 1x12 Electro-Voice EVM-12L, Tattoo You captura ese tono de guitarra articulado e icónico de los Stones: desde los limpios campanilleantes y dinámicamente comprimidos y el legendario crujido de los 80 (Start Me Up, Little T&amp;A) hasta el sustain de los solos de rock clásico. Cuenta con Noise Gate adaptativo en la entrada, limitador analógico Waveshaper (-0.1 dBFS), selector de 3 canales (Clean, Crunch, Lead), ecualizador gráfico de 5 bandas auténtico, phaser óptico Phase '78 y eco de cinta analógica slapback de 110ms.</p>
       <div class="rock-card-actions">
-        <a href="/es/tattoo-you" class="rock-btn rock-btn-secondary" style="flex: 1;">Leer Manual (v1.0.0)</a>
-        <a href="/es/history-mesa-stones" class="rock-btn rock-btn-secondary" style="flex: 1;">La Historia '78–'81 📖</a>
-        <button class="rock-btn rock-btn-primary" disabled style="width: 100%; margin-top: 0.5rem; opacity: 0.65; cursor: not-allowed;">Lanzamiento Próximamente (GRATIS)</button>
+        <a href="/es/tattoo-you" class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Leer Manual (v1.0.0)</a>
+        <a href="/es/history-mesa-stones" class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">La Historia '78–'81 📖</a>
+        <button class="rock-btn rock-btn-primary" disabled style="flex: 2; min-width: 240px; opacity: 0.65; cursor: not-allowed;">Lanzamiento Próximamente (GRATIS)</button>
       </div>
       <!-- Contact & Feedback Section integrated in Card -->
       <div class="rock-card-contact">
