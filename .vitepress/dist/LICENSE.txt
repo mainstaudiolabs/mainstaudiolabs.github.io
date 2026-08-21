@@ -1,0 +1,45 @@
+MAIN ST AUDIO LABS - FREEWARE END USER LICENSE AGREEMENT (EULA)
+Last Updated: August 2026
+
+PLEASE READ THIS END USER LICENSE AGREEMENT ("AGREEMENT" OR "EULA") CAREFULLY BEFORE DOWNLOADING, INSTALLING, OR USING THE SOFTWARE PLUGINS ("SOFTWARE") PROVIDED BY MAIN ST AUDIO LABS ("LICENSOR").
+
+BY DOWNLOADING, INSTALLING, OR USING THE SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT DOWNLOAD, INSTALL, OR USE THE SOFTWARE.
+
+1. GRANT OF LICENSE (FREEWARE)
+Subject to the terms of this Agreement, Main St Audio Labs grants you a non-exclusive, non-transferable, royalty-free license to download, install, and use the Software (including Midnight Rambler, Tattoo You, and future stompbox/amp sim releases) on any number of computers owned or controlled by you. 
+
+2. PERMITTED USES (PERSONAL & COMMERCIAL AUDIO PRODUCTION)
+You are explicitly permitted to use the Software for:
+- Personal, educational, and professional music creation, recording, mixing, and mastering.
+- Commercial audio productions, film scoring, broadcasting, and live performance.
+No royalties or licensing fees are required for audio recordings or productions created using the Software.
+
+3. RESTRICTIONS
+You shall not, and shall not permit any third party to:
+- Decompile, reverse engineer, disassemble, decrypt, or attempt to derive the source code of the Software.
+- Modify, adapt, translate, or create derivative works based upon the Software or its graphical user interface.
+- Sell, rent, lease, sublicense, distribute for commercial gain, or charge third parties for downloading or obtaining the Software binary files.
+- Remove, alter, or obscure any copyright notices, trademarks, or proprietary markings of Main St Audio Labs from the Software or accompanying documentation.
+
+4. INTELLECTUAL PROPERTY RIGHTS
+The Software, including all algorithms, user interfaces, graphic artwork, code, sound impulse responses, and documentation, is the exclusive intellectual property of Main St Audio Labs and is protected by international copyright laws and treaties. All rights not expressly granted to you under this Agreement are reserved by Main St Audio Labs.
+
+5. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. LICENSOR DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE.
+
+6. LIMITATION OF LIABILITY
+IN NO EVENT SHALL MAIN ST AUDIO LABS OR ITS CREATORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES (INCLUDING, BUT NOT LIMITED TO, LOSS OF PROFITS, DATA LOSS, SYSTEM DAMAGE, OR BUSINESS INTERRUPTION) ARISING OUT OF OR IN CONNECTION WITH THE USE OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+7. THIRD-PARTY TRADEMARK DISCLAIMER
+All product names, trademarks, registered trademarks, brand names, and model designations mentioned in the Software, user manuals, or website (such as Fender, Tweed Deluxe, 5E3, Mesa/Boogie, Electro-Voice, Shure, Royer, Rolling Stones, etc.) are the property of their respective owners. 
+These trademarks and names are used solely for historical, educational, and descriptive identification of tonal characteristics and equipment modeled. Main St Audio Labs is an independent audio technology lab and is not affiliated, associated, authorized, endorsed by, or in any way officially connected with these trademark owners.
+
+8. TERMINATION
+This Agreement is effective until terminated. Your rights under this Agreement will terminate automatically without notice from Licensor if you fail to comply with any of its terms. Upon termination, you must cease all use and destroy all copies of the Software in your possession.
+
+9. GOVERNING LAW
+This Agreement shall be governed by and construed in accordance with applicable laws governing software licensing agreements, without regard to conflicts of law principles.
+
+MAIN ST AUDIO LABS
+Contact & Inquiries: mainstaudiolabs@gmail.com
+Website: https://mainstaudiolabs.github.io

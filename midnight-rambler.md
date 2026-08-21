@@ -112,6 +112,15 @@ Many guitarists experience a sweeter, more fluid tone at 256 samples. This is du
 
 ---
 
+## 6. License & Terms of Use
+
+**Midnight Rambler** is distributed as **Freeware (Closed-Source)** under the [Main St Audio Labs End User License Agreement (EULA)](/LICENSE.txt):
+* **Free Use:** You are 100% free to use this plugin in any personal, educational, or commercial music production, mix, score, or live performance without paying any royalties or fees.
+* **Closed-Source Protection:** Reverse engineering, decompiling, reselling, or charging for binary downloads is strictly prohibited. All rights and intellectual property belong exclusively to *Main St Audio Labs*.
+* **Disclaimer:** The software is provided "AS IS", without warranty of any kind. Third-party brand names (*Fender*, *Tweed Deluxe*, *5E3*, etc.) are used solely for descriptive and historical identification of tone.
+
+---
+
 ### We Want to Hear Your Mixes!
 Midnight Rambler's dynamic behavior was calibrated directly from classic record listening tests. If you've recorded a song or mixed a track using this stompbox, we want to hear it!
 

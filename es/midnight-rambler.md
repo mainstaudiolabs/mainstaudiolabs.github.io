@@ -110,6 +110,15 @@ Muchos guitarristas experimentan un tono más dulce y fluido a 256 muestras. Est
 
 ---
 
+## 6. Licencia y Términos de Uso
+
+**Midnight Rambler** se distribuye como **Freeware (Código Cerrado)** bajo el [Acuerdo de Licencia de Usuario Final (EULA) de Main St Audio Labs](/LICENSE.txt):
+* **Uso Gratuito:** Sos 100% libre de usar este plugin en cualquier producción musical personal, educativa o comercial, mezcla o actuación en vivo sin pagar ningún tipo de regalía o licencia.
+* **Protección de Código Cerrado:** Queda estrictamente prohibida la ingeniería inversa, descompilación, reventa o cobro por la descarga de los archivos binarios del software. Todos los derechos de propiedad intelectual pertenecen exclusivamente a *Main St Audio Labs*.
+* **Exención de Responsabilidad:** El software se proporciona "TAL CUAL" ("AS IS"), sin garantías de ningún tipo. Los nombres de marcas registradas de terceros (*Fender*, *Tweed Deluxe*, *5E3*, etc.) se utilizan únicamente con fines descriptivos e históricos para identificar el tono del equipo emulado.
+
+---
+
 ### ¡Queremos escuchar tus mezclas!
 El comportamiento dinámico de Midnight Rambler se calibró directamente a partir de pruebas de audición de discos clásicos. Si has grabado una canción o mezclado una pista usando este pedal, ¡queremos escucharla!
 
