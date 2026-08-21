@@ -45,7 +45,7 @@ title: Main St Audio Labs - Stompboxes y Amplificadores Virtuales
   <!-- Card 2: Tattoo You (Coming Soon) -->
   <div class="rock-card coming-soon">
     <div class="rock-card-image-wrapper">
-      <img src="/tattoo-you.jpg" alt="Tattoo You GUI Preview" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
+      <img src="/tattoo-you.png" alt="Tattoo You GUI Preview" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
     </div>
     <div class="rock-card-content">
       <div class="rock-card-tag">Amplifier &amp; FX Series #02 <span class="badge-free">PRÓXIMAMENTE</span> <span class="badge-format">Windows · macOS &amp; Linux Próximamente</span></div>
