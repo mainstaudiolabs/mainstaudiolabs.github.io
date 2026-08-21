@@ -14,14 +14,12 @@ title: Main St Audio Labs - Stompboxes y Amplificadores Virtuales
   <!-- Card 1: Midnight Rambler (Active) -->
   <div class="rock-card">
     <div class="rock-card-image-wrapper">
-      <div class="vinyl-disc-wrapper">
-        <img src="/logo.jpg" alt="Midnight Rambler Label" class="vinyl-disc" />
-      </div>
+      <img src="/midnight.png" alt="Midnight Rambler Plugin GUI" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
     </div>
     <div class="rock-card-content">
-      <div class="rock-card-tag">Stompbox Series #01 <span class="badge-free">GRATIS</span> <span class="badge-format">VST3 &amp; Standalone</span></div>
+      <div class="rock-card-tag">Stompbox Series #01 <span class="badge-free">GRATIS</span> <span class="badge-format">VST3 &amp; Standalone · Windows, macOS y Linux</span></div>
       <h3 class="rock-card-title">Midnight Rambler</h3>
-      <p class="rock-card-desc">El Fender Tweed Deluxe 5E3 es indiscutiblemente el Santo Grial de los amplificadores de grabación en la historia del rock: la columna vertebral sonora detrás de Keith Richards en los discos cumbre de los Rolling Stones (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>), la furia cruda de Neil Young, la mordida texana de Billy Gibbons y las guitarras inmortales de <em>Hotel California</em>. <strong>Midnight Rambler</strong> recrea esta leyenda valvular con una respuesta al tacto y un realismo acústico asombrosos. Impulsado por tecnología de redes neuronales NAM, incorpora Noise Gate adaptativo en la entrada, limitador analógico Waveshaper (-0.1 dBFS), conmutación de 2 canales (Edge of Breakup &amp; Cranked Overdrive), filtros de estudio de alta precisión listos para mezcla y convolución de gabinete Oxford 12" (SM57 y R121). Cero latencia, consumo ultra bajo de CPU y 100% gratuito.</p>
+      <p class="rock-card-desc">El Fender Tweed Deluxe 5E3 es el Santo Grial de los amplificadores de grabación en la historia del rock: la columna vertebral cruda y dinámica detrás de Keith Richards (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>), la furia de Neil Young, Billy Gibbons y <em>Hotel California</em>. Aunque existen muchas emulaciones de este legendario circuito, <strong>Midnight Rambler</strong> es algo que definitivamente debes probar: su sensibilidad táctil inmediata, compresión valvular orgánica y su consumo de CPU ultra bajo te permiten conectar tu guitarra, subir el volumen y sumergirte en el sonido de un disco clásico al instante.</p>
       <div class="rock-card-actions">
         <a href="/es/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1;">Leer Manual (v1.0.0)</a>
         <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1;">Descargar PDF (v1.0.0)</a>

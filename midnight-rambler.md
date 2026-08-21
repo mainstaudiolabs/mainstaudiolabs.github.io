@@ -14,112 +14,43 @@ function copyEmail() {
 
 This manual provides a detailed description of the usage, design philosophy, and technical specifications for the **Midnight Rambler** amplifier emulation stompbox plugin.
 
-<img :src="'/mr.png'" alt="Midnight Rambler GUI" style="max-height: 240px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border);" />
+<img :src="'/midnight.png'" alt="Midnight Rambler GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
 
 ---
 
-## 1. The Legend of the Tweed 5E3: The Holy Grail of Studio Recording
+## 1. The Tweed 5E3 Soul: A Studio Legend
 
-The **Fender Tweed Deluxe 5E3** (introduced in the 1950s) is universally revered by producers, engineers, and guitarists as the ultimate studio recording amplifier in the history of rock and roll. Its minimalist dual-6V6 tube circuit, paired with tube rectification and interactive controls, yields an organic, elastic compression and unparalleled touch sensitivity that larger stadium stacks simply cannot replicate.
+The **Fender Tweed Deluxe 5E3** (1950s) is widely regarded by producers and guitarists as the ultimate studio recording amplifier in rock history. Its simple 6V6 tube circuit delivers an unmistakable organic compression, warm harmonics, and touch-sensitive response that larger stadium amps cannot replicate.
 
-### The Historic Footprint: Tones That Defined Rock History
-The Tweed 5E3 is the secret weapon behind many of the most celebrated guitar tracks ever recorded:
-* **The Rolling Stones (Golden Era):** Keith Richards' signature rhythmic crunch, open-G chime, and punchy overdrive on masterpieces like *Sticky Fingers* and *Exile on Main St.*.
-* **Neil Young & Crazy Horse:** The roaring, explosive, harmonic-rich overdrive and endless feedback sustain that defined grunge and raw garage rock.
-* **Eagles (*Hotel California*):** The iconic intertwined guitar duel and biting lead tones crafted by Don Felder and Joe Walsh in Criteria Studios.
-* **Billy Gibbons (ZZ Top):** The greasy, harmonically saturated Texas crunch and pinch-harmonic snap that powered classic 70s boogie-rock.
-* **The Faces & Ronnie Wood:** Fat, woody slide guitar and aggressive rhythm chords with immediate pick attack.
-* **Larry Carlton & Mike Campbell (Tom Petty):** Crystalline edge-of-breakup and singing studio solos that sit effortlessly in any mix.
+From Keith Richards' classic Rolling Stones rhythm crunch (*Sticky Fingers*, *Exile on Main St.*) and Neil Young's roaring grit to Billy Gibbons' Texas blues bite and the legendary guitar tracks on *Hotel California*, the Tweed 5E3 shaped generations of iconic records.
 
-### Why Midnight Rambler Sets a New Standard
-Unlike static impulse responses or generic digital modeling plugins that feel stiff and sterile, **Midnight Rambler** captures the living, breathing acoustic soul of a boutique-calibrated Tweed 5E3:
-* **True Neural Dynamics:** Powered by cutting-edge Neural Amp Modeler (NAM) deep neural networks, responding seamlessly to your guitar's volume knob and picking dynamics.
-* **Intelligent Input Protection & Noise Suppression:** Built-in adaptive Noise Gate (-58 dBFS) and pre-NAM -0.1 dBFS analog waveshaper limiter ensure pristine signal integrity with zero background hiss.
-* **Mix-Ready Studio Suite:** Independent post-amp State-Variable TPT filters (Bass HP & Tone LP) combined with zero-latency 1971 Oxford 12" studio cabinet convolution (Royer R121 ribbon and Shure SM57).
-* **Zero Latency & 100% Free:** No accounts, no dongles, ultra-low CPU consumption. Plug in, turn up, and sound like a classic record immediately.
+**Midnight Rambler** captures this exact vintage attitude:
+* **True Tube Feel:** State-of-the-art Neural Amp Modeler (NAM) engine that cleans up or breaks into crunch with your guitar's volume knob.
+* **Ultra-Low CPU:** Engineered for maximum efficiency with 0% idle overhead.
+* **Mix-Ready Tone:** Integrated high-pass and low-pass studio filters paired with custom 1971 Oxford 12" cabinet impulse responses (Shure SM57 & Royer R121).
 
 ---
 
-## 2. Signal Flow & Audio Architecture
+## 2. Quick Control Guide
 
-```text
-[ GUITAR INPUT (Mono / Stereo) ]
-       │
-       ▼
- [ INTELLIGENT STEREO-TO-MONO SUMMING (Normalized Gain) ]
-       │
-       ▼
- [ ADAPTIVE NOISE GATE (1.5ms Attack · 35ms Hold · 140ms Release) ]
-       │
-       ▼
- [ INPUT GAIN DRIVE (Scale 1.0 to 10.0 -> -18 dB to 0 dB) ]
-       │
-       ▼
- [ ANALOG WAVESHAPER LIMITER (-0.1 dBFS Hyperbolic Tangent) ]
-       │
-       ▼
- [ 5E3 NEURAL TUBE PREAMP (Dual Channel: EDGE / CRANKED) ]
-       │
-       ▼
- [ STATE-VARIABLE TPT FILTERS (BASS HP 20-300Hz · TONE LP 1k-20kHz) ]
-       │
-       ▼
- [ ZERO-LATENCY CABINET CONVOLUTION (1971 Oxford 12": WARM / SHARP / BLEND) ]
-       │
-       ▼
- [ MASTER GAIN (+18 dB Clean Output Boost) ]
-       │
-       ▼
- [ STEREO OUTPUT ]
-```
+The plugin features 4 intuitive main knobs and 3 rotary switches:
 
----
+### 🎛️ Main Knobs
+* **VOLUME / GAIN (`1.0` to `10.0`):** Controls the input drive feeding the tube engine. Lower settings provide sparkling clean headroom; higher settings deliver thick vintage saturation and singing sustain.
+* **BASS (HP Filter · `20 Hz` to `300 Hz`):** Tightens the low-end and eliminates unwanted sub-bass rumble, keeping rhythm tracks punchy.
+* **TONE (LP Filter · `1.0 kHz` to `20.0 kHz`):** Controls top-end presence and smooths out harsh frequencies for a warm, woody character.
+* **MASTER (`1.0` to `10.0`):** Clean linear output level with up to `+18 dB` of clean boost headroom.
 
-## 3. Control Guide & Parameter Specifications
-
-The pedal features intuitive, analog-calibrated controls designed to feel like operating vintage physical gear:
-
-### 🎛️ 1. VOLUME / GAIN (Input Drive)
-* **Function:** Controls input level fed into the neural tube modeling stage.
-* **Range:** Calibrated analog scale from `1.0` to `10.0` (Default: `7.0`).
-* **Response Curve:**
-  * **`1.0` (-18.0 dB):** Crystal clean tone with massive dynamic headroom.
-  * **`5.0` (-10.0 dB):** Warm clean tone that breaks up organically on strong pick attack.
-  * **`7.0` (-6.0 dB):** The dynamic sweet spot — crunchy rhythmic chords and blues bite.
-  * **`10.0` (0.0 dB):** Nominal capture level delivering lush power-tube compression without digital harshness.
-
-### 🎛️ 2. BASS (HP Filter · 20 Hz to 300 Hz)
-* **Function:** A post-amp State-Variable TPT High-Pass Filter designed to eliminate low-end muddiness and tighten rhythm tracks.
-* **Range:** `20.0 Hz` to `300.0 Hz` (Logarithmic taper). At 20 Hz the filter is wide open.
-
-### 🎛️ 3. TONE (LP Filter · 1 kHz to 20 kHz)
-* **Function:** A post-amp State-Variable TPT Low-Pass Filter designed to tame high-end fizz and control top-end presence.
-* **Range:** `1.0 kHz` to `20.0 kHz`. Rolling it back delivers a warm, woody, mid-rich vintage character.
-
-### 🎛️ 4. MASTER (Master Volume)
-* **Function:** Clean, linear output level control.
-* **Range:** Analog scale from `1.0` to `10.0` (Default: `7.0` = `0.0 dB` Unity Gain, Max: `10.0` = `+18.0 dB`).
-* **Response (Continuous Real-Amp Taper):**
-  * **`1.0` (-36.0 dB):** Soft bedroom practice level, audible immediately without dead zones.
-  * **`7.0` (0.0 dB):** Standard nominal unity gain.
-  * **`10.0` (+18.0 dB):** Massive clean volume boost for low-output vintage single-coil pickups or pushing downstream effects.
-
-### 🔀 5. CHANNEL (Dual Amp Mode Selector)
-Switches between two distinct, high-resolution boutique neural captures:
-1. **EDGE (Breakup):** Captures the magical threshold of tube breakup with hyper-dynamic touch response. Responds instantly to guitar volume pot adjustments and picking intensity. Includes an internal +2.0 dB output level compensation to match perceived loudness with the cranked mode.
-2. **CRANKED (Rock 'N' Roll):** Maximum volume Tweed saturation with lush power-tube compression, creamy harmonics, and singing sustain.
-
-### 📻 6. MIC / CAB (Cabinet Impulse Convolution)
-Switches between three curated 1971 Oxford 12" speaker responses using real-time zero-latency convolution:
-1. **WARM (Royer R121 Ribbon):** Thick, full-bodied tone with smooth top-end and rich low-mids, ideal for greasy rhythms and slide guitar.
-2. **SHARP (Shure SM57 Dynamic):** Classic rock bite with focused upper-mid punch that cuts effortlessly through dense mixes.
-3. **BLEND (60/40 Custom Mix):** The ultimate studio pairing (60% SM57 + 40% R121) delivering balanced bite, depth, and three-dimensional realism.
-
-### 🎛️ 7. STANDBY (Mute / 0% CPU Switch)
-* **Function:** Replicates a physical amplifier standby switch, completely muting the audio path and reducing CPU consumption to **0%** immediately.
-
-### 🖼️ 8. Dynamic Background Skin (Drag & Drop)
-* Drag and drop any image file (`.jpg`, `.jpeg`, or `.png`) directly from your file explorer onto the plugin interface to customize its visual appearance in real time.
+### 🔀 Selectors & Switches
+* **CHANNEL (Edge / Cranked):**
+  * **EDGE:** Dynamic edge-of-breakup tone with ultra-sensitive pick response.
+  * **CRANKED:** Rich, saturated vintage overdrive with thick power-tube compression.
+* **MIC / CAB (Speaker Cabinet IR):**
+  * **WARM:** Royer R121 ribbon microphone for a smooth, body-rich vintage response.
+  * **SHARP:** Shure SM57 dynamic microphone with bite and focused upper-mid punch.
+  * **BLEND:** Curated 60/40 studio combination (SM57 + R121) for balanced depth and realism.
+* **STANDBY (Play / Mute):** Instantly mutes audio output and drops CPU usage to **0%**.
+* **Dynamic Background:** Drag and drop any image file (`.jpg` or `.png`) directly onto the plugin window to change its skin on the fly.
 
 ---
 

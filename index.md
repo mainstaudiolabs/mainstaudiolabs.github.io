@@ -14,14 +14,12 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
   <!-- Card 1: Midnight Rambler (Active) -->
   <div class="rock-card">
     <div class="rock-card-image-wrapper">
-      <div class="vinyl-disc-wrapper">
-        <img src="/logo.jpg" alt="Midnight Rambler Label" class="vinyl-disc" />
-      </div>
+      <img src="/midnight.png" alt="Midnight Rambler Plugin GUI" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
     </div>
     <div class="rock-card-content">
-      <div class="rock-card-tag">Stompbox Series #01 <span class="badge-free">FREE</span> <span class="badge-format">VST3 &amp; Standalone</span></div>
+      <div class="rock-card-tag">Stompbox Series #01 <span class="badge-free">FREE</span> <span class="badge-format">VST3 &amp; Standalone · Windows, macOS &amp; Linux</span></div>
       <h3 class="rock-card-title">Midnight Rambler</h3>
-      <p class="rock-card-desc">The Fender Tweed Deluxe 5E3 is undeniably the holy grail of recording amplifiers in rock history — the iconic sonic backbone behind Keith Richards on classic Rolling Stones records (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>), Neil Young's roaring grit, Billy Gibbons' Texas bite, and Joe Walsh on <em>Hotel California</em>. <strong>Midnight Rambler</strong> brings this legendary, touch-sensitive soul to your DAW with stunning acoustic realism. Powered by advanced Neural Amp Modeler (NAM) technology, it features an adaptive input Noise Gate, -0.1 dBFS analog waveshaper limiter, dual-channel tube switching (Edge of Breakup &amp; Cranked Overdrive), mix-ready high-precision studio tone filters, and zero-latency Oxford 12" cabinet convolution (SM57 &amp; R121). Zero latency, ultra-low CPU footprint, and 100% free.</p>
+      <p class="rock-card-desc">The Fender Tweed Deluxe 5E3 is the holy grail of recording amplifiers in rock history — the raw, dynamic backbone behind Keith Richards (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>), Neil Young's roaring grit, Billy Gibbons, and <em>Hotel California</em>. While there are countless emulations of this classic circuit, <strong>Midnight Rambler</strong> is something you truly need to experience: its immediate touch sensitivity, organic tube bloom, and ultra-low CPU footprint let you plug in, turn up, and capture that pure vintage record feel without slowing down your session.</p>
       <div class="rock-card-actions">
         <a href="/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1;">Read Manual (v1.0.0)</a>
         <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1;">Get PDF Manual (v1.0.0)</a>
