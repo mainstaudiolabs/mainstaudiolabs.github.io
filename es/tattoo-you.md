@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { ref } from 'vue'
 const btnText = ref('Copiar Correo')
 function copyEmail() {
@@ -56,10 +56,19 @@ function copyEmail() {
 [ ENTRADA GUITARRA ]
        │
        ▼
+ [ NOISE GATE ADAPTATIVO (-58 dB) ]
+       │
+       ▼
  [ PHASE '78 ]  ───►  [ SLAPBACK DELAY ]
        │
        ▼
- [ PREAMP DE BULBOS 100W 6L6 (Clean / Crunch / Lead) ]
+ [ CONTROL DE GANANCIA (GAIN) ]
+       │
+       ▼
+ [ LIMITADOR WAVESHAPER (-0.1 dBFS) ]
+       │
+       ▼
+ [ PREAMP NEURONAL 100W 6L6 (Clean / Crunch / Lead) ]
        │
        ▼
  [ EQ GRÁFICO 5 BANDAS ]  ───►  [ SIMULACIÓN GABINETE EVM-12L ]
@@ -68,11 +77,19 @@ function copyEmail() {
  [ MASTER OUTPUT ]  ───►  [ SALIDA ESTÉREO ]
 ```
 
-### 1. Controles Principales del Amplificador
+### 1. Etapa de Entrada & Protección Dinámica
+
+* **`NOISE GATE ADAPTATIVO`:** Ubicado al inicio de la cadena pura de instrumento, elimina automáticamente ruidos de fondo, hum electromagnético y siseos sin cortar el sostenido (*sustain*) de la guitarra (Ataque ultra rápido 1.5ms, Hold 35ms, Release 140ms).
+* **`WAVESHAPER / SOFT CLIPPER (-0.1 dBFS)`:** Etapa de compresión analógica suave mediante tangente hiperbólica situada justo antes del motor neuronal NAM. Asegura transparencia total para la dinámica natural del instrumento y previene colapsos o distorsiones digitales ásperas ante picos extremos de señal.
+
+---
+
+### 2. Controles Principales del Amplificador
 
 * **`GAIN` (Volumen / Drive):** Establece el nivel de señal de entrada hacia el amplificador (`1.0` = -9 dB, `7.0` = 0 dB Ganancia Unitaria, `10.0` = +4.5 dB de aumento).
 * **`MASTER`:** Volumen de salida analógica limpia (`1.0` = -36 dB volumen de habitación, `7.0` = 0 dB Ganancia Unitaria, `10.0` = +18 dB de aumento).
 * **`CHANNEL SELECTOR`:** Selector giratorio de 3 posiciones para alternar entre `CLEAN`, `CRUNCH` y `LEAD`.
+* **`STANDBY`:** Interruptor de silencio rápido para pausas o cambios de instrumento.
 
 ---
 

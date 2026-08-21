@@ -1,4 +1,4 @@
-﻿---
+---
 layout: doc
 sidebar: false
 aside: false
@@ -45,12 +45,12 @@ title: Main St Audio Labs - Stompboxes y Amplificadores Virtuales
   <!-- Card 2: Tattoo You (Coming Soon) -->
   <div class="rock-card coming-soon">
     <div class="rock-card-image-wrapper">
-      <img src="/tattoo-you.png" alt="Tattoo You GUI Preview" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
+      <img src="/tattoo-you.jpg" alt="Tattoo You GUI Preview" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
     </div>
     <div class="rock-card-content">
       <div class="rock-card-tag">Amplifier &amp; FX Series #02 <span class="badge-free">PRÓXIMAMENTE</span> <span class="badge-format">Windows · macOS &amp; Linux Próximamente</span></div>
       <h3 class="rock-card-title">Tattoo You</h3>
-      <p class="rock-card-desc">La simulación definitiva del amplificador de bulbos vintage de 100W de 1978–1981 y la icónica suite dual de efectos vintage de Keith Richards. Basado en el legendario cabezal Mesa/Boogie y el altavoz 1x12 Electro-Voice EVM-12L, Tattoo You captura ese tono de guitarra articulado e icónico de los Stones: desde los limpios campanilleantes y dinámicamente comprimidos y el legendario crujido de los 80 (Start Me Up, Little T&amp;A) hasta el sustain de los solos de rock clásico. Cuenta con un selector de 3 canales (Clean, Crunch, Lead), un ecualizador gráfico de 5 bandas auténtico, phaser óptico Phase '78 (estilo MXR Phase 100) y eco de cinta analógica slapback de 110ms.</p>
+      <p class="rock-card-desc">La simulación definitiva del amplificador de bulbos vintage de 100W de 1978–1981 y la icónica suite dual de efectos vintage de Keith Richards. Basado en el legendario cabezal Mesa/Boogie y el altavoz 1x12 Electro-Voice EVM-12L, Tattoo You captura ese tono de guitarra articulado e icónico de los Stones: desde los limpios campanilleantes y dinámicamente comprimidos y el legendario crujido de los 80 (Start Me Up, Little T&amp;A) hasta el sustain de los solos de rock clásico. Cuenta con Noise Gate adaptativo en la entrada, limitador analógico Waveshaper (-0.1 dBFS), selector de 3 canales (Clean, Crunch, Lead), ecualizador gráfico de 5 bandas auténtico, phaser óptico Phase '78 y eco de cinta analógica slapback de 110ms.</p>
       <div class="rock-card-actions">
         <a href="/es/tattoo-you" class="rock-btn rock-btn-secondary" style="flex: 1;">Leer Manual (v1.0.0)</a>
         <a href="/es/history-mesa-stones" class="rock-btn rock-btn-secondary" style="flex: 1;">La Historia '78–'81 📖</a>

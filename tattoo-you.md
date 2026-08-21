@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { ref } from 'vue'
 const btnText = ref('Copy Email')
 function copyEmail() {
@@ -52,14 +52,23 @@ function copyEmail() {
 
 ## 3. Signal Flow & Complete Control Guide
 
-```
+```text
 [ GUITAR INPUT ]
+       │
+       ▼
+ [ ADAPTIVE NOISE GATE (-58 dB) ]
        │
        ▼
  [ PHASE '78 ]  ───►  [ SLAPBACK DELAY ]
        │
        ▼
- [ 100W 6L6 TUBE PREAMP (Clean / Crunch / Lead) ]
+ [ INPUT GAIN DRIVE ]
+       │
+       ▼
+ [ ANALOG WAVESHAPER / LIMITER (-0.1 dBFS) ]
+       │
+       ▼
+ [ 100W 6L6 NEURAL PREAMP (Clean / Crunch / Lead) ]
        │
        ▼
  [ 5-BAND GRAPHIC EQ ]  ───►  [ EVM-12L CABINET SIMULATION ]
@@ -68,11 +77,19 @@ function copyEmail() {
  [ MASTER OUTPUT ]  ───►  [ STEREO OUT ]
 ```
 
-### 1. Main Amplifier Controls
+### 1. Input Stage & Dynamic Protection
+
+* **`ADAPTIVE NOISE GATE`:** Situated at the very start of the pure instrument chain, automatically eliminating background noise, 50/60 Hz electromagnetic hum, and high-gain hiss without clipping long musical sustain (Ultra-fast 1.5ms attack, 35ms hold, 140ms natural release).
+* **`ANALOG WAVESHAPER / SOFT CLIPPER (-0.1 dBFS)`:** Smooth hyperbolic tangent saturation placed directly before the NAM neural engine. Guarantees 100% linear transparency for normal playing while musical soft-limiting safeguards against digital overs and neural extrapolation artifacts.
+
+---
+
+### 2. Main Amplifier Controls
 
 * **`GAIN` (Volume / Drive):** Sets input signal drive into the amplifier (`1.0` = -9 dB, `7.0` = 0 dB Unity Gain, `10.0` = +4.5 dB boost).
 * **`MASTER`:** Clean analog output volume (`1.0` = -36 dB bedroom volume, `7.0` = 0 dB Unity Gain, `10.0` = +18 dB boost).
 * **`CHANNEL SELECTOR`:** 3-position rotary selector switching between `CLEAN`, `CRUNCH`, and `LEAD`.
+* **`STANDBY`:** Instant mute toggle for guitar changes and silent pauses.
 
 ---
 
