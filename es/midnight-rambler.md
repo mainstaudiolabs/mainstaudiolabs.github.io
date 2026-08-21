@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { ref } from 'vue'
 const btnText = ref('Copiar Correo')
 function copyEmail() {
@@ -16,79 +16,108 @@ function copyEmail() {
   <img :src="'/logo.jpg'" alt="Midnight Rambler Label" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 4px;" />
 </div>
 
-## 1. Introducción
+## 1. La Leyenda del Tweed 5E3: El Santo Grial de la Grabación en Estudio
 
-Midnight Rambler es un simulador de amplificador de guitarra en formato de pedal, diseñado para ofrecer los tonos sagrados, crudos y sensibles al tacto del legendario amplificador de guitarra **Fender Tweed Deluxe 5E3** de la década de 1950. 
+El **Fender Tweed Deluxe 5E3** (creado en la década de 1950) es universalmente reconocido por productores, ingenieros y guitarristas como el amplificador de grabación más venerado en la historia del rock and roll. Su diseño purista con dos válvulas de potencia 6V6, rectificación valvular y controles interactivos produce una compresión elástica y una sensibilidad táctil al ataque de la púa que los grandes cabezales de estadio sencillamente no pueden igualar.
 
-A diferencia de los plugins de simulación convencionales con decenas de perillas y opciones de enrutamiento infinitas, Midnight Rambler condensa el espíritu del hardware clásico en una interfaz ágil de 4 perillas, permitiendo que tu tono de guitarra atraviese instantáneamente una mezcla estéreo sin fatiga por exceso de opciones. Está construido sobre el ecosistema **Neural Amp Modeler (NAM)** de código abierto y convolution IR personalizada, entregando calidez y saturación valvular auténticas sin aliasing digital con un consumo de CPU ultra bajo.
+### La Huella Histórica: Los Tonos que Forjaron el Rock
+El circuito Tweed 5E3 es el arma secreta detrás de muchas de las grabaciones más icónicas de la música:
+* **The Rolling Stones (Era Dorada):** El crujido rítmico inconfundible de Keith Richards, el brillo en afinación abierta de Sol y la saturación pegadiza en obras maestras como *Sticky Fingers* y *Exile on Main St.*.
+* **Neil Young & Crazy Horse:** El overdrive furioso, explosivo, cargado de armónicos y sustain infinito que definió el rock crudo de garaje y el grunge.
+* **Eagles (*Hotel California*):** El legendario duelo entrelazado de guitarras y los solos afilados grabados por Don Felder y Joe Walsh en los Criteria Studios.
+* **Billy Gibbons (ZZ Top):** La saturación densa, los armónicos de púa chirriantes y el empuje de graves que impulsaron el boogie-rock de los 70.
+* **The Faces & Ronnie Wood:** Guitarras slide con cuerpo amaderado y rítmicas agresivas de respuesta inmediata.
+* **Larry Carlton & Mike Campbell (Tom Petty):** Tonos cristalinos al borde de la ruptura y solos de estudio que se acomodan con total naturalidad en cualquier mezcla.
+
+### Por qué Midnight Rambler Marca la Diferencia
+A diferencia de los modelos digitales convencionales que suenan fríos, rígidos o artificiales, **Midnight Rambler** captura la respiración y la respuesta física de un Tweed 5E3 boutique de primera línea:
+* **Dinámica Neuronal Auténtica:** Impulsado por redes neuronales de aprendizaje profundo NAM (*Neural Amp Modeler*), reacciona de manera orgánica al pote de volumen de la guitarra y a la fuerza de tu mano derecha.
+* **Supresión de Ruido y Protección Dinámica:** Equipado con un Noise Gate adaptativo inteligente (-58 dBFS) al inicio de la cadena y un limitador analógico Waveshaper suave (-0.1 dBFS pre-NAM) que garantizan audio 100% libre de zumbidos o asperezas digitales.
+* **Suite de Estudio Lista para Mezcla (*Mix-Ready*):** Filtros de estudio State-Variable TPT independientes (Bass HP de 20-300Hz y Tone LP de 1-20kHz) junto con convolución de gabinete Oxford 12" de 1971 a latencia cero (Royer R121 y Shure SM57).
+* **Cero Latencia y 100% Gratuito:** Sin registros, sin llaves de protección y con consumo ultra bajo de CPU. Enchufa tu guitarra, sube el volumen y suena a disco clásico desde el primer acorde.
 
 ---
 
-## 2. Flujo de Señal y Controles
+## 2. Flujo de Señal y Arquitectura DSP
 
 ```text
-[ ENTRADA GUITARRA ]
+[ ENTRADA GUITARRA (Mono / Estéreo) ]
        │
        ▼
- [ CONTROL DE GANANCIA Y FILTRO HPF ]
+ [ SUMA INTELIGENTE ESTÉREO A MONO (Ganancia Normalizada) ]
        │
        ▼
- [ MOTOR NEURAL 5E3 TWEED DE 2 CANALES ]
+ [ NOISE GATE ADAPTATIVO (Ataque 1.5ms · Retención 35ms · Caída 140ms) ]
        │
        ▼
- [ CONTROL DE TONO POST-AMPLIFICADOR Y SALIDA MAESTRA ]
+ [ CONTROL DE GANANCIA / DRIVE (Escala 1.0 a 10.0 -> -18 dB a 0 dB) ]
        │
        ▼
- [ CONVOLUCIÓN DE IMPULSO DE GABINETE ]
+ [ LIMITADOR WAVESHAPER ANALÓGICO (-0.1 dBFS Tangente Hiperbólica) ]
+       │
+       ▼
+ [ PREAMP NEURAL 5E3 TWEED (Canal Dual: EDGE / CRANKED) ]
+       │
+       ▼
+ [ FILTROS TPT DE ESTUDIO (BASS HP 20-300Hz · TONE LP 1k-20kHz) ]
+       │
+       ▼
+ [ CONVOLUCIÓN DE GABINETE CERO LATENCIA (1971 Oxford 12": WARM / SHARP / BLEND) ]
+       │
+       ▼
+ [ VOLUMEN MASTER (+18 dB de Margen Limpio) ]
        │
        ▼
  [ SALIDA ESTÉREO (MIX READY) ]
 ```
 
-### 1. GAIN (Ganancia de Entrada / Saturación)
-* **Función:** Controla el nivel de la señal de entrada antes de entrar a la etapa del amplificador neural. 
-* **Rango:** Escala analógica de `1.0` a `10.0` (Predeterminado: `7.0` = `0.0 dB` Ganancia Unitaria, Max: `10.0` = `+6.0 dB`).
-* **Respuesta de Hardware (Curva Lineal Pura):**
-  * Cada paso ajusta la señal linealmente en incrementos exactos de `+2.0 dB`.
-  * **`1.0` (-12.0 dB):** Útil para limpiar el canal Cranked y obtener armónicos sutiles en los bordes de la ruptura.
-  * **`7.0` (0.0 dB):** Ganancia unitaria y balance nominal de señal pura.
-  * **`10.0` (+6.0 dB):** Nivel de boost analógico masivo, empujando los modelos neuronales hacia un territorio pesado similar al fuzz.
+---
 
-### 2. HPF (Filtro Pasa Altos Analógico)
-* **Función:** Un filtro Pasa Altos de primer orden (First Order High-Pass Filter) ubicado *antes* de la etapa del amplificador neural, afinado para domar las pastillas humbucker en amplificadores que de otra manera tendrían graves sucios y desenfocados.
-* **Rango:** Frecuencia de corte de barrido continuo desde `20 Hz` hasta `160 Hz` (-3 dB por octava).
-* **Uso:** Recorta el ruido subgrave innecesario para mantener las pistas rítmicas ajustadas y contundentes. A 20 Hz el filtro está completamente abierto.
+## 3. Guía de Controles y Especificaciones Técnicas
 
-### 3. TONE (Corte de Tono - Filtro LP)
-* **Función:** Un Filtro Pasa Bajos de topología State-Variable TPT ubicado después del amplificador, diseñado para controlar la presencia en frecuencias altas.
-* **Rango:** `1.0 kHz` a `20.0 kHz`.
-* **Uso:** Domestica el "fizz" digital y las frecuencias altas ásperas. Los valores más altos brindan una claridad cristalina, mientras que reducirlo proporciona un carácter vintage cálido, amaderado y rico en medios.
+El plugin presenta controles analógicos intuitivos diseñados para operar como un equipo físico vintage:
 
-### 4. MASTER (Volumen Maestro)
+### 🎛️ 1. VOLUME / GAIN (Ganancia de Entrada / Drive)
+* **Función:** Controla el nivel de la señal que ingresa a la etapa de emulación valvular neural.
+* **Rango:** Escala analógica calibrada de `1.0` a `10.0` (Predeterminado: `7.0`).
+* **Curva de Respuesta:**
+  * **`1.0` (-18.0 dB):** Tono limpio cristalino con amplio margen dinámico (headroom).
+  * **`5.0` (-10.0 dB):** Limpio cálido que rompe armónicamente al atacar fuerte con la púa.
+  * **`7.0` (-6.0 dB):** El punto dulce del ampli — acordes rítmicos crujientes y mordida de blues.
+  * **`10.0` (0.0 dB):** Nivel nominal de captura que entrega compresión valvular densa y sustain sin asperezas digitales.
+
+### 🎛️ 2. BASS (Filtro Pasa Altos · 20 Hz a 300 Hz)
+* **Función:** Un filtro Pasa Altos de topología State-Variable TPT ubicado después del amplificador, diseñado para eliminar sub-graves retumbantes y apretar las pistas rítmicas.
+* **Rango:** `20.0 Hz` a `300.0 Hz` (escala logarítmica). A 20 Hz el filtro está completamente abierto.
+
+### 🎛️ 3. TONE (Filtro Pasa Bajos · 1 kHz a 20 kHz)
+* **Función:** Un filtro Pasa Bajos State-Variable TPT diseñado para controlar la presencia y el brillo superior.
+* **Rango:** `1.0 kHz` a `20.0 kHz`. Al recortarlo se obtiene un carácter vintage cálido, amaderado y rico en medios.
+
+### 🎛️ 4. MASTER (Volumen Maestro)
 * **Función:** Control de nivel de salida lineal y limpio.
 * **Rango:** Escala analógica de `1.0` a `10.0` (Predeterminado: `7.0` = `0.0 dB` Ganancia Unitaria, Max: `10.0` = `+18.0 dB`).
 * **Respuesta (Curva Continua de Amplificador Real):**
-  * Cada paso aumenta el nivel en un uniforme `+6.0 dB`.
-  * **`1.0` (-36.0 dB):** Nivel suave de práctica de dormitorio, audible de inmediato sin zonas muertas.
+  * **`1.0` (-36.0 dB):** Nivel suave para práctica doméstica, audible desde el inicio sin zonas muertas.
   * **`7.0` (0.0 dB):** Ganancia unitaria nominal estándar.
-  * **`10.0` (+18.0 dB):** Aumento de volumen limpio masivo para pastillas single-coil vintage de baja salida o para empujar efectos en cadena.
+  * **`10.0` (+18.0 dB):** Gran aumento de volumen limpio para pastillas vintage de baja salida o para empujar procesadores en cadena.
 
-### 5. CHANNEL (Selector de Modo Dual de Amplificador)
-Alterna entre dos capturas neuronales boutique de alta resolución distintas:
-1. **EDGE (Ruptura):** Captura en el umbral de la ruptura de bulbos (edge-of-breakup) con respuesta táctil hiperdinámica. Responde instantáneamente a los ajustes del potenciómetro de volumen de la guitarra y a la intensidad de la púa. Incluye una compensación de nivel de salida interna de +2.0 dB para igualar la sonoridad percibida con el modo Cranked.
-2. **CRANKED (Rock 'N' Roll):** Saturación Tweed al máximo volumen con compresión densa de bulbos de potencia, armónicos cremosos y un sostenido cantante.
+### 🔀 5. CHANNEL (Selector de Modo Dual de Amplificador)
+Alterna entre dos capturas neuronales boutique de alta resolución:
+1. **EDGE (Ruptura):** Captura en el umbral de ruptura valvular (*edge-of-breakup*) con respuesta táctil hiperdinámica. Responde al instante al potenciómetro de la guitarra y a la intensidad de la mano. Incluye una compensación interna de +2.0 dB para nivelar la sonoridad aparente respecto al modo Cranked.
+2. **CRANKED (Rock 'N' Roll):** Saturación Tweed al máximo volumen con compresión de válvulas de potencia, armónicos cremosos y un sostenido cantante.
 
-### 6. MIC / CAB (Convolución de Impulso de Gabinete)
-Alterna entre tres respuestas curadas de gabinetes de altavoces usando convolución en tiempo real sin latencia:
-1. **WARM (Micrófono de Cinta Royer R121):** Tono grueso y con mucho cuerpo con agudos suaves y medios graves ricos, ideal para ritmos grasientos y slide guitar.
-2. **SHARP (Dinámico Shure SM57):** Mordida de rock clásico con un golpe enfocado en los medios agudos que corta sin esfuerzo en mezclas densas.
-3. **BLEND (Mezcla Personalizada 60/40):** La combinación de estudio definitiva (60% SM57 + 40% R121) que ofrece mordida equilibrada, profundidad y realismo tridimensional.
+### 📻 6. MIC / CAB (Convolución de Impulso de Gabinete)
+Alterna entre tres respuestas de gabinete Oxford 12" de 1971 mediante convolución en tiempo real sin latencia:
+1. **WARM (Cinta Royer R121):** Tono grueso y profundo con agudos suaves y medios-graves con cuerpo, ideal para ritmos grasientos y slide.
+2. **SHARP (Dinámico Shure SM57):** Mordida de rock clásico con un golpe enfocado en medios-altos que corta cualquier mezcla densa.
+3. **BLEND (Mezcla 60/40):** La combinación de estudio definitiva (60% SM57 + 40% R121) que aporta mordida equilibrada, profundidad y realismo 3D.
 
-### 7. STANDBY (Interruptor de Silencio / 0% CPU)
-* **Función:** Replica un interruptor de standby de un amplificador físico, silenciando completamente la ruta de audio y reduciendo el consumo de CPU al **0%** de inmediato.
+### 🎛️ 7. STANDBY (Interruptor de Silencio / 0% CPU)
+* **Función:** Replica el switch de standby de un amplificador real, silenciando completamente la señal y reduciendo el consumo de CPU al **0%** instantáneamente.
 
-### 8. Skin de Fondo Dinámico (Arrastrar y Soltar)
-* Puedes arrastrar y soltar cualquier archivo de imagen (`.jpg`, `.jpeg` o `.png`) directamente desde tu explorador de archivos hacia la interfaz del plugin para personalizar su apariencia visual en tiempo real.
+### 🖼️ 8. Skin de Fondo Dinámico (Arrastrar y Soltar)
+* Puedes arrastrar y soltar cualquier archivo de imagen (`.jpg`, `.jpeg` o `.png`) directamente desde el explorador de archivos hacia la interfaz del plugin para personalizar su apariencia visual en tiempo real.
 
 ---
 
