@@ -16,6 +16,11 @@ This manual provides a detailed description of the usage, design philosophy, and
 
 <img :src="'/midnightramblerinterface.png'" alt="Midnight Rambler GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
 
+<div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
+  <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">Get PDF Manual (v1.0.1) 📄</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 220px; padding: 0.6rem 1.4rem; text-decoration: none;">Download Plugin (FREE v1.0.1) ⬇️</a>
+</div>
+
 ---
 
 ## 1. The Tweed 5E3 Soul: A Studio Legend
@@ -104,6 +109,11 @@ Many guitarists experience a sweeter, more fluid tone at 256 samples. This is du
 * **Windows**: Simply copy the `.vst3` file to your plugin folder (typically `C:\Program Files\Common Files\VST3\`) or run the `.exe` standalone app.
 * **macOS**: Copy the `.vst3` or `.component` (AU) to your plugin folder (typically `/Library/Audio/Plug-Ins/VST3/` or `/Library/Audio/Plug-Ins/Components/`) or run the `.app` standalone app.
 * **Linux**: Copy the `.vst3` file to your plugin folder (typically `~/.vst3/` or `/usr/lib/vst3/`) or run the standalone binary.
+* **Direct Download**: Get the latest multi-platform bundle from our [GitHub Releases](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest).
+
+<div style="margin: 1.25rem 0; text-align: center;">
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Midnight Rambler v1.0.1 (FREE) ⬇️</a>
+</div>
 
 ---
 
