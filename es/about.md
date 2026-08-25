@@ -1,4 +1,4 @@
-﻿---
+---
 layout: doc
 sidebar: false
 aside: false
@@ -48,6 +48,14 @@ Creemos que tu computadora debe enfocarse en tu música, no en ejecutar gráfico
 Construir herramientas de audio virtuales boutique que suenen crudas, se sientan orgánicas y se aparten por completo del camino de tu inspiración.
 
 Sin muros de registro, sin configuraciones infladas: solo conéctate, gira las perillas y toca.
+
+---
+
+## 🤝 Colaboradores y Amigos
+
+Main St Audio Labs cuenta con el apoyo de músicos apasionados, amantes del tono y amigos que aportan su oído, comentarios y experiencia a nuestros proyectos:
+
+* **Claudio Crespino** &mdash; Agradecimiento especial por su invaluable colaboración, pruebas y constante apoyo en el desarrollo y afinación de nuestras herramientas de audio.
 
 ---
 

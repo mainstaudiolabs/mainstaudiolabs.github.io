@@ -51,6 +51,14 @@ No registration walls, no bloated setups—just plug in, turn the knobs, and pla
 
 ---
 
+## 🤝 Friends &amp; Collaborators
+
+Main St Audio Labs is supported by passionate musicians, tone chasers, and friends who contribute their ears, feedback, and expertise to our research:
+
+* **Claudio Crespino** &mdash; Special thanks for his invaluable collaboration, testing, and continuous support across our audio projects.
+
+---
+
 ## Contact &amp; Feedback
 
 We are always listening. If you have any suggestions, audio tracks you want to share, or custom cabinet requests, feel free to copy our email below:
