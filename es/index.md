@@ -14,16 +14,16 @@ title: Main St Audio Labs - Stompboxes y Amplificadores Virtuales
   <!-- Card 1: Midnight Rambler (Active) -->
   <div class="rock-card">
     <div class="rock-card-image-wrapper">
-      <img src="/midnight.png" alt="Midnight Rambler Plugin GUI" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
+      <img src="/midnightramblerinterface.png" alt="Midnight Rambler Plugin GUI" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
     </div>
     <div class="rock-card-content">
-      <div class="rock-card-tag">Stompbox Series #01 <span class="badge-free">GRATIS</span> <span class="badge-format">VST3 &amp; Standalone · Windows, macOS y Linux</span></div>
+      <div class="rock-card-tag">Stompbox Series #01 <span class="badge-free">GRATIS</span> <span class="badge-format">VST3, AU &amp; Standalone · Windows, macOS y Linux</span></div>
       <h3 class="rock-card-title">Midnight Rambler</h3>
-      <p class="rock-card-desc">El Fender Tweed Deluxe 5E3 es el Santo Grial de los amplificadores de grabación en la historia del rock: la columna vertebral cruda y dinámica detrás de Keith Richards (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>), la furia de Neil Young, Billy Gibbons y <em>Hotel California</em>. Aunque existen muchas emulaciones de este legendario circuito, <strong>Midnight Rambler</strong> es algo que definitivamente debes probar: su sensibilidad táctil inmediata, compresión valvular orgánica y su consumo de CPU ultra bajo te permiten conectar tu guitarra, subir el volumen y sumergirte en el sonido de un disco clásico al instante.</p>
+      <p class="rock-card-desc">El Fender Tweed Deluxe 5E3 es el Santo Grial de los amplificadores de grabación en la historia del rock: la columna vertebral cruda y dinámica detrás de Keith Richards (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>), la furia de Neil Young, Billy Gibbons y <em>Hotel California</em>. Aunque existen muchas emulaciones de este legendario circuito, <strong>Midnight Rambler</strong> es algo que definitivamente debes probar: su sensibilidad táctil inmediata, compresión valvular orgánica, selector de 3 micrófonos y afinador cromático retro integrado te permiten conectar tu guitarra, subir el volumen y sumergirte en el sonido de un disco clásico al instante.</p>
       <div class="rock-card-actions">
-        <a href="/es/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Leer Manual (v1.0.0)</a>
-        <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Descargar PDF (v1.0.0)</a>
-        <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="flex: 2; min-width: 240px;">Descargar Plugin (GRATIS)</a>
+        <a href="/es/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Leer Manual (v1.0.1)</a>
+        <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Descargar PDF (v1.0.1)</a>
+        <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="flex: 2; min-width: 240px;">Descargar Plugin (GRATIS v1.0.1)</a>
       </div>
       <!-- Contact & Feedback Section integrated in Card -->
       <div class="rock-card-contact">

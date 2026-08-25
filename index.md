@@ -14,16 +14,16 @@ title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
   <!-- Card 1: Midnight Rambler (Active) -->
   <div class="rock-card">
     <div class="rock-card-image-wrapper">
-      <img src="/midnight.png" alt="Midnight Rambler Plugin GUI" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
+      <img src="/midnightramblerinterface.png" alt="Midnight Rambler Plugin GUI" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
     </div>
     <div class="rock-card-content">
-      <div class="rock-card-tag">Stompbox Series #01 <span class="badge-free">FREE</span> <span class="badge-format">VST3 &amp; Standalone · Windows, macOS &amp; Linux</span></div>
+      <div class="rock-card-tag">Stompbox Series #01 <span class="badge-free">FREE</span> <span class="badge-format">VST3, AU &amp; Standalone · Windows, macOS &amp; Linux</span></div>
       <h3 class="rock-card-title">Midnight Rambler</h3>
-      <p class="rock-card-desc">The Fender Tweed Deluxe 5E3 is the holy grail of recording amplifiers in rock history — the raw, dynamic backbone behind Keith Richards (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>), Neil Young's roaring grit, Billy Gibbons, and <em>Hotel California</em>. While there are countless emulations of this classic circuit, <strong>Midnight Rambler</strong> is something you truly need to experience: its immediate touch sensitivity, organic tube bloom, and ultra-low CPU footprint let you plug in, turn up, and capture that pure vintage record feel without slowing down your session.</p>
+      <p class="rock-card-desc">The Fender Tweed Deluxe 5E3 is the holy grail of recording amplifiers in rock history — the raw, dynamic backbone behind Keith Richards (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>), Neil Young's roaring grit, Billy Gibbons, and <em>Hotel California</em>. While there are countless emulations of this classic circuit, <strong>Midnight Rambler</strong> is something you truly need to experience: its immediate touch sensitivity, organic tube bloom, 3-way studio mic selector, and integrated vintage chromatic tuner let you plug in, turn up, and capture that pure vintage record feel without slowing down your session.</p>
       <div class="rock-card-actions">
-        <a href="/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Read Manual (v1.0.0)</a>
-        <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Get PDF Manual (v1.0.0)</a>
-        <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="flex: 2; min-width: 240px;">Download Plugin (FREE)</a>
+        <a href="/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Read Manual (v1.0.1)</a>
+        <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Get PDF Manual (v1.0.1)</a>
+        <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="flex: 2; min-width: 240px;">Download Plugin (FREE v1.0.1)</a>
       </div>
       <!-- Contact & Feedback Section integrated in Card -->
       <div class="rock-card-contact">

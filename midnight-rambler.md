@@ -10,11 +10,11 @@ function copyEmail() {
 
 # Midnight Rambler: User Manual
 
-**Version 1.0.0**
+**Version 1.0.1**
 
 This manual provides a detailed description of the usage, design philosophy, and technical specifications for the **Midnight Rambler** amplifier emulation stompbox plugin.
 
-<img :src="'/midnight.png'" alt="Midnight Rambler GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
+<img :src="'/midnightramblerinterface.png'" alt="Midnight Rambler GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
 
 ---
 
@@ -31,13 +31,14 @@ Unlike static impulse responses or generic digital modeling plugins that feel st
 * **True Neural Dynamics:** Powered by cutting-edge Neural Amp Modeler (NAM) deep neural networks, responding seamlessly to your guitar's volume knob and picking dynamics.
 * **Intelligent Input Protection & Noise Suppression:** Built-in adaptive Noise Gate (-58 dBFS) and pre-NAM -0.1 dBFS analog waveshaper limiter ensure pristine signal integrity with zero background hiss.
 * **Mix-Ready Studio Suite:** Independent post-amp State-Variable TPT filters (Bass HP & Tone LP) combined with zero-latency 1971 Oxford 12" studio cabinet convolution (Royer R121 ribbon and Shure SM57).
+* **Integrated Precision Chromatic Tuner:** High-accuracy pitch engine with illuminated retro VU meter and dual detection algorithms (YIN / MPM).
 * **Zero Latency & 100% Free:** No accounts, no dongles, ultra-low CPU consumption. Plug in, turn up, and sound like a classic record immediately.
 
 ---
 
 ## 2. Quick Control Guide
 
-The plugin features 4 intuitive main knobs and 3 rotary switches:
+The plugin features 4 intuitive main knobs, 3 rotary switches, and an integrated chromatic tuner:
 
 ### 🎛️ Main Knobs
 * **VOLUME / GAIN (`1.0` to `10.0`):** Controls the input drive feeding the tube engine. Lower settings provide sparkling clean headroom; higher settings deliver thick vintage saturation and singing sustain.
@@ -49,12 +50,24 @@ The plugin features 4 intuitive main knobs and 3 rotary switches:
 * **CHANNEL (Edge / Cranked):**
   * **EDGE:** Dynamic edge-of-breakup tone with ultra-sensitive pick response.
   * **CRANKED:** Rich, saturated vintage overdrive with thick power-tube compression.
-* **MIC / CAB (Speaker Cabinet IR):**
-  * **WARM:** Royer R121 ribbon microphone for a smooth, body-rich vintage response.
-  * **SHARP:** Shure SM57 dynamic microphone with bite and focused upper-mid punch.
-  * **BLEND:** Curated 60/40 studio combination (SM57 + R121) for balanced depth and realism.
+* **MIC / CAB (3-Way Rotary Switch · 1971 Oxford 12" Studio Cabinet):**
+  * **WARM (9 o'clock):** Royer R121 ribbon microphone for a smooth, body-rich vintage response.
+  * **SHARP (6 o'clock):** Shure SM57 dynamic microphone with bite and focused upper-mid punch.
+  * **BLEND (3 o'clock):** Curated 60/40 studio combination (SM57 + R121) for balanced depth and realism.
 * **STANDBY (Play / Mute):** Instantly mutes audio output and drops CPU usage to **0%**.
+* **TUNER BUTTON (Top Right):** Opens the integrated professional Chromatic Tuner overlay.
 * **Dynamic Background:** Drag and drop any image file (`.jpg` or `.png`) directly onto the plugin window to change its skin on the fly.
+
+### 📟 Precision Chromatic Strobe & VU Tuner
+
+<img :src="'/midnightramblertuner.png'" alt="Midnight Rambler Chromatic Tuner" style="max-height: 250px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
+
+* **Illuminated Vintage VU Meter:** Features smooth ballistic needle response indicating pitch deviation from `-50` to `+50 cents`. The center `0` mark illuminates in bright green when in tune.
+* **Dual Pitch Detection Engine:**
+  * **MPM (McLeod Pitch Method):** Superior harmonic rejection, ideal for rich guitar signals and fast note acquisition.
+  * **YIN:** Industry-standard autocorrelation algorithm for ultra-precise fundamental frequency tracking.
+* **Frequency & Note Readout:** Displays detected note name (e.g. `E2`, `A2`, `D3`, `G3`, `B3`, `E4`) and exact frequency in Hertz ($A4 = 440\text{ Hz}$ concert pitch).
+* **Zero-CPU Sleep Architecture:** When the tuner overlay is closed, its internal worker thread sleeps completely, guaranteeing **0% CPU overhead** during playback.
 
 ---
 

@@ -7,12 +7,11 @@ function copyEmail() {
   setTimeout(function() { btnText.value = 'Copiar Correo' }, 2000)
 }
 </script>
-
 # Midnight Rambler: Manual de Usuario
 
-**Stompbox Series #01 · Simulación de Amplificador Neural**
+**Versión 1.0.1 · Stompbox Series #01 · Simulación de Amplificador Neural**
 
-<img :src="'/midnight.png'" alt="Midnight Rambler GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
+<img :src="'/midnightramblerinterface.png'" alt="Midnight Rambler GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
 
 ---
 
@@ -29,13 +28,14 @@ A diferencia de las respuestas a impulsos estáticas o los plugins de modelado d
 * **Dinámica Neuronal Auténtica:** Impulsado por redes neuronales de aprendizaje profundo NAM (*Neural Amp Modeler*), reacciona de manera orgánica al potenciómetro de volumen de la guitarra y a la dinámica de tu mano.
 * **Protección Inteligente y Supresión de Ruido:** Incorpora un Noise Gate adaptativo (-58 dBFS) y un limitador analógico Waveshaper suave pre-NAM (-0.1 dBFS) que garantizan una señal impecable sin zumbidos de fondo.
 * **Suite de Estudio Lista para Mezcla (*Mix-Ready*):** Filtros State-Variable TPT independientes post-amplificador (Bass HP y Tone LP) combinados con convolución a latencia cero de gabinete Oxford 12" de 1971 (cinta Royer R121 y dinámico Shure SM57).
+* **Afinador Cromático Retro Integrado:** Motor de afinación de alta precisión con medidor VU analógico iluminado y doble algoritmo de detección (YIN / MPM).
 * **Cero Latencia y 100% Gratuito:** Sin cuentas, sin llaves de protección y con consumo ultra bajo de CPU. Enchufa tu guitarra, sube el volumen y suena a disco clásico desde el primer acorde.
 
 ---
 
 ## 2. Guía Rápida de Controles
 
-El plugin cuenta con 4 perillas principales intuitivas y 3 selectores rotativos:
+El plugin cuenta con 4 perillas principales intuitivas, 3 selectores rotativos y un afinador cromático integrado:
 
 ### 🎛️ Perillas Principales
 * **VOLUME / GAIN (`1.0` a `10.0`):** Controla la ganancia de entrada. Ajustes bajos ofrecen un sonido limpio cristalino; niveles más altos entregan saturación valvular gruesa y sostenido cremoso.
@@ -47,12 +47,24 @@ El plugin cuenta con 4 perillas principales intuitivas y 3 selectores rotativos:
 * **CHANNEL (Edge / Cranked):**
   * **EDGE:** Tono al borde de la ruptura (*edge-of-breakup*) con respuesta hiperdinámica al toque.
   * **CRANKED:** Overdrive vintage rico y saturado con compresión densa de válvulas de potencia.
-* **MIC / CAB (Respuestas de Gabinete IR):**
-  * **WARM:** Micrófono de cinta Royer R121 para una respuesta suave y con mucho cuerpo.
-  * **SHARP:** Micrófono dinámico Shure SM57 con mordida y enfoque en medios-altos.
-  * **BLEND:** Combinación de estudio 60/40 (SM57 + R121) para profundidad y balance tridimensional.
+* **MIC / CAB (Selector Rotativo de 3 Posiciones · Gabinete Oxford 12" de 1971):**
+  * **WARM (a las 9 en punto):** Micrófono de cinta Royer R121 para una respuesta suave y con mucho cuerpo.
+  * **SHARP (a las 6 en punto):** Micrófono dinámico Shure SM57 con mordida y enfoque en medios-altos.
+  * **BLEND (a las 3 en punto):** Combinación de estudio 60/40 (SM57 + R121) para profundidad y balance tridimensional.
 * **STANDBY (Play / Mute):** Silencia instantáneamente el audio y reduce el uso de CPU al **0%**.
+* **BOTÓN TUNER (Esquina Superior Derecha):** Abre/cierra el afinador cromático retro integrado.
 * **Fondo Personalizado:** Arrastra y suelta cualquier archivo de imagen (`.jpg` o `.png`) directamente sobre la ventana del plugin para cambiar su aspecto al instante.
+
+### 📟 Afinador Cromático de Precisión (VU Meter)
+
+<img :src="'/midnightramblertuner.png'" alt="Afinador Cromático Midnight Rambler" style="max-height: 250px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
+
+* **Medidor VU Iluminado:** Respuesta balística clásica que indica la desviación de `-50` a `+50 cents` (el centro `0` se ilumina en verde al alcanzar la afinación perfecta).
+* **Doble Algoritmo de Detección:**
+  * **MPM (McLeod Pitch Method):** Excelente rechazo armónico para notas complejas de guitarra y rápida captura.
+  * **YIN:** Algoritmo de autocorrelación estándar de la industria para seguimiento ultrapreciso de la frecuencia fundamental.
+* **Frecuencia y Nota:** Muestra la nota detectada (ej., `E2`, `A2`, `D3`, `G3`, `B3`, `E4`) y los Hertz exactos con referencia de concierto estándar ($A4 = 440\text{ Hz}$).
+* **0% Consumo de CPU:** El hilo de cálculo se suspende por completo al cerrar la ventana del afinador, garantizando cero impacto en la reproducción.
 
 ---
 
