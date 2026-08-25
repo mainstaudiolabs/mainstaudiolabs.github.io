@@ -2,75 +2,101 @@
 layout: doc
 sidebar: false
 aside: false
-title: Main St Audio Labs - Virtual Stompboxes and Amp Sims
+title: Main St Audio Labs - Stompboxes & Virtual Amplifiers
 ---
 
 <div class="rock-container">
 <div class="rock-header">
-  <div class="rock-title">Main St Audio Labs</div>
-  <div class="rock-subtitle">Record-Inspired Audio Tools and Signal Processors</div>
+<div class="rock-title">Main St Audio Labs</div>
+<div class="rock-subtitle">Record-Inspired Audio Tools and Signal Processors</div>
 </div>
-<div class="rock-grid">
-  <!-- Card 1: Midnight Rambler (Active) -->
-  <div class="rock-card">
-    <div class="rock-card-image-wrapper">
-      <img src="/midnightramblerinterface.png" alt="Midnight Rambler Plugin GUI" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
-    </div>
-    <div class="rock-card-content">
-      <div class="rock-card-tag">Stompbox Series #01 <span class="badge-free">FREE</span> <span class="badge-format">VST3, AU &amp; Standalone · Windows, macOS &amp; Linux</span></div>
-      <h3 class="rock-card-title">Midnight Rambler</h3>
-      <p class="rock-card-desc">The Fender Tweed Deluxe 5E3 is the holy grail of recording amplifiers in rock history — the raw, dynamic backbone behind Keith Richards (<em>Sticky Fingers</em>, <em>Exile on Main St.</em>), Neil Young's roaring grit, Billy Gibbons, and <em>Hotel California</em>. While there are countless emulations of this classic circuit, <strong>Midnight Rambler</strong> is something you truly need to experience: its immediate touch sensitivity, organic tube bloom, 3-way studio mic selector, and integrated vintage chromatic tuner let you plug in, turn up, and capture that pure vintage record feel without slowing down your session.</p>
-      <div class="rock-card-actions">
-        <a href="/midnight-rambler" class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Read Manual (v1.0.1)</a>
-        <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Get PDF Manual (v1.0.1)</a>
-        <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/latest" target="_blank" class="rock-btn rock-btn-primary" style="flex: 2; min-width: 240px;">Download Plugin (FREE v1.0.1)</a>
-      </div>
-      <!-- Contact & Feedback Section integrated in Card -->
-      <div class="rock-card-contact">
-        <div class="rock-card-contact-title">We want to hear your mixes!</div>
-        <p class="rock-card-contact-desc">Midnight Rambler was calibrated by listening to classic record mixes. Now we want to hear how it sounds in yours. Send us your tracks, feedback, or inquiries.</p>
-        <div class="rock-copy-email-wrapper card-contact">
-          <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
-          <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
-        </div>
-      </div>
-      <div style="text-align: center; margin-top: 0.75rem;">
-        <a href="/support" style="font-size: 0.85rem; opacity: 0.8; text-decoration: underline; color: var(--vp-c-brand-1);">Support the Lab (Ko-fi / Crypto) ☕</a>
-      </div>
-    </div>
-  </div>
 
-  <!-- Card 2: Tattoo You (Coming Soon) -->
-  <div class="rock-card coming-soon">
-    <div class="rock-card-image-wrapper">
-      <img src="/tattoo-you.png" alt="Tattoo You GUI Preview" class="rock-card-image" style="object-fit: contain; padding: 0.5rem; width: 100%; height: 100%;" />
-    </div>
-    <div class="rock-card-content">
-      <div class="rock-card-tag">Amplifier &amp; FX Series #02 <span class="badge-free">COMING SOON</span> <span class="badge-format">Windows · macOS &amp; Linux Coming Soon</span></div>
-      <h3 class="rock-card-title">Tattoo You</h3>
-      <p class="rock-card-desc">The definitive 1978–1981 vintage 100W tube amplifier simulation and Keith Richards signature vintage dual FX suite. Based on the legendary Mesa/Boogie tube head and 1x12 Electro-Voice EVM-12L speaker, Tattoo You captures that iconic, articulate Stones guitar tone — from chimey, dynamic compressed cleans and the legendary 80's crunch (Start Me Up, Little T&amp;A) to singing, mid-forward classic rock lead sustain. Featuring an adaptive input Noise Gate, -0.1 dBFS analog waveshaper limiter, 3-way channel selector (Clean, Crunch, Lead), authentic 5-Band Graphic Equalizer, Phase '78 optical phaser, and 110ms analog tape slapback echo.</p>
-      <div class="rock-card-actions">
-        <a href="/tattoo-you" class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">Read Manual (v1.0.0)</a>
-        <a href="/history-mesa-stones" class="rock-btn rock-btn-secondary" style="flex: 1; min-width: 170px;">The '78–'81 Story 📖</a>
-        <button class="rock-btn rock-btn-primary" disabled style="flex: 2; min-width: 240px; opacity: 0.65; cursor: not-allowed;">Release Coming Soon (FREE)</button>
-      </div>
-      <!-- Contact & Feedback Section integrated in Card -->
-      <div class="rock-card-contact">
-        <div class="rock-card-contact-title">Early Access &amp; Inquiries</div>
-        <p class="rock-card-contact-desc">Tattoo You is currently in final calibration. Drop us a line with questions or to request beta builds.</p>
-        <div class="rock-copy-email-wrapper card-contact">
-          <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
-          <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
-        </div>
-      </div>
-      <div style="text-align: center; margin-top: 0.75rem;">
-        <a href="/support" style="font-size: 0.85rem; opacity: 0.8; text-decoration: underline; color: var(--vp-c-brand-1);">Support the Lab (Ko-fi / Crypto) ☕</a>
-      </div>
-    </div>
-  </div>
+<div class="rock-grid">
+<!-- Card 1: Midnight Rambler -->
+<div class="rock-card">
+<div class="rock-card-image-wrapper">
+<img src="/midnightramblerinterface.png" alt="Midnight Rambler Plugin GUI" class="rock-card-image" />
+</div>
+<div class="rock-card-content">
+<h3 class="rock-card-title">Midnight Rambler</h3>
+<div class="rock-card-subtitle">5E3 Tweed Tube Amp Simulator</div>
+<div class="rock-card-badges">
+<span class="rock-card-badge">🪟 Win</span>
+<span class="rock-card-badge">🍎 Mac</span>
+<span class="rock-card-badge">🐧 Linux</span>
+<span class="rock-card-badge">VST3 · AU · App</span>
+</div>
+<p class="rock-card-desc">The raw, dynamic tube grit of the classic 5E3 Tweed amplifier behind iconic rock records. Organic touch sensitivity, 3 studio mic positions, and built-in chromatic tuner.</p>
+<div class="rock-card-footer">
+<span class="rock-card-price">FREE</span>
+<a href="/midnight-rambler" class="rock-btn rock-btn-primary" style="padding: 0.45rem 1rem; font-size: 0.86rem;">Manual &amp; Download ➔</a>
 </div>
 </div>
-<!-- redeploy -->
+</div>
+
+<!-- Card 2: Vintage Tuner Stompbox -->
+<div class="rock-card">
+<div class="rock-card-image-wrapper">
+<img src="/TunerPedal.png" alt="Vintage Tuner Stompbox Plugin GUI" class="rock-card-image" />
+</div>
+<div class="rock-card-content">
+<h3 class="rock-card-title">Vintage Tuner Stompbox</h3>
+<div class="rock-card-subtitle">Analog Chromatic Tuner</div>
+<div class="rock-card-badges">
+<span class="rock-card-badge">🪟 Win</span>
+<span class="rock-card-badge">🍎 Mac</span>
+<span class="rock-card-badge">🐧 Linux</span>
+<span class="rock-card-badge">0.0% CPU · VST3</span>
+</div>
+<p class="rock-card-desc">Vintage needle chromatic tuner with dual open-source DSP engine (MPM &amp; YIN). True Zero-CPU architecture when closed to instantiate across every track in your session.</p>
+<div class="rock-card-footer">
+<span class="rock-card-price">FREE</span>
+<a href="/tuner-pedal" class="rock-btn rock-btn-primary" style="padding: 0.45rem 1rem; font-size: 0.86rem;">Manual &amp; Download ➔</a>
+</div>
+</div>
+</div>
+
+<!-- Card 3: Tattoo You -->
+<div class="rock-card coming-soon">
+<div class="rock-card-image-wrapper">
+<img src="/tattoo-you.png" alt="Tattoo You GUI Preview" class="rock-card-image" />
+</div>
+<div class="rock-card-content">
+<h3 class="rock-card-title">Tattoo You</h3>
+<div class="rock-card-subtitle">100W Tube Head &amp; Dual FX '78–'81</div>
+<div class="rock-card-badges">
+<span class="rock-card-badge">🪟 Win</span>
+<span class="rock-card-badge">🍎 Mac (Soon)</span>
+<span class="rock-card-badge">VST3 · Standalone</span>
+</div>
+<p class="rock-card-desc">The articulate 1978–1981 Stones guitar tone: vintage Mesa 100W tube head, 1x12 EVM-12L cab, 5-band graphic EQ, Phase '78 optical phaser, and vintage tape slapback echo.</p>
+<div class="rock-card-footer">
+<span class="rock-card-price" style="color: var(--vp-c-text-3);">SOON</span>
+<a href="/tattoo-you" class="rock-btn rock-btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.86rem;">View Details ➔</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Global Community & Support Section -->
+<div class="rock-home-banner">
+<div style="font-family: 'Special Elite', monospace; font-size: 1.4rem; color: var(--vp-c-brand-1); text-transform: uppercase; margin-bottom: 0.5rem;">
+We want to hear your mixes!
+</div>
+<p style="font-family: 'Courier Prime', monospace; font-size: 1rem; color: var(--vp-c-text-2); max-width: 700px; margin: 0 auto 1.25rem auto;">
+Our plugins were calibrated by listening to classic record mixes. Send us your tracks, comments, or inquiries directly at:
+</p>
+<div class="rock-copy-email-wrapper" style="justify-content: center; margin-bottom: 1.5rem;">
+<span class="rock-email-text">mainstaudiolabs@gmail.com</span>
+<button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
+</div>
+<div style="border-top: 1px dashed var(--vp-c-border); padding-top: 1.25rem; margin-top: 1.25rem;">
+<a href="/support" class="rock-btn rock-btn-secondary" style="display: inline-block; padding: 0.6rem 1.4rem;">
+Support the Lab (Ko-fi / Crypto) ☕
+</a>
+</div>
+</div>
+</div>
 
 <script setup>
 import { ref } from 'vue'

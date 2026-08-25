@@ -1,4 +1,4 @@
-﻿import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "Main St Audio Labs",
@@ -29,6 +29,7 @@ export default defineConfig({
             text: 'Plugins Manuals',
             items: [
               { text: 'Midnight Rambler (5E3 Tweed)', link: '/midnight-rambler' },
+              { text: 'Vintage Tuner Stompbox (Tuner)', link: '/tuner-pedal' },
               { text: 'Tattoo You (1978–1981 Tube & FX)', link: '/tattoo-you' }
             ]
           },
@@ -56,6 +57,7 @@ export default defineConfig({
             text: 'Manuales de Plugins',
             items: [
               { text: 'Midnight Rambler (5E3 Tweed)', link: '/es/midnight-rambler' },
+              { text: 'Vintage Tuner Stompbox (Afinador)', link: '/es/tuner-pedal' },
               { text: 'Tattoo You (Amplis & FX 1978–1981)', link: '/es/tattoo-you' }
             ]
           },

@@ -87,35 +87,66 @@ h1, h2, h3, h4, h5, h6 {
 /* Vintage Rock Design - Custom collage components */
 .rock-header {
   text-align: center;
-  margin: 3rem auto 4rem auto;
-  border-bottom: 4px double var(--vp-c-border);
-  padding-bottom: 2rem;
+  margin: 1.25rem auto 1.75rem auto;
+  border-bottom: 3px double var(--vp-c-border);
+  padding-bottom: 1rem;
   max-width: 800px;
 }
 
 .rock-title {
   font-family: 'Lobster', cursive !important;
-  font-size: 4.5rem !important;
+  font-size: 3.2rem !important;
   line-height: 1.1;
   color: var(--rock-red);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .rock-subtitle {
   font-family: 'Special Elite', monospace !important;
-  font-size: 1.1rem !important;
+  font-size: 0.95rem !important;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   color: var(--vp-c-text-2);
-  line-height: 1.4;
+  line-height: 1.3;
+}
+
+/* Enable full-width responsive layout for catalog storefront */
+.VPDoc:not(.has-sidebar) .container {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 1rem !important;
+}
+
+.VPDoc:not(.has-sidebar) .content {
+  max-width: 1360px !important;
+  width: 100% !important;
+  padding: 0 1rem 2.5rem 1rem !important;
+  margin: 0 auto !important;
+}
+
+.VPDoc:not(.has-sidebar) .content-container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.VPDoc:not(.has-sidebar) .vp-doc {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.rock-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .rock-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  max-width: 1040px;
-  margin: 0 auto 4rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 2.5rem auto;
 }
 
 .rock-section-heading {
@@ -131,35 +162,35 @@ h1, h2, h3, h4, h5, h6 {
 .rock-card {
   background-color: var(--vp-c-bg-soft);
   border: 3px solid var(--vp-c-text-1);
-  box-shadow: 8px 8px 0px var(--vp-c-text-1);
+  box-shadow: 5px 5px 0px var(--vp-c-text-1);
   border-radius: 0px; /* Gritty, sharp borders */
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: all 0.2s ease;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
   position: relative;
+  height: 100%;
 }
 
 .dark .rock-card {
   border: 3px solid var(--vp-c-border);
-  box-shadow: 8px 8px 0px var(--vp-c-border);
+  box-shadow: 5px 5px 0px var(--vp-c-border);
 }
 
 .rock-card.coming-soon {
-  opacity: 0.65;
-  filter: grayscale(80%);
+  opacity: 0.75;
 }
 
 .rock-card.coming-soon::before {
   content: "COMING SOON";
   position: absolute;
-  top: 25px;
-  right: -35px;
+  top: 20px;
+  right: -38px;
   background-color: var(--vp-c-brand-1);
   color: white;
   font-family: 'Special Elite', monospace;
-  font-size: 0.75rem;
-  padding: 0.25rem 2.5rem;
+  font-size: 0.65rem;
+  padding: 0.2rem 2.5rem;
   transform: rotate(45deg);
   z-index: 10;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
@@ -167,28 +198,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rock-card:hover {
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 8px 8px 0px var(--vp-c-brand-1);
-}
-
-.rock-card.coming-soon:hover {
-  border-color: var(--vp-c-text-1);
-  box-shadow: 8px 8px 0px var(--vp-c-text-1);
-}
-
-.dark .rock-card.coming-soon:hover {
-  border-color: var(--vp-c-border);
-  box-shadow: 8px 8px 0px var(--vp-c-border);
+  border-color: var(--vp-c-brand-1) !important;
+  box-shadow: 5px 5px 0px var(--vp-c-brand-1) !important;
 }
 
 .rock-card-image-wrapper {
-  background-color: #1a1a1a;
-  padding: 1rem;
+  background-color: #151515;
+  height: 145px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 3px solid var(--vp-c-text-1);
   width: 100%;
+  overflow: hidden;
+  padding: 0.5rem;
 }
 
 .dark .rock-card-image-wrapper {
@@ -196,114 +219,98 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rock-card-image {
-  max-height: 220px;
-  width: 100%;
+  max-height: 130px;
+  max-width: 95%;
   object-fit: contain;
-  filter: grayscale(10%) sepia(20%);
-  transition: filter 0.3s ease;
 }
 
-.rock-card:hover .rock-card-image {
-  filter: none;
-}
-
+.vp-doc .rock-card-content,
 .rock-card-content {
-  padding: 1.5rem 2rem;
+  padding: 0.5rem 0.9rem 0.85rem 0.9rem !important;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 100%;
 }
 
-@media (min-width: 768px) {
-  .rock-card {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .rock-card-image-wrapper {
-    width: 100%;
-    border-bottom: 3px solid var(--vp-c-text-1) !important;
-    border-right: none !important;
-    padding: 1.25rem;
-  }
-
-  .dark .rock-card-image-wrapper {
-    border-bottom: 3px solid var(--vp-c-border) !important;
-    border-right: none !important;
-  }
-
-  .rock-card-image {
-    max-height: 240px;
-  }
-
-  .rock-card-content {
-    width: 100%;
-    padding: 1.75rem 2.25rem;
-  }
-}
-
-.rock-card-tag {
-  font-family: 'Special Elite', monospace;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: var(--vp-c-brand-1);
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.badge-free {
-  background-color: var(--vp-c-brand-1);
-  color: #ffffff !important;
-  font-family: 'Special Elite', monospace;
-  font-size: 0.7rem;
-  padding: 0.1rem 0.4rem;
-  margin-left: 0.5rem;
-  border: 1px solid var(--vp-c-text-1);
-  display: inline-block;
-  vertical-align: middle;
-  letter-spacing: 1px;
-  font-weight: bold;
-  transform: translateY(-1px);
-}
-
-.dark .badge-free {
-  border: 1px solid var(--vp-c-border);
-}
-
-.badge-format {
-  border: none;
-  background: none;
-  color: #000000 !important;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-size: 0.8rem;
-  padding: 0;
-  margin-left: 0.75rem;
-  display: inline-block;
-  vertical-align: middle;
-  letter-spacing: 0.5px;
-  font-weight: 800; /* Extra bold for clear weight */
-}
-
-.dark .badge-format {
-  border: none;
-  color: var(--vp-c-text-1) !important;
-}
-
+.vp-doc h3.rock-card-title,
 .rock-card-title {
-  font-family: 'Special Elite', Georgia, serif;
-  font-size: 2rem;
+  font-family: 'Special Elite', Georgia, serif !important;
+  font-size: 1.3rem !important;
+  color: var(--vp-c-text-1) !important;
+  margin: 0 0 0.15rem 0 !important;
+  padding: 0 !important;
+  line-height: 1.15 !important;
+  border: none !important;
+}
+
+.rock-card-subtitle {
+  font-family: 'Special Elite', monospace !important;
+  font-size: 0.76rem !important;
+  color: var(--vp-c-text-3) !important;
+  margin: 0 0 0.45rem 0 !important;
+  padding: 0 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rock-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.rock-card-badge {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  background-color: var(--vp-c-bg-mute);
+  border: 1px solid var(--vp-c-border);
   color: var(--vp-c-text-1);
-  margin: 0 0 1rem 0;
-  line-height: 1.2;
+  border-radius: 2px;
 }
 
 .rock-card-desc {
   font-family: 'Courier Prime', Courier, monospace;
-  font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: 0.84rem;
+  line-height: 1.4;
   color: var(--vp-c-text-2);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.85rem;
+  flex-grow: 1;
+}
+
+.rock-card-footer {
+  margin-top: auto;
+  border-top: 2px dashed var(--vp-c-border);
+  padding-top: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.rock-card-price {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--vp-c-brand-1);
+}
+
+.rock-home-banner {
+  background-color: var(--vp-c-bg-soft);
+  border: 3px solid var(--vp-c-text-1);
+  box-shadow: 5px 5px 0px var(--vp-c-text-1);
+  padding: 1.5rem 1.75rem;
+  margin: 2rem auto 1.5rem auto;
+  max-width: 960px;
+  text-align: center;
+}
+
+.dark .rock-home-banner {
+  border-color: var(--vp-c-border);
+  box-shadow: 6px 6px 0px var(--vp-c-border);
 }
 
 .rock-card-specs {
