@@ -2,6 +2,7 @@
 layout: doc
 sidebar: false
 aside: false
+pageClass: rock-home-page
 title: Main St Audio Labs - Stompboxes y Amplificadores Virtuales
 ---
 
