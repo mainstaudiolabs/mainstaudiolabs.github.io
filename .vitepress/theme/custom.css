@@ -64,52 +64,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--vp-c-text-1);
 }
 
-/* Exile on Main St vintage collage background with soft film (ONLY on Home Page) */
-body {
-  background-color: var(--vp-c-bg) !important;
-}
-
-.rock-home-page::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('/A0647-ROLLING-STONES-Exile-on-Main-Street-8980.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  opacity: 0.08; /* Extra soft, ghosted background film */
-  pointer-events: none;
-  z-index: 0;
-  filter: contrast(1.0) brightness(1.02) sepia(0.15);
-}
-
-.dark .rock-home-page::before {
-  opacity: 0.04;
-  filter: contrast(1.1) invert(0.05);
-}
-
-.rock-home-page .VPApp, 
-.rock-home-page .VPContent, 
-.rock-home-page .VPDoc, 
-.rock-home-page .VPContent.is-home {
-  background-color: transparent !important;
-  position: relative;
-  z-index: 1;
-}
-
+/* Customized layout elements */
 .VPNavBar {
-  background-color: rgba(236, 192, 74, 0.94) !important;
-  backdrop-filter: blur(8px);
+  background-color: var(--vp-c-bg) !important;
   border-bottom: 2px solid var(--vp-c-border) !important;
-  position: sticky;
-  z-index: 20;
-}
-
-.dark .VPNavBar {
-  background-color: rgba(21, 21, 21, 0.94) !important;
 }
 
 .VPFooter {
