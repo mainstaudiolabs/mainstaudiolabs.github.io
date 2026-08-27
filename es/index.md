@@ -63,13 +63,13 @@ title: Main St Audio Labs - Stompboxes y Amplificadores Virtuales
 </div>
 <div class="rock-card-content">
 <h3 class="rock-card-title">Tattoo You</h3>
-<div class="rock-card-subtitle">Cabezal Valvular 100W &amp; Dual FX '78–'81</div>
+<div class="rock-card-subtitle">Head &amp; Combo + Dual FX '78–'81</div>
 <div class="rock-card-badges">
 <span class="rock-card-badge">🪟 Win</span>
 <span class="rock-card-badge">🍎 Mac (Pronto)</span>
 <span class="rock-card-badge">VST3 · Standalone</span>
 </div>
-<p class="rock-card-desc">El sonido articulado de los Stones de 1978–1981: cabezal Mesa vintage, caja 1x12 EVM-12L, ecualizador gráfico de 5 bandas, phaser óptico Phase '78 y slapback echo.</p>
+<p class="rock-card-desc">El tono articulado de los Stones 1978–1981: etapas de potencia 100W Head y 60W Combo 6L6, 3 canales, EQ gráfico de 5 bandas, Phase '78 y Delay, módulo "MICK" con 7 micrófonos y afinador cromático flotante.</p>
 <div class="rock-card-footer">
 <span class="rock-card-price" style="color: var(--vp-c-text-3);">PRONTO</span>
 <a href="/es/tattoo-you" class="rock-btn rock-btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.86rem;">Ver Detalles ➔</a>

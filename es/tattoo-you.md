@@ -12,7 +12,7 @@ function copyEmail() {
 
 **Versión 1.0.0 · Simulación de Amplificador Virtual & Suite de FX Vintage**
 
-<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="max-height: 300px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
+<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="max-height: 320px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
 
 > **Creado por Fans de los Stones, para Guitarristas:**  
 > **Tattoo You** nació de estudiar minuciosamente cada detalle, cinta de sesión y pista en vivo del sonido de guitarra de los Rolling Stones. Creado por fanáticos incondicionales de los Stones y guitarristas experimentados, está diseñado para que simplemente conectes tu guitarra, subas el volumen y te sumerjas de inmediato en el legendario tono de la era 1978–1981, con toda la sensibilidad al tacto, potencia y arrogancia de las grabaciones originales.
@@ -21,7 +21,7 @@ function copyEmail() {
 
 ## 1. Filosofía de Diseño: La Era Dorada de Bulbos & FX (1978–1981)
 
-**Tattoo You** captura el sonido definitivo de guitarra de estudio y escenario de finales de los 70 y principios de los 80 de Keith Richards y los Rolling Stones. Esta era marcó una transición sonora histórica: el paso de la saturación suelta y cruda de los viejos Tweed al diseño de alta ganancia en cascada y gran margen dinámico (headroom) de los **cabezales de bulbos Mesa/Boogie 100W 6L6** combinados con **altavoces 1x12 Electro-Voice EVM-12L** y modulación analógica frontal.
+**Tattoo You** captura el sonido definitivo de guitarra de estudio y escenario de finales de los 70 y principios de los 80 de Keith Richards y los Rolling Stones. Esta era marcó una transición sonora histórica: el paso de la saturación suelta y cruda de los viejos Tweed al diseño de alta ganancia en cascada y gran margen dinámico (headroom) de los **circuitos de bulbos 6L6** combinados con **altavoces 1x12 Electro-Voice EVM-12L** y modulación analógica frontal.
 
 ### La Línea de Tiempo Histórica: 1978–1981
 
@@ -38,9 +38,22 @@ function copyEmail() {
 
 ---
 
-## 2. Arquitectura Neuronal de 3 Canales
+## 2. Arquitectura de Etapa de Potencia Dual: HEAD vs COMBO
 
-**Tattoo You** cuenta con un selector de canales de 3 posiciones que cubre todo el espectro tonal del clásico circuito de bulbos 100W 6L6:
+**Tattoo You** incorpora una llave selectora de topología de etapa de potencia en el panel inferior, recreando con fidelidad física los dos formatos de amplificador utilizados en vivo y en estudio:
+
+| Modo de Potencia | Topología del Circuito | Carácter Tonal & Dinámica | Aplicaciones Ideales |
+| :--- | :--- | :--- | :--- |
+| **`HEAD`** | **Etapa de Potencia 100W 6L6 (Cuarteto 6L6)** | Margen dinámico (headroom) colosal, graves ultra ajustados y percusivos, respuesta de transitorios inmediata y ataque afilado sin compresión prematura en la etapa de salida. | Riffs demoledores de estadio (*"Start Me Up"*, *"Little T&A"*, *"Hang Fire"*), acordes rítmicos pesados y guitarras de alto impacto. |
+| **`COMBO`** | **Etapa de Potencia 60W 6L6 (Pareja 6L6)** | "Sag" y compresión orgánica de la fuente de poder, armónicos medios dulces y florecientes, y una ruptura más esponjosa y reactiva al ataque de la púa. | Limpios con alma (*"Beast of Burden"*, *"Tops"*), solos bluseros cantantes, funk rítmico (*"Dance Part 1"*) y temas de estudio íntimos (*"Waiting on a Friend"*). |
+
+* **Control Interactivo:** Puedes alternar entre `HEAD` y `COMBO` usando la palanca física o simplemente haciendo clic directo sobre el texto `HEAD` / `COMBO` en el panel.
+
+---
+
+## 3. Arquitectura Neuronal de 3 Canales
+
+El selector giratorio de 3 posiciones cubre todo el espectro de ganancia del clásico circuito valvular 6L6:
 
 | Modo de Canal | Carácter del Tono | Aplicaciones Ideales |
 | :--- | :--- | :--- |
@@ -50,7 +63,7 @@ function copyEmail() {
 
 ---
 
-## 3. Flujo de Señal y Guía Completa de Controles
+## 4. Flujo de Señal y Guía Completa de Controles
 
 ```text
 [ ENTRADA GUITARRA ]
@@ -68,10 +81,13 @@ function copyEmail() {
  [ LIMITADOR WAVESHAPER (-0.1 dBFS) ]
        │
        ▼
- [ PREAMP NEURONAL 100W 6L6 (Clean / Crunch / Lead) ]
+ [ PREAMP NEURONAL 6L6 (Clean / Crunch / Lead) ]
        │
        ▼
- [ EQ GRÁFICO 5 BANDAS ]  ───►  [ SIMULACIÓN GABINETE EVM-12L ]
+ [ ETAPA DE POTENCIA (Head 100W / Combo 60W) ]
+       │
+       ▼
+ [ EQ GRÁFICO 5 BANDAS ]  ───►  [ MÓDULO "MICK" EVM-12L ]
        │
        ▼
  [ MASTER OUTPUT ]  ───►  [ SALIDA ESTÉREO ]
@@ -87,13 +103,14 @@ function copyEmail() {
 ### 2. Controles Principales del Amplificador
 
 * **`GAIN` (Volumen / Drive):** Establece el nivel de señal de entrada hacia el amplificador (`1.0` = -9 dB, `7.0` = 0 dB Ganancia Unitaria, `10.0` = +4.5 dB de aumento).
-* **`MASTER`:** Volumen de salida analógica limpia (`1.0` = -36 dB volumen de habitación, `7.0` = 0 dB Ganancia Unitaria, `10.0` = +18 dB de aumento).
+* **`VOLUME` (Master):** Volumen de salida analógica limpia (`1.0` = -36 dB volumen de habitación, `7.0` = 0 dB Ganancia Unitaria, `10.0` = +18 dB de aumento).
+* **`SWITCH HEAD / COMBO`:** Alterna entre la etapa de potencia 100W Head (Cuarteto 6L6) y 60W Combo (Doble 6L6).
 * **`CHANNEL SELECTOR`:** Selector giratorio de 3 posiciones para alternar entre `CLEAN`, `CRUNCH` y `LEAD`.
 * **`STANDBY`:** Interruptor de silencio rápido para pausas o cambios de instrumento.
 
 ---
 
-### 2. Ecualizador Gráfico de 5 Bandas
+### 3. Ecualizador Gráfico de 5 Bandas
 
 Una recreación auténtica del clásico ecualizador activo de deslizadores Mesa con un interruptor **`EQ IN`** independiente y LED de estado:
 
@@ -105,7 +122,7 @@ Una recreación auténtica del clásico ecualizador activo de deslizadores Mesa 
 
 ---
 
-### 3. Suite Dual de FX Vintage Stones '78
+### 4. Suite Dual de FX Vintage Stones '78
 
 Integrado directamente antes de la etapa del preamplificador, replicando el flujo de señal exacto de la pedalera utilizado en discos clásicos:
 
@@ -124,9 +141,9 @@ Integrado directamente antes de la etapa del preamplificador, replicando el fluj
 
 ---
 
-### 4. Simulación de Gabinete de Estudio 1x12 EVM-12L
+### 5. Módulo "MICK" (Gabinete 1x12 EVM-12L & Selector con Flechas)
 
-El gabinete con puerto 1x12 cargado con un auténtico altavoz Electro-Voice EVM-12L de 200W ofrece un manejo de potencia inmenso, articulación de rango medio incolora y respuesta de graves ajustada. El selector **`CABINET`** ofrece 6 ubicaciones de micrófonos de estudio coherentes de fase más una opción de bypass:
+La sección **`MICK`** (un homenaje deliberado a Mick Jagger y al microfoneo de estudio) aloja el gabinete con puerto 1x12 cargado con el legendario altavoz Electro-Voice EVM-12L de 200W. Equipado con flechas verdes de navegación suave (`<` y `>`) y clic directo en el texto, permite recorrer 7 posiciones de microfoneo coherentes de fase:
 
 1. **`SM57 SweetSpot`:** Shure SM57 en el borde del cono (cap-edge) — ataque equilibrado, medios ricos y pegada sólida.
 2. **`SM57 Warm`:** Shure SM57 en el cono exterior — graves profundos, agudos suaves y texturas cálidas.
@@ -138,48 +155,69 @@ El gabinete con puerto 1x12 cargado con un auténtico altavoz Electro-Voice EVM-
 
 ---
 
-## 4. Presets Recomendados y Guías de Calibración
+## 5. Afinador de Estudio Flotante Integrado
 
-### Preset 1: "Start Me Up" / "Tattoo You Crunch" (Riff Power)
-* **Canal:** `CRUNCH`
-* **Gain:** `7.5` | **Master:** `7.5`
-* **EQ Gráfico 5-Bandas:** `80Hz: +1.5dB` | `240Hz: -3.0dB` | `750Hz: +2.5dB` | `2.2kHz: +4.0dB` | `6.6kHz: +2.0dB`
-* **Phase '78:** `OFF`
-* **Slapback Delay:** `OFF` (o `ON` con Mix @ `12%` para una sutil profundidad de sala de estudio)
-* **Gabinete:** `SM57 Warm` (o `SM57 SweetSpot`)
+<img :src="'/tattoo-you-tuner.png'" alt="Afinador de Estudio Integrado Tattoo You" style="max-height: 380px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px;" />
 
-### Preset 2: "Beast of Burden" / "Shattered" (El Limpio con Phase Líquido)
-* **Canal:** `CLEAN`
-* **Gain:** `7.0` | **Master:** `7.0`
-* **EQ Gráfico 5-Bandas:** `80Hz: 0dB` | `240Hz: -2.0dB` | `750Hz: +2.0dB` | `2.2kHz: +3.0dB` | `6.6kHz: +1.5dB`
-* **Phase '78:** `ON` | Speed: `0.80 Hz` | Intensity: `60%`
-* **Slapback Delay:** `ON` | Time: `110 ms` | Repeats: `20%` | Mix: `25%`
-* **Gabinete:** `SM57 SweetSpot` (o `U87 Studio`)
+Accesible mediante el botón compacto **`TUNER`** en la esquina inferior derecha, Tattoo You incluye un afinador cromático de rack de estudio en ventana modal flotante:
 
-### Preset 3: "Emotional Rescue" / "Dance Part 1" (Funk-Rock & Groove Ajustado)
-* **Canal:** `CLEAN`
-* **Gain:** `6.5` | **Master:** `8.0`
-* **EQ Gráfico 5-Bandas:** `80Hz: -1.0dB` | `240Hz: -4.0dB` | `750Hz: +1.0dB` | `2.2kHz: +3.5dB` | `6.6kHz: +3.0dB`
-* **Phase '78:** `ON` | Speed: `1.20 Hz` | Intensity: `40%`
-* **Slapback Delay:** `OFF`
-* **Gabinete:** `SM57 Direct`
-
-### Preset 4: "Slave" / "Neighbours" (Líneas y Solos de Bulbo Cantantes)
-* **Canal:** `LEAD`
-* **Gain:** `8.0` | **Master:** `7.0`
-* **EQ Gráfico 5-Bandas:** `80Hz: +2.0dB` | `240Hz: -1.5dB` | `750Hz: +3.5dB` | `2.2kHz: +3.0dB` | `6.6kHz: +2.0dB`
-* **Slapback Delay:** `ON` | Time: `140 ms` | Repeats: `30%` | Mix: `25%`
-* **Gabinete:** `SM57 Direct` (o `U87 Studio`)
+* **Vúmetro Analógico Vintage de Alta Precisión:** Aguja analógica con iluminación cálida, rango de barrido de ±50 cents y zona central verde in-tune (±3 cents).
+* **Pantalla Digital de Gran Contraste:** Lectura clara de la nota con octava musical, filtro de estabilidad de tono, frecuencia exacta detectada en Hz y desviación en centésimas.
+* **Algoritmo Dual (`MPM` / `YIN` Switch):**
+  * **`MPM` (McLeod Pitch Method):** Detección ultra rápida ideal para afinación ágil en vivo y escenario.
+  * **`YIN`:** Algoritmo de autocorrelación de máxima precisión para graves profundos y calibración fina de entonación en estudio.
+* **Interruptor `MUTE`:** Silencia la salida de audio para afinar de forma silenciosa en vivo.
+* **Calibración `REF A4`:** Ajustable de 432 Hz a 448 Hz (doble clic para volver a 440 Hz estándar).
+* **Consumo Real 0.0% CPU & Cierre con un Clic:** Se cierra con el botón `CLOSE TUNER` o haciendo clic en cualquier parte oscura de la ventana principal de fondo, desactivando automáticamente todo el procesamiento DSP.
 
 ---
 
-## 5. Especificaciones Técnicas y Soporte de Plataformas
+## 6. Presets Recomendados y Guías de Calibración
+
+### Preset 1: "Start Me Up" / "Tattoo You Crunch" (Riff Power)
+* **Etapa Potencia:** `HEAD` (100W)
+* **Canal:** `CRUNCH`
+* **Gain:** `7.5` | **Volume:** `7.5`
+* **EQ Gráfico 5-Bandas:** `80Hz: +1.5dB` | `240Hz: -3.0dB` | `750Hz: +2.5dB` | `2.2kHz: +4.0dB` | `6.6kHz: +2.0dB`
+* **Phase '78:** `OFF`
+* **Slapback Delay:** `OFF` (o `ON` con Mix @ `12%` para una sutil profundidad de sala de estudio)
+* **MICK:** `SM57 Warm` (o `SM57 SweetSpot`)
+
+### Preset 2: "Beast of Burden" / "Shattered" (El Limpio con Phase Líquido)
+* **Etapa Potencia:** `COMBO` (60W)
+* **Canal:** `CLEAN`
+* **Gain:** `7.0` | **Volume:** `7.0`
+* **EQ Gráfico 5-Bandas:** `80Hz: 0dB` | `240Hz: -2.0dB` | `750Hz: +2.0dB` | `2.2kHz: +3.0dB` | `6.6kHz: +1.5dB`
+* **Phase '78:** `ON` | Speed: `0.80 Hz` | Intensity: `60%`
+* **Slapback Delay:** `ON` | Time: `110 ms` | Repeats: `20%` | Mix: `25%`
+* **MICK:** `SM57 SweetSpot` (o `U87 Studio`)
+
+### Preset 3: "Emotional Rescue" / "Dance Part 1" (Funk-Rock & Groove Ajustado)
+* **Etapa Potencia:** `COMBO` (60W)
+* **Canal:** `CLEAN`
+* **Gain:** `6.5` | **Volume:** `8.0`
+* **EQ Gráfico 5-Bandas:** `80Hz: -1.0dB` | `240Hz: -4.0dB` | `750Hz: +1.0dB` | `2.2kHz: +3.5dB` | `6.6kHz: +3.0dB`
+* **Phase '78:** `ON` | Speed: `1.20 Hz` | Intensity: `40%`
+* **Slapback Delay:** `OFF`
+* **MICK:** `SM57 Direct`
+
+### Preset 4: "Slave" / "Neighbours" (Líneas y Solos de Bulbo Cantantes)
+* **Etapa Potencia:** `HEAD` (100W)
+* **Canal:** `LEAD`
+* **Gain:** `8.0` | **Volume:** `7.0`
+* **EQ Gráfico 5-Bandas:** `80Hz: +2.0dB` | `240Hz: -1.5dB` | `750Hz: +3.5dB` | `2.2kHz: +3.0dB` | `6.6kHz: +2.0dB`
+* **Slapback Delay:** `ON` | Time: `140 ms` | Repeats: `30%` | Mix: `25%`
+* **MICK:** `SM57 Direct` (o `U87 Studio`)
+
+---
+
+## 7. Especificaciones Técnicas y Soporte de Plataformas
 
 * **Formatos de Plugin:** VST3 (64-bit), Aplicación Standalone (.exe).
 * **Sistemas Operativos:**
   * **Windows:** Windows 10 / Windows 11 (x64) - *Disponible Ahora*.
-  * **macOS:** Binario Universal (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone - *Próximamente*.
-  * **Linux:** Ubuntu / Debian / Arch (VST3, CLAP, Standalone) - *Próximamente*.
+  * **macOS:** Binario Universal (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone - *Próximamente* (Compatible desde High Sierra 10.13 hasta macOS Sonoma/Sequoia).
+  * **Linux:** Ubuntu / Debian / Arch (VST3, Standalone) - *Próximamente*.
 * **Motor de Procesamiento:** Arquitectura WaveNet de Modelado Neuronal de Amplificadores (NAM) + Convolución DSP en tiempo real.
 * **Resolución de Audio Interna:** Procesamiento de coma flotante de doble precisión de 64 bits.
 * **Tasas de Muestreo Soportadas:** 44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz, 176.4 kHz, 192 kHz.

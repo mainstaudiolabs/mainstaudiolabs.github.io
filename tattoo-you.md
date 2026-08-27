@@ -12,7 +12,7 @@ function copyEmail() {
 
 **Version 1.0.0 · Virtual Amplifier Simulation & Vintage FX Suite**
 
-<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="max-height: 300px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
+<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="max-height: 320px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
 
 > **Built by Stones Fans, for Guitarists:**  
 > **Tattoo You** was born from studying every nuance, session tape, and live track of the Rolling Stones' guitar sound in obsessive detail. Created by dedicated Stones fans and seasoned guitarists, it is designed so that you can simply plug in your guitar, turn up, and immediately be immersed in the legendary 1978–1981 tone — with all the touch sensitivity, punch, and swagger of the original records.
@@ -21,7 +21,7 @@ function copyEmail() {
 
 ## 1. Design Philosophy: The 1978–1981 Golden Tube & FX Era
 
-**Tattoo You** captures the definitive late '70s and early '80s studio and stage guitar sound of Keith Richards and the Rolling Stones. This era marked a historic sonic transition: moving from raw vintage tweed breakup to the high-headroom, cascaded-gain architecture of **100W 6L6 Mesa/Boogie tube heads** paired with **1x12 Electro-Voice EVM-12L speakers** and front-loaded analog modulation.
+**Tattoo You** captures the definitive late '70s and early '80s studio and stage guitar sound of Keith Richards and the Rolling Stones. This era marked a historic sonic transition: moving from raw vintage tweed breakup to the high-headroom, cascaded-gain architecture of **Mesa/Boogie 6L6 tube circuits** paired with **1x12 Electro-Voice EVM-12L speakers** and front-loaded analog modulation.
 
 ### The Historic Timeline: 1978–1981
 
@@ -38,9 +38,22 @@ function copyEmail() {
 
 ---
 
-## 2. 3-Channel Neural Amplifier Architecture
+## 2. Dual Power Amp Architecture: HEAD vs COMBO
 
-**Tattoo You** features a 3-way channel selector covering the entire tonal spectrum of the vintage 100W 6L6 tube circuit:
+**Tattoo You** features a dedicated power amplifier topology switch on the bottom control panel, capturing the two physical circuit configurations favored on stage and in the studio:
+
+| Power Amp Mode | Circuit Topology | Tonal Character & Dynamics | Ideal Applications |
+| :--- | :--- | :--- | :--- |
+| **`HEAD`** | **100W 6L6 Power Amp (Quad 6L6)** | Massive dynamic headroom, tight and percussive low-end thump, lightning-fast transient response, and aggressive note attack without premature power-stage sag. | Huge stadium rock riffs (*"Start Me Up"*, *"Little T&A"*, *"Hang Fire"*), heavy chord punch, and high-impact rhythm tracking. |
+| **`COMBO`** | **60W 6L6 Power Amp (Dual 6L6)** | Organic power supply sag, natural power-tube compression, blooming midrange harmonics, and a spongier, touch-sensitive breakup when digging in with the pick. | Dynamic soul cleans (*"Beast of Burden"*, *"Tops"*), singing blues leads, funk comps (*"Dance Part 1"*), and intimate studio tracks (*"Waiting on a Friend"*). |
+
+* **Interactive Control:** Toggle between `HEAD` and `COMBO` using the vintage toggle switch or by simply clicking directly on the `HEAD` / `COMBO` text labels.
+
+---
+
+## 3. 3-Channel Neural Amplifier Architecture
+
+The 3-position channel rotary selector covers the complete gain spectrum of the vintage 6L6 tube circuit:
 
 | Channel Mode | Tone Character | Ideal Applications |
 | :--- | :--- | :--- |
@@ -50,7 +63,7 @@ function copyEmail() {
 
 ---
 
-## 3. Signal Flow & Complete Control Guide
+## 4. Signal Flow & Control Guide
 
 ```text
 [ GUITAR INPUT ]
@@ -68,10 +81,13 @@ function copyEmail() {
  [ ANALOG WAVESHAPER / LIMITER (-0.1 dBFS) ]
        │
        ▼
- [ 100W 6L6 NEURAL PREAMP (Clean / Crunch / Lead) ]
+ [ 6L6 NEURAL PREAMP (Clean / Crunch / Lead) ]
        │
        ▼
- [ 5-BAND GRAPHIC EQ ]  ───►  [ EVM-12L CABINET SIMULATION ]
+ [ POWER AMP TOPOLOGY (Head 100W / Combo 60W) ]
+       │
+       ▼
+ [ 5-BAND GRAPHIC EQ ]  ───►  [ "MICK" EVM-12L CABINET MODULE ]
        │
        ▼
  [ MASTER OUTPUT ]  ───►  [ STEREO OUT ]
@@ -87,15 +103,16 @@ function copyEmail() {
 ### 2. Main Amplifier Controls
 
 * **`GAIN` (Volume / Drive):** Sets input signal drive into the amplifier (`1.0` = -9 dB, `7.0` = 0 dB Unity Gain, `10.0` = +4.5 dB boost).
-* **`MASTER`:** Clean analog output volume (`1.0` = -36 dB bedroom volume, `7.0` = 0 dB Unity Gain, `10.0` = +18 dB boost).
+* **`VOLUME` (Master):** Clean analog output volume (`1.0` = -36 dB bedroom volume, `7.0` = 0 dB Unity Gain, `10.0` = +18 dB boost).
+* **`HEAD / COMBO SWITCH`:** Selects between 100W Quad-6L6 Head and 60W Dual-6L6 Combo power section topologies.
 * **`CHANNEL SELECTOR`:** 3-position rotary selector switching between `CLEAN`, `CRUNCH`, and `LEAD`.
 * **`STANDBY`:** Instant mute toggle for guitar changes and silent pauses.
 
 ---
 
-### 2. 5-Band Graphic Equalizer
+### 3. 5-Band Graphic Equalizer
 
-An authentic recreation of the classic Mesa active slider EQ with an independent **`EQ IN`** toggle and status LED:
+An authentic recreation of the classic active slider EQ with an independent **`EQ IN`** toggle and status LED:
 
 * **`80 Hz` (±12 dB):** Deep sub-bass thump and cab resonance.
 * **`240 Hz` (±12 dB):** Low-mid boxiness control. Cutting clears mud.
@@ -105,7 +122,7 @@ An authentic recreation of the classic Mesa active slider EQ with an independent
 
 ---
 
-### 3. Stones '78 Vintage Dual FX Suite
+### 4. Stones '78 Vintage Dual FX Suite
 
 Integrated directly before the preamp stage, replicating the exact pedalboard signal flow used on classic records:
 
@@ -124,9 +141,9 @@ Integrated directly before the preamp stage, replicating the exact pedalboard si
 
 ---
 
-### 4. 1x12 EVM-12L Studio Cabinet Simulation
+### 5. "MICK" Cabinet Module (1x12 EVM-12L & Arrow Selector)
 
-The 1x12 ported cabinet loaded with an authentic Electro-Voice EVM-12L 200W speaker delivers immense power handling, uncolored midrange articulation, and tight bass response. The **`CABINET`** selector offers 6 phase-coherent studio microphone placements plus a bypass option:
+The **`MICK`** section (a deliberate homage to Mick Jagger and studio microphone capture) pairs the 1x12 ported cabinet loaded with an authentic Electro-Voice EVM-12L 200W speaker. Equipped with dual green navigation arrows (`<` and `>`) and direct text click, you can smoothly cycle through 7 phase-coherent microphone placements:
 
 1. **`SM57 SweetSpot`:** Shure SM57 on cap-edge — balanced attack, rich mids and solid punch.
 2. **`SM57 Warm`:** Shure SM57 on outer cone — deep lows, smooth highs and warm textures.
@@ -138,50 +155,69 @@ The 1x12 ported cabinet loaded with an authentic Electro-Voice EVM-12L 200W spea
 
 ---
 
+## 5. Integrated Studio Rack Tuner
 
+<img :src="'/tattoo-you-tuner.png'" alt="Tattoo You Integrated Studio Tuner" style="max-height: 380px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px;" />
 
-## 4. Recommended Track Presets & Dial-In Guides
+Accessible via the compact **`TUNER`** button in the lower right corner, Tattoo You includes a full-featured studio chromatic tuner floating rack overlay:
 
-### Preset 1: "Start Me Up" / "Tattoo You Crunch" (Riff Power)
-* **Channel:** `CRUNCH`
-* **Gain:** `7.5` | **Master:** `7.5`
-* **5-Band Graphic EQ:** `80Hz: +1.5dB` | `240Hz: -3.0dB` | `750Hz: +2.5dB` | `2.2kHz: +4.0dB` | `6.6kHz: +2.0dB`
-* **Phase '78:** `OFF`
-* **Slapback Delay:** `OFF` (or `ON` with Mix @ `12%` for subtle studio room depth)
-* **Cabinet:** `SM57 Warm` (or `SM57 SweetSpot`)
-
-### Preset 2: "Beast of Burden" / "Shattered" (The Signature Liquid Phase Clean)
-* **Channel:** `CLEAN`
-* **Gain:** `7.0` | **Master:** `7.0`
-* **5-Band Graphic EQ:** `80Hz: 0dB` | `240Hz: -2.0dB` | `750Hz: +2.0dB` | `2.2kHz: +3.0dB` | `6.6kHz: +1.5dB`
-* **Phase '78:** `ON` | Speed: `0.80 Hz` | Intensity: `60%`
-* **Slapback Delay:** `ON` | Time: `110 ms` | Repeats: `20%` | Mix: `25%`
-* **Cabinet:** `SM57 SweetSpot` (or `U87 Studio`)
-
-### Preset 3: "Emotional Rescue" / "Dance Part 1" (Funk-Rock & Tight Groove)
-* **Channel:** `CLEAN`
-* **Gain:** `6.5` | **Master:** `8.0`
-* **5-Band Graphic EQ:** `80Hz: -1.0dB` | `240Hz: -4.0dB` | `750Hz: +1.0dB` | `2.2kHz: +3.5dB` | `6.6kHz: +3.0dB`
-* **Phase '78:** `ON` | Speed: `1.20 Hz` | Intensity: `40%`
-* **Slapback Delay:** `OFF`
-* **Cabinet:** `SM57 Direct`
-
-### Preset 4: "Slave" / "Neighbours" (Singing Tube Lead & Solo)
-* **Channel:** `LEAD`
-* **Gain:** `8.0` | **Master:** `7.0`
-* **5-Band Graphic EQ:** `80Hz: +2.0dB` | `240Hz: -1.5dB` | `750Hz: +3.5dB` | `2.2kHz: +3.0dB` | `6.6kHz: +2.0dB`
-* **Slapback Delay:** `ON` | Time: `140 ms` | Repeats: `30%` | Mix: `25%`
-* **Cabinet:** `SM57 Direct` (or `U87 Studio`)
+* **High-Precision Vintage VU Meter:** Dual-illuminated analog meter needle with a ±50 cent sweep range and a bright green center in-tune zone (±3 cents).
+* **Digital Display Center:** High-contrast pitch readout featuring note name with musical octave, pitch stability filtering, exact detected frequency in Hz, and cent deviation.
+* **Dual Detection Algorithms (`MPM` / `YIN` Switch):**
+  * **`MPM` (McLeod Pitch Method):** Ultra-fast tracking ideal for rapid stage tuning and live performance.
+  * **`YIN`:** High-precision autocorrelation algorithm optimized for low registers and studio intonation setups.
+* **`MUTE` Switch:** Silences audio output for silent on-stage tuning.
+* **`REF A4` Calibration:** Adjustable from 432 Hz to 448 Hz (double-click to reset to standard 440 Hz).
+* **True 0.0% CPU Standby & Click-to-Close:** Closes instantly via the `CLOSE TUNER` button or by simply clicking anywhere on the dimmed amplifier backdrop, automatically deactivating all DSP routines.
 
 ---
 
-## 5. Technical Specifications & Platform Support
+## 6. Recommended Track Presets & Dial-In Guides
+
+### Preset 1: "Start Me Up" / "Tattoo You Crunch" (Riff Power)
+* **Power Amp:** `HEAD` (100W)
+* **Channel:** `CRUNCH`
+* **Gain:** `7.5` | **Volume:** `7.5`
+* **5-Band Graphic EQ:** `80Hz: +1.5dB` | `240Hz: -3.0dB` | `750Hz: +2.5dB` | `2.2kHz: +4.0dB` | `6.6kHz: +2.0dB`
+* **Phase '78:** `OFF`
+* **Slapback Delay:** `OFF` (or `ON` with Mix @ `12%` for subtle studio room depth)
+* **MICK:** `SM57 Warm` (or `SM57 SweetSpot`)
+
+### Preset 2: "Beast of Burden" / "Shattered" (The Signature Liquid Phase Clean)
+* **Power Amp:** `COMBO` (60W)
+* **Channel:** `CLEAN`
+* **Gain:** `7.0` | **Volume:** `7.0`
+* **5-Band Graphic EQ:** `80Hz: 0dB` | `240Hz: -2.0dB` | `750Hz: +2.0dB` | `2.2kHz: +3.0dB` | `6.6kHz: +1.5dB`
+* **Phase '78:** `ON` | Speed: `0.80 Hz` | Intensity: `60%`
+* **Slapback Delay:** `ON` | Time: `110 ms` | Repeats: `20%` | Mix: `25%`
+* **MICK:** `SM57 SweetSpot` (or `U87 Studio`)
+
+### Preset 3: "Emotional Rescue" / "Dance Part 1" (Funk-Rock & Tight Groove)
+* **Power Amp:** `COMBO` (60W)
+* **Channel:** `CLEAN`
+* **Gain:** `6.5` | **Volume:** `8.0`
+* **5-Band Graphic EQ:** `80Hz: -1.0dB` | `240Hz: -4.0dB` | `750Hz: +1.0dB` | `2.2kHz: +3.5dB` | `6.6kHz: +3.0dB`
+* **Phase '78:** `ON` | Speed: `1.20 Hz` | Intensity: `40%`
+* **Slapback Delay:** `OFF`
+* **MICK:** `SM57 Direct`
+
+### Preset 4: "Slave" / "Neighbours" (Singing Tube Lead & Solo)
+* **Power Amp:** `HEAD` (100W)
+* **Channel:** `LEAD`
+* **Gain:** `8.0` | **Volume:** `7.0`
+* **5-Band Graphic EQ:** `80Hz: +2.0dB` | `240Hz: -1.5dB` | `750Hz: +3.5dB` | `2.2kHz: +3.0dB` | `6.6kHz: +2.0dB`
+* **Slapback Delay:** `ON` | Time: `140 ms` | Repeats: `30%` | Mix: `25%`
+* **MICK:** `SM57 Direct` (or `U87 Studio`)
+
+---
+
+## 7. Technical Specifications & Platform Support
 
 * **Plugin Formats:** VST3 (64-bit), Standalone Application (.exe).
 * **Operating Systems:**
   * **Windows:** Windows 10 / Windows 11 (x64) — *Available Now*.
-  * **macOS:** Universal Binary (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone — *Coming Soon*.
-  * **Linux:** Ubuntu / Debian / Arch (VST3, CLAP, Standalone) — *Coming Soon*.
+  * **macOS:** Universal Binary (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone — *Coming Soon* (Compatible with High Sierra 10.13 through macOS Sonoma/Sequoia).
+  * **Linux:** Ubuntu / Debian / Arch (VST3, Standalone) — *Coming Soon*.
 * **Processing Engine:** Neural Amp Modeler (NAM) WaveNet Architecture + DSP Real-time Convolution.
 * **Internal Audio Resolution:** 64-bit double precision floating point processing.
 * **Sample Rates Supported:** 44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz, 176.4 kHz, 192 kHz.

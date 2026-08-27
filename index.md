@@ -63,13 +63,13 @@ title: Main St Audio Labs - Stompboxes & Virtual Amplifiers
 </div>
 <div class="rock-card-content">
 <h3 class="rock-card-title">Tattoo You</h3>
-<div class="rock-card-subtitle">100W Tube Head &amp; Dual FX '78–'81</div>
+<div class="rock-card-subtitle">Head &amp; Combo + Dual FX '78–'81</div>
 <div class="rock-card-badges">
 <span class="rock-card-badge">🪟 Win</span>
 <span class="rock-card-badge">🍎 Mac (Soon)</span>
 <span class="rock-card-badge">VST3 · Standalone</span>
 </div>
-<p class="rock-card-desc">The articulate 1978–1981 Stones guitar tone: vintage Mesa 100W tube head, 1x12 EVM-12L cab, 5-band graphic EQ, Phase '78 optical phaser, and vintage tape slapback echo.</p>
+<p class="rock-card-desc">The articulate 1978–1981 Stones tone: 100W Head &amp; 60W Combo 6L6 power topologies, 3 channels, 5-band active graphic EQ, Phase '78 &amp; Tape Slapback, "MICK" EVM-12L cab with 7 studio mics, and integrated floating chromatic tuner.</p>
 <div class="rock-card-footer">
 <span class="rock-card-price" style="color: var(--vp-c-text-3);">SOON</span>
 <a href="/tattoo-you" class="rock-btn rock-btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.86rem;">View Details ➔</a>
