@@ -12,7 +12,7 @@ function copyEmail() {
 
 **Versión 1.0.0 · Simulación de Amplificador Virtual & Suite de FX Vintage**
 
-<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="max-height: 320px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
+<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
 
 > **Creado por Fans de los Stones, para Guitarristas:**  
 > **Tattoo You** nació de estudiar minuciosamente cada detalle, cinta de sesión y pista en vivo del sonido de guitarra de los Rolling Stones. Creado por fanáticos incondicionales de los Stones y guitarristas experimentados, está diseñado para que simplemente conectes tu guitarra, subas el volumen y te sumerjas de inmediato en el legendario tono de la era 1978–1981, con toda la sensibilidad al tacto, potencia y arrogancia de las grabaciones originales.
@@ -157,7 +157,7 @@ La sección **`MICK`** (un homenaje deliberado a Mick Jagger y al microfoneo de 
 
 ## 5. Afinador de Estudio Flotante Integrado
 
-<img :src="'/tattoo-you-tuner.png'" alt="Afinador de Estudio Integrado Tattoo You" style="max-height: 380px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px;" />
+<img :src="'/tattoo-you-tuner.png'" alt="Afinador de Estudio Integrado Tattoo You" style="width: 100%; max-width: 620px; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
 
 Accesible mediante el botón compacto **`TUNER`** en la esquina inferior derecha, Tattoo You incluye un afinador cromático de rack de estudio en ventana modal flotante:
 

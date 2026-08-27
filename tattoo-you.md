@@ -12,7 +12,7 @@ function copyEmail() {
 
 **Version 1.0.0 · Virtual Amplifier Simulation & Vintage FX Suite**
 
-<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="max-height: 320px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
+<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
 
 > **Built by Stones Fans, for Guitarists:**  
 > **Tattoo You** was born from studying every nuance, session tape, and live track of the Rolling Stones' guitar sound in obsessive detail. Created by dedicated Stones fans and seasoned guitarists, it is designed so that you can simply plug in your guitar, turn up, and immediately be immersed in the legendary 1978–1981 tone — with all the touch sensitivity, punch, and swagger of the original records.
@@ -157,7 +157,7 @@ The **`MICK`** section (a deliberate homage to Mick Jagger and studio microphone
 
 ## 5. Integrated Studio Rack Tuner
 
-<img :src="'/tattoo-you-tuner.png'" alt="Tattoo You Integrated Studio Tuner" style="max-height: 380px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px;" />
+<img :src="'/tattoo-you-tuner.png'" alt="Tattoo You Integrated Studio Tuner" style="width: 100%; max-width: 620px; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
 
 Accessible via the compact **`TUNER`** button in the lower right corner, Tattoo You includes a full-featured studio chromatic tuner floating rack overlay:
 
