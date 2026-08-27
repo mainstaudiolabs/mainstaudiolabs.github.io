@@ -66,8 +66,9 @@ title: Main St Audio Labs - Stompboxes y Amplificadores Virtuales
 <div class="rock-card-subtitle">Head &amp; Combo + Dual FX '78–'81</div>
 <div class="rock-card-badges">
 <span class="rock-card-badge">🪟 Win</span>
-<span class="rock-card-badge">🍎 Mac (Pronto)</span>
-<span class="rock-card-badge">VST3 · Standalone</span>
+<span class="rock-card-badge">🍎 Mac</span>
+<span class="rock-card-badge">🐧 Linux</span>
+<span class="rock-card-badge">VST3 · AU · App</span>
 </div>
 <p class="rock-card-desc">El tono articulado de los Stones 1978–1981: etapas de potencia 100W Head y 60W Combo 6L6, 3 canales, EQ gráfico de 5 bandas, Phase '78 y Delay, módulo "MICK" con 7 micrófonos y afinador cromático flotante.</p>
 <div class="rock-card-footer">
