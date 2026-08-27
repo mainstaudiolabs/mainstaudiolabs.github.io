@@ -157,7 +157,7 @@ The **`MICK`** section (a deliberate homage to Mick Jagger and studio microphone
 
 ## 5. Integrated Studio Rack Tuner
 
-<img :src="'/tattoo-you-tuner.png'" alt="Tattoo You Integrated Studio Tuner" style="width: 100%; max-width: 620px; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
+<img :src="'/tattoo-you-tuner.png'" alt="Tattoo You Integrated Studio Tuner" style="max-width: 320px; width: 100%; height: auto; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.30);" />
 
 Accessible via the compact **`TUNER`** button in the lower right corner, Tattoo You includes a full-featured studio chromatic tuner floating rack overlay:
 

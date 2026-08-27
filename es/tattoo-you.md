@@ -157,7 +157,7 @@ La sección **`MICK`** (un homenaje deliberado a Mick Jagger y al microfoneo de 
 
 ## 5. Afinador de Estudio Flotante Integrado
 
-<img :src="'/tattoo-you-tuner.png'" alt="Afinador de Estudio Integrado Tattoo You" style="width: 100%; max-width: 620px; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
+<img :src="'/tattoo-you-tuner.png'" alt="Afinador de Estudio Integrado Tattoo You" style="max-width: 320px; width: 100%; height: auto; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.30);" />
 
 Accesible mediante el botón compacto **`TUNER`** en la esquina inferior derecha, Tattoo You incluye un afinador cromático de rack de estudio en ventana modal flotante:
 
