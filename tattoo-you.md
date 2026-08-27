@@ -34,7 +34,7 @@ function copyEmail() {
 3. **The Masterpiece Riff Power (1981 · *Tattoo You*):**  
    Assembled between Paris and *Atlantic Studios* (NYC), *Tattoo You* represents the zenith of this rig. The unforgettable rhythm crunch on *"Start Me Up"*, the driving punch of *"Little T&A"*, the greasy groove of *"Slave"*, and the roaring aggression of *"Hang Fire"* and *"Neighbours"* stand as benchmark references for rock guitar tone.
 
-👉 [**Read the full story: How the Stones Acquired the Mesa/Boogie Rigs (1978–1981) →**](/history-mesa-stones)
+👉 [**"The Stones Don't Pay for Amps": How the Stones Acquired the Mesa/Boogie Rigs (1978–1981) →**](/history-mesa-stones)
 
 ---
 

@@ -34,7 +34,7 @@ function copyEmail() {
 3. **El Poder de los Riffs Maestros (1981 · *Tattoo You*):**  
    Ensamblado entre París y *Atlantic Studios* (Nueva York), *Tattoo You* representa el cénit de este equipamiento. El inolvidable crujido rítmico en *"Start Me Up"*, la potencia impulsora de *"Little T&A"*, el groove grasiento de *"Slave"* y la agresión rugiente de *"Hang Fire"* y *"Neighbours"* se erigen como referencias fundamentales para el tono de la guitarra rock.
 
-👉 [**Lee la historia completa: Cómo los Stones adquirieron los equipos Mesa/Boogie (1978–1981) →**](/es/history-mesa-stones)
+👉 [**Los Stones no pagan por amplificadores: Cómo los Stones adquirieron los equipos Mesa/Boogie (1978–1981) →**](/es/history-mesa-stones)
 
 ---
 
