@@ -21,7 +21,7 @@ function copyEmail() {
 
 ## 1. Design Philosophy: The 1978–1981 Golden Tube & FX Era
 
-**Tattoo You** captures the definitive late '70s and early '80s studio and stage guitar sound of Keith Richards and the Rolling Stones. This era marked a historic sonic transition: moving from raw vintage tweed breakup to the high-headroom, cascaded-gain architecture of **Mesa/Boogie 6L6 tube circuits** paired with **1x12 Electro-Voice EVM-12L speakers** and front-loaded analog modulation.
+**Tattoo You** captures the definitive late '70s and early '80s studio and stage guitar sound of Keith Richards and the Rolling Stones. This era marked a historic sonic transition: moving from raw vintage Ampeg/Fender breakup to the high-headroom, cascaded-gain architecture of **Mesa/Boogie 6L6 tube circuits** paired with **1x12 Electro-Voice EVM-12L speakers** and front-loaded analog modulation.
 
 ### The Historic Timeline: 1978–1981
 

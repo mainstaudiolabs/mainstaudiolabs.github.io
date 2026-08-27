@@ -21,7 +21,7 @@ function copyEmail() {
 
 ## 1. Filosofía de Diseño: La Era Dorada de Bulbos & FX (1978–1981)
 
-**Tattoo You** captura el sonido definitivo de guitarra de estudio y escenario de finales de los 70 y principios de los 80 de Keith Richards y los Rolling Stones. Esta era marcó una transición sonora histórica: el paso de la saturación suelta y cruda de los viejos Tweed al diseño de alta ganancia en cascada y gran margen dinámico (headroom) de los **circuitos de bulbos 6L6** combinados con **altavoces 1x12 Electro-Voice EVM-12L** y modulación analógica frontal.
+**Tattoo You** captura el sonido definitivo de guitarra de estudio y escenario de finales de los 70 y principios de los 80 de Keith Richards y los Rolling Stones. Esta era marcó una transición sonora histórica: el paso de la saturación suelta y cruda de los viejos Ampeg/Fender al diseño de alta ganancia en cascada y gran margen dinámico (headroom) de los **circuitos de bulbos 6L6** combinados con **altavoces 1x12 Electro-Voice EVM-12L** y modulación analógica frontal.
 
 ### La Línea de Tiempo Histórica: 1978–1981
 
