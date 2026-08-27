@@ -46,7 +46,7 @@ title: Main St Audio Labs - Stompboxes & Virtual Amplifiers
 <span class="rock-card-badge">🪟 Win</span>
 <span class="rock-card-badge">🍎 Mac</span>
 <span class="rock-card-badge">🐧 Linux</span>
-<span class="rock-card-badge">0.0% CPU · VST3</span>
+<span class="rock-card-badge">VST3 · AU · App</span>
 </div>
 <p class="rock-card-desc">Vintage needle chromatic tuner with dual open-source DSP engine (MPM &amp; YIN). True Zero-CPU architecture when closed to instantiate across every track in your session.</p>
 <div class="rock-card-footer">

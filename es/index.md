@@ -46,7 +46,7 @@ title: Main St Audio Labs - Stompboxes y Amplificadores Virtuales
 <span class="rock-card-badge">🪟 Win</span>
 <span class="rock-card-badge">🍎 Mac</span>
 <span class="rock-card-badge">🐧 Linux</span>
-<span class="rock-card-badge">0.0% CPU · VST3</span>
+<span class="rock-card-badge">VST3 · AU · App</span>
 </div>
 <p class="rock-card-desc">Afinador de aguja vintage con doble motor DSP de código abierto (MPM y YIN). Consumo 0.0% de CPU con ventana cerrada para insertar en todas las pistas de tu DAW.</p>
 <div class="rock-card-footer">
