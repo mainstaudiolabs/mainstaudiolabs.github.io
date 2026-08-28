@@ -57,6 +57,8 @@ Main St Audio Labs の研究開発は、情熱的なミュージシャンやト�
 
 * **Claudio Crespino** &mdash; 数々のオーディオプロジェクトにおける貴重なテスト、フィードバック、継続的なサポートに心から感謝します。
 
+<NewsletterSubscribe />
+
 ---
 
 ## お問い合わせ＆フィードバック

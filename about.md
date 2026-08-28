@@ -57,6 +57,8 @@ Main St Audio Labs is supported by passionate musicians, tone chasers, and frien
 
 * **Claudio Crespino** &mdash; Special thanks for his invaluable collaboration, testing, and continuous support across our audio projects.
 
+<NewsletterSubscribe />
+
 ---
 
 ## Contact &amp; Feedback

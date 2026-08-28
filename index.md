@@ -79,6 +79,8 @@ title: Main St Audio Labs - Stompboxes & Virtual Amplifiers
 </div>
 </div>
 
+<NewsletterSubscribe />
+
 <!-- Global Community & Support Section -->
 <div class="rock-home-banner">
 <div style="font-family: 'Special Elite', monospace; font-size: 1.4rem; color: var(--vp-c-brand-1); text-transform: uppercase; margin-bottom: 0.5rem;">
