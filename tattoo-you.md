@@ -12,8 +12,8 @@ function copyEmail() {
 
 <div id="manual"></div>
 
-> **Built by Stones Fans, for Guitarists:**  
-> **Tattoo You** was born from studying every nuance, session tape, and live track of the Rolling Stones' guitar sound in obsessive detail. Created by dedicated Stones fans and seasoned guitarists, it is designed so that you can simply plug in your guitar, turn up, and immediately be immersed in the legendary 1978–1981 tone — with all the touch sensitivity, punch, and swagger of the original records.
+> **The Definitive Tube Tone: The Mark I ('78) Circuit & The Stones Sound**  
+> **Tattoo You** was born from obsessive study of the legendary **Mark I ('78)** amplifier and the rig that defined the studio and stage sound of the **Rolling Stones** between 1978 and 1981 (*Some Girls*, *Emotional Rescue*, and *Tattoo You*). Crafted by and for guitarists, it captures the dynamic touch response, cascaded 6L6 tube saturation, and punch of the EVM-12L speaker: simply plug in your guitar, turn up, and immediately dive into the authentic power, bite, and swagger of classic rock.
 
 ---
 
@@ -133,28 +133,39 @@ Integrated directly before the preamp stage, replicating the exact pedalboard si
 * **`INTENS` (`0%` to `100%`):** Controls sweep depth and vocal resonance.
 
 #### **Slapback Delay (Analog Tape Echo)**
-*Recreates the warm, single-repeat analog tape slapback echo set in the classic 110ms sweet spot.*
+*Recreates the warm, single-repeat analog tape slapback echo.*
 * **`DELAY Toggle & Red LED`:** Activates or bypasses the tape echo.
-* **`TIME` (`20 ms` to `300 ms`):** Sets delay time with dynamic millisecond readout. Default: `110 ms` (Keith's classic slapback sweet spot).
+* **`TIME` (`20 ms` to `300 ms`):** Sets delay time with dynamic millisecond readout. Default: `100 ms`.
 * **`REPEATS` (`0%` to `65%`):** Controls tape feedback.
 * **`MIX` (`0%` to `50%`):** Controls wet/dry balance.
 
----
+### 5. "1x12 Hardwood Cab Lab" (Dual-Convolution Mixer & Stereo Spread 3D)
 
-### 5. "1x12 Hardwood Cab Lab" (Dual-Convolution Mixer & Stereo Spread)
+<img :src="'/tattoo-you-cab-lab.png'" alt="Tattoo You 1x12 Hardwood Cab Lab Console" style="max-width: 620px; width: 100%; height: auto; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.40);" />
 
-TattooYou integrates the **1x12 Hardwood Cab Lab** studio overlay, powered by a parallel dual-convolution engine loaded with 24 sample-accurate impulse responses captured from an authentic **EVM-12L** driver in a ported solid hardwood cabinet:
+Tattoo You integrates the **1x12 Hardwood Cab Lab** studio overlay, powered by a parallel dual-convolution engine at zero latency loaded with **24 sample-accurate impulse responses** captured from an authentic **EVM-12L** driver in a ported solid hardwood cabinet:
 
-* **`CAB LAB Button & Display`:** Clicking the `CAB LAB` button or the microphone readout on the front plate opens the full-screen studio mixing console.
-* **`MIC 1 (Direct)` & `MIC 2 (Blend/Room)`:** Two independent channels with dropdown selection across 24 official studio takes (Shure 57, Neumann 87, BassPort, and Room 3D), individual channel level faders (-24 dB to +6 dB), and polarity invert switch ($\varnothing$ 180°).
-* **`CAB BLEND Knob (% / Equal-Power)`:** Smooth continuous crossfader between both microphones with equal-power loudness preservation. Accessible in the console or directly on the front panel mini-knob.
+#### 🎛️ Console Controls & Features:
+
+* **`CAB LAB Button & Front Display`:** Clicking the `CAB LAB` button (in crisp high-contrast white) or the active microphone pill on the front plate opens the floating studio mixing console.
+* **`MIC 1 (Direct / Attack)` & `MIC 2 (Body / Room)`:** 
+  * Two independent channels with dropdown selection across the **24 official studio takes** (Shure 57, Neumann 87, bottom BassPort, and U87 Room 3D).
+  * Individual channel level faders calibrated from **-24 dB to +6 dB**.
+  * Phase polarity invert switch ($\varnothing$ 180°) on the secondary channel.
+* **`CAB BLEND Knob (% Equal-Power)`:** Smooth continuous crossfader between both microphones governed by an equal-power law (overall sound energy never drops). Accessible inside the Cab Lab or on the amplifier's top front mini-knob.
 * **`STEREO SPREAD 3D Switch (Single-Track Stereo Secret)`:**
-  * **Mono Sum (Off):** Combines both microphones in phase into the center of the track (ideal for dense rhythm mixes).
-  * **Stereo Spread (On):** Routes Mic 1 to the Left channel and Mic 2 to the Right channel with automatic +3 dB loudness compensation, creating **colossal analog stereo width on a single DAW track without duplicating tracks**.
-* **6 Calibrated Studio Reference Presets:** Instant access to industry-standard combinations (*Studio Standard*, *Heavy Punch*, *Live Room 3D*, *Wide Double Track*, etc.).
+  * **Mono Sum (Off):** Combines both microphones in phase into the center of the track (ideal for dense rhythm mixes and tight guitar tracks).
+  * **Stereo Spread (On):** Routes **Mic 1 100% to the Left channel** and **Mic 2 100% to the Right channel** with automatic +3 dB loudness compensation ($\sqrt{2}$). Creates **colossal 3D analog stereo width on a single DAW track without duplicating tracks** or phase cancellation.
+* **6 Calibrated Studio Reference Presets:**
+  * 🎸 **Studio Standard:** 57 L Sweet + 87 L Direct *(Blend 30%, Mono)* — Definitive rock tone.
+  * 🥊 **Heavy Punch:** 57 L Sweet + 57 L BassPort *(Blend 25%, Mono)* — Razor-sharp attack with 4x12 low-end weight.
+  * 🌌 **Live Room 3D:** 57 L Sweet + 87 Room L 3D *(Blend 25%, Stereo)* — Natural live-room amp dimensionality.
+  * 🎧 **Wide Double Track:** 57 L Sweet + 57 R Sweet *(Blend 50%, Stereo)* — Massive double-tracked guitar wall on a single track.
+  * ⚡ **Solo 57 Classic:** 57 L Sweet *(Mic 2 Off, Mono)* — Raw bite and punchy midrange.
+  * ✨ **Solo 87 Hi-Fi:** 87 L Direct *(Mic 2 Off, Mono)* — Studio-grade clarity and high-end air.
 
 ::: tip 🎙️ MASTER AUDIO ENGINEERING & MIC PLACEMENT GUIDE
-Want to explore the driver acoustics of the EVM-12L, sample-accurate phase physics, and the production secret behind achieving massive stereo guitar walls on a **single DAW track**?
+Want to explore the driver acoustics of the EVM-12L, cone frequency dispersion, and sample-accurate phase physics ($t=0$)?  
 👉 [**Read the Complete Master Audio Engineering & Mic Placement Guide (1x12 Hardwood Cab Lab) →**](/audio-mics-guide)
 :::
 
@@ -220,9 +231,9 @@ Accessible via the compact **`TUNER`** button in the lower right corner, Tattoo 
 
 * **Plugin Formats:** VST3 (64-bit), Standalone Application (.exe).
 * **Operating Systems:**
-  * **Windows:** Windows 10 / Windows 11 (x64) — *Available Now*.
-  * **macOS:** Universal Binary (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone — *Coming Soon* (Compatible with High Sierra 10.13 through macOS Sonoma/Sequoia).
-  * **Linux:** Ubuntu / Debian / Arch (VST3, Standalone) — *Coming Soon*.
+  * **Windows:** Windows 10 / Windows 11 (x64).
+  * **macOS:** Universal Binary (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone (Compatible with High Sierra 10.13 through macOS Sonoma/Sequoia).
+  * **Linux:** Ubuntu / Debian / Arch (VST3, Standalone).
 * **Processing Engine:** Neural Amp Modeler (NAM) WaveNet Architecture + DSP Real-time Convolution.
 * **Internal Audio Resolution:** 64-bit double precision floating point processing.
 * **Sample Rates Supported:** 44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz, 176.4 kHz, 192 kHz.

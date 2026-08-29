@@ -12,8 +12,8 @@ function copyEmail() {
 
 <div id="manual"></div>
 
-> **Creado por Fans de los Stones, para Guitarristas:**  
-> **Tattoo You** nació de estudiar minuciosamente cada detalle, cinta de sesión y pista en vivo del sonido de guitarra de los Rolling Stones. Creado por fanáticos incondicionales de los Stones y guitarristas experimentados, está diseñado para que simplemente conectes tu guitarra, subas el volumen y te sumerjas de inmediato en el legendario tono de la era 1978–1981, con toda la sensibilidad al tacto, potencia y arrogancia de las grabaciones originales.
+> **El Tono Valvular Definitivo: El Circuito Mark I ('78) y el Sonido de los Stones**  
+> **Tattoo You** nace del estudio minucioso del legendario amplificador **Mark I ('78)** y el equipamiento que definió el sonido de estudio y escenario de los **Rolling Stones** entre 1978 y 1981 (*Some Girls*, *Emotional Rescue* y *Tattoo You*). Desarrollado por y para guitarristas, recrea la respuesta dinámica al tacto, la saturación en cascada de las válvulas 6L6 y la pegada del altavoz EVM-12L: simplemente conecta tu guitarra, sube el volumen y sumérgete al instante en la auténtica potencia, mordida y carácter del rock clásico.
 
 ---
 
@@ -133,28 +133,39 @@ Integrado directamente antes de la etapa del preamplificador, replicando el fluj
 * **`INTENS` (`0%` a `100%`):** Controla la profundidad del barrido y la resonancia vocal.
 
 #### **Slapback Delay (Eco de Cinta Analógica)**
-*Recrea el cálido eco analógico de repetición única ajustado en el clásico punto dulce de 110 ms.*
+*Recrea el cálido eco analógico de repetición única.*
 * **`DELAY Toggle & LED Rojo`:** Activa o puentea el eco de cinta.
-* **`TIME` (`20 ms` a `300 ms`):** Establece el tiempo de retardo con lectura dinámica en milisegundos. Predeterminado: `110 ms` (el punto dulce clásico del slapback de Keith).
+* **`TIME` (`20 ms` a `300 ms`):** Establece el tiempo de retardo con lectura dinámica en milisegundos. Predeterminado: `100 ms`.
 * **`REPEATS` (`0%` a `65%`):** Controla la retroalimentación de la cinta (feedback).
 * **`MIX` (`0%` a `50%`):** Controla el equilibrio entre la señal con efecto y sin efecto (wet/dry).
 
----
+### 5. Consola "1x12 Hardwood Cab Lab" (Mezclador Dual & Stereo Spread 3D)
 
-### 5. Consola "1x12 Hardwood Cab Lab" (Mezclador Dual de Micrófonos & Stereo Spread)
+<img :src="'/tattoo-you-cab-lab.png'" alt="Consola 1x12 Hardwood Cab Lab de Tattoo You" style="max-width: 620px; width: 100%; height: auto; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.40);" />
 
-TattooYou integra la consola **1x12 Hardwood Cab Lab**, equipada con un motor de convolución dual en paralelo y 24 tomas milimétricas sobre el legendario altavoz **EVM-12L** montado en gabinete de madera dura con puerto *bass-reflex*:
+Tattoo You integra la consola de estudio **1x12 Hardwood Cab Lab**, equipada con un motor de convolución dual en paralelo a latencia cero y **24 tomas milimétricas** sobre el legendario altavoz **EVM-12L** montado en mueble de madera maciza con puerto *bass-reflex*:
 
-* **`CAB LAB Button & Display`:** Al hacer clic en el botón `CAB LAB` o sobre la pantalla del micrófono en la carátula frontal, se abre la consola de mezcla flotante de estudio.
-* **`MIC 1 (Directo)` & `MIC 2 (Blend/Room)`:** Dos canales independientes con selectores de las 24 tomas oficiales (Shure 57, Neumann 87, BassPort y Room 3D), faders de nivel individual (-24 dB a +6 dB) y switch de inversión de polaridad ($\varnothing$ 180°).
-* **`Perilla CAB BLEND (% / Equal-Power)`:** Ajuste continuo del balance entre ambos micrófonos con compensación automática de volumen para mantener la energía intacta. Accesible tanto en la consola como en la mini-perilla frontal del amplificador.
-* **`Switch STEREO SPREAD 3D (El Secreto de Ahorrar Pistas)`:**
-  * **Mono Sum (Apagado):** Suma ambos micrófonos en fase al centro (ideal para rítmicas compactas y mezclas densas).
-  * **Stereo Spread (Encendido):** Envía el Mic 1 a la izquierda y el Mic 2 a la derecha con ganancia compensada (+3 dB), permitiendo obtener un **estéreo analógico gigante en una sola pista del DAW sin duplicar pistas**.
-* **6 Presets de Estudio Calibrados:** Carga instantánea de combinaciones maestras (*Studio Standard*, *Heavy Punch*, *Live Room 3D*, *Wide Double Track*, etc.).
+#### 🎛️ Controles Principales de la Consola:
+
+* **`CAB LAB Button & Display Frontal`:** Al hacer clic en el botón `CAB LAB` (en blanco de alta visibilidad) o directamente sobre la cápsula que muestra los micrófonos activos, se abre la consola flotante de estudio.
+* **`MIC 1 (Directo / Ataque)` & `MIC 2 (Cuerpo / Ambiente)`:** 
+  * Dos canales independientes con selectores para las **24 tomas de estudio** (Shure 57, Neumann 87, BassPort inferior y U87 Room 3D).
+  * Faders individuales de nivel calibrados de **-24 dB a +6 dB**.
+  * Switch de inversión de polaridad de fase ($\varnothing$ 180°) en el canal secundario.
+* **`Perilla CAB BLEND (% Equal-Power)`:** Ajuste continuo del balance entre ambos micrófonos mediante ley de potencia constante (la energía total nunca decae). Puedes ajustarla tanto dentro del Cab Lab como desde la mini-perilla frontal del amplificador en tiempo real.
+* **`Switch STEREO SPREAD 3D (El Secreto para Ahorrar Pistas)`:**
+  * **Mono Sum (Apagado):** Suma ambos micrófonos en fase al centro de la pista (ideal para rítmicas compactas y mezclas densas de banda).
+  * **Stereo Spread (Encendido):** Envía el **Mic 1 al 100% a la izquierda (L)** y el **Mic 2 al 100% a la derecha (R)** con compensación automática de ganancia (+3 dB / $\sqrt{2}$). Te permite obtener un **estéreo analógico gigante y tridimensional en una sola pista del DAW**, sin clonar pistas ni sufrir cancelaciones de fase.
+* **6 Presets de Estudio Calibrados:**
+  * 🎸 **Studio Standard:** 57 L Sweet + 87 L Direct *(Blend 30%, Mono)* — El tono de rock definitivo.
+  * 🥊 **Heavy Punch:** 57 L Sweet + 57 L BassPort *(Blend 25%, Mono)* — Ataque cortante con el peso de una caja 4x12.
+  * 🌌 **Live Room 3D:** 57 L Sweet + 87 Room L 3D *(Blend 25%, Stereo)* — Sensación de amplificador en sala viva.
+  * 🎧 **Wide Double Track:** 57 L Sweet + 57 R Sweet *(Blend 50%, Stereo)* — Doble tracking abierto en una sola pista.
+  * ⚡ **Solo 57 Classic:** 57 L Sweet *(Mic 2 Off, Mono)* — Pegada directa y mordida pura.
+  * ✨ **Solo 87 Hi-Fi:** 87 L Direct *(Mic 2 Off, Mono)* — Fidelidad cristalina y aire de estudio.
 
 ::: tip 🎙️ GUÍA MAESTRA DE MICROFONEO, FASE Y MEZCLA DUAL
-¿Quieres profundizar en la física del altavoz EVM-12L, la respuesta acústica del cono, la ciencia de la fase a muestra cero y el truco para conseguir una pared de guitarras en estéreo gigante en **una sola pista del DAW**?
+¿Quieres conocer la física del altavoz EVM-12L, la respuesta de frecuencia en el cono y la ciencia de la fase a muestra cero ($t=0$)?  
 👉 [**Leer la Guía Maestra Completa de Micrófonos y Tomas (1x12 Hardwood Cab Lab) →**](/es/guia-microfonos-tomas)
 :::
 
@@ -220,9 +231,9 @@ Accesible mediante el botón compacto **`TUNER`** en la esquina inferior derecha
 
 * **Formatos de Plugin:** VST3 (64-bit), Aplicación Standalone (.exe).
 * **Sistemas Operativos:**
-  * **Windows:** Windows 10 / Windows 11 (x64) - *Disponible Ahora*.
-  * **macOS:** Binario Universal (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone - *Próximamente* (Compatible desde High Sierra 10.13 hasta macOS Sonoma/Sequoia).
-  * **Linux:** Ubuntu / Debian / Arch (VST3, Standalone) - *Próximamente*.
+  * **Windows:** Windows 10 / Windows 11 (x64).
+  * **macOS:** Binario Universal (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone (Compatible desde High Sierra 10.13 hasta macOS Sonoma/Sequoia).
+  * **Linux:** Ubuntu / Debian / Arch (VST3, Standalone).
 * **Motor de Procesamiento:** Arquitectura WaveNet de Modelado Neuronal de Amplificadores (NAM) + Convolución DSP en tiempo real.
 * **Resolución de Audio Interna:** Procesamiento de coma flotante de doble precisión de 64 bits.
 * **Tasas de Muestreo Soportadas:** 44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz, 176.4 kHz, 192 kHz.

@@ -128,9 +128,11 @@ function copyEmail() {
 * **`REPEATS` (`0%` 〜 `65%`):** テープフィードバック量を調整。
 * **`MIX` (`0%` 〜 `50%`):** エフェクト音の混ざり具合を調整。
 
-### 5. 「1x12 Hardwood Cab Lab」コンソール (デュアル・コンボリューション＆ステレオ・スプレッド)
+### 5. 「1x12 Hardwood Cab Lab」コンソール (デュアル・コンボリューション＆ステレオ・スプレッド 3D)
 
-TattooYou は、実機の **EVM-12L** ドライバーを搭載したポート付き無垢材キャビネットから収録された24種類のサンプル精度インパルス・レスポンス（IR）と、ゼロレイテンシー・デュアル・コンボリューションエンジンを搭載したスタジオ・オーバーレイを備えています：
+<img :src="'/tattoo-you-cab-lab.png'" alt="Tattoo You 1x12 Hardwood Cab Lab Console" style="max-width: 620px; width: 100%; height: auto; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.40);" />
+
+Tattoo You は、実機の **EVM-12L** ドライバーを搭載したポート付き無垢材キャビネットから収録された24種類のサンプル精度インパルス・レスポンス（IR）と、ゼロレイテンシー・デュアル・コンボリューションエンジンを搭載したスタジオ・オーバーレイを備えています：
 
 * **`CAB LAB ボタン＆ディスプレイ`:** アンプ前面の `CAB LAB` ボタンまたはマイク表示部をクリックすると、全画面のスタジオミキシングコンソールが開きます。
 * **`MIC 1 (ダイレクト)` ＆ `MIC 2 (ブレンド/ルーム)`:** 24種類の公式スタジオテイク（Shure 57、Neumann 87、BassPort、Room 3D）を独立選択可能。各チャンネルの音量フェーダー（-24 dB〜+6 dB）と極性反転スイッチ（$\varnothing$ 180°）を完備。
