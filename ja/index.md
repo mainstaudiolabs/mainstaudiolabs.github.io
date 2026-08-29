@@ -5,13 +5,7 @@ title: Main St Audio Labs - ヴィンテージ・アンプ＆スタジオ・プ�
 <div class="hero">
   <p class="eyebrow">独立系オーディオ・ラボ</p>
   <div class="brand-mark">Main St Audio Labs</div>
-  <p class="brand-tagline">名盤に着想を得たギター・プロセッサー＆シグナル・ツール</p>
-  <p class="lead">名盤の録音を基に手作業で調整されたVST3/AUプラグイン — 無限のプリセットも、無駄なCPU消費も、サブスクリプションもありません。</p>
-  <div class="hero-meta">
-    <span class="chip">VST3 · AU · Standalone</span>
-    <span class="chip">Win · Mac · Linux</span>
-    <span class="chip">64-bit</span>
-  </div>
+  <p class="brand-tagline">名盤に着想を得たオーディオツール、シグナルプロセッサー＆エンジニアリング・ジャーナル</p>
 </div>
 
 <div class="section-head"><h2>プラグイン・カタログ</h2></div>

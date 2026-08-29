@@ -5,13 +5,7 @@ title: Main St Audio Labs - Stompboxes, Amplificadores y Audio de Estudio
 <div class="hero">
   <p class="eyebrow">Laboratorio de Audio Independiente</p>
   <div class="brand-mark">Main St Audio Labs</div>
-  <p class="brand-tagline">Procesadores de guitarra y herramientas de señal inspirados en discos clásicos</p>
-  <p class="lead">Plugins VST3/AU calibrados a mano sobre grabaciones icónicas — sin presets infinitos, sin CPU desperdiciada, sin suscripciones.</p>
-  <div class="hero-meta">
-    <span class="chip">VST3 · AU · Standalone</span>
-    <span class="chip">Win · Mac · Linux</span>
-    <span class="chip">64-bit</span>
-  </div>
+  <p class="brand-tagline">Herramientas de Audio, Procesadores de Señal y Cuadernos de Ingeniería Inspirados en Grabaciones Clásicas</p>
 </div>
 
 <div class="section-head"><h2>Catálogo de Plugins</h2></div>
