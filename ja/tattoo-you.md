@@ -8,12 +8,9 @@ function copyEmail() {
 }
 </script>
 
-# Tattoo You: ユーザーマニュアル
+<ProductHero id="tattoo-you" />
 
-**バージョン 1.0.0 · 完全スタジオ・ギターワークステーション＆ヴィンテージ '78–'81 FX スイート**
-*(単なるアンプシミュレーターを超えた、完全なスタジオ制作ワークステーション：ニューラル6L6真空管トポロジー、デュアルマイキング対応1x12 Hardwood Cab Lab、1トラック完結のStereo Spread 3D、ラックチューナーを統合)*
-
-<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
+<div id="manual"></div>
 
 > **ストーンズ・ファンがギタリストのために捧げるプラグイン：**  
 > **Tattoo You** は、ローリング・ストーンズのギターサウンドを構成するセッションテープ、ライブ音源、そして機材の細部に至るまでを執念深く研究して開発されました。熱狂的なストーンズファンであり熟練のギタリストでもある開発陣が、ギターを繋いでノブを回すだけで、1978–1981年の伝説的トーン――あの唯一無二のタッチレスポンス、パンチ、そしてグルーヴ――に即座に没入できるよう設計しました。
@@ -226,3 +223,7 @@ EVM-12Lのコーン音響物理、サンプル精度の位相科学、そして1
     <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
   </div>
 </div>
+
+<div class="section-head" style="margin-top:3rem;"><h2>他のプラグイン</h2></div>
+
+<PluginGrid exclude="tattoo-you" />

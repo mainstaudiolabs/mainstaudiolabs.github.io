@@ -15,6 +15,9 @@ function copyEmail() {
 }
 </script>
 
+
+<div class="prose-page">
+
 # Main St Audio Labs について
 
 Main St Audio Labs は、ヴィンテージ・ロックンロールへの情熱、アナログモデリング技術、そしてソフトウェアエンジニアリングが交差する場所から生まれた個人開発プロジェクトです。
@@ -74,4 +77,6 @@ Main St Audio Labs の研究開発は、情熱的なミュージシャンやト�
 
 <div>
   <a href="/ja/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">ラボの開発を支援する（Ko-fi / 仮想通貨） ☕</a>
+</div>
+
 </div>

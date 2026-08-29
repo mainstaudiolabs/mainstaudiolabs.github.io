@@ -15,6 +15,9 @@ function copyEmail() {
 }
 </script>
 
+
+<div class="prose-page">
+
 # Acerca de Main St Audio Labs
 
 Main St Audio Labs es un proyecto personal nacido en la intersección de la pasión por el rock 'n' roll vintage, el modelado analógico y la ingeniería de software.
@@ -74,4 +77,6 @@ Siempre estamos escuchando. Si tienes alguna sugerencia, pistas de audio que qui
 
 <div>
   <a href="/es/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">Apoya el Laboratorio (Ko-fi / Crypto) ☕</a>
+</div>
+
 </div>

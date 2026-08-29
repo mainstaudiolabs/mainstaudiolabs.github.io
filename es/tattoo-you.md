@@ -8,12 +8,9 @@ function copyEmail() {
 }
 </script>
 
-# Tattoo You: Manual de Usuario
+<ProductHero id="tattoo-you" />
 
-**Versión 1.0.0 · Estación de Trabajo de Estudio para Guitarra & Suite de FX Vintage '78–'81**
-*(Mucho más que un simple simulador de amplificador: una estación de trabajo completa de producción con previo neuronal 6L6, consola 1x12 Hardwood Cab Lab con mezcla dual de micrófonos en fase, Stereo Spread 3D y afinador de rack)*
-
-<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
+<div id="manual"></div>
 
 > **Creado por Fans de los Stones, para Guitarristas:**  
 > **Tattoo You** nació de estudiar minuciosamente cada detalle, cinta de sesión y pista en vivo del sonido de guitarra de los Rolling Stones. Creado por fanáticos incondicionales de los Stones y guitarristas experimentados, está diseñado para que simplemente conectes tu guitarra, subas el volumen y te sumerjas de inmediato en el legendario tono de la era 1978–1981, con toda la sensibilidad al tacto, potencia y arrogancia de las grabaciones originales.
@@ -241,3 +238,7 @@ Accesible mediante el botón compacto **`TUNER`** en la esquina inferior derecha
     <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
   </div>
 </div>
+
+<div class="section-head" style="margin-top:3rem;"><h2>Otros plugins</h2></div>
+
+<PluginGrid exclude="tattoo-you" />

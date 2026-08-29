@@ -7,15 +7,14 @@ function copyEmail() {
   setTimeout(function() { btnText.value = 'Copiar Correo' }, 2000)
 }
 </script>
-# Midnight Rambler: Manual de Usuario
+<ProductHero id="midnight-rambler" />
 
-**Versión 1.0.1 · Stompbox Series #01 · Simulación de Amplificador Neural**
+<div id="manual"></div>
 
-<img :src="'/midnightramblerinterface.png'" alt="Midnight Rambler GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
+Este manual describe en detalle el uso, la filosofía de diseño y las especificaciones técnicas del plugin de simulación de amplificador **Midnight Rambler**.
 
 <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
   <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">Descargar PDF (v1.0.1) 📄</a>
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/v1.0.1" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 220px; padding: 0.6rem 1.4rem; text-decoration: none;">Descargar Plugin (GRATIS v1.0.1) ⬇️</a>
 </div>
 
 ---
@@ -156,3 +155,7 @@ Copia nuestro correo electrónico de contacto para compartir tus enlaces o comen
 <div>
   <a href="/es/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">Apoya el Laboratorio (Ko-fi / Crypto) ☕</a>
 </div>
+
+<div class="section-head" style="margin-top:3rem;"><h2>Otros plugins</h2></div>
+
+<PluginGrid exclude="midnight-rambler" />

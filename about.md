@@ -15,6 +15,9 @@ function copyEmail() {
 }
 </script>
 
+
+<div class="prose-page">
+
 # About Main St Audio Labs
 
 Main St Audio Labs is a personal project born at the intersection of vintage rock 'n' roll passion, analog modeling, and software engineering.
@@ -74,4 +77,6 @@ We are always listening. If you have any suggestions, audio tracks you want to s
 
 <div>
   <a href="/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">Support the Lab (Ko-fi / Crypto) ☕</a>
+</div>
+
 </div>

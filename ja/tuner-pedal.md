@@ -8,15 +8,13 @@ function copyEmail() {
 }
 </script>
 
-# Vintage Tuner Stompbox: ユーザーマニュアル
+<ProductHero id="tuner-pedal" />
 
-**バージョン 1.0.1 · Stompbox シリーズ #02 · ギター＆ベース用アナログ・クロマチックチューナー**  
+<div id="manual"></div>
+
 *開発：Main St Audio Labs · オープンソースDSPエンジン（MITライセンス）*
 
-<img :src="'/TunerPedal.png'" alt="Vintage Tuner Stompbox GUI" style="max-height: 380px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px;" />
-
 <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.0.1" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 240px; padding: 0.6rem 1.4rem; text-decoration: none;">プラグインをダウンロード (無料 v1.0.1) ⬇️</a>
   <a href="https://github.com/mainstaudiolabs/pitch-detector-tuner" target="_blank" class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 200px; padding: 0.6rem 1.2rem; text-decoration: none;">GitHubでDSPエンジンを見る (MIT) 🐙</a>
 </div>
 
@@ -128,3 +126,7 @@ C++ / JUCE を用いて、妥協のないリアルタイム性能基準で開発
 
 * **Vintage Tuner Stompbox** はフリーウェアとして配布されており、商用・非商用問わず自由にご利用いただけます。
 * DSPコアは **MITライセンス** のオープンソースです。
+
+<div class="section-head" style="margin-top:3rem;"><h2>他のプラグイン</h2></div>
+
+<PluginGrid exclude="tuner-pedal" />

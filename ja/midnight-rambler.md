@@ -8,17 +8,14 @@ function copyEmail() {
 }
 </script>
 
-# Midnight Rambler: ユーザーマニュアル
+<ProductHero id="midnight-rambler" />
 
-**バージョン 1.0.1**
+<div id="manual"></div>
 
 本マニュアルは、伝説のTweed 5E3アンプ・エミュレーション・ストンプボックスプラグイン **Midnight Rambler** の使用方法、設計思想、および技術仕様について詳しく解説します。
 
-<img :src="'/midnightramblerinterface.png'" alt="Midnight Rambler GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
-
 <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
   <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">PDFマニュアルを入手 (v1.0.1) 📄</a>
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/v1.0.1" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 220px; padding: 0.6rem 1.4rem; text-decoration: none;">プラグインをダウンロード (無料 v1.0.1) ⬇️</a>
 </div>
 
 ---
@@ -157,3 +154,7 @@ Midnight Rambler で録音・ミックスした楽曲がございましたら、
 <div>
   <a href="/ja/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">ラボの開発を支援する（Ko-fi / 仮想通貨） ☕</a>
 </div>
+
+<div class="section-head" style="margin-top:3rem;"><h2>他のプラグイン</h2></div>
+
+<PluginGrid exclude="midnight-rambler" />

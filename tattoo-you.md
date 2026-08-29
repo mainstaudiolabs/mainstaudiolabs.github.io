@@ -8,12 +8,9 @@ function copyEmail() {
 }
 </script>
 
-# Tattoo You: User Manual
+<ProductHero id="tattoo-you" />
 
-**Version 1.0.0 · Complete Guitar Studio Workstation & Vintage '78–'81 FX Suite**
-*(Far beyond a simple amp simulator: a complete recording production workstation featuring neural 6L6 tube topologies, 1x12 Hardwood Cab Lab with dual-convolution mic mixing, single-track Stereo Spread 3D, and integrated rack tuner)*
-
-<img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
+<div id="manual"></div>
 
 > **Built by Stones Fans, for Guitarists:**  
 > **Tattoo You** was born from studying every nuance, session tape, and live track of the Rolling Stones' guitar sound in obsessive detail. Created by dedicated Stones fans and seasoned guitarists, it is designed so that you can simply plug in your guitar, turn up, and immediately be immersed in the legendary 1978–1981 tone — with all the touch sensitivity, punch, and swagger of the original records.
@@ -241,3 +238,7 @@ Accessible via the compact **`TUNER`** button in the lower right corner, Tattoo 
     <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
   </div>
 </div>
+
+<div class="section-head" style="margin-top:3rem;"><h2>Other plugins</h2></div>
+
+<PluginGrid exclude="tattoo-you" />

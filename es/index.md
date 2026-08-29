@@ -1,186 +1,35 @@
-﻿---
-layout: doc
-sidebar: false
-aside: false
+---
 title: Main St Audio Labs - Stompboxes, Amplificadores y Audio de Estudio
 ---
 
-<div class="classic-layout">
-
-<!-- COLUMNA IZQUIERDA: MENÚ DE SECCIONES -->
-<aside class="classic-sidebar">
-  <div class="classic-sidebar-title">SECCIONES</div>
-  <ul class="classic-nav-list">
-    <li><a href="/es/manuales" class="classic-nav-link">📁 Manuales Plugins</a></li>
-    <li><a href="/es/audio-y-mezcla" class="classic-nav-link">🎛️ Audio y Mezcla</a></li>
-    <li><a href="/es/backstage" class="classic-nav-link">🎸 Backstage</a></li>
-    <li class="classic-nav-divider"></li>
-    <li><a href="/es/about" class="classic-nav-link">ℹ️ Acerca de</a></li>
-    <li><a href="/es/support" class="classic-nav-link">☕ Apoya el Lab</a></li>
-  </ul>
-</aside>
-
-<!-- COLUMNA DERECHA: CONTENIDO PRINCIPAL -->
-<main class="classic-main">
-
-<div class="rock-header">
-<div class="rock-title">Main St Audio Labs</div>
-<div class="rock-subtitle">Herramientas de Audio, Procesadores de Señal y Cuadernos de Ingeniería Inspirados en Grabaciones Clásicas</div>
+<div class="hero">
+  <p class="eyebrow">Laboratorio de Audio Independiente</p>
+  <div class="brand-mark">Main St Audio Labs</div>
+  <p class="brand-tagline">Procesadores de guitarra y herramientas de señal inspirados en discos clásicos</p>
+  <p class="lead">Plugins VST3/AU calibrados a mano sobre grabaciones icónicas — sin presets infinitos, sin CPU desperdiciada, sin suscripciones.</p>
+  <div class="hero-meta">
+    <span class="chip">VST3 · AU · Standalone</span>
+    <span class="chip">Win · Mac · Linux</span>
+    <span class="chip">64-bit</span>
+  </div>
 </div>
 
-<!-- ========================================== -->
-<!-- SECCIÓN 1: CATÁLOGO DE PLUGINS             -->
-<!-- ========================================== -->
-<div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--vp-c-border); padding-bottom: 0.5rem; margin-top: 0.5rem; margin-bottom: 1.5rem;">
-  <h2 style="font-family: 'Special Elite', monospace; font-size: 1.35rem; color: var(--vp-c-brand-1); margin: 0;">
-    🎛️ Catálogo de Plugins
-  </h2>
-  <span style="font-family: 'Courier Prime', monospace; font-size: 0.85rem; color: var(--vp-c-text-3);">
-    VST3 · AU · Standalone App (Win / Mac / Linux)
-  </span>
-</div>
+<div class="section-head"><h2>Catálogo de Plugins</h2></div>
 
-<div class="rock-grid">
+<PluginGrid />
 
-<!-- Plugin 1: Tattoo You (Flagship) -->
-<div class="rock-card">
-<div class="rock-card-image-wrapper">
-<img src="/tattoo-you.png" alt="Tattoo You Studio Workstation" class="rock-card-image" />
-</div>
-<div class="rock-card-content">
-<h3 class="rock-card-title">Tattoo You</h3>
-<div class="rock-card-subtitle">Estación de Estudio '78–'81</div>
-<div class="rock-card-badges">
-<span class="rock-card-badge">🪟 Win</span>
-<span class="rock-card-badge">🍎 Mac</span>
-<span class="rock-card-badge">🐧 Linux</span>
-<span class="rock-card-badge">64-bit</span>
-</div>
-<p class="rock-card-desc">Circuito Mark I ('78) con 12 modelos neuronales (100W/60W, Normal/Bright), consola 1x12 Hardwood Cab Lab con 24 tomas y mezcla dual, Stereo Spread 3D en 1 sola pista, Phase '78, Delay y afinador de rack.</p>
-<div class="rock-card-footer">
-<span class="rock-card-price" style="color: var(--vp-c-brand-1); font-weight: bold;">$14 USD / EVAL</span>
-<a href="/es/tattoo-you" class="rock-btn rock-btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.84rem;">Ver Manual ➔</a>
-</div>
-</div>
-</div>
+<div class="section-head"><h2>Del Cuaderno de Laboratorio</h2><a href="/es/audio-y-mezcla">Ver todo el archivo →</a></div>
 
-<!-- Plugin 2: Midnight Rambler -->
-<div class="rock-card">
-<div class="rock-card-image-wrapper">
-<img src="/midnightramblerinterface.png" alt="Midnight Rambler Plugin GUI" class="rock-card-image" />
-</div>
-<div class="rock-card-content">
-<h3 class="rock-card-title">Midnight Rambler</h3>
-<div class="rock-card-subtitle">Valvular 5E3 Tweed</div>
-<div class="rock-card-badges">
-<span class="rock-card-badge">🪟 Win</span>
-<span class="rock-card-badge">🍎 Mac</span>
-<span class="rock-card-badge">🐧 Linux</span>
-<span class="rock-card-badge">64-bit</span>
-</div>
-<p class="rock-card-desc">El tono crudo y dinámico del Fender Tweed 5E3 detrás de los discos clásicos de rock. Sensibilidad táctil orgánica, selector de 3 micrófonos coherentes de fase y afinador integrado.</p>
-<div class="rock-card-footer">
-<span class="rock-card-price">GRATIS</span>
-<a href="/es/midnight-rambler" class="rock-btn rock-btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.84rem;">Ver Manual ➔</a>
-</div>
-</div>
-</div>
+<ArticleGrid :limit="3" />
 
-<!-- Plugin 3: Vintage Tuner Stompbox -->
-<div class="rock-card">
-<div class="rock-card-image-wrapper">
-<img src="/TunerPedal.png" alt="Vintage Tuner Stompbox Plugin GUI" class="rock-card-image" />
-</div>
-<div class="rock-card-content">
-<h3 class="rock-card-title">Vintage Tuner Stompbox</h3>
-<div class="rock-card-subtitle">Afinador Cromático</div>
-<div class="rock-card-badges">
-<span class="rock-card-badge">🪟 Win</span>
-<span class="rock-card-badge">🍎 Mac</span>
-<span class="rock-card-badge">🐧 Linux</span>
-<span class="rock-card-badge">64-bit</span>
-</div>
-<p class="rock-card-desc">Afinador de aguja vintage con doble motor DSP de alta precisión (MPM y YIN). Consumo real 0.0% de CPU con ventana cerrada para insertar en todas las pistas de tu proyecto.</p>
-<div class="rock-card-footer">
-<span class="rock-card-price">GRATIS</span>
-<a href="/es/tuner-pedal" class="rock-btn rock-btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.84rem;">Ver Manual ➔</a>
-</div>
-</div>
-</div>
-
-</div>
-
-<!-- ========================================== -->
-<!-- SECCIÓN 2: BIBLIOTECA TÉCNICA E HISTORIA   -->
-<!-- ========================================== -->
-<div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--vp-c-border); padding-bottom: 0.5rem; margin-top: 2.5rem; margin-bottom: 1.25rem;">
-  <h2 style="font-family: 'Special Elite', monospace; font-size: 1.35rem; color: var(--vp-c-brand-1); margin: 0;">
-    📚 Cuadernos de Estudio &amp; Acústica
-  </h2>
-  <a href="/es/audio-y-mezcla" style="font-family: 'Courier Prime', monospace; font-size: 0.85rem; color: var(--vp-c-brand-1);">
-    Ver Índice Completo ➔
-  </a>
-</div>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem;">
-
-<!-- Artículo 1: Guía de Mics y Fase -->
-<div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-border); border-radius: 4px; padding: 1.25rem;">
-  <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--vp-c-brand-1); font-weight: bold; margin-bottom: 0.35rem;">Ingeniería &amp; Mezcla</div>
-  <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem;">
-    <a href="/es/guia-microfonos-tomas" style="color: var(--vp-c-text-1); text-decoration: none;">Guía Maestra: Micrófonos y Tomas (1x12 Hardwood) →</a>
-  </h4>
-  <p style="font-size: 0.85rem; color: var(--vp-c-text-2); margin: 0; line-height: 1.45;">
-    Física del altavoz EVM-12L, alineación a muestra cero ($t=0$), tomas L/R y el truco para lograr estéreo gigante en 1 sola pista.
-  </p>
-</div>
-
-<!-- Artículo 2: Historia del EVM-12L -->
-<div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-border); border-radius: 4px; padding: 1.25rem;">
-  <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--vp-c-brand-1); font-weight: bold; margin-bottom: 0.35rem;">Física del Altavoz</div>
-  <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem;">
-    <a href="/es/electro-voice-evm12l" style="color: var(--vp-c-text-1); text-decoration: none;">El Rey Indestructible: Electro-Voice EVM-12L →</a>
-  </h4>
-  <p style="font-size: 0.85rem; color: var(--vp-c-text-2); margin: 0; line-height: 1.45;">
-    El altavoz de 300 Watts que desafió a los conos británicos. Por qué Keith Richards, SRV y Bonamassa lo eligieron.
-  </p>
-</div>
-
-<!-- Artículo 3: Los Stones y Mesa/Boogie -->
-<div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-border); border-radius: 4px; padding: 1.25rem;">
-  <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--vp-c-brand-1); font-weight: bold; margin-bottom: 0.35rem;">Backstage &amp; Crónicas</div>
-  <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem;">
-    <a href="/es/history-mesa-stones" style="color: var(--vp-c-text-1); text-decoration: none;">Los Stones no pagan por amplificadores (1978–1981) →</a>
-  </h4>
-  <p style="font-size: 0.85rem; color: var(--vp-c-text-2); margin: 0; line-height: 1.45;">
-    Cómo Keith Richards adoptó los amplificadores Mark I y II durante las sesiones de París para <em>Some Girls</em> y <em>Tattoo You</em>.
-  </p>
-</div>
-
-</div>
-
-<!-- ========================================== -->
-<!-- SECCIÓN 3: COMUNIDAD Y APOYO AL LAB        -->
-<!-- ========================================== -->
-<div class="rock-home-banner" style="margin-top: 1.5rem; margin-bottom: 1rem;">
-<div style="font-family: 'Special Elite', monospace; font-size: 1.25rem; color: var(--vp-c-brand-1); text-transform: uppercase; margin-bottom: 0.5rem;">
-  Laboratorio Independiente de Audio
-</div>
-<p style="font-family: 'Courier Prime', monospace; font-size: 0.9rem; color: var(--vp-c-text-2); max-width: 600px; margin: 0 auto 1rem auto;">
-Desarrollamos herramientas de estudio de alta precisión sin ataduras, suscripciones ni sistemas DRM invasivos. Contáctanos:
-</p>
-<div class="rock-copy-email-wrapper" style="justify-content: center; margin-bottom: 1rem;">
-<span class="rock-email-text">mainstaudiolabs@gmail.com</span>
-<button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
-</div>
-<div style="border-top: 1px dashed var(--vp-c-border); padding-top: 0.75rem; margin-top: 0.75rem;">
-<a href="/es/support" class="rock-btn rock-btn-secondary" style="display: inline-block; padding: 0.45rem 1.1rem; font-size: 0.85rem;">
-  Apoya el Laboratorio (Ko-fi / Crypto) ☕
-</a>
-</div>
-</div>
-
-</main>
+<div class="rock-home-banner" style="margin-top: 1.5rem;">
+  <div class="eyebrow" style="font-size: 1.1rem;">Laboratorio Independiente de Ingeniería de Audio</div>
+  <p style="max-width: 600px; margin: 0.75rem auto 1rem; color: var(--vp-c-text-2);">Desarrollamos software de audio de estudio de alta precisión, sin bloatware, sin suscripciones recurrentes y sin DRM invasivo. Contáctanos:</p>
+  <div class="rock-copy-email-wrapper" style="justify-content: center; margin-bottom: 1rem;">
+    <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
+    <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
+  </div>
+  <a href="/es/support" class="btn btn-ghost">Apoya el Laboratorio (Ko-fi / Crypto) ☕</a>
 </div>
 
 <script setup>

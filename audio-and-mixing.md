@@ -1,31 +1,9 @@
-﻿# 🎛️ Audio & Mixing
+---
+title: Audio & Mixing
+---
 
-Technical research on audio engineering, speaker physics, cabinet acoustics, and signal processing:
+<div class="section-head"><h2>🎛️ Audio &amp; Mixing</h2></div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+<p class="prose-page" style="text-align:center;">Technical research on audio engineering, speaker physics, cabinet acoustics, and signal processing.</p>
 
-<!-- Mics & Phase Guide -->
-<div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-border); border-radius: 8px; padding: 1.5rem;">
-  <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--vp-c-brand-1); font-weight: bold; margin-bottom: 0.5rem;">Audio Engineering &amp; Mixing</div>
-  <h3 style="margin: 0 0 0.75rem 0; font-size: 1.2rem;">
-    <a href="/audio-mics-guide" style="color: var(--vp-c-text-1); text-decoration: none;">Master Guide: 1x12 Hardwood Cab, Mics &amp; Phase →</a>
-  </h3>
-  <p style="font-size: 0.9rem; color: var(--vp-c-text-2); line-height: 1.5; margin-bottom: 1.25rem;">
-    EVM-12L driver physics, sample-accurate transient alignment at sample zero ($t=0$), Left/Right takes, and single-track 3D stereo width.
-  </p>
-  <a href="/audio-mics-guide" class="rock-btn rock-btn-primary" style="padding: 0.4rem 0.9rem; font-size: 0.82rem;">Read Technical Guide ➔</a>
-</div>
-
-<!-- EVM-12L Story -->
-<div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-border); border-radius: 8px; padding: 1.5rem;">
-  <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--vp-c-brand-1); font-weight: bold; margin-bottom: 0.5rem;">Loudspeaker Engineering</div>
-  <h3 style="margin: 0 0 0.75rem 0; font-size: 1.2rem;">
-    <a href="/electro-voice-evm12l" style="color: var(--vp-c-text-1); text-decoration: none;">The Indestructible King: Electro-Voice EVM-12L →</a>
-  </h3>
-  <p style="font-size: 0.9rem; color: var(--vp-c-text-2); line-height: 1.5; margin-bottom: 1.25rem;">
-    The 300-Watt driver that defied fragile British paper cones. Why Keith Richards, Stevie Ray Vaughan, Zakk Wylde and Bonamassa swore by it.
-  </p>
-  <a href="/electro-voice-evm12l" class="rock-btn rock-btn-primary" style="padding: 0.4rem 0.9rem; font-size: 0.82rem;">Read Article ➔</a>
-</div>
-
-</div>
+<ArticleGrid />

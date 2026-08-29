@@ -8,15 +8,13 @@ function copyEmail() {
 }
 </script>
 
-# Vintage Tuner Stompbox: Manual de Usuario
+<ProductHero id="tuner-pedal" />
 
-**Versión 1.0.1 · Stompbox Series #02 · Afinador Cromático Analógico para Guitarra y Bajo**  
+<div id="manual"></div>
+
 *Desarrollado por Main St Audio Labs · Motor DSP de Código Abierto (Licencia MIT)*
 
-<img :src="'/TunerPedal.png'" alt="Vintage Tuner Stompbox GUI" style="max-height: 380px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px;" />
-
 <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.0.1" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 240px; padding: 0.6rem 1.4rem; text-decoration: none;">Descargar Plugin (GRATIS v1.0.1) ⬇️</a>
   <a href="https://github.com/mainstaudiolabs/pitch-detector-tuner" target="_blank" class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 200px; padding: 0.6rem 1.2rem; text-decoration: none;">Ver Motor en GitHub (MIT) 🐙</a>
 </div>
 
@@ -158,3 +156,7 @@ Envíanos tus comentarios, sugerencias o dudas a nuestro correo oficial:
 <div>
   <a href="/es/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">Apoya el Laboratorio (Ko-fi / Crypto) ☕</a>
 </div>
+
+<div class="section-head" style="margin-top:3rem;"><h2>Otros plugins</h2></div>
+
+<PluginGrid exclude="tuner-pedal" />

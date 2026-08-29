@@ -8,17 +8,14 @@ function copyEmail() {
 }
 </script>
 
-# Midnight Rambler: User Manual
+<ProductHero id="midnight-rambler" />
 
-**Version 1.0.1**
+<div id="manual"></div>
 
 This manual provides a detailed description of the usage, design philosophy, and technical specifications for the **Midnight Rambler** amplifier emulation stompbox plugin.
 
-<img :src="'/midnightramblerinterface.png'" alt="Midnight Rambler GUI" style="max-height: 280px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
-
 <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
   <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">Get PDF Manual (v1.0.1) 📄</a>
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/v1.0.1" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 220px; padding: 0.6rem 1.4rem; text-decoration: none;">Download Plugin (FREE v1.0.1) ⬇️</a>
 </div>
 
 ---
@@ -163,3 +160,7 @@ Copy our contact email to share your links or feedback:
 <div class="print-footer">
   Official Website &amp; Manual: <a href="https://mainstaudiolabs.github.io/midnight-rambler.html" target="_blank">https://mainstaudiolabs.github.io/midnight-rambler.html</a>
 </div>
+
+<div class="section-head" style="margin-top:3rem;"><h2>Other plugins</h2></div>
+
+<PluginGrid exclude="midnight-rambler" />
