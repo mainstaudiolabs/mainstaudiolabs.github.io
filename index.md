@@ -12,21 +12,6 @@ title: Main St Audio Labs - Vintage Stompboxes, Amplifiers & Studio Tools
 </div>
 
 <!-- ========================================== -->
-<!-- DIRECT SECTION NAVIGATION                  -->
-<!-- ========================================== -->
-<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; margin-bottom: 2rem;">
-  <a href="/manuals" class="rock-btn rock-btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
-    📁 Plugins Manuals
-  </a>
-  <a href="/audio-and-mixing" class="rock-btn rock-btn-secondary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
-    🎛️ Audio &amp; Mixing
-  </a>
-  <a href="/backstage" class="rock-btn rock-btn-secondary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
-    🎸 Backstage
-  </a>
-</div>
-
-<!-- ========================================== -->
 <!-- SECTION 1: PLUGINS CATALOG                -->
 <!-- ========================================== -->
 <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--vp-c-border); padding-bottom: 0.5rem; margin-top: 1.5rem; margin-bottom: 1.5rem;">

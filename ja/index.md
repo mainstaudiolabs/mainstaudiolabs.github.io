@@ -12,21 +12,6 @@ title: Main St Audio Labs - ヴィンテージ・アンプ＆スタジオ・プ�
 </div>
 
 <!-- ========================================== -->
-<!-- セクション直接ナビゲーション              -->
-<!-- ========================================== -->
-<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; margin-bottom: 2rem;">
-  <a href="/ja/manuals" class="rock-btn rock-btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
-    📁 プラグイン・マニュアル
-  </a>
-  <a href="/ja/audio-and-mixing" class="rock-btn rock-btn-secondary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
-    🎛️ オーディオ＆ミックス
-  </a>
-  <a href="/ja/backstage" class="rock-btn rock-btn-secondary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
-    🎸 バックステージ
-  </a>
-</div>
-
-<!-- ========================================== -->
 <!-- セクション 1: プラグイン・カタログ        -->
 <!-- ========================================== -->
 <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--vp-c-border); padding-bottom: 0.5rem; margin-top: 1.5rem; margin-bottom: 1.5rem;">
