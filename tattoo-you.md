@@ -10,7 +10,8 @@ function copyEmail() {
 
 # Tattoo You: User Manual
 
-**Version 1.0.0 · Virtual Amplifier Simulation & Vintage FX Suite**
+**Version 1.0.0 · Complete Guitar Studio Workstation & Vintage '78–'81 FX Suite**
+*(Far beyond a simple amp simulator: a complete recording production workstation featuring neural 6L6 tube topologies, 1x12 Hardwood Cab Lab with dual-convolution mic mixing, single-track Stereo Spread 3D, and integrated rack tuner)*
 
 <img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
 

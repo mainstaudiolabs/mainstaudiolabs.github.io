@@ -63,14 +63,14 @@ title: Main St Audio Labs - ストンプボックス＆バーチャルアンプ
 </div>
 <div class="rock-card-content">
 <h3 class="rock-card-title">Tattoo You</h3>
-<div class="rock-card-subtitle">Head &amp; Combo + デュアルFX '78–'81</div>
+<div class="rock-card-subtitle">スタジオ・ギターワークステーション '78–'81</div>
 <div class="rock-card-badges">
 <span class="rock-card-badge">🪟 Win</span>
 <span class="rock-card-badge">🍎 Mac</span>
 <span class="rock-card-badge">🐧 Linux</span>
 <span class="rock-card-badge">VST3 · AU · App</span>
 </div>
-<p class="rock-card-desc">1978–1981年のストーンズ黄金期トーンを完全再現：100W Head＆60W Comboの6L6パワーアンプ切替、3チャンネル構成、5バンド・アクティブEQ、Phase '78＆テープ・スラップバック、7種類のマイクを備えた「MICK」EVM-12Lキャビネット、フローティング・クロマチックチューナーを搭載。</p>
+<p class="rock-card-desc">単なるアンプシミュレーターを超えた、完全なスタジオ・ギターワークステーション。ニューラル6L6 100W/60W回路、24テイクの位相整合デュアルマイキング対応1x12 Hardwood Cab Lab、1トラック完結のStereo Spread 3D、Phase '78、テープ・スラップバック、5バンドEQ、高精度ラックチューナーを完全統合。</p>
 <div class="rock-card-footer">
 <span class="rock-card-price" style="color: var(--vp-c-text-3);">SOON</span>
 <a href="/ja/tattoo-you" class="rock-btn rock-btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.86rem;">詳細を見る ➔</a>

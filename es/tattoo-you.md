@@ -10,7 +10,8 @@ function copyEmail() {
 
 # Tattoo You: Manual de Usuario
 
-**Versión 1.0.0 · Simulación de Amplificador Virtual & Suite de FX Vintage**
+**Versión 1.0.0 · Estación de Trabajo de Estudio para Guitarra & Suite de FX Vintage '78–'81**
+*(Mucho más que un simple simulador de amplificador: una estación de trabajo completa de producción con previo neuronal 6L6, consola 1x12 Hardwood Cab Lab con mezcla dual de micrófonos en fase, Stereo Spread 3D y afinador de rack)*
 
 <img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
 

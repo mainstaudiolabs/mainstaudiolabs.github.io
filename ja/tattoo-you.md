@@ -10,7 +10,8 @@ function copyEmail() {
 
 # Tattoo You: ユーザーマニュアル
 
-**バージョン 1.0.0 · バーチャルアンプ・シミュレーション＆ヴィンテージFXスイート**
+**バージョン 1.0.0 · 完全スタジオ・ギターワークステーション＆ヴィンテージ '78–'81 FX スイート**
+*(単なるアンプシミュレーターを超えた、完全なスタジオ制作ワークステーション：ニューラル6L6真空管トポロジー、デュアルマイキング対応1x12 Hardwood Cab Lab、1トラック完結のStereo Spread 3D、ラックチューナーを統合)*
 
 <img :src="'/tattoo-you.png'" alt="Tattoo You Plugin GUI" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 1.75rem auto; border: 2px solid var(--vp-c-border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.35);" />
 

@@ -63,14 +63,14 @@ title: Main St Audio Labs - Stompboxes & Virtual Amplifiers
 </div>
 <div class="rock-card-content">
 <h3 class="rock-card-title">Tattoo You</h3>
-<div class="rock-card-subtitle">Head &amp; Combo + Dual FX '78–'81</div>
+<div class="rock-card-subtitle">Studio Guitar Workstation '78–'81</div>
 <div class="rock-card-badges">
 <span class="rock-card-badge">🪟 Win</span>
 <span class="rock-card-badge">🍎 Mac</span>
 <span class="rock-card-badge">🐧 Linux</span>
 <span class="rock-card-badge">VST3 · AU · App</span>
 </div>
-<p class="rock-card-desc">The articulate 1978–1981 Stones tone: 100W Head &amp; 60W Combo 6L6 power topologies, 3 channels, 5-band active graphic EQ, Phase '78 &amp; Tape Slapback, "MICK" EVM-12L cab with 7 studio mics, and integrated floating chromatic tuner.</p>
+<p class="rock-card-desc">Far beyond a simple amp simulator: a complete boutique guitar studio workstation. Neural 6L6 100W/60W topologies, 1x12 Hardwood Cab Lab with 24 IRs &amp; dual-convolution phase mixer, single-track Stereo Spread 3D, Phase '78, Slapback Delay, 5-band graphic EQ, and floating studio tuner.</p>
 <div class="rock-card-footer">
 <span class="rock-card-price" style="color: var(--vp-c-text-3);">SOON</span>
 <a href="/tattoo-you" class="rock-btn rock-btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.86rem;">View Details ➔</a>
