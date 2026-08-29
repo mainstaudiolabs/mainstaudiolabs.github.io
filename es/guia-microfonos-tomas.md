@@ -1,4 +1,4 @@
-<div class="prose-page" style="max-width:760px;">
+<div class="prose-page">
 
 # 🎙️ Guía Maestra de Micrófonos, Tomas e Ingeniería de Audio
 ### Acústica del Cono EVM-12L, Física de la Fase, Mezcla Dual y el Secreto del Estéreo en Una Sola Pista

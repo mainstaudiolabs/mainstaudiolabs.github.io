@@ -77,7 +77,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* ============ layout helpers (used inside markdown) ============ */
 .wrap{max-width:1180px;margin:0 auto;}
-.prose-page{max-width:660px;margin:0 auto;}
+.prose-page{max-width:960px;margin:0 auto;}
 .prose-page :where(p,ul,ol){color:var(--vp-c-text-2);}
 
 .eyebrow{
@@ -302,4 +302,4 @@ html{scroll-behavior:smooth;}
 .rock-header{text-align:center;margin:0 auto 1.75rem;max-width:800px;}
 .rock-title{font-family:'Lobster',cursive !important;font-size:2.8rem !important;line-height:1.5 !important;color:var(--vp-c-brand-1);margin-bottom:.5rem;padding-bottom:.2rem;}
 .rock-subtitle{font-family:'IBM Plex Mono',monospace !important;font-size:.85rem !important;text-transform:uppercase;letter-spacing:.1em;color:var(--vp-c-text-2);}
-.rock-container{max-width:760px;margin:0 auto;}
+.rock-container{max-width:960px;margin:0 auto;}

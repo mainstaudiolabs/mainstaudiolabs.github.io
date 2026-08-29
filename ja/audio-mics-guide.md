@@ -1,4 +1,4 @@
-<div class="prose-page" style="max-width:760px;">
+<div class="prose-page">
 
 # 🎙️ オーディオ・エンジニアリングマスターガイド：1x12 Hardwood Cab Lab & Studio Mic Mixer
 ### EVM-12Lコーン音響物理、位相科学、デュアルマイキング、1トラックで完結するステレオ録音の秘密

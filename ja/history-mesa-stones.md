@@ -14,7 +14,7 @@ function copyEmail() {
 </script>
 
 
-<div class="prose-page" style="max-width:760px;">
+<div class="prose-page">
 
 # '78–'81年の軌跡：ローリング・ストーンズとMesa/Boogieの出会い
 

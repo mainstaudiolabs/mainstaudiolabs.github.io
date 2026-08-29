@@ -9,7 +9,7 @@ function copyEmail() {
 </script>
 
 
-<div class="prose-page" style="max-width:760px;">
+<div class="prose-page">
 
 # The '78–'81 Story: How the Stones Met Mesa/Boogie
 

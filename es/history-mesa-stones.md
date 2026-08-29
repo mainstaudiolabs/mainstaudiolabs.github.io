@@ -9,7 +9,7 @@ function copyEmail() {
 </script>
 
 
-<div class="prose-page" style="max-width:760px;">
+<div class="prose-page">
 
 # La Historia del '78 al '81: Cómo los Stones conocieron a Mesa/Boogie
 

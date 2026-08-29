@@ -1,4 +1,4 @@
-<div class="prose-page" style="max-width:760px;">
+<div class="prose-page">
 
 # 🔊 不滅のトーン・キング：Electro-Voice EVM-12L の伝説
 ### キース・リチャーズ、スティーヴィー・レイ・ヴォーン、そしてロック史を決定づけた300Wスピーカーの歴史。

@@ -1,4 +1,4 @@
-<div class="prose-page" style="max-width:760px;">
+<div class="prose-page">
 
 # 🔊 The Indestructible King of Tone: The Electro-Voice EVM-12L Story
 ### The 300-Watt driver that defined the sound of Keith Richards, Stevie Ray Vaughan, and rock’s most legendary recordings.

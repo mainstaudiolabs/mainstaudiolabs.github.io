@@ -1,4 +1,4 @@
-<div class="prose-page" style="max-width:760px;">
+<div class="prose-page">
 
 # 🎙️ Master Audio Engineering Guide: 1x12 Hardwood Cab Lab & Studio Mic Mixer
 ### EVM-12L Cone Acoustics, Phase Physics, Dual Miking & The Single-Track Stereo Secret

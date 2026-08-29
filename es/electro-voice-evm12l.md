@@ -1,4 +1,4 @@
-<div class="prose-page" style="max-width:760px;">
+<div class="prose-page">
 
 # 🔊 El Rey Indestructible del Tono: La Historia del Electro-Voice EVM-12L
 ### El altavoz de 300 Watts que definió el sonido de Keith Richards, Stevie Ray Vaughan y las grabaciones más legendarias del rock.
