@@ -40,11 +40,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Manuals', link: '/manuals' },
-          { text: 'Audio & Mixing', link: '/audio-and-mixing' },
-          { text: 'Backstage', link: '/backstage' },
           { text: 'About', link: '/about' },
-          { text: 'Support', link: '/support' }
+          { text: 'Support the Lab', link: '/support' }
         ],
         sidebar: [
           {
@@ -65,11 +62,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Inicio', link: '/es/' },
-          { text: 'Manuales', link: '/es/manuales' },
-          { text: 'Audio y Mezcla', link: '/es/audio-y-mezcla' },
-          { text: 'Backstage', link: '/es/backstage' },
           { text: 'Acerca de', link: '/es/about' },
-          { text: 'Apoyo', link: '/es/support' }
+          { text: 'Apoya el Lab', link: '/es/support' }
         ],
         sidebar: [
           {
@@ -90,9 +84,6 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/ja/' },
-          { text: 'マニュアル', link: '/ja/manuals' },
-          { text: 'オーディオ＆ミックス', link: '/ja/audio-and-mixing' },
-          { text: 'バックステージ', link: '/ja/backstage' },
           { text: '概要', link: '/ja/about' },
           { text: '開発支援', link: '/ja/support' }
         ],

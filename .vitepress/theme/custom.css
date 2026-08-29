@@ -73,18 +73,23 @@ h1, h2, h3, h4, h5, h6 {
 /* Customized layout elements - Single continuous flat line across the entire navbar */
 .VPNav {
   background-color: var(--vp-c-bg) !important;
-  border-bottom: 2px solid var(--vp-c-border) !important;
 }
 
 .VPNavBar {
-  background-color: transparent !important;
-  border: none !important;
-  border-bottom: none !important;
+  background-color: var(--vp-c-bg) !important;
+  border-bottom: 2px solid var(--vp-c-border) !important;
+}
+
+.VPNavBar .container {
+  max-width: 100% !important;
+  padding: 0 1.5rem !important;
+}
+
+.VPNavBar .divider {
+  display: none !important;
 }
 
 .VPNavBar .wrapper,
-.VPNavBar .container,
-.VPNavBar .divider,
 .VPNavBarTitle,
 .VPNavBarTitle.has-sidebar {
   border: none !important;
