@@ -45,24 +45,11 @@ export default defineConfig({
         ],
         sidebar: [
           {
-            text: 'Plugins Manuals',
+            text: 'Sections',
             items: [
-              { text: 'Tattoo You (Studio Workstation)', link: '/tattoo-you' },
-              { text: 'Midnight Rambler (5E3 Tweed)', link: '/midnight-rambler' },
-              { text: 'Vintage Tuner Stompbox (Tuner)', link: '/tuner-pedal' }
-            ]
-          },
-          {
-            text: 'Audio & Mixing',
-            items: [
-              { text: '1x12 Hardwood Cab & Mics Guide', link: '/audio-mics-guide' },
-              { text: 'Electro-Voice EVM-12L Speaker', link: '/electro-voice-evm12l' }
-            ]
-          },
-          {
-            text: 'Backstage',
-            items: [
-              { text: 'How the Stones Met Mesa (1978–1981)', link: '/history-mesa-stones' }
+              { text: '📁 Plugins Manuals', link: '/manuals' },
+              { text: '🎛️ Audio & Mixing', link: '/audio-and-mixing' },
+              { text: '🎸 Backstage', link: '/backstage' }
             ]
           }
         ]
@@ -80,24 +67,11 @@ export default defineConfig({
         ],
         sidebar: [
           {
-            text: 'Manuales de Plugins',
+            text: 'Secciones',
             items: [
-              { text: 'Tattoo You (Estación de Estudio)', link: '/es/tattoo-you' },
-              { text: 'Midnight Rambler (5E3 Tweed)', link: '/es/midnight-rambler' },
-              { text: 'Vintage Tuner Stompbox (Afinador)', link: '/es/tuner-pedal' }
-            ]
-          },
-          {
-            text: 'Audio y Mezcla',
-            items: [
-              { text: 'Guía de Micrófonos y Tomas (1x12 Hardwood)', link: '/es/guia-microfonos-tomas' },
-              { text: 'El Altavoz Electro-Voice EVM-12L', link: '/es/electro-voice-evm12l' }
-            ]
-          },
-          {
-            text: 'Backstage',
-            items: [
-              { text: 'Los Stones y Mesa/Boogie (1978–1981)', link: '/es/history-mesa-stones' }
+              { text: '📁 Manuales de Plugins', link: '/es/manuales' },
+              { text: '🎛️ Audio y Mezcla', link: '/es/audio-y-mezcla' },
+              { text: '🎸 Backstage', link: '/es/backstage' }
             ]
           }
         ]
@@ -115,24 +89,11 @@ export default defineConfig({
         ],
         sidebar: [
           {
-            text: 'プラグイン・マニュアル',
+            text: 'セクション',
             items: [
-              { text: 'Tattoo You (スタジオ・ワークステーション)', link: '/ja/tattoo-you' },
-              { text: 'Midnight Rambler (5E3 Tweed)', link: '/ja/midnight-rambler' },
-              { text: 'Vintage Tuner Stompbox (チューナー)', link: '/ja/tuner-pedal' }
-            ]
-          },
-          {
-            text: 'オーディオ＆ミックス',
-            items: [
-              { text: '1x12 Hardwood キャビ＆マイクガイド', link: '/ja/audio-mics-guide' },
-              { text: 'Electro-Voice EVM-12L スピーカー', link: '/ja/electro-voice-evm12l' }
-            ]
-          },
-          {
-            text: 'バックステージ',
-            items: [
-              { text: 'ストーンズとMesa/Boogieの軌跡 (1978–1981)', link: '/ja/history-mesa-stones' }
+              { text: '📁 プラグイン・マニュアル', link: '/ja/manuals' },
+              { text: '🎛️ オーディオ＆ミックス', link: '/ja/audio-and-mixing' },
+              { text: '🎸 バックステージ', link: '/ja/backstage' }
             ]
           }
         ]
