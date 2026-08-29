@@ -21,6 +21,7 @@
   --vp-c-text-2: #111111;
   --vp-c-text-3: #222222;
   --vp-c-border: #000000; /* Solid black borders for print style */
+  --vp-sidebar-bg-color: #ecc04a;
 }
 
 .dark {
@@ -36,6 +37,7 @@
   --vp-c-brand-1: #e01a22;
   --vp-c-brand-2: #f32d36;
   --vp-c-brand-3: #b81017;
+  --vp-sidebar-bg-color: #151515;
 }
 
 /* Custom typographic tweaks */
@@ -68,6 +70,38 @@ h1, h2, h3, h4, h5, h6 {
 .VPNavBar {
   background-color: var(--vp-c-bg) !important;
   border-bottom: 2px solid var(--vp-c-border) !important;
+}
+
+/* Customized Sidebar matching vintage aesthetic */
+.VPSidebar {
+  background-color: var(--vp-c-bg) !important;
+  border-right: 2px solid var(--vp-c-border) !important;
+}
+
+.VPSidebar .curtain {
+  display: none !important;
+}
+
+.VPSidebarItem .text {
+  font-family: 'Special Elite', monospace !important;
+  font-size: 1.05rem !important;
+  color: var(--vp-c-text-1) !important;
+}
+
+.VPSidebarItem .link {
+  font-family: 'Courier Prime', monospace !important;
+  font-size: 0.95rem !important;
+  color: var(--vp-c-text-1) !important;
+  border-radius: 4px;
+}
+
+.VPSidebarItem .link:hover {
+  color: var(--vp-c-brand-1) !important;
+}
+
+.VPSidebarItem.is-active > .item .link {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: bold !important;
 }
 
 .VPFooter {
