@@ -40,7 +40,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Audio & Mixing', link: '/audio-mics-guide' },
+          { text: 'The Lab Journal', link: '/journal' },
           { text: 'About', link: '/about' },
           { text: 'Support the Lab', link: '/support' }
         ],
@@ -48,20 +48,21 @@ export default defineConfig({
           {
             text: 'Plugins Manuals',
             items: [
+              { text: 'Tattoo You (Studio Workstation)', link: '/tattoo-you' },
               { text: 'Midnight Rambler (5E3 Tweed)', link: '/midnight-rambler' },
-              { text: 'Vintage Tuner Stompbox (Tuner)', link: '/tuner-pedal' },
-              { text: 'Tattoo You (1978–1981 Tube & FX)', link: '/tattoo-you' }
+              { text: 'Vintage Tuner Stompbox (Tuner)', link: '/tuner-pedal' }
             ]
           },
           {
-            text: 'Audio & Mixing Lab',
+            text: 'The Lab Journal: Engineering & Mix',
             items: [
               { text: '1x12 Hardwood Cab & Mics Guide', link: '/audio-mics-guide' }
             ]
           },
           {
-            text: 'Studio Archives',
+            text: 'The Lab Journal: Tone History',
             items: [
+              { text: 'The Indestructible EVM-12L', link: '/electro-voice-evm12l' },
               { text: 'How the Stones Met Mesa (1978–1981)', link: '/history-mesa-stones' }
             ]
           }
@@ -75,7 +76,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Inicio', link: '/es/' },
-          { text: 'Audio y Mezcla', link: '/es/guia-microfonos-tomas' },
+          { text: 'Cuadernos de Estudio', link: '/es/cuadernos' },
           { text: 'Acerca de', link: '/es/about' },
           { text: 'Apoya el Lab', link: '/es/support' }
         ],
@@ -83,20 +84,21 @@ export default defineConfig({
           {
             text: 'Manuales de Plugins',
             items: [
+              { text: 'Tattoo You (Estación de Estudio)', link: '/es/tattoo-you' },
               { text: 'Midnight Rambler (5E3 Tweed)', link: '/es/midnight-rambler' },
-              { text: 'Vintage Tuner Stompbox (Afinador)', link: '/es/tuner-pedal' },
-              { text: 'Tattoo You (Amplis & FX 1978–1981)', link: '/es/tattoo-you' }
+              { text: 'Vintage Tuner Stompbox (Afinador)', link: '/es/tuner-pedal' }
             ]
           },
           {
-            text: 'Audio y Mezcla',
+            text: 'Cuadernos: Ingeniería & Mezcla',
             items: [
-              { text: 'Guía de Micrófonos y Tomas (1x12 Hardwood)', link: '/es/guia-microfonos-tomas' }
+              { text: 'Guía Maestra: Micrófonos y Tomas', link: '/es/guia-microfonos-tomas' }
             ]
           },
           {
-            text: 'Archivos de Estudio',
+            text: 'Cuadernos: Historia del Tono',
             items: [
+              { text: 'El Rey Indestructible: EVM-12L', link: '/es/electro-voice-evm12l' },
               { text: 'Los Stones y Mesa/Boogie (1978–1981)', link: '/es/history-mesa-stones' }
             ]
           }
@@ -110,7 +112,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/ja/' },
-          { text: '音響＆ミックス', link: '/ja/audio-mics-guide' },
+          { text: 'スタジオ・ジャーナル', link: '/ja/journal' },
           { text: '概要', link: '/ja/about' },
           { text: '開発支援', link: '/ja/support' }
         ],
@@ -118,21 +120,22 @@ export default defineConfig({
           {
             text: 'プラグイン・マニュアル',
             items: [
+              { text: 'Tattoo You (スタジオ・ワークステーション)', link: '/ja/tattoo-you' },
               { text: 'Midnight Rambler (5E3 Tweed)', link: '/ja/midnight-rambler' },
-              { text: 'Vintage Tuner Stompbox (チューナー)', link: '/ja/tuner-pedal' },
-              { text: 'Tattoo You (1978–1981 Tube & FX)', link: '/ja/tattoo-you' }
+              { text: 'Vintage Tuner Stompbox (チューナー)', link: '/ja/tuner-pedal' }
             ]
           },
           {
-            text: 'オーディオ＆ミキシング',
+            text: '音響工学＆ミキシング',
             items: [
               { text: '1x12 Hardwood キャビ＆マイクガイド', link: '/ja/audio-mics-guide' }
             ]
           },
           {
-            text: 'スタジオ・アーカイブ',
+            text: 'トーン・ヒストリー',
             items: [
-              { text: 'ストーンズとMesa/Boogieの軌跡 (1978–1981)', link: '/ja/history-mesa-stones' }
+              { text: '不滅のトーン：Electro-Voice EVM-12L', link: '/ja/electro-voice-evm12l' },
+              { text: 'ストーンズとMesa/Boogieの軌跡', link: '/ja/history-mesa-stones' }
             ]
           }
         ]
