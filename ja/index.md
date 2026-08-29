@@ -16,6 +16,8 @@ title: Main St Audio Labs - ヴィンテージ・アンプ＆スタジオ・プ�
 
 <ArticleGrid :limit="3" />
 
+<NewsletterSubscribe />
+
 <div class="rock-home-banner" style="margin-top: 1.5rem;">
   <div class="eyebrow" style="font-size: 1.1rem;">独立系オーディオ・エンジニアリング・ラボ</div>
   <p style="max-width: 600px; margin: 0.75rem auto 1rem; color: var(--vp-c-text-2);">不要なブロートウェア、サブスクリプション、侵略的DRMを排除した高精度スタジオ・ソフトウェアを開発しています。お問い合わせ：</p>

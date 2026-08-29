@@ -16,6 +16,8 @@ title: Main St Audio Labs - Vintage Stompboxes, Amplifiers & Studio Tools
 
 <ArticleGrid :limit="3" />
 
+<NewsletterSubscribe />
+
 <div class="rock-home-banner" style="margin-top: 1.5rem;">
   <div class="eyebrow" style="font-size: 1.1rem;">Independent Audio Engineering Lab</div>
   <p style="max-width: 600px; margin: 0.75rem auto 1rem; color: var(--vp-c-text-2);">We craft precision studio audio software with zero bloatware, no recurring subscriptions, and no invasive DRM. Reach out:</p>

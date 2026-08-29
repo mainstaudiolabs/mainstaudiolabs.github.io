@@ -16,6 +16,8 @@ title: Main St Audio Labs - Stompboxes, Amplificadores y Audio de Estudio
 
 <ArticleGrid :limit="3" />
 
+<NewsletterSubscribe />
+
 <div class="rock-home-banner" style="margin-top: 1.5rem;">
   <div class="eyebrow" style="font-size: 1.1rem;">Laboratorio Independiente de Ingeniería de Audio</div>
   <p style="max-width: 600px; margin: 0.75rem auto 1rem; color: var(--vp-c-text-2);">Desarrollamos software de audio de estudio de alta precisión, sin bloatware, sin suscripciones recurrentes y sin DRM invasivo. Contáctanos:</p>
