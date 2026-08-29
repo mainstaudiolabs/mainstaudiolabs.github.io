@@ -1,4 +1,6 @@
-﻿# 🎙️ Guía Maestra de Micrófonos, Tomas e Ingeniería de Audio
+<div class="prose-page" style="max-width:760px;">
+
+# 🎙️ Guía Maestra de Micrófonos, Tomas e Ingeniería de Audio
 ### Acústica del Cono EVM-12L, Física de la Fase, Mezcla Dual y el Secreto del Estéreo en Una Sola Pista
 **TattooYou Vintage Amplifier & Studio Suite | Main St Audio Labs**
 
@@ -226,3 +228,5 @@ En el menú superior de la consola **Cab Lab** puedes cargar con un solo clic la
    * Haz clic sobre el botón **`CAB LAB`** o directamente sobre el nombre del micrófono en la pantalla superior para abrir la consola detallada, ajustar los faders individuales de ganancia (-24 dB a +6 dB) o alternar entre Mono y Stereo Spread.
 3. **Compatibilidad Mono Garantizada:**
    * Gracias a la alineación a muestra cero ($t=0$), incluso si utilizas el modo Stereo Spread, cuando tu mezcla se reproduzca en un altavoz monofónico (como la radio de un coche o el altavoz de un teléfono móvil), la señal **no sufrirá cancelaciones de fase destructivas**, manteniendo todo el volumen y la pegada del amplificador.
+
+</div>

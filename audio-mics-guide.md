@@ -1,4 +1,6 @@
-﻿# 🎙️ Master Audio Engineering Guide: 1x12 Hardwood Cab Lab & Studio Mic Mixer
+<div class="prose-page" style="max-width:760px;">
+
+# 🎙️ Master Audio Engineering Guide: 1x12 Hardwood Cab Lab & Studio Mic Mixer
 ### EVM-12L Cone Acoustics, Phase Physics, Dual Miking & The Single-Track Stereo Secret
 **TattooYou Vintage Amplifier & Studio Suite | Main St Audio Labs**
 
@@ -219,3 +221,5 @@ Mic 1 routes to the Left channel and Mic 2 routes to the Right channel with auto
 1. **Front-Panel Rapid Tweak:** Use the **`BLEND`** mini-knob on the upper-right faceplate to adjust the balance during playback without opening the overlay window.
 2. **Full Console Access:** Click the **`CAB LAB`** button or the microphone display to access faders, polarity reverse ($\varnothing$), and stereo toggles.
 3. **Guaranteed Mono Compatibility:** Thanks to sample-accurate alignment ($t=0$), playback on mono devices (smartphones, mono smart speakers) retains **full volume and low-end impact with zero phase cancellation**.
+
+</div>

@@ -13,6 +13,9 @@ function copyEmail() {
 }
 </script>
 
+
+<div class="prose-page" style="max-width:760px;">
+
 # '78–'81年の軌跡：ローリング・ストーンズとMesa/Boogieの出会い
 
 **スタジオアーカイブ＆トーン探究記 · Main St Audio Labs**
@@ -83,4 +86,6 @@ Mesa/Boogie Mark I（およびその後のMark II、Mark III）は、10年以上
     <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
     <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
   </div>
+</div>
+
 </div>

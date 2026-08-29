@@ -1,4 +1,6 @@
-﻿# 🔊 不滅のトーン・キング：Electro-Voice EVM-12L の伝説
+<div class="prose-page" style="max-width:760px;">
+
+# 🔊 不滅のトーン・キング：Electro-Voice EVM-12L の伝説
 ### キース・リチャーズ、スティーヴィー・レイ・ヴォーン、そしてロック史を決定づけた300Wスピーカーの歴史。
 **スタジオ・ジャーナル · トーン・ヒストリー | Main St Audio Labs**
 
@@ -53,3 +55,5 @@ EVM-12Lを薄い合板のオープンバックキャビネットに載せるの�
 ---
 
 👉 [**EVM-12Lの24テイクの使い分けを学ぶ：キャビネット＆マイク完全ガイド →**](/ja/audio-mics-guide)
+
+</div>

@@ -1,4 +1,6 @@
-﻿# 🔊 El Rey Indestructible del Tono: La Historia del Electro-Voice EVM-12L
+<div class="prose-page" style="max-width:760px;">
+
+# 🔊 El Rey Indestructible del Tono: La Historia del Electro-Voice EVM-12L
 ### El altavoz de 300 Watts que definió el sonido de Keith Richards, Stevie Ray Vaughan y las grabaciones más legendarias del rock.
 **Cuadernos de Estudio · Historia del Tono | Main St Audio Labs**
 
@@ -100,3 +102,5 @@ En **TattooYou**, elegimos el **1x12 Hardwood con altavoz EVM-12L** precisamente
 ---
 
 👉 [**Aprende a mezclar las 24 tomas del EVM-12L en la Guía Maestra de Micrófonos y Tomas →**](/es/guia-microfonos-tomas)
+
+</div>

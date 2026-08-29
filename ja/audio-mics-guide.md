@@ -1,4 +1,6 @@
-﻿# 🎙️ オーディオ・エンジニアリングマスターガイド：1x12 Hardwood Cab Lab & Studio Mic Mixer
+<div class="prose-page" style="max-width:760px;">
+
+# 🎙️ オーディオ・エンジニアリングマスターガイド：1x12 Hardwood Cab Lab & Studio Mic Mixer
 ### EVM-12Lコーン音響物理、位相科学、デュアルマイキング、1トラックで完結するステレオ録音の秘密
 **TattooYou Vintage Amplifier & Studio Suite | Main St Audio Labs**
 
@@ -158,3 +160,5 @@ Mic 1が左チャンネル、Mic 2が右チャンネルに**+3 dB（$\sqrt{2}$�
 
 1. **フロントパネルでの即時調整：** アンプ前面右上の **`BLEND`** ミニノブで、オーバーレイを開くことなく演奏中にブレンド比率を調整可能。
 2. **モノラル互換性の完全保証：** サンプル精度のアライメントにより、スマートフォンやモノラルスピーカーで再生しても**音の打ち消し合い（フェイズアウト）が一切発生しません**。
+
+</div>

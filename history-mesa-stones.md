@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { ref } from 'vue'
 const btnText = ref('Copy Email')
 function copyEmail() {
@@ -7,6 +7,9 @@ function copyEmail() {
   setTimeout(function() { btnText.value = 'Copy Email' }, 2000)
 }
 </script>
+
+
+<div class="prose-page" style="max-width:760px;">
 
 # The '78–'81 Story: How the Stones Met Mesa/Boogie
 
@@ -79,4 +82,6 @@ Today, that original 1977 Mark I with the cigarette burn still exists, a physica
     <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
     <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
   </div>
+</div>
+
 </div>
