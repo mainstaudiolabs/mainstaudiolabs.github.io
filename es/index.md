@@ -1,6 +1,6 @@
 ---
 layout: doc
-sidebar: true
+sidebar: false
 aside: false
 title: Main St Audio Labs - Stompboxes, Amplificadores y Audio de Estudio
 ---
@@ -9,6 +9,21 @@ title: Main St Audio Labs - Stompboxes, Amplificadores y Audio de Estudio
 <div class="rock-header">
 <div class="rock-title">Main St Audio Labs</div>
 <div class="rock-subtitle">Herramientas de Audio, Procesadores de Señal y Cuadernos de Ingeniería Inspirados en Grabaciones Clásicas</div>
+</div>
+
+<!-- ========================================== -->
+<!-- NAVEGACIÓN DIRECTA DE SECCIONES            -->
+<!-- ========================================== -->
+<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; margin-bottom: 2rem;">
+  <a href="/es/manuales" class="rock-btn rock-btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
+    📁 Manuales de Plugins
+  </a>
+  <a href="/es/audio-y-mezcla" class="rock-btn rock-btn-secondary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
+    🎛️ Audio y Mezcla
+  </a>
+  <a href="/es/backstage" class="rock-btn rock-btn-secondary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
+    🎸 Backstage
+  </a>
 </div>
 
 <!-- ========================================== -->

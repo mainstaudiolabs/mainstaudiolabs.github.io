@@ -40,12 +40,15 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
+          { text: 'Manuals', link: '/manuals' },
+          { text: 'Audio & Mixing', link: '/audio-and-mixing' },
+          { text: 'Backstage', link: '/backstage' },
           { text: 'About', link: '/about' },
-          { text: 'Support the Lab', link: '/support' }
+          { text: 'Support', link: '/support' }
         ],
         sidebar: [
           {
-            text: 'EXPLORE',
+            text: 'SECTIONS',
             items: [
               { text: '📁 Plugins Manuals', link: '/manuals' },
               { text: '🎛️ Audio & Mixing', link: '/audio-and-mixing' },
@@ -62,12 +65,15 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Inicio', link: '/es/' },
+          { text: 'Manuales', link: '/es/manuales' },
+          { text: 'Audio y Mezcla', link: '/es/audio-y-mezcla' },
+          { text: 'Backstage', link: '/es/backstage' },
           { text: 'Acerca de', link: '/es/about' },
-          { text: 'Apoya el Lab', link: '/es/support' }
+          { text: 'Apoyo', link: '/es/support' }
         ],
         sidebar: [
           {
-            text: 'EXPLORAR',
+            text: 'SECCIONES',
             items: [
               { text: '📁 Manuales de Plugins', link: '/es/manuales' },
               { text: '🎛️ Audio y Mezcla', link: '/es/audio-y-mezcla' },
@@ -84,6 +90,9 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/ja/' },
+          { text: 'マニュアル', link: '/ja/manuals' },
+          { text: 'オーディオ＆ミックス', link: '/ja/audio-and-mixing' },
+          { text: 'バックステージ', link: '/ja/backstage' },
           { text: '概要', link: '/ja/about' },
           { text: '開発支援', link: '/ja/support' }
         ],

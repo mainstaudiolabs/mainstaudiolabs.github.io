@@ -1,6 +1,6 @@
 ---
 layout: doc
-sidebar: true
+sidebar: false
 aside: false
 title: Main St Audio Labs - ヴィンテージ・アンプ＆スタジオ・プロセッサー
 ---
@@ -9,6 +9,21 @@ title: Main St Audio Labs - ヴィンテージ・アンプ＆スタジオ・プ�
 <div class="rock-header">
 <div class="rock-title">Main St Audio Labs</div>
 <div class="rock-subtitle">名盤の響きを追求するスタジオ・プロセッサー＆オーディオ工学ジャーナル</div>
+</div>
+
+<!-- ========================================== -->
+<!-- セクション直接ナビゲーション              -->
+<!-- ========================================== -->
+<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; margin-bottom: 2rem;">
+  <a href="/ja/manuals" class="rock-btn rock-btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
+    📁 プラグイン・マニュアル
+  </a>
+  <a href="/ja/audio-and-mixing" class="rock-btn rock-btn-secondary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
+    🎛️ オーディオ＆ミックス
+  </a>
+  <a href="/ja/backstage" class="rock-btn rock-btn-secondary" style="padding: 0.55rem 1.25rem; font-size: 0.92rem; text-decoration: none;">
+    🎸 バックステージ
+  </a>
 </div>
 
 <!-- ========================================== -->
