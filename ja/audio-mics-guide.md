@@ -1,10 +1,6 @@
 <div class="prose-page">
 
-# 🎙️ オーディオ・エンジニアリングマスターガイド：1x12 Hardwood Cab Lab & Studio Mic Mixer
-### EVM-12Lコーン音響物理、位相科学、デュアルマイキング、1トラックで完結するステレオ録音の秘密
-**TattooYou Vintage Amplifier & Studio Suite | Main St Audio Labs**
-
----
+<ArticleHeader icon="🎙️" title="オーディオ・エンジニアリングマスターガイド：1x12 Hardwood Cab Lab &amp; Studio Mic Mixer" subtitle="EVM-12Lコーン音響物理、位相科学、デュアルマイキング、1トラックで完結するステレオ録音の秘密" meta="TattooYou Vintage Amplifier &amp; Studio Suite | Main St Audio Labs" />
 
 # 第1部：音響物理と位相の基礎
 

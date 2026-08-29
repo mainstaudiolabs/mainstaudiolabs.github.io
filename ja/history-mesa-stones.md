@@ -16,11 +16,7 @@ function copyEmail() {
 
 <div class="prose-page">
 
-# '78–'81年の軌跡：ローリング・ストーンズとMesa/Boogieの出会い
-
-**スタジオアーカイブ＆トーン探究記 · Main St Audio Labs**
-
----
+<ArticleHeader title="'78–'81年の軌跡：ローリング・ストーンズとMesa/Boogieの出会い" meta="スタジオアーカイブ＆トーン探究記 · Main St Audio Labs" />
 
 <img src="/KEITH_RICHARDS_MESA_03.webp" alt="Keith Richards with his Mesa Boogie Mark I" style="max-height: 400px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
 

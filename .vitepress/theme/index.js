@@ -6,6 +6,7 @@ import PluginGrid from './components/PluginGrid.vue'
 import PluginCard from './components/PluginCard.vue'
 import ProductHero from './components/ProductHero.vue'
 import ArticleGrid from './components/ArticleGrid.vue'
+import ArticleHeader from './components/ArticleHeader.vue'
 
 export default {
   extends: DefaultTheme,
@@ -16,5 +17,6 @@ export default {
     app.component('PluginCard', PluginCard)
     app.component('ProductHero', ProductHero)
     app.component('ArticleGrid', ArticleGrid)
+    app.component('ArticleHeader', ArticleHeader)
   }
 }

@@ -11,11 +11,7 @@ function copyEmail() {
 
 <div class="prose-page">
 
-# The '78–'81 Story: How the Stones Met Mesa/Boogie
-
-**Historical Archive & Sound Notes · Main St Audio Labs**
-
----
+<ArticleHeader title="The '78–'81 Story: How the Stones Met Mesa/Boogie" meta="Historical Archive &amp; Sound Notes · Main St Audio Labs" />
 
 <img src="/KEITH_RICHARDS_MESA_03.webp" alt="Keith Richards with his Mesa Boogie Mark I" style="max-height: 400px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
 

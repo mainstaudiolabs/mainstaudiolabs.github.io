@@ -1,10 +1,6 @@
 <div class="prose-page">
 
-# 🎙️ Master Audio Engineering Guide: 1x12 Hardwood Cab Lab & Studio Mic Mixer
-### EVM-12L Cone Acoustics, Phase Physics, Dual Miking & The Single-Track Stereo Secret
-**TattooYou Vintage Amplifier & Studio Suite | Main St Audio Labs**
-
----
+<ArticleHeader icon="🎙️" title="Master Audio Engineering Guide: 1x12 Hardwood Cab Lab &amp; Studio Mic Mixer" subtitle="EVM-12L Cone Acoustics, Phase Physics, Dual Miking &amp; The Single-Track Stereo Secret" meta="TattooYou Vintage Amplifier &amp; Studio Suite | Main St Audio Labs" />
 
 # PART I: ACOUSTIC & PHYSICAL FOUNDATIONS
 

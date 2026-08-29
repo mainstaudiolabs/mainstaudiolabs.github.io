@@ -1,10 +1,6 @@
 <div class="prose-page">
 
-# 🔊 不滅のトーン・キング：Electro-Voice EVM-12L の伝説
-### キース・リチャーズ、スティーヴィー・レイ・ヴォーン、そしてロック史を決定づけた300Wスピーカーの歴史。
-**スタジオ・ジャーナル · トーン・ヒストリー | Main St Audio Labs**
-
----
+<ArticleHeader icon="🔊" title="不滅のトーン・キング：Electro-Voice EVM-12L の伝説" subtitle="キース・リチャーズ、スティーヴィー・レイ・ヴォーン、そしてロック史を決定づけた300Wスピーカーの歴史。" meta="スタジオ・ジャーナル · トーン・ヒストリー | Main St Audio Labs" />
 
 ## ⚡ 1. ブリティッシュ・スピーカーへのアンチテーゼ
 

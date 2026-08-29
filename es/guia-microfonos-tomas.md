@@ -1,10 +1,6 @@
 <div class="prose-page">
 
-# 🎙️ Guía Maestra de Micrófonos, Tomas e Ingeniería de Audio
-### Acústica del Cono EVM-12L, Física de la Fase, Mezcla Dual y el Secreto del Estéreo en Una Sola Pista
-**TattooYou Vintage Amplifier & Studio Suite | Main St Audio Labs**
-
----
+<ArticleHeader icon="🎙️" title="Guía Maestra de Micrófonos, Tomas e Ingeniería de Audio" subtitle="Acústica del Cono EVM-12L, Física de la Fase, Mezcla Dual y el Secreto del Estéreo en Una Sola Pista" meta="TattooYou Vintage Amplifier &amp; Studio Suite | Main St Audio Labs" />
 
 ## 📖 Prólogo: El Arte de Capturar un Amplificador Legendario
 

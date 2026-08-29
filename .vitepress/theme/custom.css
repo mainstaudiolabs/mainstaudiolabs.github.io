@@ -80,6 +80,13 @@ h1,h2,h3,h4,h5,h6{
 .prose-page{max-width:1180px;margin:0 auto;padding-top:2rem;}
 .prose-page :where(p,ul,ol){color:var(--vp-c-text-2);}
 
+/* ============ shared article header (used by ArticleHeader.vue) ============ */
+.article-header{text-align:center;max-width:860px;margin:0 auto 2.2rem;}
+.article-header h1{margin:0 0 .9rem;}
+.article-header-icon{margin-right:.5rem;}
+.article-header-sub{font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:1.05rem;color:var(--vp-c-text-1);max-width:720px;margin:0 auto .9rem;line-height:1.5;}
+.article-header-meta{font-family:'IBM Plex Mono',monospace;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--vp-c-text-3);}
+
 .eyebrow{
   font-family:'IBM Plex Mono', monospace;
   font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;

@@ -11,11 +11,7 @@ function copyEmail() {
 
 <div class="prose-page">
 
-# La Historia del '78 al '81: Cómo los Stones conocieron a Mesa/Boogie
-
-**Archivo Histórico y Notas de Sonido · Main St Audio Labs**
-
----
+<ArticleHeader title="La Historia del '78 al '81: Cómo los Stones conocieron a Mesa/Boogie" meta="Archivo Histórico y Notas de Sonido · Main St Audio Labs" />
 
 <img src="/KEITH_RICHARDS_MESA_03.webp" alt="Keith Richards con su Mesa Boogie Mark I" style="max-height: 400px; display: block; margin: 1.5rem auto; border: 2px solid var(--vp-c-border); border-radius: 6px;" />
 
