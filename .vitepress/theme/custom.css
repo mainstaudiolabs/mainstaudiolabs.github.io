@@ -70,16 +70,35 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--vp-c-text-1);
 }
 
-/* Customized layout elements */
-.VPNavBar {
+/* Customized layout elements - Single continuous flat line across the entire navbar */
+.VPNav {
   background-color: var(--vp-c-bg) !important;
   border-bottom: 2px solid var(--vp-c-border) !important;
+}
+
+.VPNavBar {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+}
+
+.VPNavBar .wrapper,
+.VPNavBar .container,
+.VPNavBar .divider,
+.VPNavBarTitle,
+.VPNavBarTitle.has-sidebar {
+  border: none !important;
+  border-bottom: none !important;
+  border-right: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
 }
 
 /* Customized Sidebar matching vintage aesthetic */
 .VPSidebar {
   background-color: var(--vp-c-bg) !important;
   border-right: 2px solid var(--vp-c-border) !important;
+  border-top: none !important;
 }
 
 .VPSidebar .curtain {
