@@ -155,7 +155,10 @@ TattooYou integra la consola **1x12 Hardwood Cab Lab**, equipada con un motor de
   * **Stereo Spread (Encendido):** Envía el Mic 1 a la izquierda y el Mic 2 a la derecha con ganancia compensada (+3 dB), permitiendo obtener un **estéreo analógico gigante en una sola pista del DAW sin duplicar pistas**.
 * **6 Presets de Estudio Calibrados:** Carga instantánea de combinaciones maestras (*Studio Standard*, *Heavy Punch*, *Live Room 3D*, *Wide Double Track*, etc.).
 
-👉 [**Consulta la Guía Maestra Completa de Micrófonos, Tomas y Acústica (1x12 Hardwood Cab Lab) →**](/es/guia-microfonos-tomas)
+::: tip 🎙️ GUÍA MAESTRA DE MICROFONEO, FASE Y MEZCLA DUAL
+¿Quieres profundizar en la física del altavoz EVM-12L, la respuesta acústica del cono, la ciencia de la fase a muestra cero y el truco para conseguir una pared de guitarras en estéreo gigante en **una sola pista del DAW**?
+👉 [**Leer la Guía Maestra Completa de Micrófonos y Tomas (1x12 Hardwood Cab Lab) →**](/es/guia-microfonos-tomas)
+:::
 
 ---
 

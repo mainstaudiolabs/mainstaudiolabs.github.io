@@ -155,7 +155,10 @@ TattooYou integrates the **1x12 Hardwood Cab Lab** studio overlay, powered by a 
   * **Stereo Spread (On):** Routes Mic 1 to the Left channel and Mic 2 to the Right channel with automatic +3 dB loudness compensation, creating **colossal analog stereo width on a single DAW track without duplicating tracks**.
 * **6 Calibrated Studio Reference Presets:** Instant access to industry-standard combinations (*Studio Standard*, *Heavy Punch*, *Live Room 3D*, *Wide Double Track*, etc.).
 
+::: tip 🎙️ MASTER AUDIO ENGINEERING & MIC PLACEMENT GUIDE
+Want to explore the driver acoustics of the EVM-12L, sample-accurate phase physics, and the production secret behind achieving massive stereo guitar walls on a **single DAW track**?
 👉 [**Read the Complete Master Audio Engineering & Mic Placement Guide (1x12 Hardwood Cab Lab) →**](/audio-mics-guide)
+:::
 
 ---
 
