@@ -38,16 +38,18 @@ function copyEmail() {
 
 ---
 
-## 2. Dual Power Amp Architecture: HEAD vs COMBO
+## 2. Power & Voicing Controls: WATTAGE (100W vs 60W) and BRIGHT
 
-**Tattoo You** features a dedicated power amplifier topology switch on the bottom control panel, capturing the two physical circuit configurations favored on stage and in the studio:
+**Tattoo You** features two interactive vintage toggle switches on the bottom control panel, capturing the physical and harmonic response of the '78 Mark I circuit:
 
-| Power Amp Mode | Circuit Topology | Tonal Character & Dynamics | Ideal Applications |
+| Control | Position | Tonal Character & Dynamics | Ideal Applications |
 | :--- | :--- | :--- | :--- |
-| **`HEAD`** | **100W 6L6 Power Amp (Quad 6L6)** | Massive dynamic headroom, tight and percussive low-end thump, lightning-fast transient response, and aggressive note attack without premature power-stage sag. | Huge stadium rock riffs (*"Start Me Up"*, *"Little T&A"*, *"Hang Fire"*), heavy chord punch, and high-impact rhythm tracking. |
-| **`COMBO`** | **60W 6L6 Power Amp (Dual 6L6)** | Organic power supply sag, natural power-tube compression, blooming midrange harmonics, and a spongier, touch-sensitive breakup when digging in with the pick. | Dynamic soul cleans (*"Beast of Burden"*, *"Tops"*), singing blues leads, funk comps (*"Dance Part 1"*), and intimate studio tracks (*"Waiting on a Friend"*). |
+| **`WATTAGE`** | **`100W`** (Up) | Colossal headroom, tight and percussive low-end thump, lightning-fast transient response, and aggressive note attack without premature power-stage sag. | Huge stadium rock riffs (*"Start Me Up"*, *"Little T&A"*, *"Hang Fire"*), heavy chord punch, and high-impact rhythm tracking. |
+| | **`60W`** (Down) | Organic power supply sag, natural power-tube compression, blooming midrange harmonics, and a spongier, touch-sensitive breakup when digging in with the pick. | Dynamic soul cleans (*"Beast of Burden"*, *"Tops"*), singing blues leads, funk comps (*"Dance Part 1"*), and intimate studio tracks (*"Waiting on a Friend"*). |
+| **`BRIGHT`** | **`NORMAL`** (Up) | Balanced, full-frequency response with warm midrange and smooth top-end roll-off. | Versatile all-around setting for humbuckers and heavy rock rhythm. |
+| | **`BRIGHT`** (Down) | Crystalline upper-treble chime and enhanced pick bite. | Open-G chord clarity, reggae/funk skanks, and darker pickup voicings. |
 
-* **Interactive Control:** Toggle between `HEAD` and `COMBO` using the vintage toggle switch or by simply clicking directly on the `HEAD` / `COMBO` text labels.
+* **Interactive Control:** Toggle switches using the physical lever or by simply clicking directly on the `100W`/`60W` or `NORMAL`/`BRIGHT` text labels.
 
 ---
 
@@ -141,17 +143,19 @@ Integrated directly before the preamp stage, replicating the exact pedalboard si
 
 ---
 
-### 5. "MICK" Cabinet Module (1x12 EVM-12L & Arrow Selector)
+### 5. "1x12 Hardwood Cab Lab" (Dual-Convolution Mixer & Stereo Spread)
 
-The **`MICK`** section (a deliberate homage to Mick Jagger and studio microphone capture) pairs the 1x12 ported cabinet loaded with an authentic Electro-Voice EVM-12L 200W speaker. Equipped with dual green navigation arrows (`<` and `>`) and direct text click, you can smoothly cycle through 7 phase-coherent microphone placements:
+TattooYou integrates the **1x12 Hardwood Cab Lab** studio overlay, powered by a parallel dual-convolution engine loaded with 24 sample-accurate impulse responses captured from an authentic **EVM-12L** driver in a ported solid hardwood cabinet:
 
-1. **`SM57 SweetSpot`:** Shure SM57 on cap-edge — balanced attack, rich mids and solid punch.
-2. **`SM57 Warm`:** Shure SM57 on outer cone — deep lows, smooth highs and warm textures.
-3. **`SM57 Direct`:** Shure SM57 on center — razor-sharp articulation and immediate bite.
-4. **`SM57 BassPort`:** Shure SM57 on the front port — extended low-end thump (80–100 Hz).
-5. **`U87 Studio`:** Neumann U87Ai large diaphragm condenser — high fidelity, wide dynamic range and open 3D air.
-6. **`U87 Warm`:** Neumann U87Ai in warm zone — dense harmonic body without top-end harshness.
-7. **`Bypass IR`:** Disables internal cabinet simulation for pairing with external third-party IR loaders.
+* **`CAB LAB Button & Display`:** Clicking the `CAB LAB` button or the microphone readout on the front plate opens the full-screen studio mixing console.
+* **`MIC 1 (Direct)` & `MIC 2 (Blend/Room)`:** Two independent channels with dropdown selection across 24 official studio takes (Shure 57, Neumann 87, BassPort, and Room 3D), individual channel level faders (-24 dB to +6 dB), and polarity invert switch ($\varnothing$ 180°).
+* **`CAB BLEND Knob (% / Equal-Power)`:** Smooth continuous crossfader between both microphones with equal-power loudness preservation. Accessible in the console or directly on the front panel mini-knob.
+* **`STEREO SPREAD 3D Switch (Single-Track Stereo Secret)`:**
+  * **Mono Sum (Off):** Combines both microphones in phase into the center of the track (ideal for dense rhythm mixes).
+  * **Stereo Spread (On):** Routes Mic 1 to the Left channel and Mic 2 to the Right channel with automatic +3 dB loudness compensation, creating **colossal analog stereo width on a single DAW track without duplicating tracks**.
+* **6 Calibrated Studio Reference Presets:** Instant access to industry-standard combinations (*Studio Standard*, *Heavy Punch*, *Live Room 3D*, *Wide Double Track*, etc.).
+
+👉 [**Read the Complete Master Audio Engineering & Mic Placement Guide (1x12 Hardwood Cab Lab) →**](/audio-mics-guide)
 
 ---
 

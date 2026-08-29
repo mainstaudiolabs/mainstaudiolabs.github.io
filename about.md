@@ -23,7 +23,7 @@ Main St Audio Labs is a personal project born at the intersection of vintage roc
 
 ## The Story Behind the Labs
 
-Main St Audio Labs was founded by **Emiliano Tegli**, a guitarist, developer, and tone enthusiast obsessed with the raw, dynamic, and touch-sensitive guitar sounds of the late 1960s and early 1970s. 
+Main St Audio Labs was founded by **Emiliano Tegli**, an independent audio developer, guitarist, and tone enthusiast obsessed with the raw, dynamic, and touch-sensitive guitar sounds of the late 1960s and early 1970s. 
 
 The name is a direct tribute to the legendary basement sessions of the Rolling Stones' *Exile on Main St.*—an era where records were greasy, valves were pushed to their melting point, and guitar tones had a tridimensional, organic warmth that defined rock music.
 

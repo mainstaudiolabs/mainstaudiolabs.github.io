@@ -40,6 +40,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
+          { text: 'Audio & Mixing', link: '/audio-mics-guide' },
           { text: 'About', link: '/about' },
           { text: 'Support the Lab', link: '/support' }
         ],
@@ -50,6 +51,12 @@ export default defineConfig({
               { text: 'Midnight Rambler (5E3 Tweed)', link: '/midnight-rambler' },
               { text: 'Vintage Tuner Stompbox (Tuner)', link: '/tuner-pedal' },
               { text: 'Tattoo You (1978–1981 Tube & FX)', link: '/tattoo-you' }
+            ]
+          },
+          {
+            text: 'Audio & Mixing Lab',
+            items: [
+              { text: '1x12 Hardwood Cab & Mics Guide', link: '/audio-mics-guide' }
             ]
           },
           {
@@ -68,6 +75,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Inicio', link: '/es/' },
+          { text: 'Audio y Mezcla', link: '/es/guia-microfonos-tomas' },
           { text: 'Acerca de', link: '/es/about' },
           { text: 'Apoya el Lab', link: '/es/support' }
         ],
@@ -78,6 +86,12 @@ export default defineConfig({
               { text: 'Midnight Rambler (5E3 Tweed)', link: '/es/midnight-rambler' },
               { text: 'Vintage Tuner Stompbox (Afinador)', link: '/es/tuner-pedal' },
               { text: 'Tattoo You (Amplis & FX 1978–1981)', link: '/es/tattoo-you' }
+            ]
+          },
+          {
+            text: 'Audio y Mezcla',
+            items: [
+              { text: 'Guía de Micrófonos y Tomas (1x12 Hardwood)', link: '/es/guia-microfonos-tomas' }
             ]
           },
           {
@@ -96,6 +110,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/ja/' },
+          { text: '音響＆ミックス', link: '/ja/audio-mics-guide' },
           { text: '概要', link: '/ja/about' },
           { text: '開発支援', link: '/ja/support' }
         ],
@@ -106,6 +121,12 @@ export default defineConfig({
               { text: 'Midnight Rambler (5E3 Tweed)', link: '/ja/midnight-rambler' },
               { text: 'Vintage Tuner Stompbox (チューナー)', link: '/ja/tuner-pedal' },
               { text: 'Tattoo You (1978–1981 Tube & FX)', link: '/ja/tattoo-you' }
+            ]
+          },
+          {
+            text: 'オーディオ＆ミキシング',
+            items: [
+              { text: '1x12 Hardwood キャビ＆マイクガイド', link: '/ja/audio-mics-guide' }
             ]
           },
           {

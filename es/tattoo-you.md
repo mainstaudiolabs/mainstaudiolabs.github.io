@@ -38,16 +38,18 @@ function copyEmail() {
 
 ---
 
-## 2. Arquitectura de Etapa de Potencia Dual: HEAD vs COMBO
+## 2. Controles de Topología: WATTAGE (100W vs 60W) y BRIGHT
 
-**Tattoo You** incorpora una llave selectora de topología de etapa de potencia en el panel inferior, recreando con fidelidad física los dos formatos de amplificador utilizados en vivo y en estudio:
+**Tattoo You** incorpora dos switches de palanca interactivos en el panel inferior, recreando la respuesta física y armónica del circuito Mark I ('78):
 
-| Modo de Potencia | Topología del Circuito | Carácter Tonal & Dinámica | Aplicaciones Ideales |
+| Control | Posición | Carácter Tonal & Dinámica | Aplicaciones Ideales |
 | :--- | :--- | :--- | :--- |
-| **`HEAD`** | **Etapa de Potencia 100W 6L6 (Cuarteto 6L6)** | Margen dinámico (headroom) colosal, graves ultra ajustados y percusivos, respuesta de transitorios inmediata y ataque afilado sin compresión prematura en la etapa de salida. | Riffs demoledores de estadio (*"Start Me Up"*, *"Little T&A"*, *"Hang Fire"*), acordes rítmicos pesados y guitarras de alto impacto. |
-| **`COMBO`** | **Etapa de Potencia 60W 6L6 (Pareja 6L6)** | "Sag" y compresión orgánica de la fuente de poder, armónicos medios dulces y florecientes, y una ruptura más esponjosa y reactiva al ataque de la púa. | Limpios con alma (*"Beast of Burden"*, *"Tops"*), solos bluseros cantantes, funk rítmico (*"Dance Part 1"*) y temas de estudio íntimos (*"Waiting on a Friend"*). |
+| **`WATTAGE`** | **`100W`** (Arriba) | Headroom colosal, graves ultra ajustados y percusivos, respuesta de transitorios inmediata y ataque afilado sin compresión prematura. | Riffs demoledores de estadio (*"Start Me Up"*, *"Little T&A"*, *"Hang Fire"*), rítmicas pesadas y guitarras de alto impacto. |
+| | **`60W`** (Abajo) | Compresión y "sag" orgánico de la fuente de poder, medios dulces y una ruptura más reactiva al ataque de la púa. | Limpios con alma (*"Beast of Burden"*, *"Tops"*), solos de blues y temas de estudio íntimos (*"Waiting on a Friend"*). |
+| **`BRIGHT`** | **`NORMAL`** (Arriba) | Respuesta plana y equilibrada, medios cálidos y agudos suaves sin asperezas. | Configuración todoterreno para guitarras rítmicas y pastillas humbucker. |
+| | **`BRIGHT`** (Abajo) | Realce cristalino de agudos superiores y mordisco de púa (*chime* de campana). | Acordes abiertos en Sol, skanks de reggae/funk y guitarras con pastillas oscuras. |
 
-* **Control Interactivo:** Puedes alternar entre `HEAD` y `COMBO` usando la palanca física o simplemente haciendo clic directo sobre el texto `HEAD` / `COMBO` en el panel.
+* **Control Interactivo:** Puedes alternar los switches usando la palanca física o haciendo clic directo sobre el texto `100W`/`60W` o `NORMAL`/`BRIGHT` en el panel.
 
 ---
 
@@ -141,17 +143,19 @@ Integrado directamente antes de la etapa del preamplificador, replicando el fluj
 
 ---
 
-### 5. Módulo "MICK" (Gabinete 1x12 EVM-12L & Selector con Flechas)
+### 5. Consola "1x12 Hardwood Cab Lab" (Mezclador Dual de Micrófonos & Stereo Spread)
 
-La sección **`MICK`** (un homenaje deliberado a Mick Jagger y al microfoneo de estudio) aloja el gabinete con puerto 1x12 cargado con el legendario altavoz Electro-Voice EVM-12L de 200W. Equipado con flechas verdes de navegación suave (`<` y `>`) y clic directo en el texto, permite recorrer 7 posiciones de microfoneo coherentes de fase:
+TattooYou integra la consola **1x12 Hardwood Cab Lab**, equipada con un motor de convolución dual en paralelo y 24 tomas milimétricas sobre el legendario altavoz **EVM-12L** montado en gabinete de madera dura con puerto *bass-reflex*:
 
-1. **`SM57 SweetSpot`:** Shure SM57 en el borde del cono (cap-edge) — ataque equilibrado, medios ricos y pegada sólida.
-2. **`SM57 Warm`:** Shure SM57 en el cono exterior — graves profundos, agudos suaves y texturas cálidas.
-3. **`SM57 Direct`:** Shure SM57 en el centro — articulación afilada como una navaja y mordida inmediata.
-4. **`SM57 BassPort`:** Shure SM57 en el puerto frontal — golpe de graves extendido (80–100 Hz).
-5. **`U87 Studio`:** Condensador de diafragma grande Neumann U87Ai — alta fidelidad, amplio rango dinámico y aire 3D abierto.
-6. **`U87 Warm`:** Neumann U87Ai en zona cálida — cuerpo armónico denso sin dureza en agudos.
-7. **`Bypass IR`:** Desactiva la simulación de gabinete interno para emparejar con cargadores de IR (Respuestas a Impulsos) de terceros externos.
+* **`CAB LAB Button & Display`:** Al hacer clic en el botón `CAB LAB` o sobre la pantalla del micrófono en la carátula frontal, se abre la consola de mezcla flotante de estudio.
+* **`MIC 1 (Directo)` & `MIC 2 (Blend/Room)`:** Dos canales independientes con selectores de las 24 tomas oficiales (Shure 57, Neumann 87, BassPort y Room 3D), faders de nivel individual (-24 dB a +6 dB) y switch de inversión de polaridad ($\varnothing$ 180°).
+* **`Perilla CAB BLEND (% / Equal-Power)`:** Ajuste continuo del balance entre ambos micrófonos con compensación automática de volumen para mantener la energía intacta. Accesible tanto en la consola como en la mini-perilla frontal del amplificador.
+* **`Switch STEREO SPREAD 3D (El Secreto de Ahorrar Pistas)`:**
+  * **Mono Sum (Apagado):** Suma ambos micrófonos en fase al centro (ideal para rítmicas compactas y mezclas densas).
+  * **Stereo Spread (Encendido):** Envía el Mic 1 a la izquierda y el Mic 2 a la derecha con ganancia compensada (+3 dB), permitiendo obtener un **estéreo analógico gigante en una sola pista del DAW sin duplicar pistas**.
+* **6 Presets de Estudio Calibrados:** Carga instantánea de combinaciones maestras (*Studio Standard*, *Heavy Punch*, *Live Room 3D*, *Wide Double Track*, etc.).
+
+👉 [**Consulta la Guía Maestra Completa de Micrófonos, Tomas y Acústica (1x12 Hardwood Cab Lab) →**](/es/guia-microfonos-tomas)
 
 ---
 
