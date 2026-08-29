@@ -79,7 +79,6 @@ h1,h2,h3,h4,h5,h6{
 .wrap{max-width:1180px;margin:0 auto;}
 .prose-page{max-width:660px;margin:0 auto;}
 .prose-page :where(p,ul,ol){color:var(--vp-c-text-2);}
-.prose-page h1{text-align:center;}
 
 .eyebrow{
   font-family:'IBM Plex Mono', monospace;
