@@ -101,9 +101,13 @@ h1,h2,h3,h4,h5,h6{
 .brand-tagline{
   font-family:'IBM Plex Mono',monospace;font-size:.82rem;font-weight:500;
   letter-spacing:.1em;text-transform:uppercase;color:var(--vp-c-text-2);
-  max-width:44ch;margin:.9rem auto 0;
+  max-width:44ch;
   text-align:center;
 }
+/* two-class selector needed: VitePress's own .vp-doc p{margin:16px 0}
+   otherwise wins on specificity and pins margin-left/right to 0,
+   overriding the auto centering below and pinning the box to the left. */
+.hero .brand-tagline{margin:.9rem auto 0;}
 .hero p.lead{color:var(--vp-c-text-2);max-width:52ch;font-size:1.05rem;margin:1.1rem auto 0;text-align:center;}
 .hero-meta{display:flex;gap:.6rem;margin-top:1.4rem;flex-wrap:wrap;justify-content:center;}
 
