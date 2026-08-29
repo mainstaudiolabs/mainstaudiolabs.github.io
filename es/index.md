@@ -1,6 +1,6 @@
-﻿---
+---
 layout: doc
-sidebar: false
+sidebar: true
 aside: false
 title: Main St Audio Labs - Stompboxes, Amplificadores y Audio de Estudio
 ---

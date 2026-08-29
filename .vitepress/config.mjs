@@ -40,7 +40,6 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'The Lab Journal', link: '/journal' },
           { text: 'About', link: '/about' },
           { text: 'Support the Lab', link: '/support' }
         ],
@@ -54,15 +53,15 @@ export default defineConfig({
             ]
           },
           {
-            text: 'The Lab Journal: Engineering & Mix',
+            text: 'Audio & Mixing',
             items: [
-              { text: '1x12 Hardwood Cab & Mics Guide', link: '/audio-mics-guide' }
+              { text: '1x12 Hardwood Cab & Mics Guide', link: '/audio-mics-guide' },
+              { text: 'Electro-Voice EVM-12L Speaker', link: '/electro-voice-evm12l' }
             ]
           },
           {
-            text: 'The Lab Journal: Tone History',
+            text: 'Backstage',
             items: [
-              { text: 'The Indestructible EVM-12L', link: '/electro-voice-evm12l' },
               { text: 'How the Stones Met Mesa (1978–1981)', link: '/history-mesa-stones' }
             ]
           }
@@ -76,7 +75,6 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Inicio', link: '/es/' },
-          { text: 'Cuadernos de Estudio', link: '/es/cuadernos' },
           { text: 'Acerca de', link: '/es/about' },
           { text: 'Apoya el Lab', link: '/es/support' }
         ],
@@ -90,15 +88,15 @@ export default defineConfig({
             ]
           },
           {
-            text: 'Cuadernos: Ingeniería & Mezcla',
+            text: 'Audio y Mezcla',
             items: [
-              { text: 'Guía Maestra: Micrófonos y Tomas', link: '/es/guia-microfonos-tomas' }
+              { text: 'Guía de Micrófonos y Tomas (1x12 Hardwood)', link: '/es/guia-microfonos-tomas' },
+              { text: 'El Altavoz Electro-Voice EVM-12L', link: '/es/electro-voice-evm12l' }
             ]
           },
           {
-            text: 'Cuadernos: Historia del Tono',
+            text: 'Backstage',
             items: [
-              { text: 'El Rey Indestructible: EVM-12L', link: '/es/electro-voice-evm12l' },
               { text: 'Los Stones y Mesa/Boogie (1978–1981)', link: '/es/history-mesa-stones' }
             ]
           }
@@ -112,7 +110,6 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/ja/' },
-          { text: 'スタジオ・ジャーナル', link: '/ja/journal' },
           { text: '概要', link: '/ja/about' },
           { text: '開発支援', link: '/ja/support' }
         ],
@@ -126,16 +123,16 @@ export default defineConfig({
             ]
           },
           {
-            text: '音響工学＆ミキシング',
+            text: 'オーディオ＆ミックス',
             items: [
-              { text: '1x12 Hardwood キャビ＆マイクガイド', link: '/ja/audio-mics-guide' }
+              { text: '1x12 Hardwood キャビ＆マイクガイド', link: '/ja/audio-mics-guide' },
+              { text: 'Electro-Voice EVM-12L スピーカー', link: '/ja/electro-voice-evm12l' }
             ]
           },
           {
-            text: 'トーン・ヒストリー',
+            text: 'バックステージ',
             items: [
-              { text: '不滅のトーン：Electro-Voice EVM-12L', link: '/ja/electro-voice-evm12l' },
-              { text: 'ストーンズとMesa/Boogieの軌跡', link: '/ja/history-mesa-stones' }
+              { text: 'ストーンズとMesa/Boogieの軌跡 (1978–1981)', link: '/ja/history-mesa-stones' }
             ]
           }
         ]
