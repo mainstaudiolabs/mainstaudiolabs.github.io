@@ -45,7 +45,7 @@ export default defineConfig({
         ],
         sidebar: [
           {
-            text: 'Sections',
+            text: 'EXPLORE',
             items: [
               { text: '📁 Plugins Manuals', link: '/manuals' },
               { text: '🎛️ Audio & Mixing', link: '/audio-and-mixing' },
@@ -67,7 +67,7 @@ export default defineConfig({
         ],
         sidebar: [
           {
-            text: 'Secciones',
+            text: 'EXPLORAR',
             items: [
               { text: '📁 Manuales de Plugins', link: '/es/manuales' },
               { text: '🎛️ Audio y Mezcla', link: '/es/audio-y-mezcla' },
@@ -89,7 +89,7 @@ export default defineConfig({
         ],
         sidebar: [
           {
-            text: 'セクション',
+            text: 'ナビゲーション',
             items: [
               { text: '📁 プラグイン・マニュアル', link: '/ja/manuals' },
               { text: '🎛️ オーディオ＆ミックス', link: '/ja/audio-and-mixing' },

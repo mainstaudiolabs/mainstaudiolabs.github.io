@@ -22,6 +22,7 @@
   --vp-c-text-3: #222222;
   --vp-c-border: #000000; /* Solid black borders for print style */
   --vp-sidebar-bg-color: #ecc04a;
+  --vp-sidebar-width: 220px;
 }
 
 .dark {
@@ -38,6 +39,7 @@
   --vp-c-brand-2: #f32d36;
   --vp-c-brand-3: #b81017;
   --vp-sidebar-bg-color: #151515;
+  --vp-sidebar-width: 220px;
 }
 
 /* Custom typographic tweaks */
@@ -144,26 +146,39 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 
-/* Enable full-width responsive layout for catalog storefront */
-.VPDoc:not(.has-sidebar) .container {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding: 0 1rem !important;
+/* Compact Sidebar rules */
+.VPSidebar {
+  width: 220px !important;
+  background-color: var(--vp-c-bg) !important;
+  border-right: 2px solid var(--vp-c-border) !important;
 }
 
-.VPDoc:not(.has-sidebar) .content {
-  max-width: 1360px !important;
+@media (min-width: 960px) {
+  .VPContent.has-sidebar {
+    padding-left: 220px !important;
+  }
+}
+
+/* Enable full-width responsive layout for catalog storefront */
+.VPDoc .container {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 1.5rem !important;
+}
+
+.VPDoc .content {
+  max-width: 1280px !important;
   width: 100% !important;
   padding: 0 1rem 2.5rem 1rem !important;
-  margin: 0 auto !important;
+  margin: 0 !important;
 }
 
-.VPDoc:not(.has-sidebar) .content-container {
+.VPDoc .content-container {
   max-width: 100% !important;
   width: 100% !important;
 }
 
-.VPDoc:not(.has-sidebar) .vp-doc {
+.VPDoc .vp-doc {
   max-width: 100% !important;
   width: 100% !important;
 }
