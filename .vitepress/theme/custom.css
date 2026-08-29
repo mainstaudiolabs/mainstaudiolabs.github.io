@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6{
 .brand-tagline{
   font-family:'IBM Plex Mono',monospace;font-size:.82rem;font-weight:500;
   letter-spacing:.1em;text-transform:uppercase;color:var(--vp-c-text-2);
-  max-width:44ch;
+  max-width:640px;padding:0 1rem;
   text-align:center;
 }
 /* two-class selector needed: VitePress's own .vp-doc p{margin:16px 0}
