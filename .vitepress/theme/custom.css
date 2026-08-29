@@ -300,6 +300,6 @@ html{scroll-behavior:smooth;}
 .rock-copy-btn{background:var(--vp-c-brand-1);color:var(--red-ink) !important;font-family:'IBM Plex Sans';font-size:.85rem;font-weight:600;padding:.5rem 1.1rem;border:0;border-radius:5px;cursor:pointer;}
 .rock-copy-btn:hover{background:var(--vp-c-brand-2);}
 .rock-header{text-align:center;margin:0 auto 1.75rem;max-width:800px;}
-.rock-title{font-family:'Lobster',cursive !important;font-size:2.8rem !important;color:var(--vp-c-brand-1);margin-bottom:.3rem;}
+.rock-title{font-family:'Lobster',cursive !important;font-size:2.8rem !important;line-height:1.5 !important;color:var(--vp-c-brand-1);margin-bottom:.5rem;padding-bottom:.2rem;}
 .rock-subtitle{font-family:'IBM Plex Mono',monospace !important;font-size:.85rem !important;text-transform:uppercase;letter-spacing:.1em;color:var(--vp-c-text-2);}
 .rock-container{max-width:760px;margin:0 auto;}
