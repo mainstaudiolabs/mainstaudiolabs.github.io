@@ -33,6 +33,11 @@ The EVM-12L resembles no other guitar loudspeaker:
 3. **Massive 16 lb (7.5 kg) Ceramic Magnet:** Provides complete electromagnetic control over the cone. When the pick strikes the string, the cone reacts with **lightning-fast transient speed**.
 4. **100 dB SPL @ 1W/1m Sensitivity:** Highly efficient at converting electrical energy into acoustic loudness—making a 50W head sound as loud as a 100W amplifier.
 
+
+> 📄 **The numbers, first hand.** Electro-Voice still publishes the original EVM-12L engineering data sheet, with the response curves, impedance, Thiele-Small parameters and enclosure recommendations. It is the document the figures in this article come from.
+>
+> 👉 [**EVM-12L Engineering Data Sheet (PDF, Electro-Voice) →**](https://products.electrovoice.com/binary/EVM12L%20Engineering%20Data%20Sheet.pdf)
+
 ---
 
 ## 🎸 3. Tone Masters and Their Secret Weapon

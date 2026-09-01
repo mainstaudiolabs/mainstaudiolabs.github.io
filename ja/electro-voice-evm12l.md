@@ -31,6 +31,11 @@
 3. **7.5 kgの超大型セラミックマグネット:** コーン紙を電磁気力で完全に制動し、ピッキング瞬時の**電光石火のトランジェント・スピード**を実現。
 4. **100 dB SPL @ 1W/1m の高能率:** 50Wのアンプを繋いでも100Wアンプに匹敵する圧倒的な音圧を放出。
 
+
+> 📄 **一次資料としての数値。** Electro-Voice は現在も EVM-12L のオリジナル・エンジニアリング・データシートを公開しています。周波数特性、インピーダンス、Thiele-Small パラメータ、推奨エンクロージャーまで掲載されており、本記事の数値はこの資料に基づいています。
+>
+> 👉 [**EVM-12L Engineering Data Sheet (PDF, Electro-Voice) →**](https://products.electrovoice.com/binary/EVM12L%20Engineering%20Data%20Sheet.pdf)
+
 ---
 
 ## 🎸 3. トーン・マスターたちとEVM-12L

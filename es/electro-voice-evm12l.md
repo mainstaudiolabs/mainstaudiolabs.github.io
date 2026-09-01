@@ -33,6 +33,11 @@ El EVM-12L no se parece a ningún otro altavoz de guitarra:
 3. **Imán Cerámico Monstruoso de 7.5 kg:** Proporciona un control magnético total sobre la membrana. Cuando la púa toca la cuerda, el cono responde de forma **inmediata** (velocidad de transitorio ultra rápida).
 4. **Sensibilidad de 100 dB SPL @ 1W/1m:** Es tan eficiente convirtiendo energía eléctrica en acústica que conectar un amplificador de 50W a un EVM-12L produce el volumen percibido de un amplificador de 100W con altavoces estándar.
 
+
+> 📄 **Los números, de primera mano.** Electro-Voice todavía publica la hoja de datos de ingeniería original del EVM-12L, con las curvas de respuesta, la impedancia, los parámetros Thiele-Small y las recomendaciones de caja. Es el documento del que salen las cifras de este artículo.
+>
+> 👉 [**EVM-12L Engineering Data Sheet (PDF, Electro-Voice) →**](https://products.electrovoice.com/binary/EVM12L%20Engineering%20Data%20Sheet.pdf)
+
 ---
 
 ## 🎸 3. Los Maestros del Tono y sus Secretos
