@@ -30,6 +30,8 @@ A guitar pickup does not hear the whole string: it hears **the exact point where
 
 On a Stratocaster the neck pickup sits roughly 163 mm from the bridge. On a 648 mm scale that is **exactly one quarter of the string length**. And one quarter of the way along is where the fourth harmonic has its node.
 
+<img src="/open-low-e-diagram.svg" alt="The neck pickup sits exactly on the node of the fourth harmonic" style="width:100%;max-width:620px;display:block;margin:1.5rem auto;border:1px solid var(--vp-c-border);border-radius:8px;" />
+
 ```text
    BRIDGE                                                            NUT
      │                                                                │

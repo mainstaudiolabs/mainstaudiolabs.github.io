@@ -30,6 +30,8 @@ Un micrófono de guitarra no escucha la cuerda entera: escucha **el punto exacto
 
 En una Stratocaster, el micrófono del mango está a unos 163 mm del puente. Sobre una escala de 648 mm, eso es **exactamente un cuarto del largo de la cuerda**. Y a un cuarto del largo cae el nodo del cuarto armónico.
 
+<img src="/open-low-e-diagram.svg" alt="El microfono del mango cae justo en el nodo del cuarto armonico" style="width:100%;max-width:620px;display:block;margin:1.5rem auto;border:1px solid var(--vp-c-border);border-radius:8px;" />
+
 ```text
    PUENTE                                                         CEJUELA
      │                                                               │

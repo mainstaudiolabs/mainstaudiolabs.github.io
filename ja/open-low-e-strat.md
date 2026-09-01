@@ -30,6 +30,8 @@
 
 ストラトキャスターのフロントピックアップは、ブリッジからおよそ 163 mm の位置にあります。648 mm のスケールに対して、これは**ちょうど弦長の4分の1**。そして4分の1の位置には、第4倍音の節があります。
 
+<img src="/open-low-e-diagram.svg" alt="フロントピックアップは第4倍音の節の真上にある" style="width:100%;max-width:620px;display:block;margin:1.5rem auto;border:1px solid var(--vp-c-border);border-radius:8px;" />
+
 ```text
    ブリッジ                                                        ナット
      │                                                               │
