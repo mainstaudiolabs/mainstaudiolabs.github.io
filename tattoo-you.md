@@ -10,6 +10,34 @@ function copyEmail() {
 
 <ProductHero id="tattoo-you" />
 
+<!-- ===========================================================================
+     SOUND SAMPLES  --  uncomment when the four clips are recorded.
+     Put the files in  public/  with exactly these names.
+     Nothing sells an amp sim like hearing it: this is the single most
+     valuable thing missing from this page.
+============================================================================
+<div class="section-head"><h2>Hear it</h2></div>
+
+<p>Four takes, one per preset. Nothing but guitar, Tattoo You and the cab.</p>
+
+<figure>
+  <figcaption><strong>Riff Power</strong> — Crunch · 100W · SM57 Warm</figcaption>
+  <audio controls preload="none" src="/tattoo-you-riff-power.mp3"></audio>
+</figure>
+<figure>
+  <figcaption><strong>Liquid Clean</strong> — Clean · 60W · Phase '78 + Slapback</figcaption>
+  <audio controls preload="none" src="/tattoo-you-liquid-clean.mp3"></audio>
+</figure>
+<figure>
+  <figcaption><strong>Funk Groove</strong> — Clean · 60W · tight and dry</figcaption>
+  <audio controls preload="none" src="/tattoo-you-funk-groove.mp3"></audio>
+</figure>
+<figure>
+  <figcaption><strong>Singing Lead</strong> — Lead · 100W · Slapback</figcaption>
+  <audio controls preload="none" src="/tattoo-you-singing-lead.mp3"></audio>
+</figure>
+=========================================================================== -->
+
 <div id="manual"></div>
 
 > **The Definitive Tube Tone: The Mark I ('78) Circuit & The Stones Sound**  
@@ -95,7 +123,7 @@ The 3-position channel rotary selector covers the complete gain spectrum of the 
 
 ### 1. Input Stage & Dynamic Protection
 
-* **`ADAPTIVE NOISE GATE`:** Situated at the very start of the pure instrument chain, automatically eliminating background noise, 50/60 Hz electromagnetic hum, and high-gain hiss without clipping long musical sustain (Ultra-fast 1.5ms attack, 35ms hold, 140ms natural release).
+* **`NOISE GATE`:** Situated at the very start of the pure instrument chain, automatically eliminating background noise, 50/60 Hz electromagnetic hum, and high-gain hiss without clipping long musical sustain (Ultra-fast 1.5ms attack, 35ms hold, 140ms natural release).
 * **`ANALOG WAVESHAPER / SOFT CLIPPER (-0.1 dBFS)`:** Smooth hyperbolic tangent saturation placed directly before the NAM neural engine. Guarantees 100% linear transparency for normal playing while musical soft-limiting safeguards against digital overs and neural extrapolation artifacts.
 
 ---
@@ -229,15 +257,14 @@ Accessible via the compact **`TUNER`** button in the lower right corner, Tattoo 
 
 ## 7. Technical Specifications & Platform Support
 
-* **Plugin Formats:** VST3 (64-bit), Standalone Application (.exe).
+* **Plugin Formats:** VST3 (64-bit), Standalone Application.
 * **Operating Systems:**
   * **Windows:** Windows 10 / Windows 11 (x64).
-  * **macOS:** Universal Binary (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone (Compatible with High Sierra 10.13 through macOS Sonoma/Sequoia).
+  * **macOS:** Universal Binary (Apple Silicon & Intel) — AU, VST3, Standalone.
   * **Linux:** Ubuntu / Debian / Arch (VST3, Standalone).
-* **Processing Engine:** Neural Amp Modeler (NAM) WaveNet Architecture + DSP Real-time Convolution.
-* **Internal Audio Resolution:** 64-bit double precision floating point processing.
-* **Sample Rates Supported:** 44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz, 176.4 kHz, 192 kHz.
-* **Latency:** Zero latency (0 samples) for live tracking and monitoring.
+* **Processing Engine:** Neural Amp Modeler (NAM) WaveNet architecture + real-time DSP convolution. The neural stage runs in 64-bit double precision.
+* **Session Sample Rate:** the amp was captured at **48 kHz**, and that is the recommended rate. **44.1 kHz** works just as well — the difference is negligible in practice, and between them they cover almost every rock and guitar session. Above 48 kHz the amp's voicing shifts upward and it stops sounding like the Mark I that was captured: at 96 kHz the shift is a full octave. Work at 48 or 44.1.
+* **Latency:** zero latency (0 samples) for live tracking and monitoring.
 
 ---
 

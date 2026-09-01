@@ -10,6 +10,32 @@ function copyEmail() {
 
 <ProductHero id="tattoo-you" />
 
+<!-- ===========================================================================
+     サウンドサンプル  --  4つのクリップを録音したらコメントを外してください。
+     ファイルは public/ に、以下のファイル名で置いてください。
+============================================================================
+<div class="section-head"><h2>試聴</h2></div>
+
+<p>プリセットごとに1テイク、計4テイク。ギターと Tattoo You とキャビネットだけです。</p>
+
+<figure>
+  <figcaption><strong>Riff Power</strong> — Crunch · 100W · SM57 Warm</figcaption>
+  <audio controls preload="none" src="/tattoo-you-riff-power.mp3"></audio>
+</figure>
+<figure>
+  <figcaption><strong>Liquid Clean</strong> — Clean · 60W · Phase '78 + Slapback</figcaption>
+  <audio controls preload="none" src="/tattoo-you-liquid-clean.mp3"></audio>
+</figure>
+<figure>
+  <figcaption><strong>Funk Groove</strong> — Clean · 60W</figcaption>
+  <audio controls preload="none" src="/tattoo-you-funk-groove.mp3"></audio>
+</figure>
+<figure>
+  <figcaption><strong>Singing Lead</strong> — Lead · 100W · Slapback</figcaption>
+  <audio controls preload="none" src="/tattoo-you-singing-lead.mp3"></audio>
+</figure>
+=========================================================================== -->
+
 <div id="manual"></div>
 
 > **ストーンズ・ファンがギタリストのために捧げるプラグイン：**  
@@ -205,14 +231,13 @@ EVM-12Lのコーン音響物理、サンプル精度の位相科学、そして1
 
 ## 7. 技術仕様＆対応環境
 
-* **プラグインフォーマット:** VST3 (64-bit), Standalone アプリケーション (.exe)。
+* **プラグインフォーマット:** VST3 (64-bit), Standalone アプリケーション。
 * **対応OS:**
-  * **Windows:** Windows 10 / Windows 11 (x64) — *現在利用可能*。
-  * **macOS:** Universal Binary (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone — *近日公開*。
-  * **Linux:** Ubuntu / Debian / Arch (VST3, Standalone) — *近日公開*。
-* **プロセッシングエンジン:** Neural Amp Modeler (NAM) WaveNet アーキテクチャ + 高速リアルタイム畳み込みDSP。
-* **内部オーディオ解像度:** 64-bit 浮動小数点倍精度処理。
-* **対応サンプルレート:** 44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz, 176.4 kHz, 192 kHz。
+  * **Windows:** Windows 10 / Windows 11 (x64)。
+  * **macOS:** Universal Binary (Apple Silicon & Intel) — AU, VST3, Standalone。
+  * **Linux:** Ubuntu / Debian / Arch (VST3, Standalone)。
+* **プロセッシングエンジン:** Neural Amp Modeler (NAM) WaveNet アーキテクチャ + リアルタイム畳み込みDSP。ニューラル段は64ビット倍精度で動作します。
+* **セッションのサンプルレート:** アンプは **48 kHz** でキャプチャされており、48 kHz が推奨レートです。**44.1 kHz** でも同様に問題なく、実用上の差はごくわずかです。48 kHz を超えるとアンプのボイシングが上方向にずれ、キャプチャした Mark I の鳴りではなくなります（96 kHz では1オクターブ分ずれます）。48 kHz または 44.1 kHz でお使いください。
 * **レイテンシー:** ゼロレイテンシー（0 samples）によるリアルタイムトラッキング対応。
 
 ---

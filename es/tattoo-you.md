@@ -10,6 +10,33 @@ function copyEmail() {
 
 <ProductHero id="tattoo-you" />
 
+<!-- ===========================================================================
+     MUESTRAS DE SONIDO  --  descomentar cuando esten grabados los cuatro clips.
+     Los archivos van en  public/  con exactamente estos nombres.
+     Un ampli sim se vende escuchandolo: esto es lo que mas falta en la pagina.
+============================================================================
+<div class="section-head"><h2>Escuchalo</h2></div>
+
+<p>Cuatro tomas, una por preset. Nada mas que guitarra, Tattoo You y el cabinet.</p>
+
+<figure>
+  <figcaption><strong>Riff Power</strong> — Crunch · 100W · SM57 Warm</figcaption>
+  <audio controls preload="none" src="/tattoo-you-riff-power.mp3"></audio>
+</figure>
+<figure>
+  <figcaption><strong>Limpio Liquido</strong> — Clean · 60W · Phase '78 + Slapback</figcaption>
+  <audio controls preload="none" src="/tattoo-you-liquid-clean.mp3"></audio>
+</figure>
+<figure>
+  <figcaption><strong>Funk Groove</strong> — Clean · 60W · ajustado y seco</figcaption>
+  <audio controls preload="none" src="/tattoo-you-funk-groove.mp3"></audio>
+</figure>
+<figure>
+  <figcaption><strong>Solo Cantante</strong> — Lead · 100W · Slapback</figcaption>
+  <audio controls preload="none" src="/tattoo-you-singing-lead.mp3"></audio>
+</figure>
+=========================================================================== -->
+
 <div id="manual"></div>
 
 > **El Tono Valvular Definitivo: El Circuito Mark I ('78) y el Sonido de los Stones**  
@@ -95,7 +122,7 @@ El selector giratorio de 3 posiciones cubre todo el espectro de ganancia del cl�
 
 ### 1. Etapa de Entrada & Protección Dinámica
 
-* **`NOISE GATE ADAPTATIVO`:** Ubicado al inicio de la cadena pura de instrumento, elimina automáticamente ruidos de fondo, hum electromagnético y siseos sin cortar el sostenido (*sustain*) de la guitarra (Ataque ultra rápido 1.5ms, Hold 35ms, Release 140ms).
+* **`NOISE GATE`:** Ubicado al inicio de la cadena pura de instrumento, elimina automáticamente ruidos de fondo, hum electromagnético y siseos sin cortar el sostenido (*sustain*) de la guitarra (Ataque ultra rápido 1.5ms, Hold 35ms, Release 140ms).
 * **`WAVESHAPER / SOFT CLIPPER (-0.1 dBFS)`:** Etapa de compresión analógica suave mediante tangente hiperbólica situada justo antes del motor neuronal NAM. Asegura transparencia total para la dinámica natural del instrumento y previene colapsos o distorsiones digitales ásperas ante picos extremos de señal.
 
 ---
@@ -229,15 +256,14 @@ Accesible mediante el botón compacto **`TUNER`** en la esquina inferior derecha
 
 ## 7. Especificaciones Técnicas y Soporte de Plataformas
 
-* **Formatos de Plugin:** VST3 (64-bit), Aplicación Standalone (.exe).
+* **Formatos de Plugin:** VST3 (64-bit), Aplicación Standalone.
 * **Sistemas Operativos:**
   * **Windows:** Windows 10 / Windows 11 (x64).
-  * **macOS:** Binario Universal (Apple Silicon M1/M2/M3/M4 & Intel x64) / AU, VST3, Standalone (Compatible desde High Sierra 10.13 hasta macOS Sonoma/Sequoia).
+  * **macOS:** Binario Universal (Apple Silicon e Intel) — AU, VST3, Standalone.
   * **Linux:** Ubuntu / Debian / Arch (VST3, Standalone).
-* **Motor de Procesamiento:** Arquitectura WaveNet de Modelado Neuronal de Amplificadores (NAM) + Convolución DSP en tiempo real.
-* **Resolución de Audio Interna:** Procesamiento de coma flotante de doble precisión de 64 bits.
-* **Tasas de Muestreo Soportadas:** 44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz, 176.4 kHz, 192 kHz.
-* **Latencia:** Cero latencia (0 muestras) para seguimiento y monitoreo en vivo.
+* **Motor de Procesamiento:** Arquitectura WaveNet de Modelado Neuronal de Amplificadores (NAM) + convolución DSP en tiempo real. La etapa neuronal trabaja en doble precisión de 64 bits.
+* **Frecuencia de Muestreo de la Sesión:** el ampli fue capturado a **48 kHz**, y ésa es la frecuencia recomendada. **44,1 kHz** anda igual de bien: la diferencia es despreciable en la práctica, y entre las dos cubren casi cualquier sesión de rock y guitarra. Por encima de 48 kHz el voicing del ampli se corre hacia arriba y deja de sonar como el Mark I que se capturó: a 96 kHz el corrimiento es de una octava entera. Trabajá a 48 o a 44,1.
+* **Latencia:** cero latencia (0 muestras) para grabación y monitoreo en vivo.
 
 ---
 
