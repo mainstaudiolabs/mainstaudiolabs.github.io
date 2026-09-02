@@ -257,6 +257,7 @@ Accesible mediante el botón compacto **`TUNER`** en la esquina inferior derecha
 ## 7. Especificaciones Técnicas y Soporte de Plataformas
 
 * **Formatos de Plugin:** VST3 (64-bit), Aplicación Standalone.
+* **Procesador:** cualquier procesador x86 de 64 bits. Tattoo You se compila para el juego de instrucciones base, así que no requiere AVX ni AVX2: anda en máquinas viejas donde algunos plugins de ampli neuronal directamente no cargan. No hace falta placa de video.
 * **Sistemas Operativos:**
   * **Windows:** Windows 10 / Windows 11 (x64).
   * **macOS:** Binario Universal (Apple Silicon e Intel) — AU, VST3, Standalone.
@@ -264,6 +265,7 @@ Accesible mediante el botón compacto **`TUNER`** en la esquina inferior derecha
 * **Motor de Procesamiento:** Arquitectura WaveNet de Modelado Neuronal de Amplificadores (NAM) + convolución DSP en tiempo real. La etapa neuronal trabaja en doble precisión de 64 bits.
 * **Frecuencia de Muestreo de la Sesión:** el ampli fue capturado a **48 kHz**, y ésa es la frecuencia recomendada. **44,1 kHz** anda igual de bien: la diferencia es despreciable en la práctica, y entre las dos cubren casi cualquier sesión de rock y guitarra. Por encima de 48 kHz el voicing del ampli se corre hacia arriba y deja de sonar como el Mark I que se capturó: a 96 kHz el corrimiento es de una octava entera. Trabajá a 48 o a 44,1.
 * **Latencia:** cero latencia (0 muestras) para grabación y monitoreo en vivo.
+* **Si tu máquina sufre:** el plugin trae su propio indicador de CPU en la barra de abajo. Hacé clic y te dice, en castellano, si tenés margen y qué hacer al respecto. Subir el tamaño de buffer del host suele alcanzar.
 
 ---
 

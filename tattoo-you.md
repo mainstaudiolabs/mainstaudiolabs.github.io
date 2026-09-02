@@ -258,6 +258,7 @@ Accessible via the compact **`TUNER`** button in the lower right corner, Tattoo 
 ## 7. Technical Specifications & Platform Support
 
 * **Plugin Formats:** VST3 (64-bit), Standalone Application.
+* **Processor:** any 64-bit x86 processor. Tattoo You is built for the baseline instruction set, so it does not require AVX or AVX2 — it runs on older machines that some neural amp plugins refuse to load on. No dedicated graphics card needed.
 * **Operating Systems:**
   * **Windows:** Windows 10 / Windows 11 (x64).
   * **macOS:** Universal Binary (Apple Silicon & Intel) — AU, VST3, Standalone.
@@ -265,6 +266,7 @@ Accessible via the compact **`TUNER`** button in the lower right corner, Tattoo 
 * **Processing Engine:** Neural Amp Modeler (NAM) WaveNet architecture + real-time DSP convolution. The neural stage runs in 64-bit double precision.
 * **Session Sample Rate:** the amp was captured at **48 kHz**, and that is the recommended rate. **44.1 kHz** works just as well — the difference is negligible in practice, and between them they cover almost every rock and guitar session. Above 48 kHz the amp's voicing shifts upward and it stops sounding like the Mark I that was captured: at 96 kHz the shift is a full octave. Work at 48 or 44.1.
 * **Latency:** zero latency (0 samples) for live tracking and monitoring.
+* **If your machine struggles:** the plugin has its own CPU indicator in the bottom bar. Click it and it tells you, in plain language, whether you have headroom and what to do about it. Raising your host's buffer size is usually enough.
 
 ---
 
