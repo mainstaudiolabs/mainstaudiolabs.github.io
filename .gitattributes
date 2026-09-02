@@ -1,0 +1,37 @@
+# Normalizacion de fin de linea.
+#
+# POR QUE EXISTE ESTE ARCHIVO
+#
+# Sin el, cada maquina decide por su cuenta segun su core.autocrlf: Git for
+# Windows viene con true y escribe CRLF en el disco, un Linux o el runner de
+# GitHub Actions no convierte nada. Los mismos archivos aparecian como
+# modificados sin tener un solo cambio de contenido.
+#
+# text=auto: se guarda LF en el repositorio y en el checkout cada plataforma
+# recibe lo que le corresponde.
+* text=auto
+
+# node_modules y el sitio compilado quedan afuera de la normalizacion.
+# Estan versionados por accidente -- el .gitignore los nombra, pero .gitignore
+# solo evita que se agreguen archivos NUEVOS, no destraquea lo que ya entro --
+# y normalizar 4547 archivos de dependencias seria un commit inutil de varios
+# miles de archivos. Lo que corresponde es sacarlos del control de versiones:
+# el flujo de CI corre `npm ci`, que borra node_modules y lo reinstala desde
+# package-lock.json, y compila .vitepress/dist por su cuenta.
+node_modules/**      -text
+.vitepress/dist/**   -text
+
+# Binarios: que git ni lo intente.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.svg  text
+*.pdf  binary
+*.mp3  binary
+*.wav  binary
+*.woff  binary
+*.woff2 binary
+*.ttf  binary
+*.zip  binary
