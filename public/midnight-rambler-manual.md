@@ -10,7 +10,7 @@ function copyEmail() {
 
 # Midnight Rambler: User Manual
 
-**Version 1.0.0**
+**Version 1.1.0**
 
 This manual provides a detailed description of the usage, design philosophy, and technical specifications for the **Midnight Rambler** amplifier emulation stompbox plugin.
 
@@ -34,7 +34,12 @@ This pedal captures that unmistakable vintage Tweed attitude:
 Unlike raw generic models that can sound either too boomy or harsh, Midnight Rambler features meticulously tuned post-amp state-variable TPT filters (Bass & Tone cut) and calibrated gain staging. It sits instantly in a multi-track production without fighting the bass guitar or cymbals.
 
 ### Ultra-Low CPU Consumption
-Featuring 0% idle overhead and near-zero latency, only one neural engine instance is active at any time, allowing multiple instances across your session without straining your CPU.
+Featuring 0% idle overhead and zero added latency, only one neural engine instance is active at any time, allowing multiple instances across your session without straining your CPU.
+
+Version 1.1.0 went further: the cabinet convolution now does half the work for a
+result that is identical sample for sample, its impulse responses were trimmed of
+inaudible tail, and the built-in tuner uses a small fraction of the CPU it used
+to while reacting in half the time.
 
 ---
 
@@ -72,8 +77,13 @@ The pedal features intuitive, analog-calibrated controls designed to feel like o
 
 ### 🔀 5. CHANNEL (Dual Amp Mode Selector)
 Switches between two distinct, high-resolution boutique neural captures:
-1. **EDGE (Breakup):** Umbral breakup capture with hyper-dynamic touch response. Responds instantly to guitar volume pot adjustments and picking intensity. Includes an internal +2.0 dB output level compensation to match perceived loudness with the cranked mode.
+1. **EDGE (Breakup):** Threshold-of-breakup capture with hyper-dynamic touch response. Reacts instantly to your guitar's volume pot and to picking intensity.
 2. **CRANKED (Rock 'N' Roll):** Maximum volume Tweed saturation with lush power-tube compression, creamy harmonics, and singing sustain.
+
+> **Level matching (new in 1.1.0):** the two channels are now trimmed to the same
+> perceived level. They weren't before — CRANKED came out up to 4 dB louder on
+> chords — and in any comparison the louder one wins, so you were picking a
+> channel by volume without realising it. Now you pick by tone.
 
 ### 📻 6. MIC / CAB (Cabinet Impulse Convolution)
 Switches between three curated speaker cabinet responses using real-time zero-latency convolution:
@@ -86,6 +96,32 @@ Switches between three curated speaker cabinet responses using real-time zero-la
 
 ### 🖼️ 8. Dynamic Background Skin (Drag & Drop)
 * You can drag and drop any image file (`.jpg`, `.jpeg`, or `.png`) directly from your file explorer onto the plugin interface to customize its visual appearance in real time.
+
+### 📊 9. INPUT Meter (new in 1.1.0)
+This is an amplifier: its entire character comes from how hard you drive it. Two
+decibels more isn't "louder" — it's *more compression and more harmonics*.
+
+The bar at the bottom left shows what actually reaches the neural stage, measured
+after the GAIN control:
+
+* **Green** — you're below the range where the amp starts working. Common with a
+  guitar plugged straight into a typical interface. Raise your interface's input
+  gain before reaching for GAIN.
+* **Gold** — the working range. This is where a 5E3 blooms.
+* **Red** — near the ceiling. Fine for maximum saturation, but there's nothing
+  above it.
+
+The thin mark on the scale sits at −18 dBFS, roughly where the amp starts to
+respond in earnest.
+
+> It reads **peak**, not average level: what pushes an amp into compression are
+> the transients of your pick attack, not the sustained energy. A track sitting
+> at −20 dBFS average with −3 dBFS peaks is already working hard.
+
+### 🔍 10. Resizable Window (new in 1.1.0)
+Drag any corner to resize, or **right-click** the background for preset sizes
+between 75% and 200%. The proportions stay locked. Your choice is saved with the
+project, and the plugin reopens the way you left it.
 
 ---
 
@@ -105,6 +141,22 @@ Many guitarists experience a sweeter, more fluid tone at 256 samples. This is du
 
 ---
 
+### 🎚️ Session Sample Rate
+
+The amplifier was captured at **48 kHz**, and that is the recommended rate.
+**44.1 kHz** works just as well — the difference is negligible in practice, and
+between them they cover almost every rock and guitar session.
+
+Above 48 kHz it's a different story. The neural model's response is defined in
+samples, not in seconds, so it scales with the sample rate: at 96 kHz the amp's
+entire voicing shifts up by a full octave and stops sounding like the 5E3 that
+was captured. The plugin will tell you — a small warning appears next to the
+INPUT meter showing how far off you are, in semitones.
+
+Work at 48 or 44.1 kHz.
+
+---
+
 ## 4. System Requirements & Distribution
 
 ### 🖥️ System Requirements
@@ -112,7 +164,7 @@ Many guitarists experience a sweeter, more fluid tone at 256 samples. This is du
   * **Windows**: Windows 10 or Windows 11 (64-bit).
   * **macOS**: macOS 10.13 or newer (supports both Intel and Apple Silicon natively).
   * **Linux**: Ubuntu 22.04 or compatible 64-bit distribution.
-* **Processor (CPU)**: Must support **AVX2** instruction sets (Intel Core 4th Gen / AMD Ryzen or newer) on Windows and Linux to calculate the mathematical models in real-time. Apple Silicon processors are fully supported natively.
+* **Processor (CPU)**: Any 64-bit x86 processor. Midnight Rambler is built for the baseline instruction set and does **not** require AVX or AVX2, so it runs on older machines that some neural amp plugins refuse to load on. Apple Silicon is supported natively.
 * **RAM**: 4 GB minimum.
 * **Audio Card (Standalone mode)**: Audio interface with low-latency drivers (native **ASIO** on Windows; **CoreAudio** on macOS; **JACK** or **ALSA** on Linux).
 
@@ -129,7 +181,7 @@ Many guitarists experience a sweeter, more fluid tone at 256 samples. This is du
 
 ### ❌ The VST3 does not appear in the DAW or fails to scan
 * **Missing C++ Redistributable (Windows)**: Although the plugin is statically compiled, some Windows installations might miss basic runtime components. Download and install the official [Microsoft Visual C++ Redistributable 2015-2022 (x64)](https://aka.ms/vs/17/release/vc_redist.x64.exe).
-* **CPU Compatibility (AVX2)**: Ensure your processor supports **AVX2** instructions (typically Intel Core 4th Gen / AMD Ryzen or newer). The underlying NAM neural engine requires AVX2 to compute neural networks in real-time on Windows and Linux. If your CPU lacks AVX2, the plugin will not load.
+* **CPU Compatibility**: Not an issue here — the plugin is built for the baseline 64-bit instruction set and does not require AVX2. If it fails to scan, the cause is elsewhere on this list.
 * **Scan Path**: Verify that your DAW is scanning the folder where you placed the `.vst3` file (e.g. `C:\Program Files\Common Files\VST3\` on Windows).
 
 ### ❌ Standalone App shows "Unidentified Developer" warning (macOS)

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Midnight Rambler - User Manual v1.0.1</title>
+<title>Midnight Rambler - User Manual v1.1.0</title>
 <style>
   @page {
     size: A4;
@@ -108,7 +108,7 @@
 <body>
 
 <h1>Midnight Rambler: User Manual</h1>
-<div class="version-tag">Version 1.0.1 &bull; Main St Audio Labs &bull; Virtual Stompbox Series #01</div>
+<div class="version-tag">Version 1.1.0 &bull; Main St Audio Labs &bull; Virtual Stompbox Series #01</div>
 
 <p>This manual provides a detailed description of the usage, design philosophy, and technical specifications for the <strong>Midnight Rambler</strong> amplifier emulation stompbox plugin.</p>
 
@@ -133,7 +133,7 @@
 <p>Unlike raw generic models that can sound boomy or harsh, Midnight Rambler features meticulously tuned post-amp State-Variable TPT filters (Bass &amp; Tone cut), adaptive input noise gate, and calibrated analog gain staging. It sits immediately in a multi-track production without clashing with the bass guitar or cymbals.</p>
 
 <h3>Ultra-Low CPU Consumption</h3>
-<p>Featuring 0% idle overhead and near-zero latency, the plugin uses optimized neural inference allowing multiple instances across your DAW session without straining your CPU.</p>
+<p>Featuring 0% idle overhead and zero added latency, the plugin uses optimized neural inference allowing multiple instances across your DAW session without straining your CPU.</p>
 
 <h2>2. Control Guide</h2>
 
@@ -177,6 +177,11 @@
   <li><strong>CRANKED (Rock 'N' Roll):</strong> Maximum volume Tweed saturation with lush power-tube compression, creamy harmonics, and singing sustain.</li>
 </ol>
 
+<div class="callout">
+  <strong>Level matching (new in 1.1.0):</strong><br>
+  The two channels are now trimmed to the same perceived level. They weren't before &mdash; CRANKED came out up to 4 dB louder on chords &mdash; and in any comparison the louder one wins, so you were picking a channel by volume without realising it. Now you pick by tone.
+</div>
+
 <h3>📻 6. MIC / CAB (3-Way Rotary Switch &bull; 1971 Oxford 12" Studio Cabinet)</h3>
 <ol>
   <li><strong>WARM (9 o'clock &bull; Royer R121 Ribbon):</strong> Thick, full-bodied tone with smooth top-end and rich low-mids.</li>
@@ -207,6 +212,20 @@
   <li>Drag and drop any image file (<code>.jpg</code> or <code>.png</code>) directly onto the plugin window to change its visual skin in real time.</li>
 </ul>
 
+<h3>📊 10. INPUT Meter <em>(new in 1.1.0)</em></h3>
+<p>This is an amplifier: its entire character comes from how hard you drive it. Two decibels more isn't "louder" &mdash; it's <em>more compression and more harmonics</em>. The bar at the bottom left shows what actually reaches the neural stage, measured after the GAIN control.</p>
+<ul>
+  <li><strong>Green:</strong> below the range where the amp starts working. Common with a guitar plugged straight into a typical interface &mdash; raise your interface's input gain before reaching for GAIN.</li>
+  <li><strong>Gold:</strong> the working range. This is where a 5E3 blooms.</li>
+  <li><strong>Red:</strong> near the ceiling. Fine for maximum saturation, but there is nothing above it.</li>
+</ul>
+<p>The thin mark on the scale sits at &minus;18 dBFS, roughly where the amp starts to respond in earnest. It reads <strong>peak</strong>, not average: what pushes an amp into compression are the transients of your pick attack, not the sustained energy.</p>
+
+<h3>🔍 11. Resizable Window <em>(new in 1.1.0)</em></h3>
+<ul>
+  <li>Drag any corner to resize, or <strong>right-click</strong> the background for preset sizes between 75% and 200%. Proportions stay locked, and your choice is saved with the project.</li>
+</ul>
+
 <h2>3. Audio Configuration (Standalone Mode)</h2>
 <p>When running as a standalone application, configure your audio settings as follows:</p>
 <ol>
@@ -221,11 +240,16 @@
   The tiny 5.3 ms delay, combined with the physical acoustic sound of your unplugged electric strings vibrating in the room, creates an organic doubling effect that adds tridimensional depth, thickness, and a natural room reverb feel to your playing.
 </div>
 
+<div class="callout">
+  <strong>🎚️ Session Sample Rate:</strong><br>
+  The amplifier was captured at <strong>48 kHz</strong>, and that is the recommended rate. <strong>44.1 kHz</strong> works just as well. Above 48 kHz it's a different story: the neural model's response is defined in samples, not in seconds, so it scales with the sample rate &mdash; at 96 kHz the amp's entire voicing shifts up by a full octave. The plugin warns you next to the INPUT meter, showing how far off you are in semitones. Work at 48 or 44.1 kHz.
+</div>
+
 <h2>4. System Requirements &amp; Distribution</h2>
 <h3>🖥️ System Requirements</h3>
 <ul>
   <li><strong>Operating Systems:</strong> Windows 10/11 (64-bit), macOS 10.13+ (Universal: Intel &amp; Apple Silicon), Linux (Ubuntu 22.04+).</li>
-  <li><strong>Processor (CPU):</strong> AVX2 instruction support on Windows/Linux (Intel Core 4th Gen / AMD Ryzen or newer). Native Apple Silicon support on macOS.</li>
+  <li><strong>Processor (CPU):</strong> Any 64-bit x86 processor. Built for the baseline instruction set, so it does <strong>not</strong> require AVX or AVX2 and runs on older machines that some neural amp plugins refuse to load on. Native Apple Silicon support on macOS.</li>
   <li><strong>RAM:</strong> 4 GB minimum.</li>
   <li><strong>Formats:</strong> VST3, Audio Unit AU (macOS), and Standalone Application for all platforms.</li>
 </ul>
@@ -236,7 +260,7 @@
 <h2>5. Troubleshooting</h2>
 <ul>
   <li><strong>Missing C++ Redistributable (Windows):</strong> If the VST3 fails to scan, install the official Microsoft Visual C++ Redistributable 2015-2022 (x64).</li>
-  <li><strong>CPU Compatibility (AVX2):</strong> Ensure your processor supports AVX2 instructions. The underlying NAM neural engine requires AVX2 to compute neural networks in real-time.</li>
+  <li><strong>CPU Compatibility:</strong> Not an issue here — the plugin does not require AVX2. If the VST3 fails to scan, the cause is elsewhere on this list.</li>
   <li><strong>macOS Unidentified Developer:</strong> Go to <em>System Settings &gt; Privacy &amp; Security</em> and click <em>Open Anyway</em>, or run <code>xattr -cr /path/to/MidnightRambler.app</code> in Terminal.</li>
 </ul>
 

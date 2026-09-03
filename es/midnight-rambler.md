@@ -14,10 +14,18 @@ function copyEmail() {
 Este manual describe en detalle el uso, la filosofía de diseño y las especificaciones técnicas del plugin de simulación de amplificador **Midnight Rambler**.
 
 <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
-  <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">Descargar PDF (v1.0.1) 📄</a>
+  <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">Descargar PDF (v1.1.0) 📄</a>
 </div>
 
 ---
+
+## Novedades de la 1.1.0
+
+* **Los dos canales ahora suenan al mismo nivel.** Antes no, y en cualquier comparación gana el más fuerte: elegías canal por el volumen sin darte cuenta. Ahora elegís por sonido.
+* **Nuevo medidor de entrada.** Esto es un amplificador: su carácter depende enteramente de con cuánta señal lo alimentás. Una guitarra saliendo de una placa común muchas veces nunca llega al punto donde el ampli hace lo suyo. El medidor te muestra dónde estás parado.
+* **La ventana se puede agrandar.** Arrastrá la esquina, o clic derecho para tamaños fijos. Queda guardado con el proyecto.
+* **Bastante más liviano de CPU**, sobre todo el afinador integrado.
+* **En macOS**, la primera vez: clic derecho sobre el plugin y *Abrir*. No está firmado con Apple — es software gratuito y firmarlo cuesta una cuota anual que preferimos no trasladarle a nadie.
 
 ## 1. El Alma del Tweed 5E3: Una Leyenda de Estudio
 
@@ -105,10 +113,10 @@ Muchos guitarristas experimentan un tono más dulce y fluido a 256 muestras. Est
 * **Windows**: Simplemente copia el archivo `.vst3` en tu carpeta de plugins (usualmente `C:\Program Files\Common Files\VST3\`) o ejecuta la aplicación `.exe` (Standalone).
 * **macOS**: Copia el `.vst3` o `.component` (AU) en tu carpeta de plugins (usualmente `/Library/Audio/Plug-Ins/VST3/` o `/Library/Audio/Plug-Ins/Components/`) o ejecuta la app `.app` (Standalone).
 * **Linux**: Copia el archivo `.vst3` en tu carpeta de plugins (usualmente `~/.vst3/` o `/usr/lib/vst3/`) o ejecuta el binario independiente.
-* **Descarga Directa**: Obtén el paquete multiplataforma más reciente desde nuestros [Releases en GitHub](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/v1.0.1).
+* **Descarga Directa**: Obtén el paquete multiplataforma más reciente desde nuestros [Releases en GitHub](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.1.0).
 
 <div style="margin: 1.25rem 0; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/v1.0.1" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Descargar Midnight Rambler v1.0.1 (GRATIS) ⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.1.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Descargar Midnight Rambler v1.1.0 (GRATIS) ⬇️</a>
 </div>
 
 ---

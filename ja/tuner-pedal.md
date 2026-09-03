@@ -20,6 +20,14 @@ function copyEmail() {
 
 ---
 
+## 1.1.0 の新機能
+
+* **針の反応速度が2倍に。** 解析ウィンドウが必要な長さの2倍あり、精度は変わらずレイテンシーだけが増えていました。
+* **ウィンドウを開いている間のCPU負荷が大幅に低下。**
+* **低音での安定性が向上。** 5弦ベースのローBまで確認済みです。
+* **A4基準・アルゴリズム・ミュートがプロジェクトに保存されるようになりました。** 以前は毎回 440 Hz と MPM に戻っていたため、432 Hz や半音下げで使う場合に不便でした。
+* **macOS では**、初回のみプラグインを右クリックして「開く」を選んでください。Apple の署名は行っていません。無料のソフトウェアであり、署名には年間費用がかかるためです。
+
 ## 1. 🌟 ステージとスタジオのために設計
 
 **Vintage Tuner Stompbox** は、往年のアナログ針式チューナーが持つ視覚的な温かみと滑らかな弾道追従性を、DAWのミックス環境やライブステージへと直接もたらします。
@@ -117,7 +125,7 @@ C++ / JUCE を用いて、妥協のないリアルタイム性能基準で開発
 | **Linux** | VST3 (64-bit), Standalone binary | Ubuntu 22.04+ または互換 64-bit ディストリビューション |
 
 <div style="margin: 1.5rem 0; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.0.1" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Vintage Tuner Stompbox をダウンロード (無料) ⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.1.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Vintage Tuner Stompbox をダウンロード (無料) ⬇️</a>
 </div>
 
 ---

@@ -11,13 +11,13 @@ export const PLUGINS = {
     },
     'midnight-rambler': {
       name: 'Midnight Rambler', tagline: '5E3 Tweed Tube Simulation',
-      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/v1.0.1',
+      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.1.0',
       desc: "The raw, dynamic bite of the Fender Tweed 5E3 behind rock's landmark albums. Organic touch sensitivity, 3 phase-aligned studio mics, and retro tuner.",
       specs: ['5E3 Tweed tube simulation', '3 phase-aligned mic takes', 'Organic pick-dynamics response', 'Built-in retro tuner', 'Ultra-light on CPU']
     },
     'tuner-pedal': {
       name: 'Vintage Tuner Stompbox', tagline: 'Analog Chromatic Tuner',
-      img: '/TunerPedal.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.0.1',
+      img: '/TunerPedal.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.1.0',
       desc: 'Vintage needle tuner powered by dual high-precision DSP engines (MPM & YIN). True 0.0% CPU when GUI is closed for inserting across all session tracks.',
       specs: ['Dual MPM + YIN engines', '0.0% CPU with GUI closed', 'Smooth analog-style needle', 'Adjustable A4 calibration', 'Works on every track']
     }
@@ -31,13 +31,13 @@ export const PLUGINS = {
     },
     'midnight-rambler': {
       name: 'Midnight Rambler', tagline: 'Valvular 5E3 Tweed',
-      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/v1.0.1',
+      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.1.0',
       desc: 'El tono crudo y dinámico del Fender Tweed 5E3 detrás de los discos clásicos de rock. Sensibilidad táctil orgánica, selector de 3 micrófonos coherentes de fase y afinador integrado.',
       specs: ['Simulación de tubos 5E3 Tweed', '3 tomas de micrófono con fase alineada', 'Respuesta dinámica orgánica a la púa', 'Afinador retro incorporado', 'CPU ultra liviana']
     },
     'tuner-pedal': {
       name: 'Vintage Tuner Stompbox', tagline: 'Afinador Cromático',
-      img: '/TunerPedal.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.0.1',
+      img: '/TunerPedal.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.1.0',
       desc: 'Afinador de aguja vintage con doble motor DSP de alta precisión (MPM y YIN). Consumo real 0.0% de CPU con ventana cerrada para insertar en todas las pistas de tu proyecto.',
       specs: ['Motores duales MPM + YIN', '0.0% CPU con GUI cerrada', 'Aguja analógica de respuesta suave', 'Calibración A4 ajustable', 'Compatible con todas las pistas']
     }
@@ -51,13 +51,13 @@ export const PLUGINS = {
     },
     'midnight-rambler': {
       name: 'Midnight Rambler', tagline: '5E3 Tweed 真空管シミュレーション',
-      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/v1.0.1',
+      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.1.0',
       desc: 'ロック名盤を彩ったFender Tweed 5E3の生々しいダイナミクス。有機的なピッキングレスポンス、完全位相整合の3マイク選択、レトロチューナーを搭載。',
       specs: ['5E3 Tweed 真空管シミュレーション', '完全位相整合の3マイクテイク', '有機的なピッキングダイナミクス', 'レトロチューナー内蔵', '超軽量CPU']
     },
     'tuner-pedal': {
       name: 'Vintage Tuner Stompbox', tagline: 'アナログ・クロマチックチューナー',
-      img: '/TunerPedal.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.0.1',
+      img: '/TunerPedal.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.1.0',
       desc: '高精度デュアルDSPエンジン（MPM＆YIN）搭載のヴィンテージ針式チューナー。GUIを閉じればCPU消費0.0%となり全トラックへのインサートに最適。',
       specs: ['MPM + YINデュアルエンジン', 'GUIを閉じるとCPU消費0.0%', 'なめらかなアナログ針表示', 'A4キャリブレーション調整可能', '全トラックで使用可能']
     }

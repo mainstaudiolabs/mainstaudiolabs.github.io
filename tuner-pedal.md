@@ -20,6 +20,14 @@ function copyEmail() {
 
 ---
 
+## What's new in 1.1.0
+
+* **The needle reacts in half the time.** The analysis window was twice as long as it needed to be — it bought no extra precision, only latency.
+* **Much lower CPU** while the window is open.
+* **More stable on low notes.** Tested on a 5-string bass down to low B.
+* **Your A4 reference, algorithm and mute are now saved with the project.** They used to reset to 440 Hz and MPM every time — annoying if you tune to 432, or a semitone down to play along with old records.
+* **On macOS**, the first time: right-click the plugin and choose *Open*. It isn't signed with Apple — this is free software and signing carries an annual fee that we'd rather not pass on to anyone.
+
 ## 1. 🌟 Engineered for Stage and Studio
 
 The **Vintage Tuner Stompbox** brings the visual warmth and ballistic precision of classic analog needle tuners straight to your DAW and live stage setup.
@@ -131,7 +139,7 @@ For audio engineers and DSP developers, the plugin was developed in **Modern C++
 * **Installation:** Extract the downloaded archive and place the `.vst3` bundle into your default plugin folder (e.g. `C:\Program Files\Common Files\VST3\` on Windows).
 
 <div style="margin: 1.5rem 0; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.0.1" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Vintage Tuner Stompbox (FREE) ⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.1.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Vintage Tuner Stompbox (FREE) ⬇️</a>
 </div>
 
 ---

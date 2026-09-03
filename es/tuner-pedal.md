@@ -20,6 +20,14 @@ function copyEmail() {
 
 ---
 
+## Novedades de la 1.1.0
+
+* **La aguja reacciona en la mitad de tiempo.** La ventana de análisis era el doble de larga de lo necesario: no compraba precisión, solo latencia.
+* **Mucho menos CPU** con la ventana abierta.
+* **Más estable en las notas graves.** Probado con bajo de cinco cuerdas hasta el Si grave.
+* **La referencia A4, el algoritmo y el mute ahora se guardan con el proyecto.** Antes volvían a 440 Hz y MPM cada vez, molesto para quien afina a 432 o medio tono abajo para tocar sobre discos viejos.
+* **En macOS**, la primera vez: clic derecho sobre el plugin y *Abrir*. No está firmado con Apple — es software gratuito y firmarlo cuesta una cuota anual que preferimos no trasladarle a nadie.
+
 ## 1. 🌟 Diseñado para el Escenario y el Estudio
 
 El **Vintage Tuner Stompbox** traslada la calidez visual y la precisión balística de los clásicos afinadores analógicos de aguja directamente a tu DAW y a tus actuaciones en vivo. 
@@ -131,7 +139,7 @@ Para desarrolladores, técnicos de audio y entusiastas del DSP, el plugin fue pr
 * **Instalación:** Simplemente descomprime el archivo descargado y copia el `.vst3` en tu carpeta habitual de plugins (ej. `C:\Program Files\Common Files\VST3\` en Windows).
 
 <div style="margin: 1.5rem 0; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.0.1" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Descargar Vintage Tuner Stompbox (GRATIS) ⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/vintage-tuner-v1.1.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Descargar Vintage Tuner Stompbox (GRATIS) ⬇️</a>
 </div>
 
 ---
