@@ -230,7 +230,7 @@ Work at 48 or 44.1 kHz.
 
 ### Credits
 
-* **Amp models** — Daniel Nguyen ([tone3000.com/danielnguyen](https://www.tone3000.com/danielnguyen)). Captures of a 1957 Tweed Deluxe hand-wired reissue, used with permission.
+* **Amp models** — Daniel Nguyen ([tone3000.com/danielnguyen](https://www.tone3000.com/danielnguyen)). Captures of a Tweed Deluxe, used with permission.
 * **Cabinet IRs** — Nathaniel Dahman ([DahmanMusic.com](https://www.dahmanmusic.com/)). Captures of his own 1971 Twin Reverb, used with permission.
 * **Testing & tone** — Claudio Crespino. Testing on real hardware, and the long arguments about tone.
 

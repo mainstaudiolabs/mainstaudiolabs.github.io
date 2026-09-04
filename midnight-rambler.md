@@ -23,7 +23,7 @@ This manual provides a detailed description of the usage, design philosophy, and
 ## What's new in 1.2.0
 
 * **Three channels instead of two.** CLEAN, EDGE and CRANKED are the same amplifier with the instrument volume progressively further up — not three different amps. All three are level-matched against each other, measured with real signal, so the switch changes character rather than loudness.
-* **New amp captures**, of a 1957 Tweed Deluxe hand-wired reissue, by Daniel Nguyen.
+* **New amp captures**, of a Tweed Deluxe, by Daniel Nguyen.
 * **New cabinet.** A 1971 Fender Twin Reverb with its original Oxford 12T6-10 speakers, captured by Nathaniel Dahman from his own amp — a Royer R-121 and a Shure SM57 at the centre of the cap. The BLEND position is a 70/30 mix of the two, phase-aligned before summing, and lands exactly between the other two positions.
 * **Easier switching.** Click the label of the position you want and it goes straight there — no more cycling through the middle. Dragging the lever and the mouse wheel work too.
 * **INFO panel** with the version, the session's sample rate and buffer size, and the content credits.
