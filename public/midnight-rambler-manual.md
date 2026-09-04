@@ -10,7 +10,7 @@ function copyEmail() {
 
 # Midnight Rambler: User Manual
 
-**Version 1.1.0**
+**Version 1.2.0**
 
 This manual provides a detailed description of the usage, design philosophy, and technical specifications for the **Midnight Rambler** amplifier emulation stompbox plugin.
 
@@ -75,29 +75,62 @@ The pedal features intuitive, analog-calibrated controls designed to feel like o
   * **`7.0` (0.0 dB):** Standard nominal unity gain.
   * **`10.0` (+18.0 dB):** Massive clean volume boost for low-output vintage single-coil pickups or pushing downstream effects.
 
-### 🔀 5. CHANNEL (Dual Amp Mode Selector)
-Switches between two distinct, high-resolution boutique neural captures:
-1. **EDGE (Breakup):** Threshold-of-breakup capture with hyper-dynamic touch response. Reacts instantly to your guitar's volume pot and to picking intensity.
-2. **CRANKED (Rock 'N' Roll):** Maximum volume Tweed saturation with lush power-tube compression, creamy harmonics, and singing sustain.
+### 🔀 5. CHANNEL (Three Positions — new in 1.2.0)
 
-> **Level matching (new in 1.1.0):** the two channels are now trimmed to the same
-> perceived level. They weren't before — CRANKED came out up to 4 dB louder on
-> chords — and in any comparison the louder one wins, so you were picking a
-> channel by volume without realising it. Now you pick by tone.
+The three positions are the **same amplifier** with the instrument volume
+progressively further up — not three different amps.
+
+1. **CLEAN:** The 5E3 with the unused channel wide open, the classic trick for the
+   tightest clean this circuit gives. Stays clear, and only starts to grit when you
+   dig in.
+2. **EDGE (Breakup):** The threshold of breakup, with hyper-dynamic touch response.
+   Reacts instantly to your guitar's volume pot and to picking intensity.
+3. **CRANKED (Rock 'N' Roll):** Instrument volume all the way up, with power-tube
+   compression, creamy harmonics and singing sustain.
+
+> **Three ways to switch.** The most direct is to **click the label** of the
+> position you want — it goes straight there, without passing through the ones in
+> between. You can also **drag the lever** or use the **mouse wheel** over it. A
+> plain click on the lever advances one position.
+
+> **Level matching.** The three channels are trimmed to the same measured level,
+> using real signal rather than the loudness figure declared in the model files —
+> which, measured, turned out to be inverted. The match cannot be perfect: a valve
+> stage compresses differently depending on how hard you hit it, so around a
+> decibel of difference remains depending on how you play. CLEAN will sound a
+> little smaller than the other two, exactly as it does on a real amplifier.
 
 ### 📻 6. MIC / CAB (Cabinet Impulse Convolution)
-Switches between three curated speaker cabinet responses using real-time zero-latency convolution:
-1. **WARM (Royer R121 Ribbon):** Thick, full-bodied tone with smooth top-end and rich low-mids, ideal for greasy rhythms and slide guitar.
-2. **SHARP (Shure SM57 Dynamic):** Classic rock bite with focused upper-mid punch that cuts effortlessly through dense mixes.
-3. **BLEND (60/40 Custom Mix):** The ultimate studio pairing (60% SM57 + 40% R121) delivering balanced bite, depth, and three-dimensional realism.
 
-### 🎛️ 7. STANDBY (Mute / 0% CPU Switch)
+A **1971 Fender Twin Reverb with its original Oxford 12T6-10 speakers**, captured
+by Nathaniel Dahman from his own amplifier, with both microphones at the centre of
+the cap. Real-time, zero-latency convolution.
+
+1. **WARM (Royer R-121 ribbon):** Full-bodied, with a smooth top end and rich
+   low-mids. Ideal for greasy rhythm work and slide.
+2. **BLEND (70/30):** 70 % R-121 + 30 % SM57, phase-aligned before summing. It
+   lands exactly between the other two, so the selector reads as a single ladder
+   from dark to bright.
+3. **SHARP (Shure SM57 dynamic):** Classic bite, with focused upper-mid punch that
+   cuts through a dense mix.
+
+> The two microphones sit a few samples apart, because a ribbon capsule is deeper
+> in the body than a dynamic. Summing them as they came would have dropped a comb
+> notch right in the cabinet's bite, so the blend is aligned first. The selector
+> is operated the same three ways as CHANNEL.
+
+### ℹ️ 7. INFO (Credits Panel — new in 1.2.0)
+* The **INFO** button, top left, opens a panel with the plugin version, the
+  session's sample rate and buffer size, and the credits for the content. Click
+  anywhere on the panel to close it.
+
+### 🎛️ 8. STANDBY (Mute / 0% CPU Switch)
 * **Function:** Replicates a physical amplifier standby switch, completely muting the audio path and reducing CPU consumption to **0%** immediately.
 
-### 🖼️ 8. Dynamic Background Skin (Drag & Drop)
+### 🖼️ 9. Dynamic Background Skin (Drag & Drop)
 * You can drag and drop any image file (`.jpg`, `.jpeg`, or `.png`) directly from your file explorer onto the plugin interface to customize its visual appearance in real time.
 
-### 📊 9. INPUT Meter (new in 1.1.0)
+### 📊 10. INPUT Meter
 This is an amplifier: its entire character comes from how hard you drive it. Two
 decibels more isn't "louder" — it's *more compression and more harmonics*.
 
@@ -118,7 +151,7 @@ respond in earnest.
 > the transients of your pick attack, not the sustained energy. A track sitting
 > at −20 dBFS average with −3 dBFS peaks is already working hard.
 
-### 🔍 10. Resizable Window (new in 1.1.0)
+### 🔍 11. Resizable Window
 Drag any corner to resize, or **right-click** the background for preset sizes
 between 75% and 200%. The proportions stay locked. Your choice is saved with the
 project, and the plugin reopens the way you left it.
@@ -192,6 +225,17 @@ Work at 48 or 44.1 kHz.
 ### ❌ Crackling, pops, or high latency in Standalone mode
 * **Audio Drivers**: Ensure you are using the native low-latency driver for your audio interface (**ASIO** on Windows, **CoreAudio** on macOS, **JACK** or **ALSA** on Linux).
 * **Buffer Size**: A buffer size of **128** or **256 samples** is recommended. Going lower than 64 samples might cause CPU spikes and audio crackle depending on your computer's performance.
+
+---
+
+### Credits
+
+* **Amp models** — Daniel Nguyen ([tone3000.com/danielnguyen](https://www.tone3000.com/danielnguyen)). Captures of a 1957 Tweed Deluxe hand-wired reissue, used with permission.
+* **Cabinet IRs** — Nathaniel Dahman ([DahmanMusic.com](https://www.dahmanmusic.com/)). Captures of his own 1971 Twin Reverb, used with permission.
+* **Testing & tone** — Claudio Crespino. Testing on real hardware, and the long arguments about tone.
+
+Model and IR authors provided the captures. All selection, voicing and
+level-matching decisions are Main St Audio Labs'.
 
 ---
 

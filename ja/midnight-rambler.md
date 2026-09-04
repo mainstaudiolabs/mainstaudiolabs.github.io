@@ -15,19 +15,21 @@ function copyEmail() {
 本マニュアルは、伝説のTweed 5E3アンプ・エミュレーション・ストンプボックスプラグイン **Midnight Rambler** の使用方法、設計思想、および技術仕様について詳しく解説します。
 
 <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
-  <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">PDFマニュアルを入手 (v1.1.0) 📄</a>
+  <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">PDFマニュアルを入手 (v1.2.0) 📄</a>
 </div>
 
 ---
 
-## 1.1.0 の新機能
+## 1.2.0 の新機能
 
-* **2つのアンプチャンネルの音量が揃いました。** 以前は揃っておらず、比較では常に大きい方が勝ってしまうため、音ではなく音量でチャンネルを選んでしまっていました。
-* **入力メーターを追加。** アンプの性格は、どれだけ強く入力するかで決まります。一般的なオーディオインターフェースから直接つないだギターは、アンプが本領を発揮するレベルに届いていないことが少なくありません。
-* **ウィンドウのサイズ変更に対応。** 角をドラッグするか、右クリックで固定サイズを選べます。設定はプロジェクトに保存されます。
-* **CPU負荷が大幅に軽減**（特に内蔵チューナー）。
-* **macOS では**、初回のみプラグインを右クリックして「開く」を選んでください。Apple の署名は行っていません。無料のソフトウェアであり、署名には年間費用がかかるためです。
-
+* **2チャンネルから3チャンネルへ。** CLEAN、EDGE、CRANKED は3台の別々のアンプではなく、同じアンプのインストゥルメント・ボリュームを段階的に上げたものです。3つとも実信号で測定してレベルを揃えてあるため、スイッチは音量ではなく音色を変えます。
+* **新しいアンプ・キャプチャー。** 1957年 Tweed Deluxe ハンドワイヤード・リイシューを Daniel Nguyen がキャプチャーしました。
+* **新しいキャビネット。** オリジナルの Oxford 12T6-10 を搭載した1971年 Fender Twin Reverb を、Nathaniel Dahman が自身のアンプからキャプチャー。Royer R-121 と Shure SM57 をキャップ中央に設置しています。BLEND は位相を揃えた 70/30 ミックスで、他の2つのちょうど中間に位置します。
+* **セレクターの操作が簡単に。** 選びたいポジションの文字をクリックすると直接そこへ移動します。中間を経由する必要はありません。レバーのドラッグやマウスホイールにも対応しています。
+* **INFO パネル** — バージョン、セッションのサンプルレートとバッファサイズ、コンテンツのクレジットを表示します。
+* **1.1.0 より CPU 負荷が軽く** なりました。チャンネルが増えたにもかかわらず、インパルス・レスポンスを実際にエネルギーが終わる位置まで切り詰めたためです。
+* 1.1.0 で保存したプロジェクトは自動的に移行されます。EDGE のままだったものは EDGE で開きます。
+* **macOS では初回のみ**、プラグインを右クリックして *開く* を選択してください。Apple の署名はありません — これは無料のソフトウェアであり、署名には年間費用がかかるため、その負担を誰にも転嫁しないことにしました。
 ## 1. Tweed 5E3 の魂：スタジオレコーディングの生ける伝説
 
 1950年代の **Fender Tweed Deluxe 5E3** は、ロック史において最も優れたスタジオ録音用アンプとして、多くのプロデューサーやギタリストから絶大な信頼を寄せられています。極めてシンプルな6V6真空管回路は、大型スタジアムアンプでは決して得られない独特のオーガニックなコンプレッション感、豊かな倍音、そして弾き手のタッチに追従するダイナミクスを生み出します。
@@ -114,10 +116,10 @@ function copyEmail() {
 * **Windows**: `.vst3` ファイルをご使用のVST3フォルダ（通常は `C:\Program Files\Common Files\VST3\`）にコピーするか、スタンドアロンの `.exe` を実行してください。
 * **macOS**: `.vst3` または `.component` (AU) をプラグインフォルダ（`/Library/Audio/Plug-Ins/VST3/` または `/Library/Audio/Plug-Ins/Components/`）にコピーするか、スタンドアロンの `.app` を実行してください。
 * **Linux**: `.vst3` をプラグインフォルダ（`~/.vst3/` または `/usr/lib/vst3/`）に配置してください。
-* **直接ダウンロード**: [GitHub Releases](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.1.0) から最新のマルチプラットフォーム・バンドルを入手できます。
+* **直接ダウンロード**: [GitHub Releases](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0) から最新のマルチプラットフォーム・バンドルを入手できます。
 
 <div style="margin: 1.25rem 0; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.1.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Midnight Rambler v1.1.0 をダウンロード (無料) ⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Midnight Rambler v1.2.0 をダウンロード (無料) ⬇️</a>
 </div>
 
 ---

@@ -15,19 +15,21 @@ function copyEmail() {
 This manual provides a detailed description of the usage, design philosophy, and technical specifications for the **Midnight Rambler** amplifier emulation stompbox plugin.
 
 <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
-  <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">Get PDF Manual (v1.1.0) 📄</a>
+  <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">Get PDF Manual (v1.2.0) 📄</a>
 </div>
 
 ---
 
-## What's new in 1.1.0
+## What's new in 1.2.0
 
-* **Both amp channels now match in level.** They didn't before, and the louder one wins every comparison — so you were choosing a channel by volume without realising it. Now you choose by tone.
-* **New input meter.** This is an amplifier: its whole character depends on how hard you drive it. A guitar straight out of a typical interface often never reaches the level where the amp starts doing its thing. The meter shows you where you are.
-* **The window can be resized.** Drag the corner, or right-click for preset sizes. Your choice is saved with the project.
-* **Noticeably lighter on CPU**, especially the built-in tuner.
+* **Three channels instead of two.** CLEAN, EDGE and CRANKED are the same amplifier with the instrument volume progressively further up — not three different amps. All three are level-matched against each other, measured with real signal, so the switch changes character rather than loudness.
+* **New amp captures**, of a 1957 Tweed Deluxe hand-wired reissue, by Daniel Nguyen.
+* **New cabinet.** A 1971 Fender Twin Reverb with its original Oxford 12T6-10 speakers, captured by Nathaniel Dahman from his own amp — a Royer R-121 and a Shure SM57 at the centre of the cap. The BLEND position is a 70/30 mix of the two, phase-aligned before summing, and lands exactly between the other two positions.
+* **Easier switching.** Click the label of the position you want and it goes straight there — no more cycling through the middle. Dragging the lever and the mouse wheel work too.
+* **INFO panel** with the version, the session's sample rate and buffer size, and the content credits.
+* **Lighter on CPU than 1.1.0**, despite the extra channel: the impulse responses were trimmed to where their energy actually ends.
+* Projects saved with 1.1.0 are migrated automatically — what you left on EDGE opens on EDGE.
 * **On macOS**, the first time: right-click the plugin and choose *Open*. It isn't signed with Apple — this is free software and signing carries an annual fee that we'd rather not pass on to anyone.
-
 ## 1. The Tweed 5E3 Soul: A Studio Legend
 
 The **Fender Tweed Deluxe 5E3** (1950s) is widely regarded by producers and guitarists as the ultimate studio recording amplifier in rock history. Its simple 6V6 tube circuit delivers an unmistakable organic compression, warm harmonics, and touch-sensitive response that larger stadium amps cannot replicate.
@@ -114,10 +116,10 @@ Many guitarists experience a sweeter, more fluid tone at 256 samples. This is du
 * **Windows**: Simply copy the `.vst3` file to your plugin folder (typically `C:\Program Files\Common Files\VST3\`) or run the `.exe` standalone app.
 * **macOS**: Copy the `.vst3` or `.component` (AU) to your plugin folder (typically `/Library/Audio/Plug-Ins/VST3/` or `/Library/Audio/Plug-Ins/Components/`) or run the `.app` standalone app.
 * **Linux**: Copy the `.vst3` file to your plugin folder (typically `~/.vst3/` or `/usr/lib/vst3/`) or run the standalone binary.
-* **Direct Download**: Get the latest multi-platform bundle from our [GitHub Releases](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.1.0).
+* **Direct Download**: Get the latest multi-platform bundle from our [GitHub Releases](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0).
 
 <div style="margin: 1.25rem 0; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.1.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Midnight Rambler v1.1.0 (FREE) ⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Midnight Rambler v1.2.0 (FREE) ⬇️</a>
 </div>
 
 ---
