@@ -22,6 +22,7 @@ function copyEmail() {
 
 ## What's new in 1.1.0
 
+* **Resizable window.** At its old fixed size the pedal was a postage stamp on a 4K screen. Drag any corner, or right-click the background for preset sizes between 75% and 200%. The proportions stay locked — the chassis is a photograph, and stretching it ruins it — and your choice is saved with the project.
 * **The needle reacts in half the time.** The analysis window was twice as long as it needed to be — it bought no extra precision, only latency.
 * **Much lower CPU** while the window is open.
 * **More stable on low notes.** Tested on a 5-string bass down to low B.

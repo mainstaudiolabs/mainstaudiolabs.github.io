@@ -22,6 +22,7 @@ function copyEmail() {
 
 ## Novedades de la 1.1.0
 
+* **Ventana redimensionable.** En su tamaño fijo anterior el pedal quedaba como una estampilla en una pantalla 4K. Arrastra cualquier esquina, o haz clic derecho sobre el fondo para elegir entre 75 % y 200 %. Las proporciones quedan trabadas —el chasis es una foto y deformarla la arruina— y tu elección se guarda con el proyecto.
 * **La aguja reacciona en la mitad de tiempo.** La ventana de análisis era el doble de larga de lo necesario: no compraba precisión, solo latencia.
 * **Mucho menos CPU** con la ventana abierta.
 * **Más estable en las notas graves.** Probado con bajo de cinco cuerdas hasta el Si grave.
