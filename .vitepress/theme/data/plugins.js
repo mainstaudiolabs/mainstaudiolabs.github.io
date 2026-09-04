@@ -11,7 +11,7 @@ export const PLUGINS = {
     },
     'midnight-rambler': {
       name: 'Midnight Rambler', tagline: '5E3 Tweed Tube Simulation',
-      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0',
+      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases#release-Midnight-Rambler-v1.2.0',
       desc: "The raw, dynamic bite of the Fender Tweed 5E3 behind rock's landmark albums. Organic touch sensitivity, 3 phase-aligned studio mics, and retro tuner.",
       specs: ['5E3 Tweed tube simulation', '3 phase-aligned mic takes', 'Organic pick-dynamics response', 'Built-in retro tuner', 'Ultra-light on CPU']
     },
@@ -31,7 +31,7 @@ export const PLUGINS = {
     },
     'midnight-rambler': {
       name: 'Midnight Rambler', tagline: 'Valvular 5E3 Tweed',
-      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0',
+      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases#release-Midnight-Rambler-v1.2.0',
       desc: 'El tono crudo y dinámico del Fender Tweed 5E3 detrás de los discos clásicos de rock. Sensibilidad táctil orgánica, selector de 3 micrófonos coherentes de fase y afinador integrado.',
       specs: ['Simulación de tubos 5E3 Tweed', '3 tomas de micrófono con fase alineada', 'Respuesta dinámica orgánica a la púa', 'Afinador retro incorporado', 'CPU ultra liviana']
     },
@@ -51,7 +51,7 @@ export const PLUGINS = {
     },
     'midnight-rambler': {
       name: 'Midnight Rambler', tagline: '5E3 Tweed 真空管シミュレーション',
-      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0',
+      img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases#release-Midnight-Rambler-v1.2.0',
       desc: 'ロック名盤を彩ったFender Tweed 5E3の生々しいダイナミクス。有機的なピッキングレスポンス、完全位相整合の3マイク選択、レトロチューナーを搭載。',
       specs: ['5E3 Tweed 真空管シミュレーション', '完全位相整合の3マイクテイク', '有機的なピッキングダイナミクス', 'レトロチューナー内蔵', '超軽量CPU']
     },

@@ -116,10 +116,10 @@ Many guitarists experience a sweeter, more fluid tone at 256 samples. This is du
 * **Windows**: Simply copy the `.vst3` file to your plugin folder (typically `C:\Program Files\Common Files\VST3\`) or run the `.exe` standalone app.
 * **macOS**: Copy the `.vst3` or `.component` (AU) to your plugin folder (typically `/Library/Audio/Plug-Ins/VST3/` or `/Library/Audio/Plug-Ins/Components/`) or run the `.app` standalone app.
 * **Linux**: Copy the `.vst3` file to your plugin folder (typically `~/.vst3/` or `/usr/lib/vst3/`) or run the standalone binary.
-* **Direct Download**: Get the latest multi-platform bundle from our [GitHub Releases](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0).
+* **Direct Download**: Get the latest multi-platform bundle from our [GitHub Releases](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases#release-Midnight-Rambler-v1.2.0).
 
 <div style="margin: 1.25rem 0; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Midnight Rambler v1.2.0 (FREE) ⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases#release-Midnight-Rambler-v1.2.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Midnight Rambler v1.2.0 (FREE) ⬇️</a>
 </div>
 
 ---

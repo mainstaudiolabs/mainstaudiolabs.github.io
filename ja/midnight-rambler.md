@@ -116,10 +116,10 @@ function copyEmail() {
 * **Windows**: `.vst3` ファイルをご使用のVST3フォルダ（通常は `C:\Program Files\Common Files\VST3\`）にコピーするか、スタンドアロンの `.exe` を実行してください。
 * **macOS**: `.vst3` または `.component` (AU) をプラグインフォルダ（`/Library/Audio/Plug-Ins/VST3/` または `/Library/Audio/Plug-Ins/Components/`）にコピーするか、スタンドアロンの `.app` を実行してください。
 * **Linux**: `.vst3` をプラグインフォルダ（`~/.vst3/` または `/usr/lib/vst3/`）に配置してください。
-* **直接ダウンロード**: [GitHub Releases](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0) から最新のマルチプラットフォーム・バンドルを入手できます。
+* **直接ダウンロード**: [GitHub Releases](https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases#release-Midnight-Rambler-v1.2.0) から最新のマルチプラットフォーム・バンドルを入手できます。
 
 <div style="margin: 1.25rem 0; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/midnight-rambler-v1.2.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Midnight Rambler v1.2.0 をダウンロード (無料) ⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases#release-Midnight-Rambler-v1.2.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Midnight Rambler v1.2.0 をダウンロード (無料) ⬇️</a>
 </div>
 
 ---
