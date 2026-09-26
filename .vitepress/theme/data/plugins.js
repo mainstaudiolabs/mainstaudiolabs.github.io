@@ -3,6 +3,13 @@
 // worth a native-speaker pass before shipping.
 export const PLUGINS = {
   root: {
+    'main-st-5f1': {
+      name: 'Main St 5F1', tagline: "Tweed 1956 · 5 Watts · Single-Ended",
+      img: '/MainSt5F1.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.0',
+      desc: "Component-level physical modelling of the 1956 tweed Champ: wave digital filters solve the real circuit sample by sample, so the 12AX7, the 6V6 and the 5Y3 rectifier's sag react to your picking the way the valves do. One knob, two inputs, and a Jensen P10R cabinet.",
+      specs: ['Wave digital filters: the circuit solved sample by sample', '12AX7 preamp and single-ended class-A 6V6', '5Y3GT rectifier with real supply sag', 'Jensen P10R modelled as a reactive load', 'Two inputs: Jack 1 and Jack 2 (\u22126 dB, 136 k\u03a9)', 'SM57 and SM94 cabinet takes, plus Direct', 'Built-in tuner with adjustable A4', 'Lighter on CPU than a commercial amp sim']
+    },
+
     'tattoo-you': {
       name: 'Tattoo You', tagline: "Studio Guitar Workstation '78–'81",
       img: '/tattoo-you.png', free: true, soon: true,
@@ -23,6 +30,13 @@ export const PLUGINS = {
     }
   },
   es: {
+    'main-st-5f1': {
+      name: 'Main St 5F1', tagline: 'Tweed 1956 · 5 watts · single-ended',
+      img: '/MainSt5F1.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.0',
+      desc: 'Modelado f\u00edsico a nivel de componentes del Champ tweed de 1956: los filtros de onda digital resuelven el circuito real muestra por muestra, as\u00ed que la 12AX7, la 6V6 y la ca\u00edda de tensi\u00f3n de la rectificadora 5Y3 responden a tu p\u00faa como responden las v\u00e1lvulas. Una perilla, dos entradas y un gabinete con Jensen P10R.',
+      specs: ['Filtros de onda digital: el circuito resuelto muestra por muestra', 'Previo 12AX7 y 6V6 en clase A single-ended', 'Rectificadora 5Y3GT con sag real de la fuente', 'Jensen P10R modelado como carga reactiva', 'Dos entradas: Jack 1 y Jack 2 (\u22126 dB, 136 k\u03a9)', 'Tomas de gabinete SM57 y SM94, m\u00e1s Direct', 'Afinador integrado con A4 ajustable', 'M\u00e1s liviano de CPU que un simulador comercial']
+    },
+
     'tattoo-you': {
       name: 'Tattoo You', tagline: "Estación de Estudio '78–'81",
       img: '/tattoo-you.png', free: true, soon: true,
@@ -43,6 +57,13 @@ export const PLUGINS = {
     }
   },
   ja: {
+    'main-st-5f1': {
+      name: 'Main St 5F1', tagline: 'Tweed 1956 · 5ワット · シングルエンド',
+      img: '/MainSt5F1.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.0',
+      desc: '1956年製ツイードChampをコンポーネント単位で物理モデリング。ウェーブ・デジタル・フィルタが実際の回路を1サンプルずつ解くため、12AX7も6V6も、そして5Y3整流管による電源のサグも、本物の真空管と同じようにピッキングへ反応します。ノブ1つ、入力2系統、Jensen P10R搭載キャビネット。',
+      specs: ['ウェーブ・デジタル・フィルタで回路を1サンプルずつ解析', '12AX7プリアンプとシングルエンド・クラスA 6V6', '5Y3GT整流管による本物の電源サグ', 'Jensen P10Rをリアクティブ負荷としてモデリング', '2系統の入力：Jack 1とJack 2（\u22126 dB、136 kΩ）', 'SM57・SM94のキャビネットテイクとDirect', 'A4調整可能なチューナー内蔵', '市販アンプシミュレーターより軽いCPU負荷']
+    },
+
     'tattoo-you': {
       name: 'Tattoo You', tagline: "スタジオ・ワークステーション '78–'81",
       img: '/tattoo-you.png', free: true, soon: true,
@@ -64,4 +85,4 @@ export const PLUGINS = {
   }
 }
 
-export const PLUGIN_ORDER = ['tattoo-you', 'midnight-rambler', 'tuner-pedal']
+export const PLUGIN_ORDER = ['main-st-5f1', 'tattoo-you', 'midnight-rambler', 'tuner-pedal']

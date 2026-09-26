@@ -22,6 +22,8 @@ title: 開発支援 - Main St Audio Labs
   <div class="support-card crypto-card">
     <div class="support-card-title">仮想通貨（暗号資産）</div>
     <p class="support-card-desc">手数料の低いネットワークでの寄付を受け付けています。ボタンをクリックしてアドレスをコピーするか、ウォレットからQRコードをスキャンしてください。</p>
+    <details class="crypto-details">
+      <summary>暗号資産で寄付する（USDT・Bitcoin・Solana）</summary>
     <div class="crypto-list">
       <!-- USDT -->
       <div class="crypto-item">
@@ -66,6 +68,7 @@ title: 開発支援 - Main St Audio Labs
         </div>
       </div>
     </div>
+    </details>
   </div>
 </div>
 </div>

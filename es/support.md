@@ -22,6 +22,8 @@ title: Apoya el Laboratorio - Main St Audio Labs
   <div class="support-card crypto-card">
     <div class="support-card-title">Criptomonedas</div>
     <p class="support-card-desc">Aceptamos donaciones en redes de bajas comisiones. Haz clic en el botón para copiar la dirección o escanea el código QR desde tu billetera.</p>
+    <details class="crypto-details">
+      <summary>O donar con criptomonedas (USDT, Bitcoin, Solana)</summary>
     <div class="crypto-list">
       <!-- USDT -->
       <div class="crypto-item">
@@ -66,6 +68,7 @@ title: Apoya el Laboratorio - Main St Audio Labs
         </div>
       </div>
     </div>
+    </details>
   </div>
 </div>
 </div>

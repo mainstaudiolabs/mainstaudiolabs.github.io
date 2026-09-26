@@ -15,7 +15,10 @@ const href = computed(() => localePrefix(localeIndex.value) + '/' + props.id)
 
 <template>
   <a class="card" :href="withBase(href)">
-    <div class="card-img"><img :src="plugin.img" :alt="plugin.name" /></div>
+    <div class="card-img">
+      <span v-if="plugin.isNew" class="card-new">{{ ui.newBadge }}</span>
+      <img :src="plugin.img" :alt="plugin.name" />
+    </div>
     <div class="card-body">
       <h3>{{ plugin.name }}</h3>
       <div class="card-tag">{{ plugin.tagline }}</div>

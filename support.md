@@ -22,6 +22,8 @@ title: Support the Lab - Main St Audio Labs
   <div class="support-card crypto-card">
     <div class="support-card-title">Cryptocurrency</div>
     <p class="support-card-desc">We accept donations on low-fee networks. Click the button to copy the address or scan the QR code from your wallet.</p>
+    <details class="crypto-details">
+      <summary>Or donate with cryptocurrency (USDT, Bitcoin, Solana)</summary>
     <div class="crypto-list">
       <!-- USDT -->
       <div class="crypto-item">
@@ -66,6 +68,7 @@ title: Support the Lab - Main St Audio Labs
         </div>
       </div>
     </div>
+    </details>
   </div>
 </div>
 </div>

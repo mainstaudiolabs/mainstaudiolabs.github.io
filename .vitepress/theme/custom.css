@@ -158,7 +158,10 @@ h1,h2,h3,h4,h5,h6{
   text-decoration:none !important;color:inherit;
 }
 .card:hover{border-top-color:var(--vp-c-brand-1);}
-.card-img{background:var(--surface-dark);border-bottom:1px solid var(--surface-dark-line);height:190px;display:flex;align-items:center;justify-content:center;padding:.9rem;}
+.card-img{position:relative;background:var(--surface-dark);border-bottom:1px solid var(--surface-dark-line);height:190px;display:flex;align-items:center;justify-content:center;padding:.9rem;}
+.card-new{position:absolute;top:10px;left:10px;z-index:2;background:var(--vp-c-brand-1);color:var(--red-ink);
+  font-family:'IBM Plex Mono',monospace;font-size:.68rem;font-weight:700;letter-spacing:.08em;
+  padding:.25rem .6rem;border-radius:4px;text-transform:uppercase;}
 .card-img img{max-height:100%;max-width:100%;object-fit:contain;}
 .card-body{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.55rem;flex:1;}
 .card-body h3{font-size:1.25rem !important;margin:0 !important;}
@@ -211,6 +214,13 @@ h1,h2,h3,h4,h5,h6{
 .support-card-title{font-family:'Fraunces',serif;font-weight:600 !important;font-size:1.5rem;color:var(--vp-c-brand-1);margin:0 0 .6rem !important;}
 .support-card-desc{font-family:'IBM Plex Sans';font-size:.95rem;color:var(--vp-c-text-1);line-height:1.6;margin-bottom:1.4rem;}
 .crypto-list{display:flex;flex-direction:column;gap:1.2rem;margin-top:1.6rem;}
+.crypto-details{margin-top:.4rem;}
+.crypto-details summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:.45rem;
+  font-family:'IBM Plex Mono',monospace;font-size:.85rem;color:var(--vp-c-brand-1);padding:.45rem 0;}
+.crypto-details summary::-webkit-details-marker{display:none;}
+.crypto-details summary::before{content:'\25B8';font-size:.8rem;}
+.crypto-details[open] summary::before{content:'\25BE';}
+.crypto-details summary:hover{text-decoration:underline;}
 .crypto-item{background:rgba(0,0,0,.04);border:1px solid var(--vp-c-border);border-radius:8px;padding:1.1rem 1.3rem;display:flex;align-items:center;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;}
 .dark .crypto-item{background:rgba(255,255,255,.03);}
 .crypto-meta{display:flex;flex-direction:column;gap:.3rem;}
