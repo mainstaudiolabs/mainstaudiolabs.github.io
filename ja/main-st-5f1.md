@@ -15,7 +15,7 @@ function copyEmail() {
 本マニュアルでは、アンプ **Main St 5F1** の使い方、設計、および技術仕様について説明します。
 
 <div style="margin: 1.25rem 0 1.75rem; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Main St 5F1 v1.0.0 をダウンロード（無料）⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.2" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Main St 5F1 v1.0.2 をダウンロード（無料）⬇️</a>
 </div>
 
 ---
@@ -215,7 +215,7 @@ function copyEmail() {
 *本文中に記載されているすべての製品名、商標、モデル名（Fender、Champ、Princeton、Jensen、Shure、SM57、SM94など）は各所有者の商標または登録商標であり、モデリング元のビンテージ機器を歴史的・技術的に説明する目的でのみ使用しています。Main St Audio Labsは独立した開発者であり、これらの企業との提携、承認、スポンサーシップ関係はありません。*
 
 <div style="margin: 1.75rem 0; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Main St 5F1 v1.0.0 をダウンロード（無料）⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.2" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Main St 5F1 v1.0.2 をダウンロード（無料）⬇️</a>
 </div>
 
 このアンプで録音した作品があれば、ぜひ聴かせてください。下のメールアドレスをコピーしてリンクをお送りください：

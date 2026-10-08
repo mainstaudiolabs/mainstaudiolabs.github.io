@@ -15,7 +15,7 @@ function copyEmail() {
 Este manual describe el uso, el diseño y las especificaciones técnicas del amplificador **Main St 5F1**.
 
 <div style="margin: 1.25rem 0 1.75rem; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Descargar Main St 5F1 v1.0.0 (GRATIS) ⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.2" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Descargar Main St 5F1 v1.0.2 (GRATIS) ⬇️</a>
 </div>
 
 ---
@@ -215,7 +215,7 @@ Revisá la barra inferior. Si se muestra el mensaje **NO AUDIO INPUT** en color 
 *Todos los nombres de productos, marcas comerciales y modelos mencionados (tales como Fender, Champ, Princeton, Jensen, Shure, SM57, SM94) pertenecen a sus respectivos propietarios y se citan exclusivamente con fines descriptivos e históricos del equipamiento analógico tomado como referencia. Main St Audio Labs es un proyecto independiente y no cuenta con afiliación, patrocinio ni aval comercial por parte de dichas marcas.*
 
 <div style="margin: 1.75rem 0; text-align: center;">
-  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Descargar Main St 5F1 v1.0.0 (GRATIS) ⬇️</a>
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.2" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Descargar Main St 5F1 v1.0.2 (GRATIS) ⬇️</a>
 </div>
 
 Si grabás algo con este amplificador, queremos escucharlo. Copiá nuestro correo para mandarnos el enlace:
