@@ -6,8 +6,8 @@ export const PLUGINS = {
     'main-st-63-spring': {
       name: "Main St '63 Spring", tagline: "1963 Spring Reverb Unit · Tube Driven",
       img: '/MainSt63Spring.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt63Spring-v1.0.0',
-      desc: "The whole 1963 outboard spring reverb unit, solved as a real circuit: the 12AT7 input and Dwell, the 6V6 driving the tank's coil, two dispersive springs and the 12AX7 recovery with Tone and Mixer. Validated against 100 impulse responses of a real unit. Use it before your amp like the original, or on a bus with the dry off and the two springs split in stereo.",
-      specs: ['The complete unit, solved sample by sample', '12AT7 input, 6V6 driver, 12AX7 recovery', 'Two dispersive springs, with the drip', 'Validated against 100 measured impulse responses', 'Dwell, Mixer, Tone and the reverb switch', 'DRY off and STEREO (springs L/R) for buses', 'Output cable capacitance (off to 2.2 nF)', 'Light on CPU']
+      desc: "The whole 1963 outboard spring reverb unit, solved as a real circuit: the 12AT7 input and Dwell, the 6V6 driving the tank's coil, two dispersive springs and the 12AX7 recovery with Tone and Mixer. Use it before your amp like the original, or on a bus with the dry off and the two springs split in stereo.",
+      specs: ['The complete unit, solved sample by sample', '12AT7 input, 6V6 driver, 12AX7 recovery', 'Two dispersive springs, with the drip', 'Dwell, Mixer, Tone and the reverb switch', 'DRY off and STEREO (springs L/R) for buses', 'Output cable capacitance (off to 2.2 nF)', 'Light on CPU']
     },
     'main-st-5f1': {
       name: 'Main St 5F1', tagline: "Tweed 1956 · 5 Watts · Single-Ended",
@@ -16,12 +16,6 @@ export const PLUGINS = {
       specs: ['Wave digital filters: the circuit solved sample by sample', '12AX7 preamp and single-ended class-A 6V6', '5Y3GT rectifier with real supply sag', 'Jensen P10R modelled as a reactive load', 'Two inputs: Jack 1 and Jack 2 (\u22126 dB, 136 k\u03a9)', 'SM57 and SM94 cabinet takes, plus Direct', 'Built-in tuner with adjustable A4', 'Lighter on CPU than a commercial amp sim']
     },
 
-    'tattoo-you': {
-      name: 'Tattoo You', tagline: "Studio Guitar Workstation '78–'81",
-      img: '/tattoo-you.png', free: true, soon: true,
-      desc: "'78 Mark I circuit with 12 neural models (100W/60W, Normal/Bright), 1x12 Hardwood Cab Lab with 24 takes, single-track Stereo Spread 3D, Phase '78, Delay, and rack tuner. Free and 100% functional under a pay-what-you-want model (REAPER-style): with no license, it just adds a 6-second wait when opening the plugin.",
-      specs: ["12 neural 6L6 models (Clean / Crunch / Lead)", "1x12 Hardwood Cab Lab console (24 EVM-12L takes & dual blend)", "Single-track Stereo Spread 3D", "Phase '78 + Slapback Delay", "5-band graphic EQ", "Built-in chromatic tuner", "Pay-what-you-want: 6s wait without a license"]
-    },
     'midnight-rambler': {
       name: 'Midnight Rambler', tagline: '5E3 Tweed Tube Simulation',
       img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/Midnight-Rambler-v1.2.1',
@@ -39,8 +33,8 @@ export const PLUGINS = {
     'main-st-63-spring': {
       name: "Main St '63 Spring", tagline: 'Unidad de reverb de 1963 · a válvulas',
       img: '/MainSt63Spring.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt63Spring-v1.0.0',
-      desc: 'La unidad de reverb de resorte externa de 1963 completa, resuelta como un circuito real: la entrada 12AT7 y el Dwell, la 6V6 que excita la bobina del tanque, dos resortes dispersivos y la recuperación 12AX7 con Tone y Mixer. Validada contra 100 respuestas al impulso de una unidad real. Usala antes del ampli como la original, o en un bus con el seco apagado y los dos resortes separados en estéreo.',
-      specs: ['La unidad completa, resuelta muestra por muestra', 'Entrada 12AT7, driver 6V6, recuperación 12AX7', 'Dos resortes dispersivos, con el drip', 'Validada contra 100 respuestas al impulso medidas', 'Dwell, Mixer, Tone y la tecla de la reverb', 'DRY off y STEREO (resortes izq./der.) para buses', 'Capacidad del cable de salida (off a 2,2 nF)', 'Liviana de CPU']
+      desc: 'La unidad de reverb de resorte externa de 1963 completa, resuelta como un circuito real: la entrada 12AT7 y el Dwell, la 6V6 que excita la bobina del tanque, dos resortes dispersivos y la recuperación 12AX7 con Tone y Mixer. Usala antes del ampli como la original, o en un bus con el seco apagado y los dos resortes separados en estéreo.',
+      specs: ['La unidad completa, resuelta muestra por muestra', 'Entrada 12AT7, driver 6V6, recuperación 12AX7', 'Dos resortes dispersivos, con el drip', 'Dwell, Mixer, Tone y la tecla de la reverb', 'DRY off y STEREO (resortes izq./der.) para buses', 'Capacidad del cable de salida (off a 2,2 nF)', 'Liviana de CPU']
     },
     'main-st-5f1': {
       name: 'Main St 5F1', tagline: 'Tweed 1956 · 5 watts · single-ended',
@@ -49,12 +43,6 @@ export const PLUGINS = {
       specs: ['Filtros de onda digital: el circuito resuelto muestra por muestra', 'Previo 12AX7 y 6V6 en clase A single-ended', 'Rectificadora 5Y3GT con sag real de la fuente', 'Jensen P10R modelado como carga reactiva', 'Dos entradas: Jack 1 y Jack 2 (\u22126 dB, 136 k\u03a9)', 'Tomas de gabinete SM57 y SM94, m\u00e1s Direct', 'Afinador integrado con A4 ajustable', 'M\u00e1s liviano de CPU que un simulador comercial']
     },
 
-    'tattoo-you': {
-      name: 'Tattoo You', tagline: "Estación de Estudio '78–'81",
-      img: '/tattoo-you.png', free: true, soon: true,
-      desc: "Circuito Mark I ('78) con 12 modelos neuronales (100W/60W, Normal/Bright), consola 1x12 Hardwood Cab Lab con 24 tomas y mezcla dual, Stereo Spread 3D en 1 sola pista, Phase '78, Delay y afinador de rack. Gratis y 100% funcional bajo un modelo a voluntad (estilo REAPER): sin licencia activa, solo agrega una espera de 6 segundos al abrir el plugin.",
-      specs: ['12 modelos neurales 6L6 (Clean / Crunch / Lead)', 'Consola 1x12 Hardwood Cab Lab (24 tomas EVM-12L y mezcla dual)', 'Stereo Spread 3D en una sola pista', "Phase '78 + Slapback Delay", 'Ecualizador gráfico de 5 bandas', 'Afinador cromático integrado', 'Modelo a voluntad: espera de 6s sin licencia']
-    },
     'midnight-rambler': {
       name: 'Midnight Rambler', tagline: 'Valvular 5E3 Tweed',
       img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/Midnight-Rambler-v1.2.1',
@@ -72,8 +60,8 @@ export const PLUGINS = {
     'main-st-63-spring': {
       name: "Main St '63 Spring", tagline: '1963年スプリング・リバーブ・ユニット · 真空管駆動',
       img: '/MainSt63Spring.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt63Spring-v1.0.0',
-      desc: '1963年の外付けスプリング・リバーブ・ユニット全体を実際の回路として解析。12AT7の入力段とDwell、タンクのコイルを駆動する6V6、2本の分散性スプリング、ToneとMixerを備えた12AX7のリカバリー段。実機の100個のインパルス・レスポンスで検証済み。オリジナル同様アンプの前に、またはドライをoffにし2本のスプリングをステレオに分けてバスで。',
-      specs: ['ユニット全体を1サンプルずつ解析', '12AT7入力、6V6ドライバー、12AX7リカバリー', 'ドリップを再現する2本の分散性スプリング', '測定した100個のインパルス・レスポンスで検証', 'Dwell、Mixer、Toneとリバーブ・スイッチ', 'バス用のDRY offとSTEREO（スプリング左右）', '出力ケーブル容量（off〜2.2 nF）', 'CPU負荷が軽い']
+      desc: '1963年の外付けスプリング・リバーブ・ユニット全体を実際の回路として解析。12AT7の入力段とDwell、タンクのコイルを駆動する6V6、2本の分散性スプリング、ToneとMixerを備えた12AX7のリカバリー段。オリジナル同様アンプの前に、またはドライをoffにし2本のスプリングをステレオに分けてバスで。',
+      specs: ['ユニット全体を1サンプルずつ解析', '12AT7入力、6V6ドライバー、12AX7リカバリー', 'ドリップを再現する2本の分散性スプリング', 'Dwell、Mixer、Toneとリバーブ・スイッチ', 'バス用のDRY offとSTEREO（スプリング左右）', '出力ケーブル容量（off〜2.2 nF）', 'CPU負荷が軽い']
     },
     'main-st-5f1': {
       name: 'Main St 5F1', tagline: 'Tweed 1956 · 5ワット · シングルエンド',
@@ -82,12 +70,6 @@ export const PLUGINS = {
       specs: ['ウェーブ・デジタル・フィルタで回路を1サンプルずつ解析', '12AX7プリアンプとシングルエンド・クラスA 6V6', '5Y3GT整流管による本物の電源サグ', 'Jensen P10Rをリアクティブ負荷としてモデリング', '2系統の入力：Jack 1とJack 2（\u22126 dB、136 kΩ）', 'SM57・SM94のキャビネットテイクとDirect', 'A4調整可能なチューナー内蔵', '市販アンプシミュレーターより軽いCPU負荷']
     },
 
-    'tattoo-you': {
-      name: 'Tattoo You', tagline: "スタジオ・ワークステーション '78–'81",
-      img: '/tattoo-you.png', free: true, soon: true,
-      desc: "12種類のニューラルモデル（100W/60W, Normal/Bright）、24テイクの1x12 Hardwood Cab Lab、1トラック完結のStereo Spread 3D、Phase '78、ディレイ、ラックチューナーを完全統合。ライセンス未登録でも全機能を無料で100%利用可能（REAPER方式）。起動時に6秒の待機画面が表示されるのみです。",
-      specs: ['6L6ニューラルモデル12種（Clean / Crunch / Lead）', '1x12 Hardwood Cab Lab コンソール（24テイクEVM-12L＆デュアルミックス）', '1トラック完結のStereo Spread 3D', "Phase '78 + スラップバックディレイ", '5バンド・グラフィックEQ', 'クロマチックチューナー内蔵', '寄付制モデル：ライセンス未登録時は起動時に6秒待機']
-    },
     'midnight-rambler': {
       name: 'Midnight Rambler', tagline: '5E3 Tweed 真空管シミュレーション',
       img: '/midnightramblerinterface.png', free: true, soon: false, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/Midnight-Rambler-v1.2.1',
@@ -103,4 +85,4 @@ export const PLUGINS = {
   }
 }
 
-export const PLUGIN_ORDER = ['main-st-63-spring', 'main-st-5f1', 'tattoo-you', 'midnight-rambler', 'tuner-pedal']
+export const PLUGIN_ORDER = ['main-st-63-spring', 'main-st-5f1', 'midnight-rambler', 'tuner-pedal']

@@ -6,7 +6,7 @@ PLEASE READ THIS END USER LICENSE AGREEMENT ("AGREEMENT" OR "EULA") CAREFULLY BE
 BY DOWNLOADING, INSTALLING, OR USING THE SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT DOWNLOAD, INSTALL, OR USE THE SOFTWARE.
 
 1. GRANT OF LICENSE (FREEWARE)
-Subject to the terms of this Agreement, Main St Audio Labs grants you a non-exclusive, non-transferable, royalty-free license to download, install, and use the Software (including Midnight Rambler, Tattoo You, and future stompbox/amp sim releases) on any number of computers owned or controlled by you. 
+Subject to the terms of this Agreement, Main St Audio Labs grants you a non-exclusive, non-transferable, royalty-free license to download, install, and use the Software (including Midnight Rambler and future stompbox/amp sim releases) on any number of computers owned or controlled by you. 
 
 2. PERMITTED USES (PERSONAL & COMMERCIAL AUDIO PRODUCTION)
 You are explicitly permitted to use the Software for:

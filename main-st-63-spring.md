@@ -29,8 +29,6 @@ This manual describes the use, the design and the technical specifications of th
 - **Tank:** two dispersive springs (a short one and a long one), with the chirps, the "drip" and the decay of a real tank.
 - **Recovery and mix:** the **12AX7** recovery stage, the **Tone** control, and the **Mixer**, which blends the reverb with the dry signal that runs through a cathode follower (V3B), as in the original.
 
-The complete unit was **validated against 100 impulse responses measured on a real '63 reissue**, across the whole range of the Dwell and Tone controls.
-
 **Fully functional and completely free.** All features are available without time limits or functional restrictions. An optional license key is available to support development and remove the brief welcome window.
 
 ---
