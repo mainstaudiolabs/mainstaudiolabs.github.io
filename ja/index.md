@@ -21,7 +21,7 @@ title: Main St Audio Labs - ヴィンテージ・アンプ＆スタジオ・プ�
     <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
     <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
   </div>
-  <a href="/ja/support" class="btn btn-ghost">開発者を支援する (Ko-fi / Crypto) ☕</a>
+  <a href="/ja/support" class="btn btn-ghost">開発者を支援する (Ko-fi) ☕</a>
 </div>
 
 <script setup>

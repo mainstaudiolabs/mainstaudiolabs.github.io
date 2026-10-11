@@ -73,10 +73,10 @@ We are always listening. If you have any suggestions, audio tracks you want to s
   <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
 </div>
 
-<p style="margin-top: 2rem; margin-bottom: 1rem;">If you would like to support our independent research and help us keep our plugins free, you can support us with Card, PayPal, or Cryptocurrency:</p>
+<p style="margin-top: 2rem; margin-bottom: 1rem;">If you would like to support our independent research and help us keep our plugins free, you can support us with Card or PayPal:</p>
 
 <div>
-  <a href="/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">Support the Lab (Ko-fi / Crypto) ☕</a>
+  <a href="/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">Support the Lab (Ko-fi) ☕</a>
 </div>
 
 </div>

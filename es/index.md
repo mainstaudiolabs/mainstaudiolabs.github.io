@@ -21,7 +21,7 @@ title: Main St Audio Labs - Stompboxes, Amplificadores y Audio de Estudio
     <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
     <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
   </div>
-  <a href="/es/support" class="btn btn-ghost">Apoya el Laboratorio (Ko-fi / Crypto) ☕</a>
+  <a href="/es/support" class="btn btn-ghost">Apoya el Laboratorio (Ko-fi) ☕</a>
 </div>
 
 <script setup>

@@ -213,23 +213,6 @@ h1,h2,h3,h4,h5,h6{
 .support-card-badge{position:absolute;top:-12px;right:20px;background:var(--vp-c-brand-1);color:var(--red-ink);font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:700;padding:.25rem .7rem;border-radius:4px;}
 .support-card-title{font-family:'Fraunces',serif;font-weight:600 !important;font-size:1.5rem;color:var(--vp-c-brand-1);margin:0 0 .6rem !important;}
 .support-card-desc{font-family:'IBM Plex Sans';font-size:.95rem;color:var(--vp-c-text-1);line-height:1.6;margin-bottom:1.4rem;}
-.crypto-list{display:flex;flex-direction:column;gap:1.2rem;margin-top:1.6rem;}
-.crypto-details{margin-top:.4rem;}
-.crypto-details summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:.45rem;
-  font-family:'IBM Plex Mono',monospace;font-size:.85rem;color:var(--vp-c-brand-1);padding:.45rem 0;}
-.crypto-details summary::-webkit-details-marker{display:none;}
-.crypto-details summary::before{content:'\25B8';font-size:.8rem;}
-.crypto-details[open] summary::before{content:'\25BE';}
-.crypto-details summary:hover{text-decoration:underline;}
-.crypto-item{background:rgba(0,0,0,.04);border:1px solid var(--vp-c-border);border-radius:8px;padding:1.1rem 1.3rem;display:flex;align-items:center;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;}
-.dark .crypto-item{background:rgba(255,255,255,.03);}
-.crypto-meta{display:flex;flex-direction:column;gap:.3rem;}
-.crypto-name{font-family:'Fraunces',serif;font-weight:600;font-size:1.1rem;color:var(--vp-c-text-1);}
-.crypto-network-badge{font-family:'IBM Plex Mono',monospace;font-size:.7rem;background:var(--vp-c-brand-1);color:var(--red-ink);padding:.15rem .5rem;border-radius:3px;}
-.crypto-address-wrapper{flex:1;min-width:200px;max-width:420px;background:var(--surface-dark);border-radius:6px;padding:.5rem .7rem;display:flex;align-items:center;justify-content:space-between;gap:.6rem;}
-.crypto-address-text{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:#cfc6b0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.crypto-qr-wrapper{width:76px;height:76px;background:#fff;border-radius:6px;padding:.3rem;flex-shrink:0;}
-.crypto-qr-wrapper img{width:100%;height:100%;object-fit:contain;}
 
 /* ============ site header ============ */
 .site-header{position:sticky;top:0;z-index:40;background:var(--vp-c-bg);border-bottom:1px solid var(--vp-c-border);}

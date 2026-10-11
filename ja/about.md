@@ -73,10 +73,10 @@ Main St Audio Labs の研究開発は、情熱的なミュージシャンやト�
   <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
 </div>
 
-<p style="margin-top: 2rem; margin-bottom: 1rem;">当ラボの独立した研究開発を支援し、プラグインの無料提供をサポートしていただける場合は、クレジットカード、PayPal、または仮想通貨でのご支援を受け付けております：</p>
+<p style="margin-top: 2rem; margin-bottom: 1rem;">当ラボの独立した研究開発を支援し、プラグインの無料提供をサポートしていただける場合は、クレジットカードまたはPayPalでのご支援を受け付けております：</p>
 
 <div>
-  <a href="/ja/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">ラボの開発を支援する（Ko-fi / 仮想通貨） ☕</a>
+  <a href="/ja/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">ラボの開発を支援する（Ko-fi） ☕</a>
 </div>
 
 </div>

@@ -25,7 +25,7 @@ const year = new Date().getFullYear()
         <div class="site-footer-col">
           <h4>Contact</h4>
           <a href="mailto:mainstaudiolabs@gmail.com">mainstaudiolabs@gmail.com</a>
-          <a href="https://ko-fi.com/mainstaudiolabs" target="_blank" rel="noopener">Ko-fi / Crypto</a>
+          <a href="https://ko-fi.com/mainstaudiolabs" target="_blank" rel="noopener">Ko-fi</a>
         </div>
       </div>
     </div>

@@ -34,6 +34,8 @@ Este manual describe el uso, el diseño y las especificaciones técnicas de la r
 - **Tanque:** dos resortes dispersivos (uno corto y uno largo), con los chirridos, el "drip" y la caída de un tanque de verdad.
 - **Recuperación y mezcla:** la etapa de recuperación con **12AX7**, el control **Tone** y el **Mixer**, que mezcla la reverb con la señal seca que pasa por un seguidor de cátodo (V3B), como en el original.
 
+Usala **antes del ampli**, como la original, o **en un bus** con el seco apagado y los dos resortes separados en estéreo.
+
 **Totalmente funcional y completamente gratis.** Todas las funciones están disponibles sin límites de tiempo ni restricciones. Hay una clave de licencia opcional para apoyar el desarrollo y sacar la breve ventana de bienvenida.
 
 ---
