@@ -3,6 +3,12 @@
 // worth a native-speaker pass before shipping.
 export const PLUGINS = {
   root: {
+    'main-st-5e3': {
+      name: 'Main St 5E3', tagline: 'Tweed 5E3 · Push-Pull 6V6 · Two Channels',
+      img: '/MainSt5E3.png', free: false, price: '$9', soon: true, isNew: false, downloadUrl: '',
+      desc: "Component-level physical modelling of the 1950s tweed 5E3: two 12AY7 channels that interact through a shared cathode, the 12AX7 gain stage and cathodyne, a push-pull pair of 6V6GT into the output transformer, the 5Y3 rectifier's sag and a Jensen P12Q as a reactive load. Four jacks and the jumper cable, and a two-mic cabinet with our own impulse responses.",
+      specs: ['Wave digital filters: the whole circuit solved sample by sample', 'Two channels, four jacks and the jumper (to Hi or Lo)', 'Interacting Normal and Bright volumes, and Tone', 'Cathodyne and a push-pull pair of 6V6GT', '5Y3GT rectifier with real supply sag', 'Jensen P12Q 12\" alnico as a reactive load', 'Two-mic cabinet: SM57, SM94, R121, MD421 at four positions', 'Optional mods: Lead and V2A cathode / NFB', 'Presets and built-in tuner', '30-day full trial, then $9 one-time']
+    },
     'main-st-63-spring': {
       name: "Main St '63 Spring", tagline: "1963 Spring Reverb Unit · Tube Driven",
       img: '/MainSt63Spring.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt63Spring-v1.0.0',
@@ -30,6 +36,12 @@ export const PLUGINS = {
     }
   },
   es: {
+    'main-st-5e3': {
+      name: 'Main St 5E3', tagline: 'Tweed 5E3 · push-pull 6V6 · dos canales',
+      img: '/MainSt5E3.png', free: false, price: 'US$ 9', soon: true, isNew: false, downloadUrl: '',
+      desc: 'Modelado físico a nivel de componentes del tweed 5E3 de los años 50: dos canales 12AY7 que interactúan por un cátodo compartido, la etapa 12AX7 y el catodino, un par push-pull de 6V6GT sobre el transformador de salida, el sag de la rectificadora 5Y3 y un Jensen P12Q como carga reactiva. Cuatro jacks y el cable puente, y un gabinete de dos micrófonos con respuestas al impulso propias.',
+      specs: ['Filtros de onda digital: todo el circuito resuelto muestra por muestra', 'Dos canales, cuatro jacks y el puente (al Hi o al Lo)', 'Volúmenes Normal y Bright que interactúan, y Tone', 'Catodino y par push-pull de 6V6GT', 'Rectificadora 5Y3GT con sag real de la fuente', 'Jensen P12Q de 12\" alnico como carga reactiva', 'Gabinete de dos micrófonos: SM57, SM94, R121, MD421 en cuatro posiciones', 'Mods opcionales: Lead y cátodo de V2A / NFB', 'Presets y afinador integrado', 'Prueba completa de 30 días, después US$ 9 pago único']
+    },
     'main-st-63-spring': {
       name: "Main St '63 Spring", tagline: 'Unidad de reverb de 1963 · a válvulas',
       img: '/MainSt63Spring.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt63Spring-v1.0.0',
@@ -57,6 +69,12 @@ export const PLUGINS = {
     }
   },
   ja: {
+    'main-st-5e3': {
+      name: 'Main St 5E3', tagline: 'Tweed 5E3 · プッシュプル 6V6 · 2チャンネル',
+      img: '/MainSt5E3.png', free: false, price: '$9', soon: true, isNew: false, downloadUrl: '',
+      desc: '1950年代のツイード 5E3 をコンポーネント単位で物理モデリング。カソードを共有して相互作用する 12AY7 の2チャンネル、12AX7 のゲイン段とカソダイン、出力トランスを駆動する 6V6GT のプッシュプル・ペア、5Y3 整流管のサグ、リアクティブ負荷としての Jensen P12Q。4つのジャックとジャンパー・ケーブル、自社製インパルス・レスポンスによる2マイクのキャビネット。',
+      specs: ['ウェーブ・デジタル・フィルターで回路全体を1サンプルずつ解析', '2チャンネル、4ジャック、ジャンパー（Hi または Lo へ）', '相互作用する Normal と Bright のボリューム、Tone', 'カソダインと 6V6GT のプッシュプル・ペア', '5Y3GT 整流管による本物の電源サグ', 'Jensen P12Q 12インチ・アルニコをリアクティブ負荷として', '2マイクのキャビネット：SM57、SM94、R121、MD421、4ポジション', 'オプションの改造：Lead と V2A カソード / NFB', 'プリセットとチューナー内蔵', '30日間のフル試用、その後9ドルの買い切り']
+    },
     'main-st-63-spring': {
       name: "Main St '63 Spring", tagline: '1963年スプリング・リバーブ・ユニット · 真空管駆動',
       img: '/MainSt63Spring.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt63Spring-v1.0.0',
@@ -85,4 +103,4 @@ export const PLUGINS = {
   }
 }
 
-export const PLUGIN_ORDER = ['main-st-63-spring', 'main-st-5f1', 'midnight-rambler', 'tuner-pedal']
+export const PLUGIN_ORDER = ['main-st-5e3', 'main-st-63-spring', 'main-st-5f1', 'midnight-rambler', 'tuner-pedal']

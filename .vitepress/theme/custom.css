@@ -197,6 +197,11 @@ h1,h2,h3,h4,h5,h6{
 .spec-list li{display:flex;gap:.5rem;}
 .spec-list li::before{content:"—";color:var(--vp-c-brand-1);flex-shrink:0;}
 @media (max-width:560px){.spec-list{grid-template-columns:1fr;}}
+/* 11/10/2026: especificaciones a todo el ancho, debajo de la imagen y el texto, en 3 columnas */
+.product-hero .spec-wide{grid-column:1 / -1;margin-top:0;}
+.spec-wide .spec-list{grid-template-columns:repeat(3,1fr);}
+@media (max-width:860px){.spec-wide .spec-list{grid-template-columns:1fr 1fr;}}
+@media (max-width:560px){.spec-wide .spec-list{grid-template-columns:1fr;}}
 
 /* ============ about / contact ============ */
 .founder-line{border-left:3px solid var(--vp-c-brand-1);padding-left:1rem;margin:1.6rem 0;color:var(--vp-c-text-1);font-style:italic;font-family:'Fraunces',serif;font-size:1.05rem;}

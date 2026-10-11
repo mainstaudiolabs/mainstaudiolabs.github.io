@@ -36,13 +36,15 @@ const prefix = computed(() => localePrefix(localeIndex.value))
           <a v-if="!plugin.soon" class="btn btn-primary" :href="plugin.downloadUrl || '#'" target="_blank" rel="noopener">{{ ui.download }}</a>
           <a class="btn btn-ghost" href="#manual">{{ ui.viewManual }} ↓</a>
         </div>
+      </div>
 
-        <div class="spec-block">
-          <div class="eyebrow">{{ ui.specs }}</div>
-          <ul class="spec-list">
-            <li v-for="(s, i) in plugin.specs" :key="i">{{ s }}</li>
-          </ul>
-        </div>
+      <!-- 11/10/2026: las especificaciones van en una franja de ancho completo, debajo de la
+           imagen y el texto (antes, en la columna derecha, dejaban un hueco largo a la izquierda) -->
+      <div class="spec-block spec-wide">
+        <div class="eyebrow">{{ ui.specs }}</div>
+        <ul class="spec-list">
+          <li v-for="(s, i) in plugin.specs" :key="i">{{ s }}</li>
+        </ul>
       </div>
     </div>
   </div>
