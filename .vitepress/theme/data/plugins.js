@@ -6,20 +6,20 @@ export const PLUGINS = {
     'main-st-5e3': {
       name: 'Main St 5E3', tagline: 'Tweed 5E3 · Push-Pull 6V6 · Two Channels',
       img: '/MainSt5E3.png', free: false, price: '$9', soon: true, isNew: false, downloadUrl: '',
-      desc: "Component-level physical modelling of the 1950s tweed 5E3: two 12AY7 channels that interact through a shared cathode, the 12AX7 gain stage and cathodyne, a push-pull pair of 6V6GT into the output transformer, the 5Y3 rectifier's sag and a Jensen P12Q as a reactive load. Four jacks and the jumper cable, and a two-mic cabinet with our own impulse responses.",
-      specs: ['Wave digital filters: the whole circuit solved sample by sample', 'Two channels, four jacks and the jumper (to Hi or Lo)', 'Interacting Normal and Bright volumes, and Tone', 'Cathodyne and a push-pull pair of 6V6GT', '5Y3GT rectifier with real supply sag', 'Jensen P12Q 12\" alnico as a reactive load', 'Two-mic cabinet: SM57, SM94, R121, MD421 at four positions', 'Optional mods: Lead and V2A cathode / NFB', 'Presets and built-in tuner', '30-day full trial, then $9 one-time']
+      desc: "The original 5E3 tweed circuit, rebuilt tube by tube: two 12AY7 channels, a 12AX7, a pair of 6V6 power tubes and a 5Y3 rectifier, all working together as in the real amp. That's why it cleans up when you roll back your guitar's volume, sags and compresses when you dig in, and breaks into the famous tweed roar when you crank it.",
+      specs: ["The whole circuit, tube by tube, solved in real time, not sampled", "Two 12AY7 channels sharing one cathode: the volumes interact, like the real amp", "Push-pull pair of 6V6: big headroom and low end, a loose roar when cranked", "5Y3 tube rectifier: the sag and bloom you feel under your pick", "Cleans up with your guitar's volume knob", "The classic jumper-cable trick to blend both channels", "12\" alnico speaker that reacts with the power tubes, four classic mics", "Optional mods for tighter lows and more headroom", "Presets and a built-in tuner", "30-day full trial, then $9 one-time"]
     },
     'main-st-63-spring': {
       name: "Main St '63 Spring", tagline: "1963 Spring Reverb Unit · Tube Driven",
       img: '/MainSt63Spring.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt63Spring-v1.0.0',
-      desc: "The whole 1963 Fender outboard spring reverb unit (6G15), solved as a real circuit: the 12AT7 input and Dwell, the 6V6 driving the tank's coil, two dispersive springs and the 12AX7 recovery with Tone and Mixer. Use it before your amp like the original, or on a bus with the dry off and the two springs split in stereo.",
-      specs: ['The complete unit, solved sample by sample', '12AT7 input, 6V6 driver, 12AX7 recovery', 'Two dispersive springs, with the drip', 'Dwell, Mixer, Tone and the reverb switch', 'DRY off and STEREO (springs L/R) for buses', 'Output cable capacitance (off to 2.2 nF)', 'Light on CPU']
+      desc: "The original 1963 outboard spring reverb, rebuilt part by part: the tubes that drive the tank, the two springs and the recovery stage. That's where the drip and splash of surf and vintage records come from, and why it gets wetter and wilder as you turn up the Dwell and hit it harder. Use it before your amp like the original, or on a bus with the springs in stereo.",
+      specs: ["12AT7 input and 6V6 driver: more Dwell, a wetter and more aggressive splash", "Two dispersive springs, with the classic drip", "Dwell, Mixer, Tone and the reverb switch, like the unit", "DRY off and STEREO springs for buses", "Cable-length setting: darker as the cable gets longer", "Light on CPU"]
     },
     'main-st-5f1': {
       name: 'Main St 5F1', tagline: "Tweed 1956 · 5 Watts · Single-Ended",
       img: '/MainSt5F1.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.2',
-      desc: "Component-level physical modelling of the 1956 tweed Champ: wave digital filters solve the real circuit sample by sample, so the 12AX7, the 6V6 and the 5Y3 rectifier's sag react to your picking the way the valves do. One knob, two inputs, and a Jensen P10R cabinet.",
-      specs: ['Wave digital filters: the circuit solved sample by sample', '12AX7 preamp and single-ended class-A 6V6', '5Y3GT rectifier with real supply sag', 'Jensen P10R modelled as a reactive load', 'Two inputs: Jack 1 and Jack 2 (\u22126 dB, 136 k\u03a9)', 'SM57 and SM94 cabinet takes, plus Direct', 'Built-in tuner with adjustable A4', 'Lighter on CPU than a commercial amp sim']
+      desc: "The original 1956 tweed Champ circuit, rebuilt tube by tube: a 12AX7, a single 6V6 and a 5Y3 rectifier, working together as in the real amp. That's why one knob covers it all (sweet cleans down low, warm crunch in the middle, singing overdrive at the top) and why it answers your picking like the real thing.",
+      specs: ["12AX7 preamp: chimey cleans that break up when you dig in", "Single-ended 6V6: the sweet, compressed overdrive of small tweed amps", "5Y3 tube rectifier: the sag and bloom you feel under your pick", "Jensen P10R that reacts with the power tube", "Two inputs: Jack 2 is softer and darker, for hot pickups", "SM57 and SM94 cabinet takes, plus Direct", "Built-in tuner"]
     },
 
     'midnight-rambler': {
@@ -39,20 +39,20 @@ export const PLUGINS = {
     'main-st-5e3': {
       name: 'Main St 5E3', tagline: 'Tweed 5E3 · push-pull 6V6 · dos canales',
       img: '/MainSt5E3.png', free: false, price: 'US$ 9', soon: true, isNew: false, downloadUrl: '',
-      desc: 'Modelado físico a nivel de componentes del tweed 5E3 de los años 50: dos canales 12AY7 que interactúan por un cátodo compartido, la etapa 12AX7 y el catodino, un par push-pull de 6V6GT sobre el transformador de salida, el sag de la rectificadora 5Y3 y un Jensen P12Q como carga reactiva. Cuatro jacks y el cable puente, y un gabinete de dos micrófonos con respuestas al impulso propias.',
-      specs: ['Filtros de onda digital: todo el circuito resuelto muestra por muestra', 'Dos canales, cuatro jacks y el puente (al Hi o al Lo)', 'Volúmenes Normal y Bright que interactúan, y Tone', 'Catodino y par push-pull de 6V6GT', 'Rectificadora 5Y3GT con sag real de la fuente', 'Jensen P12Q de 12\" alnico como carga reactiva', 'Gabinete de dos micrófonos: SM57, SM94, R121, MD421 en cuatro posiciones', 'Mods opcionales: Lead y cátodo de V2A / NFB', 'Presets y afinador integrado', 'Prueba completa de 30 días, después US$ 9 pago único']
+      desc: "El circuito tweed 5E3 original, reconstruido válvula por válvula: dos canales 12AY7, una 12AX7, un par de 6V6 de potencia y una rectificadora 5Y3, trabajando juntos como en el ampli real. Por eso se limpia cuando bajás el volumen de la guitarra, se comprime y respira cuando atacás fuerte, y estalla en el famoso rugido tweed cuando lo llevás al máximo.",
+      specs: ["Todo el circuito, válvula por válvula, resuelto en tiempo real, sin muestras", "Dos canales 12AY7 que comparten un cátodo: los volúmenes interactúan, como en el ampli real", "Par push-pull de 6V6: mucho margen y graves, un rugido suelto al máximo", "Rectificadora 5Y3 a válvula: el sag y la respiración que sentís en la púa", "Se limpia con el volumen de tu guitarra", "El truco clásico del cable puente para mezclar los dos canales", "Parlante de 12\" alnico que interactúa con las válvulas de potencia, cuatro micrófonos clásicos", "Mods opcionales para graves más firmes y más margen", "Presets y afinador integrado", "Prueba completa de 30 días, después US$ 9 pago único"]
     },
     'main-st-63-spring': {
       name: "Main St '63 Spring", tagline: 'Unidad de reverb de 1963 · a válvulas',
       img: '/MainSt63Spring.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt63Spring-v1.0.0',
-      desc: 'La unidad de reverb de resorte externa Fender de 1963 (6G15) completa, resuelta como un circuito real: la entrada 12AT7 y el Dwell, la 6V6 que excita la bobina del tanque, dos resortes dispersivos y la recuperación 12AX7 con Tone y Mixer. Usala antes del ampli como la original, o en un bus con el seco apagado y los dos resortes separados en estéreo.',
-      specs: ['La unidad completa, resuelta muestra por muestra', 'Entrada 12AT7, driver 6V6, recuperación 12AX7', 'Dos resortes dispersivos, con el drip', 'Dwell, Mixer, Tone y la tecla de la reverb', 'DRY off y STEREO (resortes izq./der.) para buses', 'Capacidad del cable de salida (off a 2,2 nF)', 'Liviana de CPU']
+      desc: "La unidad de reverb de resorte externa original de 1963, reconstruida pieza por pieza: las válvulas que excitan el tanque, los dos resortes y la etapa de recuperación. De ahí salen el drip y el splash de los discos de surf y de época, y por eso se vuelve más húmeda y salvaje a medida que subís el Dwell y atacás más fuerte. Usala antes del ampli como la original, o en un bus con los resortes en estéreo.",
+      specs: ["Entrada 12AT7 y driver 6V6: más Dwell, un splash más húmedo y agresivo", "Dos resortes dispersivos, con el drip clásico", "Dwell, Mixer, Tone y la tecla de la reverb, como en la unidad", "DRY off y resortes en STEREO para buses", "Largo del cable: más oscuro cuanto más largo", "Liviana de CPU"]
     },
     'main-st-5f1': {
       name: 'Main St 5F1', tagline: 'Tweed 1956 · 5 watts · single-ended',
       img: '/MainSt5F1.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.2',
-      desc: 'Modelado f\u00edsico a nivel de componentes del Champ tweed de 1956: los filtros de onda digital resuelven el circuito real muestra por muestra, as\u00ed que la 12AX7, la 6V6 y la ca\u00edda de tensi\u00f3n de la rectificadora 5Y3 responden a tu p\u00faa como responden las v\u00e1lvulas. Una perilla, dos entradas y un gabinete con Jensen P10R.',
-      specs: ['Filtros de onda digital: el circuito resuelto muestra por muestra', 'Previo 12AX7 y 6V6 en clase A single-ended', 'Rectificadora 5Y3GT con sag real de la fuente', 'Jensen P10R modelado como carga reactiva', 'Dos entradas: Jack 1 y Jack 2 (\u22126 dB, 136 k\u03a9)', 'Tomas de gabinete SM57 y SM94, m\u00e1s Direct', 'Afinador integrado con A4 ajustable', 'M\u00e1s liviano de CPU que un simulador comercial']
+      desc: "El circuito original del Champ tweed de 1956, reconstruido válvula por válvula: una 12AX7, una sola 6V6 y una rectificadora 5Y3, trabajando juntas como en el ampli real. Por eso una sola perilla alcanza para todo (limpios dulces abajo, crunch cálido en el medio, saturación que canta arriba) y responde a tu púa como el original.",
+      specs: ["Previo 12AX7: limpios cristalinos que rompen cuando atacás fuerte", "6V6 single-ended: la saturación dulce y comprimida de los tweed chicos", "Rectificadora 5Y3 a válvula: el sag y la respiración que sentís en la púa", "Jensen P10R que interactúa con la válvula de potencia", "Dos entradas: el Jack 2 es más suave y oscuro, para micrófonos calientes", "Tomas de gabinete SM57 y SM94, más Direct", "Afinador integrado"]
     },
 
     'midnight-rambler': {
@@ -72,20 +72,20 @@ export const PLUGINS = {
     'main-st-5e3': {
       name: 'Main St 5E3', tagline: 'Tweed 5E3 · プッシュプル 6V6 · 2チャンネル',
       img: '/MainSt5E3.png', free: false, price: '$9', soon: true, isNew: false, downloadUrl: '',
-      desc: '1950年代のツイード 5E3 をコンポーネント単位で物理モデリング。カソードを共有して相互作用する 12AY7 の2チャンネル、12AX7 のゲイン段とカソダイン、出力トランスを駆動する 6V6GT のプッシュプル・ペア、5Y3 整流管のサグ、リアクティブ負荷としての Jensen P12Q。4つのジャックとジャンパー・ケーブル、自社製インパルス・レスポンスによる2マイクのキャビネット。',
-      specs: ['ウェーブ・デジタル・フィルターで回路全体を1サンプルずつ解析', '2チャンネル、4ジャック、ジャンパー（Hi または Lo へ）', '相互作用する Normal と Bright のボリューム、Tone', 'カソダインと 6V6GT のプッシュプル・ペア', '5Y3GT 整流管による本物の電源サグ', 'Jensen P12Q 12インチ・アルニコをリアクティブ負荷として', '2マイクのキャビネット：SM57、SM94、R121、MD421、4ポジション', 'オプションの改造：Lead と V2A カソード / NFB', 'プリセットとチューナー内蔵', '30日間のフル試用、その後9ドルの買い切り']
+      desc: "オリジナルの 5E3 ツイード回路を真空管ひとつずつ再構築。12AY7 の2チャンネル、12AX7、6V6 パワー管のペア、5Y3 整流管が、実機と同じように連動します。だからギターのボリュームを絞ればクリーンになり、強く弾けばサグとコンプレッションがかかり、フルアップで有名なツイードの咆哮へ。",
+      specs: ["回路全体を真空管ひとつずつリアルタイムで解析（サンプリングではありません）", "カソードを共有する 12AY7 の2チャンネル：実機同様ボリュームが相互に作用", "6V6 のプッシュプル・ペア：大きなヘッドルームと低域、フルアップでルーズな咆哮", "5Y3 整流管：ピックで感じるサグと膨らみ", "ギターのボリュームでクリーンに", "両チャンネルをブレンドする定番のジャンパー・ケーブル", "パワー管と相互作用する12インチ・アルニコ・スピーカー、定番マイク4本", "低域を締めヘッドルームを増やすオプションの改造", "プリセットとチューナー内蔵", "30日間のフル試用、その後9ドルの買い切り"]
     },
     'main-st-63-spring': {
       name: "Main St '63 Spring", tagline: '1963年スプリング・リバーブ・ユニット · 真空管駆動',
       img: '/MainSt63Spring.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt63Spring-v1.0.0',
-      desc: '1963年のFender外付けスプリング・リバーブ・ユニット（6G15）全体を実際の回路として解析。12AT7の入力段とDwell、タンクのコイルを駆動する6V6、2本の分散性スプリング、ToneとMixerを備えた12AX7のリカバリー段。オリジナル同様アンプの前に、またはドライをoffにし2本のスプリングをステレオに分けてバスで。',
-      specs: ['ユニット全体を1サンプルずつ解析', '12AT7入力、6V6ドライバー、12AX7リカバリー', 'ドリップを再現する2本の分散性スプリング', 'Dwell、Mixer、Toneとリバーブ・スイッチ', 'バス用のDRY offとSTEREO（スプリング左右）', '出力ケーブル容量（off〜2.2 nF）', 'CPU負荷が軽い']
+      desc: "1963年のオリジナル外付けスプリング・リバーブをパーツごとに再構築。タンクを駆動する真空管、2本のスプリング、リカバリー段。サーフやヴィンテージ録音のドリップとスプラッシュはここから生まれ、Dwell を上げて強く弾くほどウェットでワイルドに。オリジナル同様アンプの前に、またはスプリングをステレオに分けてバスで。",
+      specs: ["12AT7 入力と 6V6 ドライバー：Dwell を上げるほどウェットで攻撃的なスプラッシュ", "定番のドリップを再現する2本の分散性スプリング", "ユニットと同じ Dwell、Mixer、Tone とリバーブ・スイッチ", "バス用の DRY off と STEREO スプリング", "ケーブル長の設定：長いほど暗く", "CPU負荷が軽い"]
     },
     'main-st-5f1': {
       name: 'Main St 5F1', tagline: 'Tweed 1956 · 5ワット · シングルエンド',
       img: '/MainSt5F1.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt5F1-v1.0.2',
-      desc: '1956年製ツイードChampをコンポーネント単位で物理モデリング。ウェーブ・デジタル・フィルタが実際の回路を1サンプルずつ解くため、12AX7も6V6も、そして5Y3整流管による電源のサグも、本物の真空管と同じようにピッキングへ反応します。ノブ1つ、入力2系統、Jensen P10R搭載キャビネット。',
-      specs: ['ウェーブ・デジタル・フィルタで回路を1サンプルずつ解析', '12AX7プリアンプとシングルエンド・クラスA 6V6', '5Y3GT整流管による本物の電源サグ', 'Jensen P10Rをリアクティブ負荷としてモデリング', '2系統の入力：Jack 1とJack 2（\u22126 dB、136 kΩ）', 'SM57・SM94のキャビネットテイクとDirect', 'A4調整可能なチューナー内蔵', '市販アンプシミュレーターより軽いCPU負荷']
+      desc: "1956年製ツイード Champ のオリジナル回路を真空管ひとつずつ再構築。12AX7、1本の 6V6、5Y3 整流管が実機と同じように連動します。だからノブ1つですべてをカバー（低い位置では甘いクリーン、中間で温かいクランチ、上げれば歌うようなオーバードライブ）、ピッキングにも実機のように応えます。",
+      specs: ["12AX7 プリアンプ：強く弾くと歪み始めるきらびやかなクリーン", "シングルエンドの 6V6：小型ツイードならではの甘く圧縮されたオーバードライブ", "5Y3 整流管：ピックで感じるサグと膨らみ", "パワー管と相互作用する Jensen P10R", "2系統の入力：Jack 2 はより柔らかく暗めで、ハイ出力ピックアップ向け", "SM57・SM94 のキャビネットテイクと Direct", "チューナー内蔵"]
     },
 
     'midnight-rambler': {
