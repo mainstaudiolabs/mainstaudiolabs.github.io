@@ -1,3 +1,8 @@
+---
+title: "Main St '63 Spring – Free 1963 Fender Spring Reverb Unit (6G15) Plugin"
+description: "Free VST3 and AU plugin that models the 1963 Fender outboard spring reverb unit (6G15) as a real circuit: 12AT7 input, 6V6 driver, two-spring tank and 12AX7 recovery. Windows, macOS and Linux."
+---
+
 <script setup>
 import { ref } from 'vue'
 const btnText = ref('Copy Email')
@@ -22,7 +27,7 @@ This manual describes the use, the design and the technical specifications of th
 
 ## Welcome
 
-**Main St '63 Spring** simulates the whole 1963 outboard spring reverb unit — the box with its own tubes and tank that players put between the guitar and the amp. It is not an impulse response and not a generic spring algorithm: the circuit is solved sample by sample.
+**Main St '63 Spring** simulates the whole 1963 Fender outboard spring reverb unit (the 6G15) — the box with its own tubes and tank that players put between the guitar and the amp. It is not an impulse response and not a generic spring algorithm: the circuit is solved sample by sample.
 
 - **Input stage:** a **12AT7** (V1A and V1B) with the **Dwell** control, which sets how hard the tank is driven.
 - **Driver:** a **6V6** feeding the tank's input coil through its transformer, loaded by the coil itself. Push the Dwell and the driver and the transducer start to compress, just like the real unit.

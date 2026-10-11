@@ -1,3 +1,8 @@
+---
+title: "Main St '63 Spring – Plugin gratis de la unidad de reverb Fender de 1963 (6G15)"
+description: "Plugin VST3 y AU gratuito que modela la unidad de reverb de resorte externa Fender de 1963 (6G15) como un circuito real: entrada 12AT7, driver 6V6, tanque de dos resortes y recuperación 12AX7. Windows, macOS y Linux."
+---
+
 <script setup>
 import { ref } from 'vue'
 const btnText = ref('Copiar correo')
@@ -22,7 +27,7 @@ Este manual describe el uso, el diseño y las especificaciones técnicas de la r
 
 ## Bienvenida
 
-**Main St '63 Spring** simula la unidad de reverb de resorte externa de 1963 completa: la caja con sus propias válvulas y su tanque que se ponía entre la guitarra y el ampli. No es una respuesta al impulso ni un algoritmo de resorte genérico: el circuito se resuelve muestra por muestra.
+**Main St '63 Spring** simula completa la unidad de reverb de resorte externa Fender de 1963 (la 6G15): la caja con sus propias válvulas y su tanque que se ponía entre la guitarra y el ampli. No es una respuesta al impulso ni un algoritmo de resorte genérico: el circuito se resuelve muestra por muestra.
 
 - **Entrada:** una **12AT7** (V1A y V1B) con el control **Dwell**, que define cuánto se excita el tanque.
 - **Driver:** una **6V6** que alimenta la bobina de entrada del tanque a través de su transformador, cargada por la propia bobina. Subí el Dwell y el driver y el transductor empiezan a comprimir, como en la unidad real.
