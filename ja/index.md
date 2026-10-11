@@ -12,10 +12,6 @@ title: Main St Audio Labs - ヴィンテージ・アンプ＆スタジオ・プ�
 
 <PluginGrid />
 
-<div class="section-head"><h2>ラボ・ジャーナルより</h2><a href="/ja/audio-and-mixing">すべて見る →</a></div>
-
-<ArticleGrid :limit="3" />
-
 <NewsletterSubscribe />
 
 <div class="rock-home-banner" style="margin-top: 1.5rem;">

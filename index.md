@@ -12,10 +12,6 @@ title: Main St Audio Labs - Vintage Stompboxes, Amplifiers & Studio Tools
 
 <PluginGrid />
 
-<div class="section-head"><h2>From the Lab Notebook</h2><a href="/audio-and-mixing">View full archive →</a></div>
-
-<ArticleGrid :limit="3" />
-
 <NewsletterSubscribe />
 
 <div class="rock-home-banner" style="margin-top: 1.5rem;">

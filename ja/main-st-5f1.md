@@ -225,12 +225,6 @@ function copyEmail() {
   <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
 </div>
 
-<p style="margin-top: 2rem; margin-bottom: 1rem;">私たちの独立した研究を支援し、プラグインを無料で提供し続けるための力になっていただける場合は、カード・PayPal・暗号資産でのご支援を受け付けています：</p>
-
-<div>
-  <a href="/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">ラボを支援する（Ko-fi / Crypto）☕</a>
-</div>
-
 <div class="print-footer">
   公式サイトとマニュアル: <a href="https://mainstaudiolabs.github.io/ja/main-st-5f1.html" target="_blank">https://mainstaudiolabs.github.io/ja/main-st-5f1.html</a>
 </div>

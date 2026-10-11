@@ -78,9 +78,9 @@ La salida usa la misma escala de voltaje que la entrada, así que se encadena di
 
 Ponela en una pista auxiliar / bus y mandale guitarras, batería o lo que quieras:
 
-1. Poné **DRY** en **off**: el plugin devuelve solo la reverb, y el **Mixer** pasa a ser el nivel de la reverb.
+1. Poné **DRY** en **off**: el plugin devuelve solo la reverb, y el **Mixer** pasa a ser el nivel de la reverb. En la unidad real el retorno del tanque es bajo, así que con DRY en off el plugin le suma **+12 dB**: con Output en 0 y el Mixer en 10, la reverb vuelve cerca del nivel que le mandás. El ajuste fino, con **Output**.
 2. Prendé **STEREO** para tener amplitud: el resorte corto del tanque va a la izquierda y el largo a la derecha.
-3. Empezá con el **Input** en alrededor de **−12 dB**: una mezcla a nivel de línea es mucho más caliente que una guitarra, y la 12AT7 y la 6V6 comprimirían mucho. Subilo si querés más de ese grano valvular.
+3. Poné el **Input** a gusto: una mezcla a nivel de línea es mucho más caliente que una guitarra, así que cuanto más alto, más comprimen la 12AT7 y la 6V6: ese es el grano valvular. Bajalo para una reverb más limpia y abierta.
 
 > **¿Por qué el seco no desaparece con el Mixer en 10?**  
 > Porque en la unidad real tampoco: el Mixer es un pote de 250 k entre la reverb y la señal seca, y en 10 el seco se sigue colando (lo medimos apenas unos 5 dB debajo de su máximo). Eso es parte del sonido cuando la unidad va antes de un ampli, y es justamente por eso que el plugin suma la tecla **DRY** para usarla en un bus.
@@ -94,7 +94,7 @@ Ponela en una pista auxiliar / bus y mandale guitarras, batería o lo que quiera
 - **Tone (1–10):** Los agudos del retorno de la reverb, de oscura al sonido brillante y salpicado del surf.
 - **Tecla REVERB:** Prende y apaga la reverb, como el pedal de la unidad. Con DRY en on, la señal seca sigue pasando por la unidad. La reverb entra y sale en unos milisegundos para no hacer clic. El piloto ámbar muestra el estado (el original no lo tiene).
 - **CABLE (off, 330 pF, 680 pF, 2,2 nF):** La capacidad del cable que va de la unidad al ampli, más la entrada del ampli. Los cables más largos le sacan brillo a la salida. 330 pF (unos 3 m) es el valor por defecto; 2,2 nF es un cable muy largo o pesado.
-- **DRY (on / off):** On, como la unidad. Off, solo la reverb (para envíos y buses).
+- **DRY (on / off):** On, como la unidad. Off, solo la reverb (para envíos y buses), con +12 dB de compensación en el retorno.
 - **STEREO (off / on):** Off, mono como la unidad (la misma señal en los dos lados). On, los dos resortes separados: el corto a la izquierda, el largo a la derecha. La entrada siempre se suma a mono, como en la unidad, así que la reverb no sigue al paneo. Cada lado tiene el mismo nivel que la unidad mono.
 
 Doble clic en una perilla la vuelve a 5. Con **Shift** apretado al arrastrar, el ajuste es fino. Cambiar CABLE o STEREO rearma el circuito, así que la cola que estaba sonando se corta.
@@ -157,12 +157,6 @@ Si grabás algo con esta reverb, queremos escucharlo. Copiá nuestro correo para
 <div class="rock-copy-email-wrapper inline">
   <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
   <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
-</div>
-
-<p style="margin-top: 2rem; margin-bottom: 1rem;">Si querés apoyar nuestra investigación independiente y ayudarnos a mantener los plugins gratuitos, podés hacerlo con tarjeta, PayPal o criptomonedas:</p>
-
-<div>
-  <a href="/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">Apoyar al laboratorio (Ko-fi / Crypto) ☕</a>
 </div>
 
 <div class="print-footer">

@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useData, useRoute, withBase } from 'vitepress'
-import { t, localePrefix, LEARN_PATH } from '../data/i18n.js'
+import { t, localePrefix } from '../data/i18n.js'
 
 const { localeIndex, isDark, site } = useData()
 const route = useRoute()
@@ -9,11 +9,9 @@ const menuOpen = ref(false)
 
 const prefix = computed(() => localePrefix(localeIndex.value))
 const ui = computed(() => t(localeIndex.value))
-const learnPath = computed(() => LEARN_PATH[localeIndex.value] || LEARN_PATH.root)
 
 const navItems = computed(() => ([
   { label: ui.value.plugins, href: prefix.value + '/' },
-  { label: ui.value.learn, href: learnPath.value },
   { label: ui.value.about, href: prefix.value + '/about' },
   { label: ui.value.support, href: prefix.value + '/support' }
 ]))

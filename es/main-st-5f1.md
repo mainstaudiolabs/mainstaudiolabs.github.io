@@ -225,12 +225,6 @@ Si grabás algo con este amplificador, queremos escucharlo. Copiá nuestro corre
   <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
 </div>
 
-<p style="margin-top: 2rem; margin-bottom: 1rem;">Si querés apoyar nuestra investigación independiente y ayudarnos a mantener los plugins gratuitos, podés hacerlo con tarjeta, PayPal o criptomonedas:</p>
-
-<div>
-  <a href="/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">Apoyar al laboratorio (Ko-fi / Crypto) ☕</a>
-</div>
-
 <div class="print-footer">
   Sitio oficial y manual: <a href="https://mainstaudiolabs.github.io/es/main-st-5f1.html" target="_blank">https://mainstaudiolabs.github.io/es/main-st-5f1.html</a>
 </div>

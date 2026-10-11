@@ -60,7 +60,6 @@ function copyEmail() {
 3. **The Masterpiece Riff Power (1981 · *Tattoo You*):**  
    Assembled between Paris and *Atlantic Studios* (NYC), *Tattoo You* represents the zenith of this rig. The unforgettable rhythm crunch on *"Start Me Up"*, the driving punch of *"Little T&A"*, the greasy groove of *"Slave"*, and the roaring aggression of *"Hang Fire"* and *"Neighbours"* stand as benchmark references for rock guitar tone.
 
-👉 [**"The Stones Don't Pay for Amps": How the Stones Acquired the Mesa/Boogie Rigs (1978–1981) →**](/history-mesa-stones)
 
 ---
 
@@ -191,11 +190,6 @@ Tattoo You integrates the **1x12 Hardwood Cab Lab** studio overlay, powered by a
   * 🎧 **Wide Double Track:** 57 L Sweet + 57 R Sweet *(Blend 50%, Stereo)* — Massive double-tracked guitar wall on a single track.
   * ⚡ **Solo 57 Classic:** 57 L Sweet *(Mic 2 Off, Mono)* — Raw bite and punchy midrange.
   * ✨ **Solo 87 Hi-Fi:** 87 L Direct *(Mic 2 Off, Mono)* — Studio-grade clarity and high-end air.
-
-::: tip 🎙️ MASTER AUDIO ENGINEERING & MIC PLACEMENT GUIDE
-Want to explore the driver acoustics of the EVM-12L, cone frequency dispersion, and sample-accurate phase physics ($t=0$)?  
-👉 [**Read the Complete Master Audio Engineering & Mic Placement Guide (1x12 Hardwood Cab Lab) →**](/audio-mics-guide)
-:::
 
 ---
 

@@ -59,7 +59,6 @@ function copyEmail() {
 3. **El Poder de los Riffs Maestros (1981 · *Tattoo You*):**  
    Ensamblado entre París y *Atlantic Studios* (Nueva York), *Tattoo You* representa el cénit de este equipamiento. El inolvidable crujido rítmico en *"Start Me Up"*, la potencia impulsora de *"Little T&A"*, el groove grasiento de *"Slave"* y la agresión rugiente de *"Hang Fire"* y *"Neighbours"* se erigen como referencias fundamentales para el tono de la guitarra rock.
 
-👉 [**Los Stones no pagan por amplificadores: Cómo los Stones adquirieron los equipos Mesa/Boogie (1978–1981) →**](/es/history-mesa-stones)
 
 ---
 
@@ -190,11 +189,6 @@ Tattoo You integra la consola de estudio **1x12 Hardwood Cab Lab**, equipada con
   * 🎧 **Wide Double Track:** 57 L Sweet + 57 R Sweet *(Blend 50%, Stereo)* — Doble tracking abierto en una sola pista.
   * ⚡ **Solo 57 Classic:** 57 L Sweet *(Mic 2 Off, Mono)* — Pegada directa y mordida pura.
   * ✨ **Solo 87 Hi-Fi:** 87 L Direct *(Mic 2 Off, Mono)* — Fidelidad cristalina y aire de estudio.
-
-::: tip 🎙️ GUÍA MAESTRA DE MICROFONEO, FASE Y MEZCLA DUAL
-¿Quieres conocer la física del altavoz EVM-12L, la respuesta de frecuencia en el cono y la ciencia de la fase a muestra cero ($t=0$)?  
-👉 [**Leer la Guía Maestra Completa de Micrófonos y Tomas (1x12 Hardwood Cab Lab) →**](/es/guia-microfonos-tomas)
-:::
 
 ---
 

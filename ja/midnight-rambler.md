@@ -159,12 +159,6 @@ Midnight Rambler で録音・ミックスした楽曲がございましたら、
   <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
 </div>
 
-<p style="margin-top: 2rem; margin-bottom: 1rem;">当ラボの独立開発を応援していただける場合は、Ko-fiまたは仮想通貨でのサポートをお待ちしております：</p>
-
-<div>
-  <a href="/ja/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">ラボの開発を支援する（Ko-fi / 仮想通貨） ☕</a>
-</div>
-
 <div class="section-head" style="margin-top:3rem;"><h2>他のプラグイン</h2></div>
 
 <PluginGrid exclude="midnight-rambler" />

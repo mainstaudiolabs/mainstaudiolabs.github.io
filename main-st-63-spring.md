@@ -78,9 +78,9 @@ The output uses the same voltage scale as the input, so it chains directly into 
 
 Put it on an aux / bus track and send guitars, drums or anything else to it:
 
-1. Set **DRY** to **off**: the plugin then returns only the reverb, and the **Mixer** becomes the reverb level.
+1. Set **DRY** to **off**: the plugin then returns only the reverb, and the **Mixer** becomes the reverb level. The tank's return is quiet on the real unit, so with DRY off the plugin adds **+12 dB** of make-up: with Output at 0 and the Mixer at 10, the reverb comes back close to the level you send it. Fine-tune it with **Output**.
 2. Turn **STEREO** on for width: the tank's short spring goes to the left and the long spring to the right.
-3. Start with **Input** around **−12 dB**: line-level mixes are much hotter than a guitar, and the 12AT7 and the 6V6 would compress heavily. Raise it if you want more of that tube grit.
+3. Set **Input** to taste: line-level mixes are much hotter than a guitar, so the higher you go, the more the 12AT7 and the 6V6 compress — that is the tube grit. Lower it for a cleaner, more open reverb.
 
 > **Why does the dry signal not disappear with the Mixer at 10?**  
 > Because on the real unit it doesn't either: the Mixer is a 250 k pot between the reverb and the dry signal, and at 10 the dry still leaks through (we measured it at only about 5 dB below its maximum). That is part of the sound when the unit sits before an amp — and exactly why the plugin adds the **DRY** switch for bus use.
@@ -94,7 +94,7 @@ Put it on an aux / bus track and send guitars, drums or anything else to it:
 - **Tone (1–10):** The treble of the reverb return, from dark to the bright, splashy surf tone.
 - **REVERB switch:** Turns the reverb on and off, like the unit's footswitch. With DRY on, the dry signal keeps passing through the unit. The reverb fades in and out over a few milliseconds to avoid clicks. The amber pilot light shows the state (the original has none).
 - **CABLE (off, 330 pF, 680 pF, 2.2 nF):** The capacitance of the cable from the unit to the amp, plus the amp input. Longer cables take some brightness off the output. 330 pF (about 3 m) is the default; 2.2 nF is a very long or heavy cable.
-- **DRY (on / off):** On, like the unit. Off, reverb only (for sends and buses).
+- **DRY (on / off):** On, like the unit. Off, reverb only (for sends and buses), with +12 dB of make-up on the return.
 - **STEREO (off / on):** Off, mono like the unit (the same signal on both sides). On, the two springs are split: the short one on the left, the long one on the right. The input is always summed to mono, as in the unit, so the reverb does not follow panning. Each side is level-matched to the mono unit.
 
 Double-click a knob to return it to 5. Hold **Shift** while dragging for fine adjustment. Changing CABLE or STEREO rebuilds the circuit, so the tail that was sounding is cut.
@@ -157,12 +157,6 @@ If you record something with this reverb, we want to hear it. Copy our email to 
 <div class="rock-copy-email-wrapper inline">
   <span class="rock-email-text">mainstaudiolabs@gmail.com</span>
   <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
-</div>
-
-<p style="margin-top: 2rem; margin-bottom: 1rem;">If you would like to support our independent research and help us keep our plugins free, you can do so with Card, PayPal or Cryptocurrency:</p>
-
-<div>
-  <a href="/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">Support the Lab (Ko-fi / Crypto) ☕</a>
 </div>
 
 <div class="print-footer">

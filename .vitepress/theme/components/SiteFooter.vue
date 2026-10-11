@@ -1,12 +1,11 @@
 <script setup>
 import { computed } from 'vue'
 import { useData, withBase } from 'vitepress'
-import { t, localePrefix, LEARN_PATH } from '../data/i18n.js'
+import { t, localePrefix } from '../data/i18n.js'
 
 const { localeIndex } = useData()
 const prefix = computed(() => localePrefix(localeIndex.value))
 const ui = computed(() => t(localeIndex.value))
-const learnPath = computed(() => LEARN_PATH[localeIndex.value] || LEARN_PATH.root)
 const year = new Date().getFullYear()
 </script>
 
@@ -21,7 +20,6 @@ const year = new Date().getFullYear()
         <div class="site-footer-col">
           <h4>Site</h4>
           <a :href="withBase(prefix + '/')">{{ ui.plugins }}</a>
-          <a :href="withBase(learnPath)">{{ ui.learn }}</a>
           <a :href="withBase(prefix + '/about')">{{ ui.about }}</a>
         </div>
         <div class="site-footer-col">

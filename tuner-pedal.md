@@ -160,12 +160,6 @@ Send us your thoughts, questions, or ideas at:
   <button class="rock-copy-btn" @click="copyEmail">{{ btnText }}</button>
 </div>
 
-<p style="margin-top: 2rem; margin-bottom: 1rem;">If you wish to support our independent research and help keep our tools free, you can support us via Card, PayPal, or Crypto:</p>
-
-<div>
-  <a href="/support" class="rock-btn rock-btn-primary" style="display: inline-block; text-align: center;">Support the Lab (Ko-fi / Crypto) ☕</a>
-</div>
-
 <div class="section-head" style="margin-top:3rem;"><h2>Other plugins</h2></div>
 
 <PluginGrid exclude="tuner-pedal" />
