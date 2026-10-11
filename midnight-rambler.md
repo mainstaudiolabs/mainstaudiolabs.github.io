@@ -14,10 +14,6 @@ function copyEmail() {
 
 This manual provides a detailed description of the usage, design philosophy, and technical specifications for the **Midnight Rambler** amplifier emulation stompbox plugin.
 
-<div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
-  <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">Get PDF Manual (v1.2.0) 📄</a>
-</div>
-
 ---
 
 ## What's new in 1.2.0

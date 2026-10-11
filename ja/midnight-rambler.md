@@ -14,10 +14,6 @@ function copyEmail() {
 
 本マニュアルは、伝説のTweed 5E3アンプ・エミュレーション・ストンプボックスプラグイン **Midnight Rambler** の使用方法、設計思想、および技術仕様について詳しく解説します。
 
-<div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
-  <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">PDFマニュアルを入手 (v1.2.0) 📄</a>
-</div>
-
 ---
 
 ## 1.2.0 の新機能

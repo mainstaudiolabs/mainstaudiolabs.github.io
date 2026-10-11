@@ -13,10 +13,6 @@ function copyEmail() {
 
 Este manual describe en detalle el uso, la filosofía de diseño y las especificaciones técnicas del plugin de simulación de amplificador **Midnight Rambler**.
 
-<div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin: 1.25rem 0 1.75rem 0;">
-  <a href="/midnight-rambler-manual.pdf" download class="rock-btn rock-btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 180px; padding: 0.6rem 1.2rem; text-decoration: none;">Descargar PDF (v1.2.0) 📄</a>
-</div>
-
 ---
 
 ## Novedades de la 1.2.0
