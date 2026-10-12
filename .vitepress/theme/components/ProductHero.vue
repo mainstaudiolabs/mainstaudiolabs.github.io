@@ -32,8 +32,11 @@ const prefix = computed(() => localePrefix(localeIndex.value))
 
         <div class="product-cta-row">
           <span v-if="plugin.soon" class="chip soon" style="font-size:1.05rem;">{{ ui.comingSoon }}</span>
+          <span v-else-if="plugin.free === false && plugin.price" class="chip free" style="font-size:1.05rem;">{{ plugin.price }}</span>
           <span v-else class="chip free" style="font-size:1.05rem;">{{ ui.free }}</span>
-          <a v-if="!plugin.soon" class="btn btn-primary" :href="plugin.downloadUrl || '#'" target="_blank" rel="noopener">{{ ui.download }}</a>
+          <a v-if="!plugin.soon" class="btn btn-primary" :href="plugin.downloadUrl || '#'" target="_blank" rel="noopener">{{ plugin.free === false ? ui.downloadTrial : ui.download }}</a>
+          <!-- 12/10/2026: los plugins pagos llevan ademas el boton de compra (Payhip) -->
+          <a v-if="!plugin.soon && plugin.buyUrl" class="btn btn-primary" :href="plugin.buyUrl" target="_blank" rel="noopener">{{ ui.buy }} · {{ plugin.price }}</a>
           <a class="btn btn-ghost" href="#manual">{{ ui.viewManual }} ↓</a>
         </div>
       </div>

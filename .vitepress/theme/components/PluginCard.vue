@@ -28,6 +28,7 @@ const href = computed(() => localePrefix(localeIndex.value) + '/' + props.id)
       <p class="card-desc">{{ plugin.desc }}</p>
       <div class="card-foot">
         <span v-if="plugin.soon" class="chip soon">{{ ui.comingSoon }}</span>
+        <span v-else-if="plugin.free === false && plugin.price" class="chip free">{{ plugin.cardPrice || plugin.price }}</span>
         <span v-else class="chip free">{{ ui.free || 'Free' }}</span>
         <span class="btn btn-primary btn-sm">{{ ui.viewDetails }}</span>
       </div>

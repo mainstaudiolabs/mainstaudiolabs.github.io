@@ -2,7 +2,7 @@ export const UI = {
   root: {
     plugins: 'Plugins', about: 'About', support: 'Support', free: 'Free',
     backToPlugins: '← Back to Plugins', otherPlugins: 'Other plugins', specs: 'Specifications',
-    download: 'Download', viewManual: 'View full manual', viewDetails: 'View details',
+    download: 'Download', downloadTrial: 'Download free trial', buy: 'Buy license', viewManual: 'View full manual', viewDetails: 'View details',
     comingSoon: 'Coming soon', newBadge: 'New',
     soonNotice: '🕓 Still in development — coming soon for download.'
   }

@@ -14,10 +14,6 @@ function copyEmail() {
 
 This manual describes the use, the design and the technical specifications of the **Main St 5E3** amplifier.
 
-<div class="callout" style="margin: 1.25rem 0 1.75rem; text-align: center;">
-  <strong>Coming soon.</strong> Main St 5E3 is in final testing. It will ship with a <strong>30-day full trial</strong> — nothing disabled — and a license is <strong>$9, one-time</strong>. Subscribe to the newsletter on the home page to know the day it's out.
-</div>
-
 ---
 
 ## Welcome
