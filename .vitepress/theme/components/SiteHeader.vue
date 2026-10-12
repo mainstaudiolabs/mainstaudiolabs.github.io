@@ -61,7 +61,7 @@ function closeMenu() {
       </nav>
 
       <div class="site-header-tools">
-        <div class="site-lang">
+        <div v-if="languages.length > 1" class="site-lang">
           <a v-for="l in languages" :key="l.key" :href="l.link"
              :class="{ active: l.key === localeIndex }">{{ l.abbr }}</a>
         </div>

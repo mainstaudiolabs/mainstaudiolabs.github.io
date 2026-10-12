@@ -15,20 +15,11 @@ export default defineConfig({
     }
   },
 
+  // 12/10/2026: solo ingles (se sacaron castellano y japones)
   locales: {
     root: {
       label: 'English',
       lang: 'en'
-    },
-    es: {
-      label: 'Español',
-      lang: 'es',
-      link: '/es/'
-    },
-    ja: {
-      label: '日本語',
-      lang: 'ja',
-      link: '/ja/'
     }
   }
 })
