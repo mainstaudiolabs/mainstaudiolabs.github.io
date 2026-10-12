@@ -308,3 +308,13 @@ html{scroll-behavior:smooth;}
 .rock-title{font-family:'Lobster',cursive !important;font-size:2.8rem !important;line-height:1.5 !important;color:var(--vp-c-brand-1);margin-bottom:.5rem;padding-bottom:.2rem;}
 .rock-subtitle{font-family:'IBM Plex Mono',monospace !important;font-size:.85rem !important;text-transform:uppercase;letter-spacing:.1em;color:var(--vp-c-text-2);}
 .rock-container{max-width:1180px;margin:0 auto;padding-top:2rem;}
+
+/* 12/10/2026: aviso debajo de las especificaciones (plugin.notice) */
+.amp-notice{border:1px solid var(--vp-c-border);border-left:4px solid var(--amber);border-radius:8px;
+  background:var(--vp-c-bg-soft);padding:1.1rem 1.3rem;margin-top:1.4rem;}
+.amp-notice-title{font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--amber);
+  text-transform:uppercase;letter-spacing:.06em;font-size:.85rem;margin-bottom:.5rem;}
+.amp-notice p{margin:.4rem 0;color:var(--vp-c-text-2);}
+.amp-notice ul{margin:.5rem 0 .6rem;padding-left:1.2rem;}
+.amp-notice li{margin:.3rem 0;color:var(--vp-c-text-2);}
+.amp-notice b{color:var(--vp-c-text-1);}

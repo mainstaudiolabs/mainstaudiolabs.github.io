@@ -49,6 +49,16 @@ const prefix = computed(() => localePrefix(localeIndex.value))
           <li v-for="(s, i) in plugin.specs" :key="i">{{ s }}</li>
         </ul>
       </div>
+
+      <!-- 12/10/2026: aviso opcional (plugin.notice) para quien no conoce el ampli -->
+      <div v-if="plugin.notice" class="amp-notice spec-wide">
+        <div class="amp-notice-title">{{ plugin.notice.title }}</div>
+        <p v-html="plugin.notice.intro"></p>
+        <ul>
+          <li v-for="(n, i) in plugin.notice.items" :key="i" v-html="n"></li>
+        </ul>
+        <p v-html="plugin.notice.outro"></p>
+      </div>
     </div>
   </div>
 </template>

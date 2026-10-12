@@ -6,7 +6,20 @@ export const PLUGINS = {
       name: 'Main St 5E3', tagline: 'Tweed 5E3 · Push-Pull 6V6 · Two Channels',
       img: '/MainSt5E3.png', free: false, price: '$9', cardPrice: '$9 (1 month trial)', soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/mainSt5e3-v1.0.0', buyUrl: 'https://payhip.com/b/atLR8',
       desc: "The original 5E3 tweed circuit, rebuilt tube by tube: two 12AY7 channels, a 12AX7, a pair of 6V6 power tubes and a 5Y3 rectifier, all working together as in the real amp. That's why it cleans up when you roll back your guitar's volume, sags and compresses when you dig in, and breaks into the famous tweed roar when you crank it.",
-      specs: ["The whole circuit, tube by tube, solved in real time, not sampled", "Two 12AY7 channels sharing one cathode: the volumes interact, like the real amp", "Push-pull pair of 6V6: big headroom and low end, a loose roar when cranked", "5Y3 tube rectifier: the sag and bloom you feel under your pick", "Cleans up with your guitar's volume knob", "The classic jumper-cable trick to blend both channels", "12\" alnico speaker that reacts with the power tubes, four classic mics", "Optional mods for tighter lows and more headroom", "Presets and a built-in tuner", "30-day full trial, then $9 one-time"]
+      specs: ["The whole circuit, tube by tube, solved in real time, not sampled", "Two 12AY7 channels sharing one cathode: the volumes interact, like the real amp", "Push-pull pair of 6V6: big headroom and low end, a loose roar when cranked", "5Y3 tube rectifier: the sag and bloom you feel under your pick", "Cleans up with your guitar's volume knob", "The classic jumper-cable trick to blend both channels", "12\" alnico speaker that reacts with the power tubes, four classic mics", "Optional mods for tighter lows and more headroom", "Presets and a built-in tuner", "30-day full trial, then $9 one-time"],
+      // 12/10/2026: aviso debajo de las especificaciones para quien no conoce el ampli (pedido del usuario)
+      notice: {
+        title: 'New to the 5E3? Read this first',
+        intro: "The 5E3 is a 1950s amp, not a modern one: no channel switch, no master volume, and controls that interact. Some things that look like a fault aren't:",
+        items: [
+          "<b>No sound after changing jacks?</b> Each jack feeds its own channel, and you hear the volume of the channel you're plugged into. Bright starts at 1, so if you move the guitar to a Bright jack, turn up Bright.",
+          "<b>The other volume still matters.</b> The two channels share a tube, so the volume of the channel you're not using changes the gain and the tone of the one you play.",
+          "<b>Volume is gain.</b> There's no master: turning a volume up means more drive, not just more level. Set the final level with OUTPUT.",
+          "<b>Lo jacks are 6 dB quieter</b>, meant for hot pickups. If it sounds weak, try Hi.",
+          "<b>Tone is not just an EQ.</b> It sits where the two channels meet, before the next tube, so it changes how the amp distorts: higher Tone sends more highs into that tube, for more bite and an earlier break-up; lower Tone smooths the sound before it distorts. It also takes its treble from the Bright channel, so with Bright all the way down it brightens less."
+        ],
+        outro: "Players have been finding tricks on this amp for seventy years: jumpering the channels, cranking one volume and using the other to shape it, and more. Search for <i>5E3 tips</i> or <i>jumpering a 5E3</i>; since the whole circuit is here, most of them work the same way. Details in <a href=\"#amplifier-controls\">Amplifier Controls</a>."
+      },
     },
     'main-st-63-spring': {
       name: "Main St '63 Spring", tagline: "1963 Spring Reverb Unit · Tube Driven",
