@@ -2,6 +2,26 @@
 // 12/10/2026: el sitio queda solo en ingles (se sacaron las versiones en castellano y japones).
 export const PLUGINS = {
   root: {
+    // 23/10/2026: Main St PR '64 (Princeton Reverb AA1164, blackface 1964). Licencia en Payhip, US$ 14.
+    'main-st-pr64': {
+      name: "Main St PR '64", tagline: 'Blackface 1964 · Spring Reverb · Bias Tremolo',
+      img: '/MainStPR64.png', free: false, price: '$14', cardPrice: '$14 (1 month trial)', soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainStPR64', buyUrl: 'https://payhip.com/b/G9jx3',
+      desc: "The 1964 blackface Princeton Reverb, rebuilt tube by tube: the preamp with Treble and Bass, a tube-driven spring reverb, the bias tremolo, a pair of 6V6 and a GZ34 rectifier, all working together as in the real amp. That's why the cleans sparkle and the reverb blooms off your picking, why it gets a warm, singing edge when you turn it up, and why the Vibrato pulses like the real one.",
+      specs: ["The whole circuit, tube by tube, solved in real time, not sampled", "Treble, Bass and Volume, with the taper of the original pots", "Tube-driven spring reverb: 12AT7 driver, reverb transformer and a long two-spring tank", "Real bias tremolo (\"Vibrato\"): an oscillator tube moving the power tubes, with Speed and Intensity", "Push-pull pair of 6V6 with negative feedback: sparkling cleans, a warm edge when turned up", "GZ34 tube rectifier: the sag you feel when you dig in", "Cleans up with your guitar's volume knob", "10\" alnico speaker that reacts with the power tubes, four classic mics", "Two-button footswitch (Reverb, Vibrato) and a working POWER switch", "Presets and a built-in tuner", "30-day full trial, then $14 one-time"],
+      notice: {
+        title: 'New to the Princeton Reverb? Read this first',
+        intro: "The Princeton Reverb is a 1960s amp, not a modern one: no master volume, no gain channel, and a few things that work differently. Some things that look like a fault aren't:",
+        items: [
+          "<b>Speed and Intensity do nothing?</b> The Vibrato starts off. Press VIBRATO on the footswitch (its LED lights up). Fender called it Vibrato, but it's a tremolo: the volume pulses.",
+          "<b>Volume is gain.</b> There's no master: turning Volume up means more drive, not just more level. It stays clean in the lower half of the dial and starts to break up past the middle. Set the final level with OUTPUT.",
+          "<b>Treble and Bass are not a flat EQ.</b> They're a passive tone stack: they interact with each other and with Volume, and there's a fixed mid scoop no setting removes. Small moves go a long way.",
+          "<b>The reverb reacts to your picking.</b> The springs are driven by a tube, so hitting harder splashes more. Turn it off with REVERB on the footswitch.",
+          "<b>Input 2 is 6 dB quieter</b>, meant for hot pickups. If it sounds weak, use Input 1.",
+          "<b>No sound at all?</b> Check the POWER switch on the right of the panel. When it's off the amp is silent (the tuner still works)."
+        ],
+        outro: "Players have been finding their sweet spots on this amp for sixty years. Search for <i>Princeton Reverb settings</i>; since the whole circuit is here, most of them work the same way. Details in <a href=\"#amplifier-controls\">Amplifier Controls</a>."
+      },
+    },
     'main-st-5e3': {
       name: 'Main St 5E3', tagline: 'Tweed 5E3 · Push-Pull 6V6 · Two Channels',
       img: '/MainSt5E3.png', free: false, price: '$9', cardPrice: '$9 (1 month trial)', soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/mainSt5e3-v1.0.0', buyUrl: 'https://payhip.com/b/atLR8',
@@ -49,4 +69,4 @@ export const PLUGINS = {
   }
 }
 
-export const PLUGIN_ORDER = ['main-st-5e3', 'main-st-63-spring', 'main-st-5f1', 'midnight-rambler', 'tuner-pedal']
+export const PLUGIN_ORDER = ['main-st-pr64', 'main-st-5e3', 'main-st-63-spring', 'main-st-5f1', 'midnight-rambler', 'tuner-pedal']
