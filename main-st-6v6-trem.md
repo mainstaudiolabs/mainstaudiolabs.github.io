@@ -50,7 +50,7 @@ There is no speaker and no cabinet: the output is taken off the transformer and 
 | **macOS** | 10.13 High Sierra or later. Universal binary: runs natively on both Intel and Apple Silicon Macs. |
 | **Linux** | x86_64, with glibc 2.35 or later (Ubuntu 22.04 and equivalents onward). |
 | **Formats** | VST3 on all three systems; Audio Unit (AU) on macOS for Logic Pro and GarageBand. It is an effect for your DAW: there is no standalone application. |
-| **CPU** | Moderate, since a whole power stage is solved sample by sample: on our test machine, about 15% of one core at 48 kHz at the default 2× oversampling (about 11% at 1×, 28% at 4×). |
+| **CPU** | Moderate, since a whole power stage is solved sample by sample: on our test machine, about 10% of one core at 48 kHz at the default 1× oversampling (about 16% at 2×). When the track is silent, almost nothing. |
 
 ---
 
@@ -113,10 +113,12 @@ The panel at the bottom of the pedal has two rows.
 - **INPUT:** A digital trim in dB: how hard the signal hits the circuit. Below its meter, the peak voltage reaching the pedal (V pk), holding each peak for about 1.5 seconds.
 - **AFTER AMP / BEFORE AMP:** Where the pedal sits (see *Where to Put It*).
 - **OUTPUT:** The final trim in dB, after LEVEL. Below its meter, the output level in dBFS.
-- **OVERSAMPLING (1×, 2×, 4×):** Reduces aliasing when the tubes are driven hard. 2× is the default; 2× and 4× add 3 and 4 samples of latency, reported to your DAW.
+- **OVERSAMPLING (1×, 2×, 4×):** Reduces aliasing when the tubes are driven hard. **1×** is the default and is plenty at normal DRIVE settings; switch to **2×** when you push DRIVE high, especially on bright parts. 2× and 4× add 3 and 4 samples of latency, reported to your DAW. Oversampling counts from 48 kHz: if your project runs at 88.2 or 96 kHz, the pedal already works at that rate, so 2× costs nothing extra there.
 - **INFO:** How it's made, the version, the website and your license key.
 
 You can resize the window from its corner; it keeps its size with your project.
+
+**Silence costs nothing.** After a second of digital silence on the track (gaps between regions, a stopped transport) the tubes rest and the CPU drops to almost zero. The first note wakes them up instantly, right where they left off.
 
 ---
 
