@@ -19,8 +19,8 @@ function copyEmail() {
 
 This manual describes the use, the design and the technical specifications of the **Main St 6V6 Trem** tremolo.
 
-<div class="callout" style="margin: 1.25rem 0 1.75rem; text-align: center;">
-  <strong>Coming soon.</strong> Main St 6V6 Trem is in final testing. Like Main St '63 Spring, it will be <strong>free and complete</strong>. Subscribe to the newsletter on the home page to know the day it's out.
+<div style="margin: 1.25rem 0 1.75rem; text-align: center;">
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt6V6Trem-v1.0.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Main St 6V6 Trem v1.0.0 (FREE) ⬇️</a>
 </div>
 
 ---
@@ -180,6 +180,10 @@ It appears at most once per session and only without a key. If it keeps appearin
 - Typefaces: Montserrat, Barlow Condensed and IBM Plex Mono (SIL Open Font License 1.1).
 
 *All product names, trademarks, and registered trademarks mentioned (including Fender, Princeton Reverb and Focusrite) are property of their respective owners and are referenced solely for historical context and descriptive identification of the modeled analog equipment. Main St Audio Labs is an independent developer and has no affiliation, endorsement, or commercial sponsorship from these companies.*
+
+<div style="margin: 1.75rem 0; text-align: center;">
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt6V6Trem-v1.0.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Main St 6V6 Trem v1.0.0 (FREE) ⬇️</a>
+</div>
 
 If you record something with this tremolo, we want to hear it. Copy our email to send us the link:
 

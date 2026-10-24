@@ -22,12 +22,11 @@ export const PLUGINS = {
         outro: "Players have been finding their sweet spots on this amp for sixty years. Search for <i>Princeton Reverb settings</i>; since the whole circuit is here, most of them work the same way. Details in <a href=\"#amplifier-controls\">Amplifier Controls</a>."
       },
     },
-    // 24/10/2026: Main St 6V6 Trem, el tremolo del PR '64 hecho pedal. Gratis con tip (como la '63).
-    // Coming soon hasta que salga la version: entonces soon: false, downloadUrl con el tag y los
-    // botones de descarga en main-st-6v6-trem.md (en lugar del aviso).
+    // 24/10/2026: Main St 6V6 Trem 1.0.0, el tremolo del PR '64 hecho pedal. Gratis con tip (como la '63;
+    // la clave en Payhip: https://payhip.com/b/ZHv9Y).
     'main-st-6v6-trem': {
       name: 'Main St 6V6 Trem', tagline: 'Tube Bias Tremolo · 2 × 6V6 Push-Pull · Smooth / Deep',
-      img: '/MainSt6V6Trem.png', free: true, soon: true, isNew: false, downloadUrl: '',
+      img: '/MainSt6V6Trem.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainSt6V6Trem-v1.0.0',
       desc: "The bias tremolo of the 1964 blackface Princeton Reverb, taken out of the amp and built into a pedal, tube by tube: the oscillator tube, the bias supply and a push-pull pair of 6V6 with their output transformer. The power tubes make the tremolo, so the pulse is round and warm, it breathes with your playing and each valley gets a little dirty. SMOOTH is the original circuit; DEEP goes all the way down to silence.",
       specs: ["A real bias tremolo: a 12AX7 oscillator moving the bias of two 6V6 power tubes", "The tubes shape the pulse: their curves bend the wave and it follows your picking", "SMOOTH: the 1964 circuit as it was, a gentle, round sway", "DEEP: colder bias and a wider swing, deep and defined, down to silence", "DRIVE: how hard the tubes are hit, with your level kept steady", "After your amp, on a track or a bus, or straight from the guitar", "Push-pull 6V6 with negative feedback and a GZ34 supply, as in the amp", "Free and complete: nothing locked or time-limited"]
     },
