@@ -19,9 +19,11 @@ const prefix = computed(() => localePrefix(localeIndex.value))
     <a class="back-link" :href="withBase(prefix + '/')">{{ ui.backToPlugins }}</a>
 
     <div class="product-hero">
-      <div class="product-shot"><img :src="plugin.img" :alt="plugin.name" /></div>
+      <div class="product-shot"><img :src="plugin.img" :alt="plugin.modelRef ? plugin.name + ' – ' + plugin.modelRef : plugin.name" /></div>
       <div class="product-info">
         <h1>{{ plugin.name }}</h1>
+        <!-- 01/11/2026: el circuito de referencia, visible (los buscadores y quien llega desde ellos) -->
+        <div v-if="plugin.modelRef" class="card-model product-model">{{ plugin.modelRef }}</div>
         <span class="card-tag">{{ plugin.tagline }}</span>
         <div class="card-badges" style="margin-top:.6rem;">
           <span class="chip">🪟 Win</span><span class="chip">🍎 Mac</span><span class="chip">🐧 Linux</span>
@@ -34,9 +36,11 @@ const prefix = computed(() => localePrefix(localeIndex.value))
           <span v-if="plugin.soon" class="chip soon" style="font-size:1.05rem;">{{ ui.comingSoon }}</span>
           <span v-else-if="plugin.free === false && plugin.price" class="chip free" style="font-size:1.05rem;">{{ plugin.price }}</span>
           <span v-else class="chip free" style="font-size:1.05rem;">{{ ui.free }}</span>
-          <a v-if="!plugin.soon" class="btn btn-primary" :href="plugin.downloadUrl || '#'" target="_blank" rel="noopener">{{ plugin.free === false ? ui.downloadTrial : ui.download }}</a>
+          <a v-if="!plugin.soon && plugin.downloadUrl" class="btn btn-primary" :href="plugin.downloadUrl" target="_blank" rel="noopener">{{ plugin.free === false ? ui.downloadTrial : ui.download }}</a>
           <!-- 12/10/2026: los plugins pagos llevan ademas el boton de compra (Payhip) -->
           <a v-if="!plugin.soon && plugin.buyUrl" class="btn btn-primary" :href="plugin.buyUrl" target="_blank" rel="noopener">{{ ui.buy }} · {{ plugin.price }}</a>
+          <!-- 01/11/2026: los gratis sin clave (CS-26) llevan el TIP JAR de Payhip -->
+          <a v-if="plugin.tipUrl" class="btn btn-ghost" :href="plugin.tipUrl" target="_blank" rel="noopener">{{ ui.tipJar }} ☕</a>
           <a class="btn btn-ghost" href="#manual">{{ ui.viewManual }} ↓</a>
         </div>
       </div>

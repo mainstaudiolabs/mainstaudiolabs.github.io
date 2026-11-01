@@ -29,6 +29,9 @@ const year = new Date().getFullYear()
         </div>
       </div>
     </div>
-    <div class="site-footer-bottom">© {{ year }} Main St Audio Labs — Independent Audio Engineering Lab</div>
+    <div class="site-footer-bottom">
+      <div>© {{ year }} Main St Audio Labs — Independent Audio Engineering Lab</div>
+      <p class="site-footer-legal">{{ ui.trademarkDisclaimer }}</p>
+    </div>
   </footer>
 </template>
