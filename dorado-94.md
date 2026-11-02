@@ -3,8 +3,7 @@ title: "Dorado '94 – Free Klon Centaur Overdrive Plugin (1994 Transparent Over
 description: "Dorado '94 is a free overdrive plugin that models the 1994 Klon Centaur as a real circuit, part by part: the input buffer, the gain section with germanium diodes and the clean blend, the treble control on charge-pump rails and the buffered bypass. VST3 and AU for Windows, macOS and Linux."
 ---
 
-<!-- 02/11/2026: página del Dorado '94 (Klon Centaur). Los nombres de marcas solo como descripción, con el aviso.
-     Mientras soon: true en plugins.js no hay botones de descarga; al publicar, agregarlos como en las otras páginas. -->
+<!-- 02/11/2026: página del Dorado '94 (Klon Centaur). Los nombres de marcas solo como descripción, con el aviso. -->
 
 <script setup>
 import { ref } from 'vue'
@@ -21,6 +20,10 @@ function copyEmail() {
 <div id="manual"></div>
 
 This manual describes how to use **Dorado '94** and what each control does.
+
+<div style="margin: 1.25rem 0 1.75rem; text-align: center;">
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/Dorado94-v1.0.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Dorado '94 v1.0.0 (FREE) ⬇️</a>
+</div>
 
 ---
 
@@ -156,6 +159,10 @@ Yes. No key, no time limit, nothing locked. The tip jar is there if you want to 
 - Developed with the JUCE framework.
 
 *All product names, trademarks, and registered trademarks mentioned (including Klon, Centaur and Focusrite) are property of their respective owners and are referenced solely for historical context and descriptive identification of the modeled analog equipment. Main St Audio Labs is an independent developer and has no affiliation, endorsement, or commercial sponsorship from these companies.*
+
+<div style="margin: 1.75rem 0; text-align: center;">
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/Dorado94-v1.0.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Dorado '94 v1.0.0 (FREE) ⬇️</a>
+</div>
 
 If you record something with Dorado '94, we want to hear it. Copy our email to send us the link:
 
