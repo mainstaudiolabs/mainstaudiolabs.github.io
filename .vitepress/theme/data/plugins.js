@@ -30,6 +30,20 @@ export const PLUGINS = {
       desc: "Our own compressor, designed from scratch for guitar: it evens out your playing and adds sustain without changing your tone. BLEND brings the clean signal back in so your pick attack stays alive, a 100 Hz switch keeps the low strings from pumping, and a row of LEDs shows how hard it's working. Free, with no key and no limits.",
       specs: ["An original circuit, designed from scratch and simulated part by part", "Transparent: your tone stays yours, only the dynamics change", "SUSTAIN, ATTACK, BLEND and VOLUME, like a pedal on your board", "RATIO: 2:1 gentle, 4:1 firm, LIM for limiting", "BASS 100 Hz: low notes stop pumping the compressor", "Six LEDs from 3 to 20 dB, plus a gain reduction meter", "VOLUME at 6.3 matches the bypass level", "Click-free footswitch and a POWER switch for 0% CPU", "Free and complete: no key, no time limit"]
     },
+    // 02/11/2026: Dorado '94 (Klon Centaur, 1994) y TS '82 (Ibanez TS9, 1982). Gratis, sin clave (TIP JAR en Payhip: 7XO0F).
+    // soon: true hasta que esté el release; al publicar: soon: false y downloadUrl con el tag del release.
+    'dorado-94': {
+      name: "Dorado '94", category: 'fx', modelRef: '1994 Klon Centaur overdrive', tagline: 'Transparent Overdrive · Germanium Diodes · Buffered Bypass',
+      img: '/dorado-94.png', free: true, soon: true, isNew: true, downloadUrl: '', tipUrl: 'https://payhip.com/b/7XO0F',
+      desc: "The famous 1994 transparent overdrive, rebuilt part by part: the buffer, the gain section with its germanium diodes and the clean signal running alongside, the treble control on its charge-pump rails and the original buffered bypass. That's why it thickens your tone instead of replacing it, works as a clean boost with GAIN low, and pushes an amp into singing overdrive when you turn it up.",
+      specs: ["The whole circuit, part by part, solved in real time, not sampled", "The gain section solved as one circuit: clean and clipped paths, the dual-gang GAIN pot, op-amp clipping and germanium diodes", "TREBLE: the active high shelf on the +16 V / -9 V charge-pump rails", "The original buffered bypass, with its little leak of the effect", "Clean boost with GAIN low, full overdrive at the top", "Input calibrated to the voltage of a real guitar", "POWER switch for 0% CPU; silence costs nothing", "Free and complete: no key, no time limit"]
+    },
+    'ts82': {
+      name: "TS '82", category: 'fx', modelRef: '1982 Ibanez TS9 Tube Screamer', tagline: 'Green Overdrive · JRC4558D · Silicon Diodes',
+      img: '/ts82.png', free: true, soon: true, isNew: true, downloadUrl: '', tipUrl: 'https://payhip.com/b/7XO0F',
+      desc: "The 1982 green overdrive, rebuilt part by part: the two transistor buffers, the JRC4558D clipping stage with its silicon diodes, the tone control and the original buffered bypass. That's where the famous mid hump comes from, the tight low end and the smooth clipping that tames your amp, whether you use it for overdrive or as a boost in front of a dirty amp.",
+      specs: ["The whole 1982 circuit, part by part, solved in real time, not sampled", "JRC4558D clipping stage with antiparallel silicon diodes in the feedback loop", "The 720 Hz high-pass that gives the mid hump and the tight lows", "DRIVE, TONE and LEVEL, with the taper of the original pots", "The original transistor buffers and the buffered bypass", "Overdrive on its own, or a boost in front of a dirty amp", "Input calibrated to the voltage of a real guitar", "POWER switch for 0% CPU; silence costs nothing", "Free and complete: no key, no time limit"]
+    },
     // 24/10/2026: Main St 6V6 Trem 1.0.0, el tremolo del PR '64 hecho pedal. Gratis con tip (como la '63;
     // la clave en Payhip: https://payhip.com/b/ZHv9Y).
     'main-st-6v6-trem': {
@@ -86,4 +100,4 @@ export const PLUGINS = {
 }
 
 // 01/11/2026: el home se divide en amplificadores y pedales (category); el orden vale dentro de cada grupo.
-export const PLUGIN_ORDER = ['main-st-pr64', 'main-st-5e3', 'main-st-5f1', 'midnight-rambler', 'cs-26', 'main-st-6v6-trem', 'main-st-63-spring', 'tuner-pedal']
+export const PLUGIN_ORDER = ['main-st-pr64', 'main-st-5e3', 'main-st-5f1', 'midnight-rambler', 'cs-26', 'dorado-94', 'ts82', 'main-st-6v6-trem', 'main-st-63-spring', 'tuner-pedal']

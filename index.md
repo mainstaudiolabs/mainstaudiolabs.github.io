@@ -1,6 +1,6 @@
 ---
-title: Main St Audio Labs – Tube Amp Plugins (Princeton Reverb, Tweed Deluxe 5E3, Champ 5F1) & Guitar Pedal Plugins
-description: "Guitar amp and pedal plugins rebuilt part by part from the real circuits: the 1964 Fender Princeton Reverb, the Tweed Deluxe 5E3 and the Tweed Champ 5F1, plus the CS-26 compressor, a bias tremolo, a 1963 spring reverb and a tuner. VST3 and AU for Windows, macOS and Linux."
+title: Main St Audio Labs – Tube Amp Plugins (Princeton Reverb, Tweed Deluxe 5E3, Champ 5F1) & Guitar Pedal Plugins (Klon, Tube Screamer)
+description: "Guitar amp and pedal plugins rebuilt part by part from the real circuits: the 1964 Fender Princeton Reverb, the Tweed Deluxe 5E3 and the Tweed Champ 5F1, plus Klon Centaur and Tube Screamer TS9 overdrives, the CS-26 compressor, a bias tremolo, a 1963 spring reverb and a tuner. VST3 and AU for Windows, macOS and Linux."
 ---
 
 <!-- 01/11/2026: el home se divide en amplificadores y pedales. Las dos secciones van en el HTML (sin pestañas)
@@ -23,7 +23,7 @@ description: "Guitar amp and pedal plugins rebuilt part by part from the real ci
   <a class="door door-fx" href="#pedals">
     <span class="door-kicker">Stompboxes &amp; studio effects</span>
     <span class="door-title">Pedals &amp; Effects</span>
-    <span class="door-list">Compressor · Bias tremolo · Spring reverb · Tuner</span>
+    <span class="door-list">Overdrives · Compressor · Bias tremolo · Spring reverb · Tuner</span>
     <span class="door-go">See the pedals ↓</span>
   </a>
 </div>
@@ -43,7 +43,7 @@ description: "Guitar amp and pedal plugins rebuilt part by part from the real ci
   <div class="catalog-head">
     <p class="eyebrow">Part by part</p>
     <h2>Pedals &amp; Effects</h2>
-    <p class="catalog-intro">Stompboxes and outboard effects for your guitar track or your mix: the <b>CS-26</b> transparent compressor, our own design; the bias tremolo of the 1964 Princeton Reverb as a pedal; the 1963 outboard spring reverb; and a needle tuner that costs no CPU.</p>
+    <p class="catalog-intro">Stompboxes and outboard effects for your guitar track or your mix: two classic overdrives rebuilt part by part, the 1994 <b>Klon Centaur</b> and the 1982 <b>Ibanez TS9 Tube Screamer</b>; the <b>CS-26</b> transparent compressor, our own design; the bias tremolo of the 1964 Princeton Reverb as a pedal; the 1963 outboard spring reverb; and a needle tuner that costs no CPU.</p>
   </div>
 
 <PluginGrid category="fx" />
