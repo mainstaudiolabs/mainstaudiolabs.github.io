@@ -1,6 +1,6 @@
 ---
-title: Main St Audio Labs – Tube Amp Plugins (Princeton Reverb, Tweed Deluxe 5E3, Champ 5F1) & Guitar Pedal Plugins (Klon, Tube Screamer)
-description: "Guitar amp and pedal plugins rebuilt part by part from the real circuits: the 1964 Fender Princeton Reverb, the Tweed Deluxe 5E3 and the Tweed Champ 5F1, plus Klon Centaur and Tube Screamer TS9 overdrives, the CS-26 compressor, a bias tremolo, a 1963 spring reverb and a tuner. VST3 and AU for Windows, macOS and Linux."
+title: Main St Audio Labs – Tube Amp Plugins (Vibroverb, Princeton Reverb, Tweed Deluxe 5E3, Champ 5F1) & Guitar Pedal Plugins (Klon, Tube Screamer)
+description: "Guitar amp and pedal plugins rebuilt part by part from the real circuits: the 1964 Fender Vibroverb and Princeton Reverb, the Tweed Deluxe 5E3 and the Tweed Champ 5F1, plus Klon Centaur and Tube Screamer TS9 overdrives, the CS-26 compressor, a bias tremolo, a 1963 spring reverb and a tuner. VST3 and AU for Windows, macOS and Linux."
 ---
 
 <!-- 01/11/2026: el home se divide en amplificadores y pedales. Las dos secciones van en el HTML (sin pestañas)
@@ -17,7 +17,7 @@ description: "Guitar amp and pedal plugins rebuilt part by part from the real ci
   <a class="door door-amp" href="#amplifiers">
     <span class="door-kicker">Tube amplifiers</span>
     <span class="door-title">Amplifiers</span>
-    <span class="door-list">Princeton Reverb '64 · Tweed Deluxe 5E3 · Tweed Champ 5F1</span>
+    <span class="door-list">Vibroverb '64 · Princeton Reverb '64 · Tweed Deluxe 5E3 · Tweed Champ 5F1</span>
     <span class="door-go">See the amps ↓</span>
   </a>
   <a class="door door-fx" href="#pedals">
@@ -32,7 +32,7 @@ description: "Guitar amp and pedal plugins rebuilt part by part from the real ci
   <div class="catalog-head">
     <p class="eyebrow">Tube by tube</p>
     <h2>Tube Amp Plugins</h2>
-    <p class="catalog-intro">Classic Fender® circuits rebuilt tube by tube and solved in real time, not sampled: the 1964 blackface <b>Princeton Reverb</b>, the 1950s tweed <b>Deluxe 5E3</b> and the 1956 tweed <b>Champ 5F1</b>. They clean up with your guitar's volume, sag when you dig in and break up like the real amps.</p>
+    <p class="catalog-intro">Classic Fender® circuits rebuilt tube by tube and solved in real time, not sampled: the 1964 blackface <b>Vibroverb</b> (with a pedalboard in front) and <b>Princeton Reverb</b>, the 1950s tweed <b>Deluxe 5E3</b> and the 1956 tweed <b>Champ 5F1</b>. They clean up with your guitar's volume, sag when you dig in and break up like the real amps.</p>
   </div>
 
 <PluginGrid category="amp" />

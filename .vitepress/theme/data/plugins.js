@@ -2,6 +2,28 @@
 // 12/10/2026: el sitio queda solo en ingles (se sacaron las versiones en castellano y japones).
 export const PLUGINS = {
   root: {
+    // 03/11/2026: Main St '64 V-Verb (Vibroverb AB763, blackface 1964, 1x15). Licencia en Payhip, US$ 19.
+    'main-st-vv64': {
+      name: "Main St '64 V-Verb", category: 'amp', shortCode: "V-Verb", modelRef: '1964 Fender Vibroverb (blackface, 1x15)', tagline: 'Blackface 1964 · 40 W · 1x15 · Reverb · Vibrato · Pedalboard',
+      img: '/MainStVV64.png', free: false, price: '$19', cardPrice: '$19 (1 month trial)', soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/MainStVV64-v1.0.0', buyUrl: 'https://payhip.com/b/ZG6Ji',
+      desc: "The 1964 blackface Vibroverb, rebuilt tube by tube: two channels, a tube-driven spring reverb, the optical vibrato, a pair of 6L6GC, a GZ34 rectifier and a 15\" speaker, all working together as in the real amp. Big, round cleans with a lot of headroom, deep reverb and a throbbing vibrato, and a thick, singing edge when you turn it up. With the '64 Custom switches and a pedalboard in front: a compressor and two overdrives.",
+      specs: ["The whole circuit, tube by tube, solved in real time, not sampled", "Two channels, Normal and Vibrato, four input jacks and Bright switches", "Treble, Bass and Volume, with the taper of the original pots", "Tube-driven spring reverb: 12AT7 driver, reverb transformer and a long spring tank", "Optical vibrato: a neon lamp and a photocell, with Speed and Intensity", "Push-pull pair of 6L6GC with negative feedback: about 40 watts of clean headroom", "GZ34 tube rectifier: the sag you feel when you dig in", "'64 Custom switches: STOCK / MOD circuit and TUBE / DIODE rectifier", "Pedalboard included: CS-26 compressor, TS '82 and Dorado '94 overdrives", "15\" ceramic speaker that reacts with the power tubes, six mics", "Presets and a built-in tuner", "30-day full trial, then $19 one-time"],
+      notice: {
+        title: 'New to the Vibroverb? Read this first',
+        intro: "The Vibroverb is a 1960s amp, not a modern one: no master volume, no gain channel, and a few things that work differently. Some things that look like a fault aren't:",
+        items: [
+          "<b>Speed and Intensity do nothing?</b> The Vibrato starts off. Press VIBRATO on the footswitch (its LED lights up). Fender called it Vibrato, but it's a tremolo: the volume pulses.",
+          "<b>Reverb and vibrato are on the Vibrato channel only.</b> The plugin starts with the guitar in Vibrato 1. In the Normal jacks there's no reverb and no vibrato, as on the amp.",
+          "<b>Volume is gain.</b> There's no master: turning Volume up means more drive, not just more level. Set the final level with OUTPUT.",
+          "<b>Treble and Bass are not a flat EQ.</b> They're a passive tone stack with the mids fixed: they interact with each other and with Volume. Small moves go a long way.",
+          "<b>Jack 2 is 6 dB quieter</b>, meant for hot pickups. If it sounds weak, use jack 1.",
+          "<b>MOD greys out half the panel.</b> It's the '64 Custom's high-gain mod: the Normal channel and the vibrato are gone, by design. Set CIRCUIT back to STOCK to get them back.",
+          "<b>The pedals start off.</b> Open PEDALS on the grille and step on a switch. A pedal that's off uses no CPU.",
+          "<b>No sound at all?</b> Check the POWER switch on the right of the panel. When it's off the amp is silent (the tuner still works)."
+        ],
+        outro: "Players have been finding their sweet spots on this amp for sixty years. Search for <i>Vibroverb settings</i>; since the whole circuit is here, most of them work the same way. Details in <a href=\"#amplifier-controls\">Amplifier Controls</a>."
+      },
+    },
     // 23/10/2026: Main St PR '64 (Princeton Reverb AA1164, blackface 1964). Licencia en Payhip, US$ 14.
     'main-st-pr64': {
       name: "Main St PR '64", category: 'amp', shortCode: "PR '64", modelRef: '1964 Fender Princeton Reverb (blackface)', tagline: 'Blackface 1964 · Spring Reverb · Bias Tremolo',
@@ -100,4 +122,4 @@ export const PLUGINS = {
 }
 
 // 01/11/2026: el home se divide en amplificadores y pedales (category); el orden vale dentro de cada grupo.
-export const PLUGIN_ORDER = ['main-st-pr64', 'main-st-5e3', 'main-st-5f1', 'midnight-rambler', 'cs-26', 'dorado-94', 'ts82', 'main-st-6v6-trem', 'main-st-63-spring', 'tuner-pedal']
+export const PLUGIN_ORDER = ['main-st-vv64', 'main-st-pr64', 'main-st-5e3', 'main-st-5f1', 'midnight-rambler', 'cs-26', 'dorado-94', 'ts82', 'main-st-6v6-trem', 'main-st-63-spring', 'tuner-pedal']
