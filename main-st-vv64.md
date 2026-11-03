@@ -213,7 +213,7 @@ Click the small cabinet on the grille to open the cabinet view. The impulse resp
 
 The preset pill at the top steps through presets (previous / next) and shows a red dot when you have changed something.
 
-- **Factory:** *default* (the plugin as it opens: Vibrato channel, clean, with some reverb). The sweet spots are yours to find.
+- **Factory:** *default* (the plugin as it opens: Vibrato channel, clean, with some reverb), plus six made by ear: *clean on the edge*, *dorado as booster*, *el dorado drive*, *little green men*, *sweet Prudence* and *texas neck*. Some use the MOD circuit or the pedalboard: load them and look at the panel and the pedals to see how they are set.
 - **Mine:** **save** stores your own. The menu also has **SAVE AS NEW**, **RENAME**, **DELETE**, **IMPORT** and **OPEN FOLDER**.
 - A preset stores the amplifier, the footswitch, the CIRCUIT and RECTIFIER switches, the pedalboard (which pedals are on and their knobs) and the cabinet. It doesn't store Input, Output, oversampling, the POWER switch or the tuner.
 
