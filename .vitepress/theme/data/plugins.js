@@ -54,10 +54,10 @@ export const PLUGINS = {
     },
     // 02/11/2026: Dorado '94 (Klon Centaur, 1994) y TS '82 (Ibanez TS9, 1982). Gratis, sin clave (TIP JAR en Payhip: 7XO0F).
     // 27/11/2026: Photocell Vibe (Uni-Vibe / Vibe Bro). Gratis, sin clave (TIP JAR en Payhip: 7XO0F).
-    // soon: true hasta que esté el release; al publicar: soon: false y downloadUrl con el tag del release (PhotocellVibe-v1.0.0).
+    // 27/11/2026: 1.0.0 publicado (release PhotocellVibe-v1.0.0).
     'photocell-vibe': {
       name: "Photocell Vibe", category: 'fx', modelRef: 'Late-1960s Uni-Vibe (Shin-ei / Univox)', tagline: 'Lamp & Photocells · Chorus / Vibrato · Four Phase Stages',
-      img: '/photocell-vibe.png', free: true, soon: true, isNew: true, downloadUrl: '', tipUrl: 'https://payhip.com/b/7XO0F',
+      img: '/photocell-vibe.png', free: true, soon: false, isNew: true, downloadUrl: 'https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/PhotocellVibe-v1.0.0', tipUrl: 'https://payhip.com/b/7XO0F',
       desc: "The late-1960s lamp-and-photocell vibe, rebuilt from its circuit: a real incandescent lamp, driven by the pedal's own oscillator, lights four photocells that move four transistor phase stages. The filament heats up fast and cools down slowly, so the sweep rises quickly and fades lazily: the lopsided, breathing throb no LFO can fake. CHORUS for the classic swirl, VIBRATO for pure pitch wobble.",
       specs: ["The lamp and the four photocells modeled as physics, tuned against measurements of a real unit", "Four transistor phase stages matched to the original circuit, not textbook all-pass filters", "CHORUS (dry + wet) or VIBRATO (wet only), with the red and white key", "VOLUME, INTENSITY and SPEED (0.85 to 7.6 Hz), like the pedal", "A LAMP window that glows with the model's real bulb", "The preamp: clean with a normal guitar, a hard edge with a hot one", "Input calibrated to the voltage of a real guitar", "Very light on CPU", "Free and complete: no key, no time limit"]
     },

@@ -3,9 +3,7 @@ title: "Photocell Vibe – Free Uni-Vibe Plugin (Lamp & Photocell Chorus / Vibra
 description: "Photocell Vibe is a free vibe plugin that models the late-1960s Uni-Vibe as a real circuit: four phase stages driven by an incandescent lamp and four photocells, the preamp, the chorus and vibrato mixer and the lamp driver. VST3 and AU for Windows, macOS and Linux."
 ---
 
-<!-- 27/11/2026: página de Photocell Vibe (Uni-Vibe / Vibe Bro). Los nombres de marcas solo como descripción, con el aviso.
-     Mientras soon: true en plugins.js no hay botones de descarga; al publicar, agregarlos como en la del Dorado '94
-     (release PhotocellVibe-v1.0.0). -->
+<!-- 27/11/2026: página de Photocell Vibe (Uni-Vibe / Vibe Bro). Los nombres de marcas solo como descripción, con el aviso. -->
 
 <script setup>
 import { ref } from 'vue'
@@ -22,6 +20,10 @@ function copyEmail() {
 <div id="manual"></div>
 
 This manual describes how to use **Photocell Vibe** and what each control does.
+
+<div style="margin: 1.25rem 0 1.75rem; text-align: center;">
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/PhotocellVibe-v1.0.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Photocell Vibe v1.0.0 (FREE) ⬇️</a>
+</div>
 
 ---
 
@@ -158,6 +160,10 @@ Yes. No key, no time limit, nothing locked. The tip jar is there if you want to 
 - Developed with the JUCE framework.
 
 *All product names, trademarks, and registered trademarks mentioned (including Uni-Vibe, Univox, Shin-ei and Focusrite) are property of their respective owners and are referenced solely for historical context and descriptive identification of the modeled analog equipment. Main St Audio Labs is an independent developer and has no affiliation, endorsement, or commercial sponsorship from these companies.*
+
+<div style="margin: 1.75rem 0; text-align: center;">
+  <a href="https://github.com/mainstaudiolabs/mainstaudiolabs.github.io/releases/tag/PhotocellVibe-v1.0.0" target="_blank" class="rock-btn rock-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; min-width: 250px; padding: 0.65rem 1.6rem; text-decoration: none; font-size: 1rem;">Download Photocell Vibe v1.0.0 (FREE) ⬇️</a>
+</div>
 
 If you record something with Photocell Vibe, we want to hear it. Copy our email to send us the link:
 
