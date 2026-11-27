@@ -53,6 +53,14 @@ export const PLUGINS = {
       specs: ["An original circuit, designed from scratch and simulated part by part", "Transparent: your tone stays yours, only the dynamics change", "SUSTAIN, ATTACK, BLEND and VOLUME, like a pedal on your board", "RATIO: 2:1 gentle, 4:1 firm, LIM for limiting", "BASS 100 Hz: low notes stop pumping the compressor", "Six LEDs from 3 to 20 dB, plus a gain reduction meter", "VOLUME at 6.3 matches the bypass level", "Click-free footswitch and a POWER switch for 0% CPU", "Free and complete: no key, no time limit"]
     },
     // 02/11/2026: Dorado '94 (Klon Centaur, 1994) y TS '82 (Ibanez TS9, 1982). Gratis, sin clave (TIP JAR en Payhip: 7XO0F).
+    // 27/11/2026: Photocell Vibe (Uni-Vibe / Vibe Bro). Gratis, sin clave (TIP JAR en Payhip: 7XO0F).
+    // soon: true hasta que esté el release; al publicar: soon: false y downloadUrl con el tag del release (PhotocellVibe-v1.0.0).
+    'photocell-vibe': {
+      name: "Photocell Vibe", category: 'fx', modelRef: 'Late-1960s Uni-Vibe (Shin-ei / Univox)', tagline: 'Lamp & Photocells · Chorus / Vibrato · Four Phase Stages',
+      img: '/photocell-vibe.png', free: true, soon: true, isNew: true, downloadUrl: '', tipUrl: 'https://payhip.com/b/7XO0F',
+      desc: "The late-1960s lamp-and-photocell vibe, rebuilt from its circuit: a real incandescent lamp, driven by the pedal's own oscillator, lights four photocells that move four transistor phase stages. The filament heats up fast and cools down slowly, so the sweep rises quickly and fades lazily: the lopsided, breathing throb no LFO can fake. CHORUS for the classic swirl, VIBRATO for pure pitch wobble.",
+      specs: ["The lamp and the four photocells modeled as physics, tuned against measurements of a real unit", "Four transistor phase stages matched to the original circuit, not textbook all-pass filters", "CHORUS (dry + wet) or VIBRATO (wet only), with the red and white key", "VOLUME, INTENSITY and SPEED (0.85 to 7.6 Hz), like the pedal", "A LAMP window that glows with the model's real bulb", "The preamp: clean with a normal guitar, a hard edge with a hot one", "Input calibrated to the voltage of a real guitar", "Very light on CPU", "Free and complete: no key, no time limit"]
+    },
     // 02/11/2026: 1.0.0 publicados (releases Dorado94-v1.0.0 y TS82-v1.0.0).
     'dorado-94': {
       name: "Dorado '94", category: 'fx', modelRef: '1994 Klon Centaur overdrive', tagline: 'Transparent Overdrive · Germanium Diodes · Buffered Bypass',
@@ -122,4 +130,4 @@ export const PLUGINS = {
 }
 
 // 01/11/2026: el home se divide en amplificadores y pedales (category); el orden vale dentro de cada grupo.
-export const PLUGIN_ORDER = ['main-st-vv64', 'main-st-pr64', 'main-st-5e3', 'main-st-5f1', 'midnight-rambler', 'cs-26', 'dorado-94', 'ts82', 'main-st-6v6-trem', 'main-st-63-spring', 'tuner-pedal']
+export const PLUGIN_ORDER = ['main-st-vv64', 'main-st-pr64', 'main-st-5e3', 'main-st-5f1', 'midnight-rambler', 'cs-26', 'dorado-94', 'ts82', 'photocell-vibe', 'main-st-6v6-trem', 'main-st-63-spring', 'tuner-pedal']
